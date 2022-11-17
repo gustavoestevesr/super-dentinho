@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.25s;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Class to change the background - start */
+
+.background {
+    background-image: url("../images/background/background.png");
+    background-size: cover;
+}
+
+.boardgame {
+    background-image: url("../images/background/Boardgame.jpg");
+    background-size: cover;
+}
+
+/* Class to change the background - end */
+
+section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.play:hover, .exit:hover, .credits:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.title h1 {
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 72px;
+    color: white;
+}
+
+#btnPlay {
+    width: 301px;
+    height: 307px;
+}
+
+#boardgame {
+    height: 100vh;
+    position: relative;
+}
+
+#superDentinho {
+    position: absolute;
+    top: 75%;
+    left: 10%;
+    width: 100px;
+}
+
+#p1 {
+    object-position: 250px 125px;
+}
+
+/* Class to change the background - start */
