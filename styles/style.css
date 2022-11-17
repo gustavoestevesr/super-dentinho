@@ -7,21 +7,33 @@
 
 body {
     height: 100vh;
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-size: cover;
 }
 
 /* Class to change the background - start */
 
 .background {
-    background-image: url("../images/background/background.png");
-    background-size: cover;
+    background-image: url("../images/background/BACKGROUND.png");
 }
 
 .boardgame {
-    background-image: url("../images/background/Boardgame.jpg");
-    background-size: cover;
+    background-image: url("../images/background/BACKGROUND.png");
+}
+
+.questionLeft {
+    background-image: url("../images/background/QUESTIONLEFT.jpg");
+}
+
+.answer {
+    background-image: url("../images/background/ANSWER.jpg");
+}
+
+.credits {
+    background-image: url("../images/background/CREDITS.jpg");
 }
 
 /* Class to change the background - end */
@@ -41,37 +53,104 @@ section {
     flex-wrap: wrap;
 }
 
-.play:hover, .exit:hover, .credits:hover {
+h1.gameTitle {
+    text-align: center;
+    color: white;
+    font-size: 2vw;
+}
+
+.title {
+    margin-bottom: 50px;
+}
+
+.btnMenu {
+    width: 15vw;
+    height: 15vw;
     cursor: pointer;
+}
+
+.btnMenu:hover {
     transform: scale(1.1);
 }
 
-.title h1 {
-    margin-bottom: 50px;
-    text-align: center;
-    font-size: 72px;
-    color: white;
-}
-
 #btnPlay {
-    width: 301px;
-    height: 307px;
-}
-
-#boardgame {
-    height: 100vh;
-    position: relative;
+    width: 22vw;
+    height: 22vw;
 }
 
 #superDentinho {
+    position: fixed;
+    width: 10%;
+}
+
+.p1 {
+    top: 700px;
+    left: 25px;
+}
+
+.p2 {
+    top: 5%;
+    left: 5.5%;
+}
+
+/* SLOTS OF QUESTIONS - START */
+
+.boardgame{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.questionSlot{
+    width: 10%;
     position: absolute;
-    top: 75%;
-    left: 10%;
-    width: 100px;
 }
 
-#p1 {
-    object-position: 250px 125px;
+img#q1{
+    top: 700px;
+    left: 300px;
 }
 
-/* Class to change the background - start */
+img#q2{
+    top: 600px;
+    left: 600px;
+}
+
+img#q3{
+    top: 700px;
+    left: 900px;
+}
+
+img#q4{
+    top: 600px;
+    left: 1200px;
+}
+
+img#q5{
+    top: 700px;
+    left: 1500px;
+}
+
+
+/* SLOTS OF QUESTIONS - END */
+
+/* SLOT OF QUESTION ANIMATION - START */
+
+@keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.2, 1.2);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+
+.questionSlotActive{
+    animation: zoom-in-zoom-out 2s ease infinite;
+    cursor: pointer;
+}
+
+/* SLOT OF QUESTION ANIMATION - END */
