@@ -6,15 +6,19 @@
 }
 
 body {
-    height: 100vh;
-    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
     background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
 }
 
 /* Class to change the background - start */
+
+.start {
+    background-image: url("../images/background/START.png");
+}
 
 .background {
     background-image: url("../images/background/BACKGROUND.png");
@@ -24,8 +28,8 @@ body {
     background-image: url("../images/background/BACKGROUND.png");
 }
 
-.questionLeft {
-    background-image: url("../images/background/QUESTIONLEFT.jpg");
+.question {
+    background-image: url("../images/background/QUESTION.jpg");
 }
 
 .answer {
@@ -53,17 +57,7 @@ section {
     flex-wrap: wrap;
 }
 
-h1.gameTitle {
-    text-align: center;
-    color: white;
-    font-size: 2vw;
-}
-
-.title {
-    margin-bottom: 50px;
-}
-
-.btnMenu {
+.btn {
     width: 15vw;
     height: 15vw;
     cursor: pointer;
@@ -73,14 +67,34 @@ h1.gameTitle {
     transform: scale(1.1);
 }
 
-#btnPlay {
-    width: 22vw;
-    height: 22vw;
+#title {
+    position: fixed;
+    top: 17vh;
+    left: 5vw;
+    width: 45vw;
 }
 
-#superDentinho {
+#btnPlay {
     position: fixed;
-    width: 10%;
+    top: 80vh;
+    left: 24vw;
+    width: 8vw;
+    height: 8vw;
+    animation: zoom-in-zoom-out 2s ease infinite;
+}
+
+#superDentinhoStart {
+    position: fixed;
+    top: 5vh;
+    left: 55vw;
+
+    width: 40vw;
+    animation: bounce 4s ease infinite;
+}
+
+.superDentinho {
+    position: fixed;
+    width: 10vw;
 }
 
 .p1 {
@@ -95,60 +109,86 @@ h1.gameTitle {
 
 /* SLOTS OF QUESTIONS - START */
 
-.boardgame{
+.boardgame {
     width: 100%;
     height: 100%;
     position: relative;
 }
 
-.questionSlot{
+.questionSlot {
     width: 10%;
-    position: absolute;
+    position: fixed;
 }
 
-img#q1{
+img#q1 {
     top: 700px;
     left: 300px;
 }
 
-img#q2{
+img#q2 {
     top: 600px;
     left: 600px;
 }
 
-img#q3{
+img#q3 {
     top: 700px;
     left: 900px;
 }
 
-img#q4{
+img#q4 {
     top: 600px;
     left: 1200px;
 }
 
-img#q5{
+img#q5 {
     top: 700px;
     left: 1500px;
 }
 
-
 /* SLOTS OF QUESTIONS - END */
+
+
+/* ANIMATION START SUPER DENTINHO - START */
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(50px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.questionSlotActive {
+    animation: zoom-in-zoom-out 2s ease infinite;
+    cursor: pointer;
+}
+
+/* ANIMATION START SUPER DENTINHO - END */
+
 
 /* SLOT OF QUESTION ANIMATION - START */
 
 @keyframes zoom-in-zoom-out {
     0% {
-      transform: scale(1, 1);
+        transform: scale(1, 1);
     }
-    50% {
-      transform: scale(1.2, 1.2);
-    }
-    100% {
-      transform: scale(1, 1);
-    }
-  }
 
-.questionSlotActive{
+    50% {
+        transform: scale(1.2, 1.2);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+.questionSlotActive {
     animation: zoom-in-zoom-out 2s ease infinite;
     cursor: pointer;
 }
