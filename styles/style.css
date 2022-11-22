@@ -2,8 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    transition: 0.25s;
+    transition: 0.5s;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
 body {
     display: flex;
@@ -12,32 +14,41 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Class to change the background - start */
 
 .start {
-    background-image: url("../images/background/START.png");
+    background-image: url("../images/backgrounds/START.png");
+}
+
+.apresentation {
+    background-image: url("../images/backgrounds/APRESENTATION.png");
 }
 
 .background {
-    background-image: url("../images/background/BACKGROUND.png");
+    background-image: url("../images/backgrounds/BACKGROUND.png");
 }
 
 .boardgame {
-    background-image: url("../images/background/BACKGROUND.png");
+    background-image: url("../images/backgrounds/BACKGROUND.png");
 }
 
 .question {
-    background-image: url("../images/background/QUESTION.jpg");
+    background-image: url("../images/backgrounds/QUESTION.jpg");
 }
 
 .answer {
-    background-image: url("../images/background/ANSWER.jpg");
+    background-image: url("../images/backgrounds/ANSWER.jpg");
 }
 
 .credits {
-    background-image: url("../images/background/CREDITS.jpg");
+    background-image: url("../images/backgrounds/CREDITS.jpg");
+}
+
+.rules {
+    background-image: url("../images/backgrounds/RULES.jpg");
 }
 
 /* Class to change the background - end */
@@ -57,12 +68,6 @@ section {
     flex-wrap: wrap;
 }
 
-.btn {
-    width: 15vw;
-    height: 15vw;
-    cursor: pointer;
-}
-
 .btnMenu:hover {
     transform: scale(1.1);
 }
@@ -74,13 +79,91 @@ section {
     width: 45vw;
 }
 
+#ballon {
+    position: fixed;
+    top: 2vh;
+    left: 20vw;
+    height: 85vh;
+    animation: bounce 6s ease infinite;
+}
+
+#apresentationText {
+    top: 25vh;
+    left: 55.5vh;
+    height: 85vh;
+    width: 80vh;
+    position: fixed;
+    color: black;
+    font-size: 4vh;
+    text-align: center;
+    animation: bounce 6s ease infinite;
+    font-family: 'Roboto', sans-serif;
+}
+
+#tooths {
+    position: fixed;
+    bottom: 1vh;
+    right: 1vw;
+    height: 25vh;
+}
+
 #btnPlay {
     position: fixed;
-    top: 80vh;
-    left: 24vw;
-    width: 8vw;
-    height: 8vw;
+    top: 82vh;
+    left: 52vh;    
+    width: 16vh;
+    height: 16vh;
     animation: zoom-in-zoom-out 2s ease infinite;
+    cursor: pointer;
+}
+
+#btnContinue {
+    position: fixed;
+    top: 5vh;
+    right: 10vh;    
+    width: 16vh;
+    height: 16vh;
+    animation: zoom-in-zoom-out 2s ease infinite;
+    cursor: pointer;
+}
+
+#btnRules {
+    position: fixed;
+    top: 45vh;
+    right: 10vh;     
+    width: 16vh;
+    height: 16vh;
+    animation: zoom-in-zoom-out 2s ease infinite;
+    cursor: pointer;
+}
+
+#btnCredits {
+    position: fixed;
+    top: 25vh;
+    right: 10vh;     
+    width: 16vh;
+    height: 16vh;
+    animation: zoom-in-zoom-out 2s ease infinite;
+    cursor: pointer;
+}
+
+/* #btnExit {
+    position: fixed;
+    top: 82vh;
+    left: 52vh;    
+    width: 16vh;
+    height: 16vh;
+    animation: zoom-in-zoom-out 2s ease infinite;
+    cursor: pointer;
+} */
+
+#superDentinhoApresentacao {
+    position: fixed;
+    bottom: 5vh;
+    left: 5vw;
+
+    width: 20vw;
+    animation: bounce 6s ease infinite;
 }
 
 #superDentinhoStart {
@@ -89,7 +172,11 @@ section {
     left: 55vw;
 
     width: 40vw;
-    animation: bounce 4s ease infinite;
+    animation: bounce 6s ease infinite;
+}
+
+#superDentinhoBoardgame{
+    
 }
 
 .superDentinho {
@@ -156,7 +243,7 @@ img#q5 {
     }
 
     50% {
-        transform: translateY(50px);
+        transform: translateY(25px);
     }
 
     100% {

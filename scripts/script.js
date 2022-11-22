@@ -4,13 +4,15 @@ let sectionCredits = document.querySelector('#credits')
 let sectionBoardgame = document.querySelector('#boardgame')
 let sectionQuestion = document.querySelector('#question')
 let sectionAnswer = document.querySelector('#answer')
-let sectionApresentacao = document.querySelector('#apresentacao')
+let sectionApresentation = document.querySelector('#apresentation')
+let sectionRules = document.querySelector('#rules')
 
 // BTNs
-let btnPlay = document.querySelector('img#btnPlay.btn')
+let btnPlay = document.querySelector('img#btnPlay')
 let btnCredits = document.querySelector('#btnCredits')
 let btnExit = document.querySelector('#btnExit')
 let btnContinue = document.querySelector('#btnContinue')
+let btnRules = document.querySelector('#btnRules')
 
 //CHARACTER
 let superDentinho = document.querySelector('#superDentinho')
@@ -33,41 +35,61 @@ sectionCredits.style.display = 'none'
 sectionBoardgame.style.display = 'none'
 sectionQuestion.style.display = 'none'
 sectionAnswer.style.display = 'none'
-sectionApresentacao.style.display = 'none'
+sectionApresentation.style.display = 'none'
+sectionRules.style.display = 'none'
 
 // DEFINE THE FIRST SCREEN
 document.body.classList.add("start");
 
 // DEFINE THE FIRST POSITION
-superDentinho.classList.add("p1")
+// superDentinho.classList.add("p1")
 
 // DEFINE THE FIRST ACTIVE SLOT QUESTION
 questionSlot1.classList.add("questionSlotActive")
 
-// NAVIGATE PLAY MENU TO APRESENTACAO
+// NAVIGATE FROM START PLAY TO APRESENTATION
 btnPlay.addEventListener("click", function() {
     sectionMenu.style.display = 'none'
-    sectionApresentacao.style.display = 'flex'
+    sectionApresentation.style.display = 'flex'
 
     document.body.classList.remove("background")
-    document.body.classList.add("apresentacao")
+    document.body.classList.add("apresentation")
 
     btnPlay.style.display = 'none'
+
+    displayApresentationText()
 
     playSound()
 });
 
-// NAVIGATE TO EXIT GAME
+// NAVIGATE FROM APRESENTATION TO CREDITS
 btnCredits.addEventListener("click", function() {
-    sectionMenu.style.display = 'none'
+    sectionApresentation.style.display = 'none'
     sectionCredits.style.display = 'flex'
 
     document.body.classList.remove("background")
     document.body.classList.add("credits")
-
-    playSound()
 });
 
+// NAVIGATE FROM APRESENTATION TO RULES
+btnRules.addEventListener("click", function() {
+    sectionApresentation.style.display = 'none'
+    sectionRules.style.display = 'flex'
+
+    document.body.classList.remove("background")
+    document.body.classList.add("rules")
+});
+
+// NAVIGATE FROM APRESENTATION TO RULES
+btnContinue.addEventListener("click", function() {
+    sectionApresentation.style.display = 'none'
+    sectionBoardgame.style.display = 'flex'
+
+    document.body.classList.remove("background")
+    document.body.classList.add("boardgame")
+});
+
+// EXIT THE GAME
 btnExit.addEventListener("click", function() {
     window.close()
 });
