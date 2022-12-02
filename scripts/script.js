@@ -13,6 +13,8 @@ let btnCredits = document.querySelector('#btnCredits')
 let btnExit = document.querySelector('#btnExit')
 let btnContinue = document.querySelector('#btnContinue')
 let btnRules = document.querySelector('#btnRules')
+let btnBackFromRulesToApresentation = document.querySelector('#btnBackFromRulesToApresentation')
+let btnBackFromCreditsToApresentation = document.querySelector('#btnBackFromCreditsToApresentation')
 
 //CHARACTER
 let superDentinho = document.querySelector('#superDentinho')
@@ -46,6 +48,19 @@ document.body.classList.add("start");
 
 // DEFINE THE FIRST ACTIVE SLOT QUESTION
 questionSlot1.classList.add("questionSlotActive")
+// DEFINE THE OTHERS SLOT QUESTION POSITIONS
+questionSlot1.classList.add("p1")
+questionSlot2.classList.add("p2")
+questionSlot3.classList.add("p3")
+questionSlot4.classList.add("p4")
+questionSlot5.classList.add("p5")
+questionSlot6.classList.add("p6")
+questionSlot1.classList.add("p1")
+questionSlot2.classList.add("p2")
+questionSlot3.classList.add("p3")
+questionSlot4.classList.add("p4")
+questionSlot5.classList.add("p5")
+questionSlot6.classList.add("p6")
 
 // NAVIGATE FROM START PLAY TO APRESENTATION
 btnPlay.addEventListener("click", function() {
@@ -57,7 +72,7 @@ btnPlay.addEventListener("click", function() {
 
     btnPlay.style.display = 'none'
 
-    displayApresentationText()
+    displayApresentationGame()
 
     playSound()
 });
@@ -67,8 +82,10 @@ btnCredits.addEventListener("click", function() {
     sectionApresentation.style.display = 'none'
     sectionCredits.style.display = 'flex'
 
-    document.body.classList.remove("background")
+    document.body.classList.remove("apresentation")
     document.body.classList.add("credits")
+
+    displayApresentationCredits()
 });
 
 // NAVIGATE FROM APRESENTATION TO RULES
@@ -78,6 +95,8 @@ btnRules.addEventListener("click", function() {
 
     document.body.classList.remove("background")
     document.body.classList.add("rules")
+
+    displayApresentationRules()
 });
 
 // NAVIGATE FROM APRESENTATION TO RULES
@@ -89,10 +108,26 @@ btnContinue.addEventListener("click", function() {
     document.body.classList.add("boardgame")
 });
 
-// EXIT THE GAME
-btnExit.addEventListener("click", function() {
-    window.close()
+btnBackFromRulesToApresentation.addEventListener("click", function() {
+    sectionRules.style.display = 'none'
+    sectionApresentation.style.display = 'flex'
+
+    document.body.classList.remove("rules")
+    document.body.classList.add("apresentation")
 });
+
+btnBackFromRulesToApresentation.addEventListener("click", function() {
+    sectionCredits.style.display = 'none'
+    sectionApresentation.style.display = 'flex'
+
+    document.body.classList.remove("credits")
+    document.body.classList.add("apresentation")
+});
+
+// EXIT THE GAME
+// btnExit.addEventListener("click", function() {
+//     window.close()
+// });
 
 // NAVIGATE TO THE QUESTIONS
 questionSlot1.addEventListener("click", function() {

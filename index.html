@@ -20,9 +20,9 @@
     </section>
 
     <section id="apresentation">
-        <!-- ballon and txt -->
-        <img id="ballon" src="images/ballons/BALLON TEXT.png" alt=""> 
-        <p id="apresentationText"></p>
+        <!-- ballon and txt -->        
+            <img id="ballon" src="images/ballons/BALLON TEXT.png" alt=""> 
+            <p class="apresentationText" id="apresentationGame"></p>
 
         <!-- tooths -->
         <img id="tooths" src="images/characters/TOOTHS.png" alt="">
@@ -56,22 +56,76 @@
         <img class="questionSlot" id="q14" src="images/buttons/BUTTON.png" alt="">
         <img class="questionSlot" id="q15" src="images/buttons/BUTTON.png" alt="">
 
-        <img id="superDentinhoBoardgame" src="images/characters/super happy tooth.png" alt="">
+        <img id="superDentinhoBoardGame" src="images/characters/super happy tooth.png" alt="">
     </section>
 
-    <section id="rules"></section>
+    <section id="rules">
+        <!-- btns -->
+        <img id="btnBackFromRulesToApresentation" src="images/buttons/BACK.png" alt="">
 
-    <section id="credits"></section>
+        <!-- ballon and txt -->
+        <img id="superDentinhoRules" src="images/characters/SUPER HAPPY TOOTH SPEAKING.gif" alt="">
+        <img id="ballonCredits" src="images/ballons/BALLON TEXT.png" alt=""> 
 
-    <section id="question"></section>
+        <!-- rules -->
+        <p class="apresentationText" id="apresentationRule1"></p>
+        <p class="apresentationText" id="apresentationRule2"></p>
+        <p class="apresentationText" id="apresentationRule3"></p>
+        <p class="apresentationText" id="apresentationRule4"></p>
+        <p class="apresentationText" id="apresentationRule5"></p>
+    </section>
 
-    <section id="answer"></section>
+    <section id="credits">
+        <!-- btns -->
+        <img id="btnBackFromCreditsToApresentation" src="images/buttons/BACK.png" alt="">
+
+        <!-- ballon and txt -->
+        <div class="row">
+            <!-- super tooth -->
+            <img id="superDentinhoCredits" src="images/characters/SUPER HAPPY TOOTH SPEAKING.gif" alt="">
+            <div class="column">
+                <img id="ballonCredits" src="images/ballons/BALLON TEXT.png" alt=""> 
+                <p class="apresentationText" id="apresentation1"></p>
+                <!-- <img class="creator" id="creator1" src="images/creators/Vanessa.jpg" alt=""> -->
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <p class="apresentationText" id="apresentation2"></p>
+                <img id="ballonCredits" src="images/ballons/BALLON TEXT.png" alt=""> 
+                <!-- <img class="creator" id="creator1" src="images/creators/Vanessa.jpg" alt=""> -->
+            </div>
+            <!-- super tooth -->
+            <img id="superDentinhoCredits" src="images/characters/SUPER HAPPY TOOTH SPEAKING.gif" alt="">
+        </div>
+
+        <div class="row">
+            <!-- super tooth -->
+            <img id="superDentinhoCredits" src="images/characters/SUPER HAPPY TOOTH SPEAKING.gif" alt="">
+            <div class="column">
+                <img id="ballonCredits" src="images/ballons/BALLON TEXT.png" alt=""> 
+                <p class="apresentationText" id="apresentation3"></p>
+                <!-- <img class="creator" id="creator1" src="images/creators/Vanessa.jpg" alt=""> -->
+            </div>
+        </div>        
+    </section>
+
+    <section id="question">
+
+    </section>
+
+    <section id="answer">
+
+    </section>
 
     <audio id="audio" src="sounds/background sound.mp3" controls style="display: none;"></audio>
 
     <!-- Script -->
     <script src="scripts/script.js"></script>
-    <script src="scripts/apresentation.js"></script>
+    <script src="scripts/apresentationCredits.js"></script>
+    <script src="scripts/apresentationRules.js"></script>
+    <script src="scripts/apresentationGame.js"></script>
     <script src="scripts/questions.js"></script>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
