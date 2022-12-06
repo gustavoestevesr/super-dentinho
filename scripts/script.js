@@ -105,7 +105,7 @@ btnContinue.addEventListener("click", function() {
     sectionBoardgame.style.display = 'flex'
 
     document.body.classList.remove("background")
-    document.body.classList.add("boardgame")
+    document.body.classList.add("credits")
 });
 
 btnBackFromRulesToApresentation.addEventListener("click", function() {
@@ -116,7 +116,7 @@ btnBackFromRulesToApresentation.addEventListener("click", function() {
     document.body.classList.add("apresentation")
 });
 
-btnBackFromRulesToApresentation.addEventListener("click", function() {
+btnBackFromCreditsToApresentation.addEventListener("click", function() {
     sectionCredits.style.display = 'none'
     sectionApresentation.style.display = 'flex'
 
