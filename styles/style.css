@@ -95,34 +95,42 @@ section {
 
 
 #numberQuestion{
-    font-size: 1.25rem;
-    top: 5vh;
-    width: 78vh;
+    font-size: 1.1rem;
+    top: 10vh;
+    left: 70vh;
+    height: auto;
 }
 
 #question{
-    font-size: 1.25rem;
-    top: 15vh;
-    width: 78vh;
+    font-size: 1.8rem;
+    top: 20vh;
+    left: 65vh;
+    height: auto;
+    width: 90vh;
 }
 
 #option1{
-    font-size: 1.25rem;
-    top: 35vh;
-    width: 78vh;
+    font-size: 1.3rem;
+    top: 50vh;
+    width: 50vh;
+    left: 50vh;
+    height: auto;
+    cursor: pointer;
 }
 
 #option2{
-    font-size: 1.25rem;
-    top: 55vh;
-    width: 78vh;
+    font-size: 1.3rem;
+    top: 50vh;
+    width: 50vh;
+    left: 110vh;
+    height: auto;
+    cursor: pointer;
 }
 
 
 #apresentationCredits {
-    font-size: 1.25rem;
-    top: 75vh;
-    width: 78vh;
+    font-size: 1.5rem;
+    top: 20vh;
 }
 
 .apresentationText {
@@ -130,6 +138,7 @@ section {
     left: 58vh;
     height: 85vh;
     width: 80vh;
+    
 
     position: fixed;
     color: black;
@@ -196,9 +205,9 @@ section {
     cursor: pointer;
 }
 
-#btnNextRule{
+#btnNextRule, #btnNextCredit{
     position: fixed;
-    bottom: 30vh;
+    bottom: 25vh;
     right: 75vh;    
     width: 12vh;
     height: 12vh;

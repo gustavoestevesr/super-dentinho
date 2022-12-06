@@ -316,10 +316,10 @@ function changeActiveSlotQuestion() {
 }
 
 function prepareQuestion() {
-    document.querySelector("#numberQuestion").innerHTML = `${numberQuestion}° Questão`
-    document.querySelector("#question").innerHTML = questions[numberQuestion].title
-    document.querySelector("#option1").innerHTML = questions[numberQuestion].choices
-    document.querySelector("#option2").innerHTML = questions[numberQuestion].choices
+    document.querySelector("p#numberQuestion.apresentationText").innerHTML = `${numberQuestion+1}° Questão`
+    document.querySelector("p#question.apresentationText").innerHTML = `${questions[numberQuestion].title}`
+    document.querySelector("p#option1.apresentationText").innerHTML = `${questions[numberQuestion].choices[0]}`
+    document.querySelector("p#option2.apresentationText").innerHTML = `${questions[numberQuestion].choices[1]}`
 }
 
 function verifyQuestion() {

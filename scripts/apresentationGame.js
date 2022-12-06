@@ -6,10 +6,9 @@ function delay(milliseconds){
     });
 }
 
-let indexGame = 0
-let sizeGame = apresentation.length    
-
 async function displayApresentationGame(){
+    let indexGame = 0
+    let sizeGame = apresentation.length    
     while( indexGame < sizeGame ){
         await delay(50);
         document.querySelector("#apresentationGame").innerHTML += apresentation[indexGame]

@@ -12,7 +12,7 @@ let indexAuthor = 0
 let sizeAuthor = authors[numberAuthor].length
 
 async function displayApresentationCredits(){
-
+    
     if (indexAuthor == 0) {
         document.querySelector("#apresentationCredits").innerHTML = ""
         while (indexAuthor < sizeAuthor) {
@@ -21,7 +21,7 @@ async function displayApresentationCredits(){
             indexAuthor++;
         }
 
-        if (numberAuthor < 7) {
+        if (numberAuthor < 3) {
             numberAuthor++;
             indexAuthor = 0
             sizeAuthor = authors[numberAuthor].length
