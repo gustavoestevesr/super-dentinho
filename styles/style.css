@@ -33,11 +33,11 @@ body {
 }
 
 .boardgame {
-    background-image: url("../images/backgrounds/BACKGROUND.png");    
+    background-image: url("../images/backgrounds/BOARDGAME.jpg");    
 }
 
 .question {
-    background-image: url("../images/backgrounds/APRESENTATION.PNG");
+    background-image: url("../images/backgrounds/QUESTION.jpg");
 }
 
 .answer {
@@ -45,12 +45,12 @@ body {
 }
 
 .credits {
-    background-image: url("../images/backgrounds/APRESENTATION.png");
+    background-image: url("../images/backgrounds/CREDITS.png");
     background-repeat: repeat;
 }
 
 .rules {
-    background-image: url("../images/backgrounds/APRESENTATION.png");
+    background-image: url("../images/backgrounds/RULES.png");
 }
 
 /* Class to change the background - end */
@@ -81,21 +81,53 @@ section {
 }
 
 #ballon {
-    position: fixed;
     top: 2vh;
     left: 42vh;
-    height: 85vh;
-    width: auto;
+    height: 90vh;
+    position: fixed;
     animation: bounce 6s ease infinite;
+    z-index: -1;
 }
 
 .creator {
     width: 20vh;
 }
 
+
+#numberQuestion{
+    font-size: 1.25rem;
+    top: 5vh;
+    width: 78vh;
+}
+
+#question{
+    font-size: 1.25rem;
+    top: 15vh;
+    width: 78vh;
+}
+
+#option1{
+    font-size: 1.25rem;
+    top: 35vh;
+    width: 78vh;
+}
+
+#option2{
+    font-size: 1.25rem;
+    top: 55vh;
+    width: 78vh;
+}
+
+
+#apresentationCredits {
+    font-size: 1.25rem;
+    top: 75vh;
+    width: 78vh;
+}
+
 .apresentationText {
-    top: 25vh;
-    left: 55.5vh;
+    top: 28vh;
+    left: 58vh;
     height: 85vh;
     width: 80vh;
 
@@ -107,16 +139,23 @@ section {
     font-family: 'Roboto', sans-serif;
 }
 
+
 #apresentationRule{
     left: 58vh;
     top: 28vh;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 915px) {
     .apresentationText {
         font-size: 1.2rem;
         top: 20vh;
         width: 75vh;
+    }
+    #apresentationCredits, #apresentationRules  {
+        font-size: 1rem;
+        top: 5vh;
+        width: 80vh;
+        left: 60vh;
     }
   }
   
@@ -148,7 +187,7 @@ section {
     cursor: pointer;
 }
 
-#btnBackFromRulesToApresentation, #btnBackFromCreditsToApresentation{
+#btnBackFromRulesToApresentation, #btnBackFromCreditsToApresentation, #btnBackFromQuestionToBoardgame{
     position: fixed;
     top: 5vh;
     left: 5vh;    
@@ -157,7 +196,18 @@ section {
     cursor: pointer;
 }
 
-#btnRules {
+#btnNextRule{
+    position: fixed;
+    bottom: 30vh;
+    right: 75vh;    
+    width: 12vh;
+    height: 12vh;
+    cursor: pointer;
+    z-index: 2;
+    animation: bounce 6s ease infinite;
+}
+
+#btnRules, #btnCredits {
     position: fixed;
     top: 45vh;
     right: 10vh;     
@@ -208,7 +258,7 @@ section {
     animation: bounce 6s ease infinite;
 }
 
-#superDentinhoCredits{
+#superDentinhoCredits, #superDentinhoQuestion{
     position: fixed;
     bottom: 5vh;
     left: 5vw;
@@ -265,63 +315,103 @@ section {
 /* SLOTS OF QUESTIONS - END */
 
 .p1 {
-    bottom: 10vh;
+    bottom: 5vh;
     left: 35vh;
 }
 
 .p2 {
-    bottom: 0vh;
+    bottom: 20vh;
     left: 65vh;
 }
 
 .p3 {
-    bottom: 10vh;
+    bottom: 5vh;
     left: 95vh;
 }
 
 .p4 {
-    bottom: 0vh;
+    bottom: 20vh;
     left: 125vh;
 }
 
 .p5 {
-    bottom: 10vh;
+    bottom: 5vh;
     left: 155vh;
 }
 
 .p6 {
-    bottom: 0vh;
+    bottom: 20vh;
     left: 185vh;
 }
 
 .p7 {
-    bottom: 10vh;
-    left: 35vh;
+    bottom: 50vh;
+    left: 185vh;
 }
 
 .p8 {
-    bottom: 0vh;
-    left: 65vh;
+    bottom: 75vh;
+    left: 155vh;
 }
 
 .p9 {
-    bottom: 10vh;
-    left: 95vh;
+    bottom: 50vh;
+    left: 125vh;
 }
 
 .p10 {
-    bottom: 0vh;
+    bottom: 50vh;
     left: 125vh;
 }
 
 .p11 {
-    bottom: 10vh;
-    left: 155vh;
+    bottom: 75vh;
+    left: 35vh;
 }
 
 .p12 {
-    bottom: 0vh;
+    bottom: 50vh;
+    left: 65vh;
+}
+
+.p13 {
+    bottom: 75vh;
+    left: 95vh;
+}
+
+.p14 {
+    bottom: 50vh;
+    left: 125vh;
+}
+
+.p15 {
+    bottom: 5vh;
+    left: 155vh;
+}
+
+.p16 {
+    bottom: 20vh;
     left: 185vh;
+}
+
+.p17 {
+    bottom: 50vh;
+    left: 185vh;
+}
+
+.p18 {
+    bottom: 75vh;
+    left: 155vh;
+}
+
+.p19 {
+    bottom: 50vh;
+    left: 125vh;
+}
+
+.p20 {
+    bottom: 50vh;
+    left: 125vh;
 }
 
 /* ANIMATION START SUPER DENTINHO - START */
