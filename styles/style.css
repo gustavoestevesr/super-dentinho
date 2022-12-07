@@ -75,8 +75,8 @@ section {
 
 #title {
     position: fixed;
-    top: 15vh;
-    left: 10vh;
+    top: 10vh;
+    left: 5vh;
     width: 100vh;
 }
 
@@ -157,15 +157,23 @@ section {
 @media screen and (max-width: 915px) {
     .apresentationText {
         font-size: 1.2rem;
-        top: 20vh;
+        top: 20vh; 
         width: 75vh;
     }
-    #apresentationCredits, #apresentationRules  {
-        font-size: 1rem;
-        top: 5vh;
-        width: 80vh;
-        left: 60vh;
+    #apresentationCredits {
+        font-size: 1.2rem;
+        top: 18vh;
+        width: 85vh;
+        left: 55vh;
     }
+    #apresentationGame, #apresentationRules  {
+        top: 22vh;
+        width: 80vh;
+    }
+    #question{
+        font-size: 1.4rem;
+    }
+
   }
   
 
@@ -178,8 +186,8 @@ section {
 
 #btnPlay {
     position: fixed;
-    top: 82vh;
-    left: 52vh;    
+    top: 75vh;
+    left: 46vh;    
     width: 16vh;
     height: 16vh;
     animation: zoom-in-zoom-out 2s ease infinite;
@@ -205,15 +213,20 @@ section {
     cursor: pointer;
 }
 
-#btnNextRule, #btnNextCredit{
+#btnNextRule, #btnNextCredit, #btnNextFromToBoardgame{
     position: fixed;
-    bottom: 25vh;
-    right: 75vh;    
+    top: 49vh;
+    left: 142vh;    
     width: 12vh;
     height: 12vh;
     cursor: pointer;
     z-index: 2;
     animation: bounce 6s ease infinite;
+}
+
+#btnNextFromToBoardgame{
+    top: 60vh;
+    left: 150vh;    
 }
 
 #btnRules, #btnCredits {
@@ -258,39 +271,21 @@ section {
     flex-wrap: wrap;    
 }
 
-#superDentinhoRules{
+#superDentinhoCredits, #superDentinhoQuestion, #superDentinhoAnswer, #superDentinhoRules, #superDentinhoApresentacao{
     position: fixed;
     bottom: 5vh;
-    left: 5vw;
+    left: 5vh;
 
-    width: 20vw;
-    animation: bounce 6s ease infinite;
-}
-
-#superDentinhoCredits, #superDentinhoQuestion{
-    position: fixed;
-    bottom: 5vh;
-    left: 5vw;
-
-    width: 20vw;
-    animation: bounce 6s ease infinite;
-}
-
-#superDentinhoApresentacao {
-    position: fixed;
-    bottom: 5vh;
-    left: 10vh;
-
-    height: 45vh;
+    width: 45vh;
     animation: bounce 6s ease infinite;
 }
 
 #superDentinhoStart {
     position: fixed;
-    top: 5vh;
-    left: 110vh;
+    top: 10vh;
+    left: 100vh;
 
-    height: 85vh;
+    height: 80vh;
     animation: bounce 6s ease infinite;
 }
 
@@ -303,10 +298,6 @@ section {
     animation: bounce 6s ease infinite;
 }
 
-.superDentinho {
-    position: fixed;
-    width: 10vw;
-}
 
 /* SLOTS OF QUESTIONS - START */
 

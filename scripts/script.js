@@ -16,6 +16,7 @@ let btnRules = document.querySelector('#btnRules')
 let btnBackFromRulesToApresentation = document.querySelector('#btnBackFromRulesToApresentation')
 let btnBackFromCreditsToApresentation = document.querySelector('#btnBackFromCreditsToApresentation')
 let btnBackFromQuestionToBoardgame = document.querySelector('#btnBackFromQuestionToBoardgame')
+let btnNextFromToBoardgame =  document.querySelector('#btnNextFromToBoardgame')
 
 //CHARACTER
 let superDentinho = document.querySelector('#superDentinho')
@@ -120,7 +121,7 @@ btnRules.addEventListener("click", function () {
     document.body.classList.remove("background")
     document.body.classList.add("rules")
 
-    displayApresentationRules()
+    displayApresentationRules( true )
 });
 
 // NAVIGATE FROM APRESENTATION TO CREDITS
@@ -130,6 +131,14 @@ btnContinue.addEventListener("click", function () {
 
     document.body.classList.remove("background")
     document.body.classList.add("credits")
+});
+
+btnNextFromToBoardgame.addEventListener("click", function () {
+    sectionAnswer.style.display = 'none'
+    sectionBoardgame.style.display = 'flex'
+
+    document.body.classList.remove("answer")
+    document.body.classList.add("boardgame")
 });
 
 btnBackFromRulesToApresentation.addEventListener("click", function () {
@@ -162,17 +171,18 @@ btnBackFromQuestionToBoardgame.addEventListener("click", function () {
 // });
 
 // NAVIGATE TO THE QUESTIONS
-questionSlot1.addEventListener("click", function () {
+// questionSlot1.addEventListener("click", function () {
 
-    // change background
-    sectionBoardgame.style.display = 'none'
-    sectionQuestion.style.display = 'flex'
+//     // change background
+//     sectionBoardgame.style.display = 'none'
+//     sectionQuestion.style.display = 'flex'
 
-    document.body.classList.remove("background")
-    document.body.classList.add("question")
+//     document.body.classList.remove("background")
+//     document.body.classList.add("question")
 
-    prepareQuestion()
-});
+//     prepareQuestion()
+// });
+
 
 // BACKGROUND SOUND
 function playSound() {
@@ -253,7 +263,7 @@ var questions = [
     }
 ];
 
-function changeActiveSlotQuestion() {
+function changeActiveSlotQuestion( numberQuestion ) {
     switch (numberQuestion) {
         case 0:
             questionSlot1.classList.remove("questionSlotActive")
@@ -322,17 +332,37 @@ function prepareQuestion() {
     document.querySelector("p#option2.apresentationText").innerHTML = `${questions[numberQuestion].choices[1]}`
 }
 
-function verifyQuestion() {
-    if (condition) {
+function goToQuestion(){
+     // change background
+     sectionBoardgame.style.display = 'none'
+     sectionQuestion.style.display = 'flex'
+ 
+     document.body.classList.remove("background")
+     document.body.classList.add("question")
+ 
+     prepareQuestion()
+}
 
-    } else {
+function verifyQuestion( anwserUser ) {
+    // alert(anwserUser)
 
-    }
+    let statusAnswerUser = questions[numberQuestion].answer === anwserUser ? true : false
 
-    changeActiveSlotQuestion()
+    changeActiveSlotQuestion(numberQuestion)
+    feedbackAnswer(statusAnswerUser)
     numberQuestion++;
 }
 
-function feedbackAnswer() {
+function feedbackAnswer( statusAnswerUser ) {
+    // change background
+    sectionAnswer.style.display = 'flex'
+    sectionQuestion.style.display = 'none'
 
+    document.body.classList.remove("question")
+    document.body.classList.add("answer")
+
+    start();
+            stop();
+
+    // alert( statusAnswerUser )
 }
