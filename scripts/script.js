@@ -99,7 +99,7 @@ btnPlay.addEventListener("click", function () {
 
     displayApresentationGame()
 
-    playSound()
+    playBackgroundSound()
 });
 
 // NAVIGATE FROM APRESENTATION TO CREDITS
@@ -185,10 +185,26 @@ btnBackFromQuestionToBoardgame.addEventListener("click", function () {
 
 
 // BACKGROUND SOUND
-function playSound() {
-    let sound = document.getElementById("audio")
+function playBackgroundSound() {
+    let sound = document.getElementById("audioBd")
     sound.currentTime = 0
     sound.loop = true
+    sound.play()
+}
+
+// CORRECT SOUND
+function playCorrectSound() {
+    let sound = document.getElementById("audioCt")
+    sound.currentTime = 0
+    sound.loop = false
+    sound.play()
+}
+
+// WRONG SOUND
+function playWrongSound() {
+    let sound = document.getElementById("audioWg")
+    sound.currentTime = 0
+    sound.loop = false
     sound.play()
 }
 
@@ -217,44 +233,60 @@ var questions = [
         wrongAnswerExplanation: "Incorreta !A escovinha sempre deve ser pequena e macia  para conseguir limpar todos os cantinhos do dente ,sem machucar."
     },
     {
-        title: "Which of the following is NOT a method to call an element with class 'example'?",
-        choices: ["document.getElementsByClassName( 'example');", "document.body.example;", "document.querySelector( '.example')", "document.querySelectorAll( '.example')[0]"],
-        answer: "document.body.example;"
+        title: "A pasta de dental e uma grande amiga da escovinha, ela precisa de flúor para manter o dentinho longe das cáries?",
+        choices: ["sim, precisa.", "document.body.example;", "não, precisa."],
+        answer: "sim, precisa.",
+        correctAnswerExplanation: "Correta, todas as pastas precisam de flúor para combater o bichinho da cárie,e manter o esmalte forte .( bichinho cárie, flúor caindo no dentinho)gif",
+        wrongAnswerExplanation: "Incorreta, sem flúor as pastas não irão ajudar os dentinhos contras as cáries. (dentinho lutando contra a cárie)"
     },
     {
-        title: "Arrays in JavaScript can be used to store ______.",
-        choices: ["strings", "numbers", "objects", "All of the Above"],
-        answer: "All of the Above"
+        title: "E a quantidade de pasta para colocar para idade de vocês?",
+        choices: ["a) a quantidade vai de um lado ao outro da escova (foto mandada da pasta em toda a escova)", "b) a quantidade e relativa a um grão de ervilha"],
+        answer: "b) a quantidade e relativa a um grão de ervilha",
+        correctAnswerExplanation: "Acertou!!! a pasta deve ser colocada na idade de vocês, do mesmo tamanho de um carocinho de ver ilha!! ( foto de uma ervilha)",
+        wrongAnswerExplanation: "Errou !!! a pasta deve ser colocada na idade de vocês ,do mesmo tamanho de um carocinho de ver ilha!! ( foto de uma ervilha)"
     },
     {
-        title: "Undefined does NOT mean that _______.",
-        choices: ["the variable in the code doesn't exist", "the variable is not assigned to a value", "the variable is assigned no value", "the property doesn't exist"],
-        answer: "the variable is assigned no value"
+        title: "Você precisa ir no dentista quando...",
+        choices: ["a) Meu dente doer apenas.", "b) De 6 em 6 meses, mesmo se não estiver sentindo nenhuma dor."],
+        answer: "b) De 6 em 6 meses, mesmo se não estiver sentindo nenhuma dor.",
+        correctAnswerExplanation: "Acertou!!!! você precisa ir no dentista mesmo se seu dentinho não estiver doendo ,para fazer a manutenção da sua saúde da boca.",
+        wrongAnswerExplanation: "Errada, você precisa ir no dentista mesmo se seu dentinho não estiver doendo, para fazer a manutenção da sua saúde da bucal."
     },
     {
-        title: "Commonly used data types DO NOT include:",
-        choices: ["strings", "booleans", "alerts", "numbers"],
-        answer: "alerts"
+        title: "A massinha branca que fica sobre os dentes, precisam ser removidas com a escovação?",
+        choices: ["a) sim, caso não seja removida ela poderá causar a cárie ou doença na gengiva", "b) não ,essa massinha é a pasta de dente que ficou no dente.(foto de varias bichinhos no dente, escovando eles somem)"],
+        answer: "a) sim, caso não seja removida ela poderá causar a cárie ou doença na gengiva",
+        correctAnswerExplanation: "correta! Essa massinha e devido a não escovação correta é ela que tem várias bactérias e pode causar a cárie e gengivite (doença que causa inflamação, vermelhão, dor e sangramento na gengiva)",
+        wrongAnswerExplanation: "errada! Não é pasta não ! ! Essa massinha e devido a não escovação correta é ela que tem várias bactérias e pode causar a cárie ou gengivite (doença que causa inflamação, vermelhão, dor e sangramento na gengiva)"
     },
     {
-        title: "The condition in an if / else statement is enclosed within ____.",
-        choices: ["quotes", "curly brackets", "parentheses", "square brackets"],
-        answer: "parentheses"
+        title: "O fio dental é usado antes ou depois da escovação?",
+        choices: ["a) depois da escovação", "b) antes da escovação"],
+        answer: "b) antes da escovação",
+        correctAnswerExplanation: "Isso aí!! Muito bem sempre antes da escovação passamos o fio dental",
+        wrongAnswerExplanation: "errou! ( carinha de triste) sempre antes da escovação passamos o fio dental"
     },
     {
-        title: "Data is stored in localStorage as _____.",
-        choices: ["strings", "objects", "arrays", "all of the above"],
-        answer: "strings"
+        title: "Alimentos cariogênicos são aqueles que causam cárie. Eles são:",
+        choices: ["a) balas, chocolates, refrigerantes", "b) frutas, legumes e verduras."],
+        answer: "a) balas, chocolates, refrigerantes",
+        correctAnswerExplanation: "Isso, as balas ,chocolates são ricos em açúcares por isso causam cárie",
+        wrongAnswerExplanation: "Esses alimentos não são  carigênicos, ou seja eles não causam a cárie, e ainda contribuem para saúde de uma forma geral prevenindo diabetes ,obesidade e hipertensão"
     },
     {
-        title: "Which of the following is NOT a method to call an element with class 'example'?",
-        choices: ["document.getElementsByClassName( 'example');", "document.body.example;", "document.querySelector( '.example')", "document.querySelectorAll( '.example')[0]"],
-        answer: "document.body.example;"
+        title: "Os alimentos autolimpantes são aqueles, que limpam os dentes eles podem ser:",
+        choices: ["a) geleias e chicletes", "b) maças e cenouras"],
+        answer: "b) maças e cenouras",
+        correctAnswerExplanation: "sim, eles limpam as faces dos dentes ,contribuindo para uma gengiva saudável",
+        wrongAnswerExplanation: "não, pelo contrário esses alimentos agarram nos dentes"
     },
     {
-        title: "Arrays in JavaScript can be used to store ______.",
-        choices: ["strings", "numbers", "objects", "All of the Above"],
-        answer: "All of the Above"
+        title: "A língua precisa também ser escovada em todas as escovações do dente?",
+        choices: ["a) uma vez ao dia é o suficiente", "b) sim, todas as escovações precisamos escovar a língua(língua sendo limpa)"],
+        answer: "b) sim, todas as escovações precisamos escovar a língua(língua sendo limpa)",
+        correctAnswerExplanation: "sim!!!! A língua assim como os dentes ,precisa de cuidados ,todas as vezes que escovamos os dentes ,precisamos escovar a língua também .",
+        wrongAnswerExplanation: "errada! A língua assim como os dentes, precisa de cuidados ,todas as vezes que escovamos os dentes ,precisamos escovar a língua também"
     },
     {
         title: "Undefined does NOT mean that _______.",
@@ -343,14 +375,20 @@ function goToQuestion(){
      prepareQuestion()
 }
 
-function verifyQuestion( anwserUser ) {
-    // alert(anwserUser)
+function verifyQuestion( userChoice ) {
+    let answerUser = userChoice === "option1" ? questions[numberQuestion].choices[0] : questions[numberQuestion].choices[1]
 
-    let statusAnswerUser = questions[numberQuestion].answer === anwserUser ? true : false
+    let statusAnswerUser = questions[numberQuestion].answer === answerUser ? true : false
 
     changeActiveSlotQuestion(numberQuestion)
     feedbackAnswer(statusAnswerUser)
     numberQuestion++;
+}
+
+function prepareAnswerExplanation() {
+    document.querySelector("p#question.apresentationText").innerHTML = `${questions[numberQuestion].title}`
+    document.querySelector("p#option1.apresentationText").innerHTML = `${questions[numberQuestion].choices[0]}`
+    document.querySelector("p#option2.apresentationText").innerHTML = `${questions[numberQuestion].choices[1]}`
 }
 
 function feedbackAnswer( statusAnswerUser ) {
@@ -361,8 +399,13 @@ function feedbackAnswer( statusAnswerUser ) {
     document.body.classList.remove("question")
     document.body.classList.add("answer")
 
-    start();
-            stop();
+    if (statusAnswerUser) {
+        playCorrectSound()
+        start();
+        stop();
+    } else {
+        playWrongSound()
+    }
 
-    // alert( statusAnswerUser )
+    prepareAnswerExplanation()
 }
