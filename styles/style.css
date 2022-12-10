@@ -80,6 +80,15 @@ section {
     width: 100vh;
 }
 
+#creatorImg {
+    border-radius: 10px;
+    position: fixed;
+    width: 30vh;
+    top: 20vh;
+    left: 170vh;
+    animation: bounce 6s ease infinite;
+}
+
 #ballon {
     top: 2vh;
     left: 42vh;
@@ -101,7 +110,7 @@ section {
     height: auto;
 }
 
-#question{
+#question, #questionExplanation{
     font-size: 1.8rem;
     top: 20vh;
     left: 65vh;
@@ -125,6 +134,23 @@ section {
     left: 110vh;
     height: auto;
     cursor: pointer;
+    border-radius: 1px solid black;
+}
+
+#correctAnswer{
+    font-size: 1.8rem;
+    top: 40vh;
+    left: 65vh;
+    height: auto;
+    width: 90vh;
+}
+
+#correctAnswerExplanation {
+    font-size: 1.3rem;
+    top: 50vh;
+    left: 65vh;
+    height: auto;
+    width: 90vh;
 }
 
 

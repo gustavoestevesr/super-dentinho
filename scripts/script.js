@@ -234,7 +234,7 @@ var questions = [
     },
     {
         title: "A pasta de dental e uma grande amiga da escovinha, ela precisa de flúor para manter o dentinho longe das cáries?",
-        choices: ["sim, precisa.", "document.body.example;", "não, precisa."],
+        choices: ["sim, precisa.", "não, precisa."],
         answer: "sim, precisa.",
         correctAnswerExplanation: "Correta, todas as pastas precisam de flúor para combater o bichinho da cárie,e manter o esmalte forte .( bichinho cárie, flúor caindo no dentinho)gif",
         wrongAnswerExplanation: "Incorreta, sem flúor as pastas não irão ajudar os dentinhos contras as cáries. (dentinho lutando contra a cárie)"
@@ -364,15 +364,17 @@ function prepareQuestion() {
     document.querySelector("p#option2.apresentationText").innerHTML = `${questions[numberQuestion].choices[1]}`
 }
 
-function goToQuestion(){
-     // change background
-     sectionBoardgame.style.display = 'none'
-     sectionQuestion.style.display = 'flex'
- 
-     document.body.classList.remove("background")
-     document.body.classList.add("question")
- 
-     prepareQuestion()
+function goToQuestion( slotSelectedFromUSer ){
+     if (slotSelectedFromUSer === numberQuestion) {
+        // change background
+        sectionBoardgame.style.display = 'none'
+        sectionQuestion.style.display = 'flex'
+    
+        document.body.classList.remove("background")
+        document.body.classList.add("question")
+    
+        prepareQuestion()
+     }
 }
 
 function verifyQuestion( userChoice ) {
@@ -386,9 +388,9 @@ function verifyQuestion( userChoice ) {
 }
 
 function prepareAnswerExplanation() {
-    document.querySelector("p#question.apresentationText").innerHTML = `${questions[numberQuestion].title}`
-    document.querySelector("p#option1.apresentationText").innerHTML = `${questions[numberQuestion].choices[0]}`
-    document.querySelector("p#option2.apresentationText").innerHTML = `${questions[numberQuestion].choices[1]}`
+    document.querySelector("p#questionExplanation.apresentationText").innerHTML = `${questions[numberQuestion].title}`
+    document.querySelector("p#correctAnswer.apresentationText").innerHTML = `${questions[numberQuestion].answer}`
+    document.querySelector("p#correctAnswerExplanation.apresentationText").innerHTML = `${questions[numberQuestion].correctAnswerExplanation}`
 }
 
 function feedbackAnswer( statusAnswerUser ) {

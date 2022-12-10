@@ -38,27 +38,27 @@
     </section>
 
     <section id="boardgame">        
-        <img class="questionSlot" id="q1" src="images/buttons/BUTTON.png" alt="" onclick="goToQuestion()">
-        <img class="questionSlot" id="q2" src="images/buttons/BUTTON.png" alt="" onclick="goToQuestion()">
-        <img class="questionSlot" id="q3" src="images/buttons/BUTTON.png" alt="" onclick="goToQuestion()">
-        <img class="questionSlot" id="q4" src="images/buttons/BUTTON.png" alt="" onclick="goToQuestion()">
-        <img class="questionSlot" id="q5" src="images/buttons/BUTTON.png" alt="" onclick="goToQuestion()">
-        <img class="questionSlot" id="q6" src="images/buttons/BUTTON.png" alt="" onclick="goToQuestion()">
-        <img class="questionSlot" id="q7" src="images/buttons/BUTTON.png" alt="" onclick="goToQuestion()">
-        <img class="questionSlot" id="q8" src="images/buttons/BUTTON.png" alt="" onclick="goToQuestion()">
-        <img class="questionSlot" id="q9" src="images/buttons/BUTTON.png" alt="" onclick="goToQuestion()">
-        <img class="questionSlot" id="q10" src="images/buttons/BUTTON.png" alt="" onclick="goToQuestion()">
+        <img class="questionSlot" id="q1" src="images/buttons/BUTTON.png" alt="" onclick="goToQuestion(0)">
+        <img class="questionSlot" id="q2" src="images/buttons/BUTTON.png" alt="" onclick="goToQuestion(1)">
+        <img class="questionSlot" id="q3" src="images/buttons/BUTTON.png" alt="" onclick="goToQuestion(2)">
+        <img class="questionSlot" id="q4" src="images/buttons/BUTTON.png" alt="" onclick="goToQuestion(3)">
+        <img class="questionSlot" id="q5" src="images/buttons/BUTTON.png" alt="" onclick="goToQuestion(4)">
+        <img class="questionSlot" id="q6" src="images/buttons/BUTTON.png" alt="" onclick="goToQuestion(5)">
+        <img class="questionSlot" id="q7" src="images/buttons/BUTTON.png" alt="" onclick="goToQuestion(6)">
+        <img class="questionSlot" id="q8" src="images/buttons/BUTTON.png" alt="" onclick="goToQuestion(7)">
+        <img class="questionSlot" id="q9" src="images/buttons/BUTTON.png" alt="" onclick="goToQuestion(8)">
+        <img class="questionSlot" id="q10" src="images/buttons/BUTTON.png" alt="" onclick="goToQuestion(9)">
 
-        <img class="questionSlot" id="q11" src="images/buttons/BUTTON.png" alt="" onclick="goToQuestion()">
-        <img class="questionSlot" id="q12" src="images/buttons/BUTTON.png" alt="" onclick="goToQuestion()">
-        <img class="questionSlot" id="q13" src="images/buttons/BUTTON.png" alt="" onclick="goToQuestion()">
-        <img class="questionSlot" id="q14" src="images/buttons/BUTTON.png" alt="" onclick="goToQuestion()">
-        <img class="questionSlot" id="q15" src="images/buttons/BUTTON.png" alt="" onclick="goToQuestion()">
-        <img class="questionSlot" id="q16" src="images/buttons/BUTTON.png" alt="" onclick="goToQuestion()">
-        <img class="questionSlot" id="q17" src="images/buttons/BUTTON.png" alt="" onclick="goToQuestion()">
-        <img class="questionSlot" id="q18" src="images/buttons/BUTTON.png" alt="" onclick="goToQuestion()">
-        <img class="questionSlot" id="q19" src="images/buttons/BUTTON.png" alt="" onclick="goToQuestion()">
-        <img class="questionSlot" id="q20" src="images/buttons/BUTTON.png" alt="" onclick="goToQuestion()">
+        <img class="questionSlot" id="q11" src="images/buttons/BUTTON.png" alt="" onclick="goToQuestion(10)">
+        <img class="questionSlot" id="q12" src="images/buttons/BUTTON.png" alt="" onclick="goToQuestion(11)">
+        <img class="questionSlot" id="q13" src="images/buttons/BUTTON.png" alt="" onclick="goToQuestion(12)">
+        <img class="questionSlot" id="q14" src="images/buttons/BUTTON.png" alt="" onclick="goToQuestion(13)">
+        <img class="questionSlot" id="q15" src="images/buttons/BUTTON.png" alt="" onclick="goToQuestion(14)">
+        <img class="questionSlot" id="q16" src="images/buttons/BUTTON.png" alt="" onclick="goToQuestion(15)">
+        <img class="questionSlot" id="q17" src="images/buttons/BUTTON.png" alt="" onclick="goToQuestion(16)">
+        <img class="questionSlot" id="q18" src="images/buttons/BUTTON.png" alt="" onclick="goToQuestion(17)">
+        <img class="questionSlot" id="q19" src="images/buttons/BUTTON.png" alt="" onclick="goToQuestion(18)">
+        <img class="questionSlot" id="q20" src="images/buttons/BUTTON.png" alt="" onclick="goToQuestion(19)">
 
         <img id="superDentinhoBoardGame" src="images/characters/super happy tooth.png" alt="">
     </section>
@@ -83,6 +83,7 @@
         <!-- ballon and txt -->        
         <img id="ballon" src="images/ballons/BALLON TEXT.png" alt=""> 
         <p class="apresentationText" id="apresentationCredits"></p>
+        <img id="creatorImg" src="images/creators/Vanessa.jpg" alt=""> 
 
         <!-- super tooth -->
         <img id="superDentinhoCredits" src="images/characters/SUPER HAPPY TOOTH SPEAKING.gif" alt="">        
@@ -108,11 +109,16 @@
 
         <!-- ballon and txt -->        
         <img id="ballon" src="images/ballons/BOX TEXT.png" alt=""> 
-        <p class="apresentationText" id="question">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, sunt!</p>
+        <p class="apresentationText" id="questionExplanation">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, sunt!</p>
+        <hr>
         <p class="apresentationText" id="correctAnswer">Lorem ipsum dolor sit amet.</p>
         <p class="apresentationText" id="correctAnswerExplanation">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto quidem voluptatem et necessitatibus, perferendis minima.</p>
         
         <img id="superDentinhoAnswer" src="images/characters/SUPER HAPPY TOOTH SPEAKING.gif" alt="">       
+    </section>
+
+    <section id="victory">
+
     </section>
 
     <audio id="audioBd" src="sounds/background.mp3" controls style="display: none;"></audio>
