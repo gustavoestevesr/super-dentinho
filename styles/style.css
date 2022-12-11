@@ -25,7 +25,7 @@ body {
 }
 
 .apresentation {
-    background-image: url("../images/backgrounds/APRESENTATION.png");
+    background-image: url("../images/backgrounds/APRESENTATION.png");    
 }
 
 .background {
@@ -118,20 +118,41 @@ section {
     width: 90vh;
 }
 
+.optionButton {
+    position: fixed;
+    animation: bounce 6s ease infinite;
+    height: auto;
+    cursor: pointer;
+}
+
+#optionButton1 {
+    top: 45vh;
+    width: 55vh;
+    left: 48vh;
+    cursor: pointer;    
+}
+
+#optionButton2 {
+    top: 45vh;
+    width: 55vh;
+    left: 113vh;
+    cursor: pointer;
+}
+
 #option1{
-    font-size: 1.3rem;
-    top: 50vh;
+    font-size: 1.4rem;
+    top: 52vh;
     width: 50vh;
-    left: 50vh;
+    left: 51vh;
     height: auto;
     cursor: pointer;
 }
 
 #option2{
-    font-size: 1.3rem;
-    top: 50vh;
+    font-size: 1.4rem;
+    top: 52vh;
     width: 50vh;
-    left: 110vh;
+    left: 115vh;
     height: auto;
     cursor: pointer;
     border-radius: 1px solid black;
@@ -327,67 +348,59 @@ section {
 
 /* SLOTS OF QUESTIONS - START */
 
-.boardgame {
-    width: 100%;
-    height: 100%;
-    position: relative;
-}
-
 .questionSlot {
-    width: 20vh;
+    width: 10vw;
     position: fixed;
 }
 
-/* SLOTS OF QUESTIONS - END */
-
 .p1 {
-    bottom: 5vh;
-    left: 35vh;
+    bottom: 5vw;
+    left: 12vw;
 }
 
 .p2 {
-    bottom: 20vh;
-    left: 65vh;
+    bottom: 10vw;
+    left: 24vw;
 }
 
 .p3 {
-    bottom: 5vh;
-    left: 95vh;
+    bottom: 5vw;
+    left: 36vw;
 }
 
 .p4 {
-    bottom: 20vh;
-    left: 125vh;
+    bottom: 10vw;
+    left: 48vw;
 }
 
 .p5 {
-    bottom: 5vh;
-    left: 155vh;
+    bottom: 5vw;
+    left: 60vw;
 }
 
 .p6 {
-    bottom: 20vh;
-    left: 185vh;
+    bottom: 10vw;
+    left: 72vw;
 }
 
 .p7 {
-    bottom: 50vh;
-    left: 185vh;
+    bottom: 5vw;
+    left: 84vw;
 }
 
-.p8 {
-    bottom: 75vh;
-    left: 155vh;
+ .p8 {
+    bottom: 16vw;
+    left: 90vw;
 }
 
 .p9 {
-    bottom: 50vh;
-    left: 125vh;
+    bottom: 26vw;
+    left: 80vw;
 }
-
+/*
 .p10 {
-    bottom: 50vh;
-    left: 125vh;
+    bottom: 65vh;
+    left: 155vh;
 }
 
 .p11 {
@@ -408,7 +421,7 @@ section {
 .p14 {
     bottom: 50vh;
     left: 125vh;
-}
+} 
 
 .p15 {
     bottom: 5vh;
@@ -438,7 +451,9 @@ section {
 .p20 {
     bottom: 50vh;
     left: 125vh;
-}
+}  */
+
+/* SLOTS OF QUESTIONS - END */
 
 /* ANIMATION START SUPER DENTINHO - START */
 
