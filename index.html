@@ -21,7 +21,8 @@
 
     <section id="apresentation">
         <!-- ballon and txt -->        
-        <img id="ballon" src="images/ballons/BALLON TEXT.png" alt=""> 
+        <img id="ballon" src="images/ballons/BALLON TEXT.png" alt="">
+        <p class="apresentationText" id="titleApresentation">Apresentação</p> 
         <p class="apresentationText" id="apresentationGame"></p>
 
         <!-- tooths -->
@@ -70,6 +71,7 @@
 
         <!-- ballon and txt -->        
         <img id="ballon" src="images/ballons/BALLON TEXT.png" alt=""> 
+        <p class="apresentationText" id="titleApresentation">Regras</p>         
         <p class="apresentationText" id="apresentationRule"></p>                      
 
         <img id="superDentinhoRules" src="images/characters/SUPER HAPPY TOOTH SPEAKING.gif" alt="">
@@ -80,8 +82,9 @@
         <img id="btnBackFromCreditsToApresentation" src="images/buttons/BACK.png" alt="">
         <img id="btnNextCredit" src="images/buttons/NEXT.png" alt="" onclick="displayApresentationCredits()">
 
-        <!-- ballon and txt -->        
+        <!-- ballon and txt -->                
         <img id="ballon" src="images/ballons/BALLON TEXT.png" alt=""> 
+        <p class="apresentationText" id="titleApresentationCredits"></p> 
         <p class="apresentationText" id="apresentationCredits"></p>
         <img id="creatorImg" src="images/creators/Vanessa.jpg" alt=""> 
 
@@ -91,16 +94,20 @@
 
     <section id="question">
         <!-- btns -->
-        <img id="btnBackFromQuestionToBoardgame" src="images/buttons/BACK.png" alt="">
+        <!-- <img id="btnBackFromQuestionToBoardgame" src="images/buttons/BACK.png" alt=""> -->
 
         <!-- ballon and txt -->        
         <img id="ballon" src="images/ballons/BOX TEXT.png" alt=""> 
         <p class="apresentationText" id="numberQuestion">1° Questão</p>
-        <p class="apresentationText" id="question">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, sunt!</p>
-        <img class="optionButton" id="optionButton1" src="images/buttons/OPTION.png" alt="" onclick="verifyQuestion(this.id)">
-        <img class="optionButton" id="optionButton2" src="images/buttons/OPTION.png" alt="" onclick="verifyQuestion(this.id)">
-        <p class="apresentationText" id="option1" >Lorem ipsum 1!</p>
-        <p class="apresentationText" id="option2" >Lorem ipsum 2</p>
+        <p class="apresentationText" id="questionText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, sunt!</p>
+        <div onclick="verifyQuestion(this.id)">
+            <img class="optionButton" id="optionButton1" src="images/buttons/OPTION.png" alt="">
+            <p class="apresentationText" id="option1" >Lorem ipsum 1!</p>
+        </div>
+        <div onclick="verifyQuestion(this.id)">
+            <img class="optionButton" id="optionButton2" src="images/buttons/OPTION.png" alt="">
+            <p class="apresentationText" id="option2" >Lorem ipsum 2</p>
+        </div>
         
         <img id="superDentinhoQuestion" src="images/characters/SUPER HAPPY TOOTH SPEAKING.gif" alt="">        
     </section>
@@ -112,7 +119,6 @@
         <!-- ballon and txt -->        
         <img id="ballon" src="images/ballons/BOX TEXT.png" alt=""> 
         <p class="apresentationText" id="questionExplanation">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, sunt!</p>
-        <hr>
         <p class="apresentationText" id="correctAnswer">Lorem ipsum dolor sit amet.</p>
         <p class="apresentationText" id="correctAnswerExplanation">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto quidem voluptatem et necessitatibus, perferendis minima.</p>
         

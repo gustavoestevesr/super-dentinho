@@ -75,27 +75,26 @@ section {
 
 #title {
     position: fixed;
-    top: 10vh;
-    left: 5vh;
-    width: 100vh;
+    top: 5vw;
+    left: 5vw;
+    width: 50vw;
 }
 
 #creatorImg {
     border-radius: 10px;
     position: fixed;
-    width: 30vh;
-    top: 20vh;
-    left: 170vh;
+    width: 15vw;
+    top: 2.5vw;
+    left: 80vw;
     animation: bounce 6s ease infinite;
 }
 
 #ballon {
-    top: 2vh;
-    left: 42vh;
-    height: 90vh;
+    top: 0vw;
+    left: 20vw;
+    width: 62vw;
     position: fixed;
-    animation: bounce 6s ease infinite;
-    z-index: -1;
+    animation: bounce 6s ease infinite;    
 }
 
 .creator {
@@ -105,17 +104,16 @@ section {
 
 #numberQuestion{
     font-size: 1.1rem;
-    top: 10vh;
-    left: 70vh;
+    top: 5vw;
+    left: 30vw;
     height: auto;
 }
 
-#question, #questionExplanation{
-    font-size: 1.8rem;
-    top: 20vh;
-    left: 65vh;
+#questionText, #questionExplanation{    
+    top: 5vw;
+    left: 25vw;
     height: auto;
-    width: 90vh;
+    width: 50vw;
 }
 
 .optionButton {
@@ -158,12 +156,11 @@ section {
     border-radius: 1px solid black;
 }
 
-#correctAnswer{
-    font-size: 1.8rem;
-    top: 40vh;
-    left: 65vh;
-    height: auto;
-    width: 90vh;
+#correctAnswer{    
+    top: 15vw;
+    left: 25vw;    
+    width: 50vw;
+    font-weight: bold;
 }
 
 #correctAnswerExplanation {
@@ -174,38 +171,53 @@ section {
     width: 90vh;
 }
 
-
 #apresentationCredits {
-    font-size: 1.5rem;
-    top: 20vh;
+    font-size: 1rem;
+    top: 12.5vw;
+    width: 45vw;
+    left: 26vw;
+}
+
+#titleApresentation, #titleApresentationCredits{
+    font-size: 2rem;
+    top: 10vw;
+    left: 27vw;    
+}
+
+#titleApresentationCredits {
+    top: 7.5vw;
+}
+
+p#questionText.apresentationText {
+    width: 50vw;
+    left: 26vw;
+    top: 10vw;
 }
 
 .apresentationText {
-    top: 28vh;
-    left: 58vh;
-    height: 85vh;
-    width: 80vh;
-    
+    top: 18vw;
+    left: 28vw;    
+    width: 44vw;
 
     position: fixed;
     color: black;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     text-align: center;
     animation: bounce 6s ease infinite;
     font-family: 'Roboto', sans-serif;
 }
 
-
-#apresentationRule{
-    left: 58vh;
-    top: 28vh;
-}
-
 @media screen and (max-width: 915px) {
+    #titleApresentation{
+        font-size: 1.3rem;
+        top: 6vw;
+        left: 27vw;
+        font-weight: bold;
+    }
     .apresentationText {
         font-size: 1.2rem;
-        top: 20vh; 
-        width: 75vh;
+        top: 11vw; 
+        width: 42vw;
     }
     #apresentationCredits {
         font-size: 1.2rem;
@@ -213,12 +225,16 @@ section {
         width: 85vh;
         left: 55vh;
     }
-    #apresentationGame, #apresentationRules  {
+    #apresentationRules  {
         top: 22vh;
         width: 80vh;
     }
-    #question{
-        font-size: 1.4rem;
+    #questionText{
+        font-size: 1.2rem;
+    }
+    #option1, #option2 {
+        font-size: 1rem;
+        width: 23vw;        
     }
 
   }
@@ -233,42 +249,43 @@ section {
 
 #btnPlay {
     position: fixed;
-    top: 75vh;
-    left: 46vh;    
-    width: 16vh;
-    height: 16vh;
-    animation: zoom-in-zoom-out 2s ease infinite;
+    top: 38vw;
+    left: 25vw;    
+    width: 9vw;
+    height: 9vw;
+    animation: zoom-in-zoom-out 1s ease infinite;
     cursor: pointer;
 }
 
 #btnContinue {
     position: fixed;
-    top: 5vh;
-    right: 10vh;    
-    width: 16vh;
-    height: 16vh;
-    animation: zoom-in-zoom-out 2s ease infinite;
+    top: 5vw;
+    right: 5vw;    
+    width: 9vw;
+    height: 9vw;
+    animation: zoom-in-zoom-out 1s ease infinite;
     cursor: pointer;
 }
 
 #btnBackFromRulesToApresentation, #btnBackFromCreditsToApresentation, #btnBackFromQuestionToBoardgame{
     position: fixed;
-    top: 5vh;
-    left: 5vh;    
-    width: 16vh;
-    height: 16vh;
+    top: 2.5vw;
+    left: 2.5vw;    
+    width: 8vw;
+    height: 8vw;
     cursor: pointer;
+    animation: zoom-in-zoom-out 1s ease infinite;
 }
 
 #btnNextRule, #btnNextCredit, #btnNextFromToBoardgame{
     position: fixed;
-    top: 49vh;
-    left: 142vh;    
-    width: 12vh;
-    height: 12vh;
+    top: 28vw;
+    left: 73vw;    
+    width: 9vh;
+    height: 9vh;
     cursor: pointer;
     z-index: 2;
-    animation: bounce 6s ease infinite;
+    animation: zoom-in-zoom-out 1s ease infinite;    
 }
 
 #btnNextFromToBoardgame{
@@ -276,23 +293,23 @@ section {
     left: 150vh;    
 }
 
-#btnRules, #btnCredits {
+#btnRules {
     position: fixed;
-    top: 45vh;
-    right: 10vh;     
-    width: 16vh;
-    height: 16vh;
-    animation: zoom-in-zoom-out 2s ease infinite;
+    top: 16vw;
+    right: 5vw;    
+    width: 9vw;
+    height: 9vw;
+    animation: zoom-in-zoom-out 1s ease infinite;
     cursor: pointer;
 }
 
 #btnCredits {
     position: fixed;
-    top: 25vh;
-    right: 10vh;     
-    width: 16vh;
-    height: 16vh;
-    animation: zoom-in-zoom-out 2s ease infinite;
+    top: 28vw;
+    right: 5vw;    
+    width: 9vw;
+    height: 9vw;
+    animation: zoom-in-zoom-out 1s ease infinite;
     cursor: pointer;
 }
 
@@ -302,7 +319,7 @@ section {
     left: 52vh;    
     width: 16vh;
     height: 16vh;
-    animation: zoom-in-zoom-out 2s ease infinite;
+    animation: zoom-in-zoom-out 1s ease infinite;
     cursor: pointer;
 } */
 
@@ -320,19 +337,19 @@ section {
 
 #superDentinhoCredits, #superDentinhoQuestion, #superDentinhoAnswer, #superDentinhoRules, #superDentinhoApresentacao{
     position: fixed;
-    bottom: 5vh;
-    left: 5vh;
+    bottom: 0vw;
+    left: 0vw;
 
-    width: 45vh;
+    width: 25vw;
     animation: bounce 6s ease infinite;
 }
 
 #superDentinhoStart {
     position: fixed;
-    top: 10vh;
-    left: 100vh;
+    top: 2.5vw;
+    left: 55vw;
 
-    height: 80vh;
+    height: 40vw;
     animation: bounce 6s ease infinite;
 }
 
@@ -354,104 +371,104 @@ section {
 }
 
 .p1 {
-    bottom: 5vw;
+    bottom: 2vw;
     left: 12vw;
 }
 
 .p2 {
-    bottom: 10vw;
+    bottom: 7vw;
     left: 24vw;
 }
 
 .p3 {
-    bottom: 5vw;
+    bottom: 2vw;
     left: 36vw;
 }
 
 .p4 {
-    bottom: 10vw;
+    bottom: 7vw;
     left: 48vw;
 }
 
 .p5 {
-    bottom: 5vw;
+    bottom: 2vw;
     left: 60vw;
 }
 
 .p6 {
-    bottom: 10vw;
+    bottom: 7vw;
     left: 72vw;
 }
 
 .p7 {
-    bottom: 5vw;
+    bottom: 2vw;
     left: 84vw;
 }
 
  .p8 {
-    bottom: 16vw;
+    bottom: 14vw;
     left: 90vw;
 }
 
 .p9 {
-    bottom: 26vw;
-    left: 80vw;
+    bottom: 21vw;
+    left: 78vw;
 }
-/*
+
 .p10 {
-    bottom: 65vh;
-    left: 155vh;
+    bottom: 28vw;
+    left: 90vw;
 }
 
 .p11 {
-    bottom: 75vh;
-    left: 35vh;
+    bottom: 35vw;
+    left: 80vw;
 }
 
 .p12 {
-    bottom: 50vh;
-    left: 65vh;
+    bottom: 28vw;
+    left: 70vw;
 }
 
 .p13 {
-    bottom: 75vh;
-    left: 95vh;
+    bottom: 35vw;
+    left: 60vw;
 }
 
 .p14 {
-    bottom: 50vh;
-    left: 125vh;
+    bottom: 35vw;
+    left: 72vw;
 } 
 
 .p15 {
-    bottom: 5vh;
-    left: 155vh;
+    bottom: 30vw;
+    left: 60vw;
 }
 
 .p16 {
-    bottom: 20vh;
-    left: 185vh;
+    bottom: 35vw;
+    left: 48vw;
 }
 
 .p17 {
-    bottom: 50vh;
-    left: 185vh;
+    bottom: 30vw;
+    left: 36vw;
 }
 
 .p18 {
-    bottom: 75vh;
-    left: 155vh;
+    bottom: 35vw;
+    left: 24vw;
 }
 
 .p19 {
-    bottom: 50vh;
-    left: 125vh;
+    bottom: 30vw;
+    left: 12vw;
 }
 
 .p20 {
-    bottom: 50vh;
-    left: 125vh;
-}  */
+    bottom: 20vw;
+    left: 2vw;
+}  
 
 /* SLOTS OF QUESTIONS - END */
 
@@ -472,7 +489,7 @@ section {
 }
 
 .questionSlotActive {
-    animation: zoom-in-zoom-out 2s ease infinite;
+    animation: zoom-in-zoom-out 1s ease infinite;
     cursor: pointer;
 }
 
@@ -496,7 +513,7 @@ section {
 }
 
 .questionSlotActive {
-    animation: zoom-in-zoom-out 2s ease infinite;
+    animation: zoom-in-zoom-out 1s ease infinite;
     cursor: pointer;
 }
 
