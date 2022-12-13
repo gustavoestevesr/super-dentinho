@@ -5,8 +5,6 @@
     transition: 0.5s;        
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
-
 body {
     display: flex;
     align-items: center;
@@ -14,7 +12,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #38B6FF;
-    font-family: 'Roboto', sans-serif;
+    background-position: center;
     height: 100vh;
 }
 
@@ -22,35 +20,62 @@ body {
 
 .start {
     background-image: url("../images/backgrounds/START.png");
+    background-color: #38B6FF;
 }
 
 .apresentation {
-    background-image: url("../images/backgrounds/APRESENTATION.png");    
+    background-image: url("../images/backgrounds/APRESENTATION.png");   
+    background-color: #38B6FF; 
 }
 
 .background {
     background-image: url("../images/backgrounds/BACKGROUND.png");
+    background-color: #38B6FF;
 }
 
 .boardgame {
-    background-image: url("../images/backgrounds/BOARDGAME.jpg");    
+    background-image: url("../images/backgrounds/BOARDGAME.jpg");   
+    background-color: #38B6FF; 
 }
 
 .question {
     background-image: url("../images/backgrounds/QUESTION.jpg");
+    background-color: #38B6FF;
 }
 
 .answer {
     background-image: url("../images/backgrounds/ANSWER.jpg");
+    background-color: #38B6FF;
 }
 
-.credits {
-    background-image: url("../images/backgrounds/CREDITS.png");
-    background-repeat: repeat;
+.creditsVanessa {
+    background-image: url("../images/backgrounds/CREDITS\ VANESSA.png");      
+    background-size: contain;  
+    background-color: #38B6FF;  
 }
 
-.rules {
-    background-image: url("../images/backgrounds/RULES.png");
+.creditsCarlos {
+    background-image: url("../images/backgrounds/CREDITS\ CARLOS.png");      
+    background-size: contain; 
+    background-color: #38B6FF;   
+}
+
+.creditsGustavo {
+    background-image: url("../images/backgrounds/CREDITS\ GUSTAVO.png");  
+    background-size: contain; 
+    background-color: #38B6FF;   
+}
+
+.rules1 {
+    background-image: url("../images/backgrounds/RULES\ 1.png");
+    background-size: cover;
+    background-color: #38B6FF;
+}
+
+.rules2 {
+    background-image: url("../images/backgrounds/RULES\ 2.png");
+    background-size: cover;
+    background-color: #38B6FF;
 }
 
 /* Class to change the background - end */
@@ -80,21 +105,12 @@ section {
     width: 50vw;
 }
 
-#creatorImg {
-    border-radius: 10px;
-    position: fixed;
-    width: 15vw;
-    top: 2.5vw;
-    left: 80vw;
-    animation: bounce 6s ease infinite;
-}
-
 #ballon {
     top: 0vw;
     left: 20vw;
     width: 62vw;
     position: fixed;
-    animation: bounce 6s ease infinite;    
+    /* animation: bounce 6s ease infinite;     */
 }
 
 .creator {
@@ -171,21 +187,30 @@ section {
     width: 90vh;
 }
 
-#apresentationCredits {
-    font-size: 1rem;
-    top: 12.5vw;
-    width: 45vw;
-    left: 26vw;
-}
-
-#titleApresentation, #titleApresentationCredits{
-    font-size: 2rem;
-    top: 10vw;
-    left: 27vw;    
-}
-
 #titleApresentationCredits {
-    top: 7.5vw;
+    font-size: 3rem;
+    top: 5vw;
+    left: 7.5vw;    
+}
+
+#apresentationCredits {
+    font-size: 1.2rem;
+    top: 11vw;    
+    left: 20vw;
+    width: 50vw;    
+    text-align: justify;
+}
+
+#titleApresentation {
+    font-size: 2.2rem;
+    top: 10vw;
+    left: 26.5vw;
+}
+
+#titleApresentationRules {
+    font-size: 2.2rem;
+    top: 4vw;
+    left: 27vw;    
 }
 
 p#questionText.apresentationText {
@@ -197,22 +222,25 @@ p#questionText.apresentationText {
 .apresentationText {
     top: 18vw;
     left: 28vw;    
-    width: 44vw;
+    width: 45vw;
 
     position: fixed;
     color: black;
     font-size: 1.6rem;
     text-align: center;
-    animation: bounce 6s ease infinite;
-    font-family: 'Roboto', sans-serif;
+    /* animation: bounce 6s ease infinite; */
+
 }
 
 @media screen and (max-width: 915px) {
-    #titleApresentation{
+    #titleApresentation {
         font-size: 1.3rem;
         top: 6vw;
-        left: 27vw;
+        left: 26.5vw;
         font-weight: bold;
+    }
+    #titleApresentationRules{
+        font-size: 1.3rem;                        
     }
     .apresentationText {
         font-size: 1.2rem;
@@ -236,6 +264,17 @@ p#questionText.apresentationText {
         font-size: 1rem;
         width: 23vw;        
     }
+    #titleApresentationCredits {
+        font-size: 2rem;           
+    }
+    
+    #apresentationCredits {
+        font-size: 0.7rem;
+        top: 12vw;    
+        left: 20vw;
+        width: 60vw;    
+        text-align: justify;
+    }
 
   }
   
@@ -247,26 +286,6 @@ p#questionText.apresentationText {
     height: 25vh;
 }
 
-#btnPlay {
-    position: fixed;
-    top: 38vw;
-    left: 25vw;    
-    width: 9vw;
-    height: 9vw;
-    animation: zoom-in-zoom-out 1s ease infinite;
-    cursor: pointer;
-}
-
-#btnContinue {
-    position: fixed;
-    top: 5vw;
-    right: 5vw;    
-    width: 9vw;
-    height: 9vw;
-    animation: zoom-in-zoom-out 1s ease infinite;
-    cursor: pointer;
-}
-
 #btnBackFromRulesToApresentation, #btnBackFromCreditsToApresentation, #btnBackFromQuestionToBoardgame{
     position: fixed;
     top: 2.5vw;
@@ -275,17 +294,29 @@ p#questionText.apresentationText {
     height: 8vw;
     cursor: pointer;
     animation: zoom-in-zoom-out 1s ease infinite;
+    z-index: 10;
 }
 
-#btnNextRule, #btnNextCredit, #btnNextFromToBoardgame{
+#btnNextCredit, #btnNextRule{
     position: fixed;
-    top: 28vw;
-    left: 73vw;    
+    bottom: 2vw;
+    right: 2vw;    
+    width: 5vw;
+    height: 5vw;
+    cursor: pointer;
+    animation: zoom-in-zoom-out 1s ease infinite;
+    z-index: 10;
+}
+
+#btnNextFromToBoardgame{
+    position: fixed;
+    bottom: 5vw;
+    right: 5vw;    
     width: 9vh;
     height: 9vh;
-    cursor: pointer;
-    z-index: 2;
+    cursor: pointer;    
     animation: zoom-in-zoom-out 1s ease infinite;    
+    z-index: 10;
 }
 
 #btnNextFromToBoardgame{
@@ -293,35 +324,39 @@ p#questionText.apresentationText {
     left: 150vh;    
 }
 
-#btnRules {
-    position: fixed;
-    top: 16vw;
-    right: 5vw;    
+.btnMenu {
+    position: fixed;       
     width: 9vw;
     height: 9vw;
     animation: zoom-in-zoom-out 1s ease infinite;
     cursor: pointer;
+    z-index: 20;
+}
+
+#btnPlay {
+    top: 38vw;
+    left: 25vw;  
+}
+
+#btnContinue {    
+    top: 2vw;
+    right: 5vw;    
 }
 
 #btnCredits {
-    position: fixed;
-    top: 28vw;
-    right: 5vw;    
-    width: 9vw;
-    height: 9vw;
-    animation: zoom-in-zoom-out 1s ease infinite;
-    cursor: pointer;
+    top: 13vw;
+    right: 5vw; 
 }
 
-/* #btnExit {
-    position: fixed;
-    top: 82vh;
-    left: 52vh;    
-    width: 16vh;
-    height: 16vh;
-    animation: zoom-in-zoom-out 1s ease infinite;
-    cursor: pointer;
-} */
+#btnRules {
+    top: 24vw;
+    right: 5vw; 
+}
+
+#btnExit {
+    top: 35vw;
+    right: 5vw; 
+}
 
 .column {
     display: flex;
@@ -370,105 +405,105 @@ p#questionText.apresentationText {
     position: fixed;
 }
 
-.p1 {
-    bottom: 2vw;
+/* .p1 {
+    bottom: 0vw;
     left: 12vw;
-}
-
+} */
+/* 
 .p2 {
-    bottom: 7vw;
+    bottom: 5vw;
     left: 24vw;
-}
+} */
 
-.p3 {
-    bottom: 2vw;
+/* .p3 {
+    bottom: 0vw;
     left: 36vw;
-}
+} */
 
-.p4 {
-    bottom: 7vw;
+/* .p4 {
+    bottom: 5vw;
     left: 48vw;
-}
+} */
 
-.p5 {
-    bottom: 2vw;
+/* .p5 {
+    bottom: 0vw;
     left: 60vw;
-}
+} */
 
-.p6 {
-    bottom: 7vw;
+/* .p6 {
+    bottom: 5vw;
     left: 72vw;
-}
+} */
 
-.p7 {
-    bottom: 2vw;
+/* .p7 {
+    bottom: 0vw;
     left: 84vw;
-}
+} */
 
- .p8 {
-    bottom: 14vw;
+ /* .p8 {
+    bottom: 12vw;
     left: 90vw;
-}
+} */
 
-.p9 {
-    bottom: 21vw;
+/* .p9 {
+    bottom: 18vw;
     left: 78vw;
-}
+} */
 
-.p10 {
-    bottom: 28vw;
+/* .p10 {
+    bottom: 26vw;
     left: 90vw;
-}
+} */
 
-.p11 {
-    bottom: 35vw;
-    left: 80vw;
-}
+/* .p11 {
+    bottom: 32vw;
+    left: 78vw;
+} */
 
-.p12 {
+/* .p12 {
     bottom: 28vw;
-    left: 70vw;
-}
+    left: 70vw;    
+} */
 
-.p13 {
+/* .p13 {
     bottom: 35vw;
     left: 60vw;
-}
+} */
 
-.p14 {
+/* .p14 {
     bottom: 35vw;
     left: 72vw;
-} 
+}  */
 
-.p15 {
+/* .p15 {
     bottom: 30vw;
     left: 60vw;
-}
+} */
 
-.p16 {
+/* .p16 {
     bottom: 35vw;
     left: 48vw;
-}
+} */
 
-.p17 {
+/* .p17 {
     bottom: 30vw;
     left: 36vw;
-}
+} */
 
-.p18 {
+/* .p18 {
     bottom: 35vw;
     left: 24vw;
-}
+} */
 
-.p19 {
+/* .p19 {
     bottom: 30vw;
     left: 12vw;
-}
+} */
 
-.p20 {
+/* .p20 {
     bottom: 20vw;
     left: 2vw;
-}  
+}   */
 
 /* SLOTS OF QUESTIONS - END */
 

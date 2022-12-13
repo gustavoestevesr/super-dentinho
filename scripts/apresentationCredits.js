@@ -1,41 +1,29 @@
-// DEFINE THE CREATORS TEXT
-let authors =[`Graduada em Odontologia, UNIFAA, possui especialização em Estratégia da saúde e da família, com ênfase em saúde coletiva e especialização em  Ortodontia , pela UNIFAA – Centro Universitário de Valença-RJ .Pós graduada em periodontia, cirurgia oral menor ,CEVO -Centro de estudos ,Valença-RJ. Pós-graduada em prótese e dentística estética pela ABO-Associação Brasileira de odontologia .Professora Universitária do curso de odontologia ,UNIFAA. Mestranda em Ensino em Ciências da Saúde e do Meio Ambiente.`,`Graduado em Ciências Biológicas, Especialista em Bioquímica,Especialista em Hematologia pela UFRJ em 2000, Mestre em Ciência e Tecnologia de Alimentos pela UFRRJ (2001) na área deconcentração em Microbiologia Aplicada; Doutor em Biotecnologia Industrial (2007) EEL-USP na área de concentração em Microbiologia Aplicada. Possui experiência em Biotecnologia demicro-organismos: estudos com Lactobacillus e seu papel naestimulação da imunidade; Microbiologia Clínica e Médica;Hematologia Clínica e Laboratorial. Coordenador do Curso de Ciências Biológicas - Bacharelado com ênfase em Biotecnologia. Docente/Orientador do Mestrado Profissional em Ensino de Ciências da Saúde e do Meio Ambiente do UniFOA, programa no qual desenvolve estudos relacionados ao uso de atividades lúdicas como ferramenta para o ensino em Ciências Biológicas e Saúde. Estuda também os aspectos epidemiológicos de bactérias isoladas de Otites em Cães e no ambiente hospitalar, e sua relação com a conduta terapêutica e com o ensino médico.`,`gustavo asdasd asd`]
-let imgs = ['Vanessa.jpg','Carlos.png','Gustavo.png']
-let names = ['Vanessa','Carlos','Gustavo']
+// Var to control the authors list 
+let numberAuthor = 1
+let numberOfPagesFromCredits = 3
 
-function delay(milliseconds){
-    return new Promise(resolve => {
-        setTimeout(resolve, milliseconds);
-    });
+function displayApresentationCredits(){
+    updateBackgroundImageCredits()    
 }
 
-let numberAuthor = 0
-let indexAuthor = 0
-let sizeAuthor = authors[numberAuthor].length
-
-async function displayApresentationCredits(){
-    
-    if (indexAuthor == 0) {
-        document.querySelector("#apresentationCredits").innerHTML = ""
-        document.querySelector("img#creatorImg").src = `images/creators/${imgs[numberAuthor]}`
-        document.querySelector("p#titleApresentationCredits.apresentationText").innerHTML = `${names[numberAuthor]}`
-        
-        while (indexAuthor < sizeAuthor) {
-            await delay(50);
-            document.querySelector("p#apresentationCredits.apresentationText").innerHTML += authors[numberAuthor][indexAuthor]            
-            indexAuthor++;
-        }
-
-        if (numberAuthor < 3) {
-            numberAuthor++;
-            indexAuthor = 0
-            sizeAuthor = authors[numberAuthor].length
-        } else {
-            numberAuthor=0
-            indexAuthor = 0
-            sizeAuthor = authors[numberAuthor].length
-            displayApresentationCredits()
-        }    
+function updateBackgroundImageCredits(){
+    if (numberAuthor === 1) {
+        document.body.classList.remove('creditsGustavo')
+        document.body.classList.add('creditsVanessa')
+    } else if (numberAuthor == 2) {
+        document.body.classList.remove('creditsVanessa')
+        document.body.classList.add('creditsCarlos')
+    } else if (numberAuthor == 3) {
+        document.body.classList.remove('creditsCarlos')
+        document.body.classList.add('creditsGustavo')
     }
+}
 
+function nextAuthor(){
+    if ( numberAuthor < numberOfPagesFromCredits ) {
+        numberAuthor++
+    } else {
+        numberAuthor = 1
+    }
+    displayApresentationCredits()
 }

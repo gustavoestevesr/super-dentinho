@@ -111,7 +111,7 @@ btnCredits.addEventListener("click", function () {
     sectionCredits.style.display = 'flex'
 
     document.body.classList.remove("apresentation")
-    document.body.classList.add("credits")
+    document.body.classList.add("creditsVanessa")
 
     displayApresentationCredits()
 });
@@ -122,9 +122,9 @@ btnRules.addEventListener("click", function () {
     sectionRules.style.display = 'flex'
 
     document.body.classList.remove("background")
-    document.body.classList.add("rules")
+    document.body.classList.add("rules1")
 
-    displayApresentationRules(true)
+    displayApresentationRules()
 });
 
 // NAVIGATE FROM APRESENTATION TO CREDITS
@@ -148,16 +148,19 @@ btnBackFromRulesToApresentation.addEventListener("click", function () {
     sectionRules.style.display = 'none'
     sectionApresentation.style.display = 'flex'
 
-    document.body.classList.remove("rules")
+    document.body.classList.remove("rules1")
+    document.body.classList.remove("rules2")
     document.body.classList.add("apresentation")
 });
 
 btnBackFromCreditsToApresentation.addEventListener("click", function () {
     sectionCredits.style.display = 'none'
-    sectionApresentation.style.display = 'flex'
+    sectionApresentation.style.display = 'flex'    
 
-    document.body.classList.remove("credits")
-    document.body.classList.add("apresentation")
+    document.body.classList.remove("creditsVanessa")
+    document.body.classList.remove("creditsCarlos")
+    document.body.classList.remove("creditsGustavo")
+    document.body.classList.add("apresentation")    
 });
 
 function victory() {
@@ -180,9 +183,9 @@ function victory() {
 // });
 
 // EXIT THE GAME
-// btnExit.addEventListener("click", function() {
-//     window.close()
-// });
+btnExit.addEventListener("click", function() {
+    window.close()
+});
 
 // BACKGROUND SOUND
 function playBackgroundSound() {
