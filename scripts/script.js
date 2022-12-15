@@ -19,6 +19,8 @@ let btnBackFromRulesToApresentation = document.querySelector('#btnBackFromRulesT
 let btnBackFromCreditsToApresentation = document.querySelector('#btnBackFromCreditsToApresentation')
 // let btnBackFromQuestionToBoardgame = document.querySelector('#btnBackFromQuestionToBoardgame')
 let btnNextFromToBoardgame = document.querySelector('#btnNextFromToBoardgame')
+let btnBackFromBoardgameToMenu = document.querySelector('#btnBackFromBoardgameToMenu')
+
 
 //CHARACTER
 let superDentinhoBoardGame = document.querySelector('#superDentinhoBoardGame')
@@ -127,13 +129,13 @@ btnRules.addEventListener("click", function () {
     displayApresentationRules()
 });
 
-// NAVIGATE FROM APRESENTATION TO CREDITS
+// NAVIGATE FROM APRESENTATION TO BOARDGAME
 btnContinue.addEventListener("click", function () {
     sectionApresentation.style.display = 'none'
     sectionBoardgame.style.display = 'flex'
 
-    document.body.classList.remove("background")
-    document.body.classList.add("credits")
+    document.body.classList.remove("apresentation")
+    document.body.classList.add("boardgame")
 });
 
 btnNextFromToBoardgame.addEventListener("click", function () {
@@ -142,6 +144,14 @@ btnNextFromToBoardgame.addEventListener("click", function () {
 
     document.body.classList.remove("answer")
     document.body.classList.add("boardgame")
+});
+
+btnBackFromBoardgameToMenu.addEventListener("click", function () {
+    sectionBoardgame.style.display = 'none'
+    sectionApresentation.style.display = 'flex'
+
+    document.body.classList.remove("boardgame")
+    document.body.classList.add("apresentation")
 });
 
 btnBackFromRulesToApresentation.addEventListener("click", function () {
@@ -171,16 +181,16 @@ function victory() {
     document.body.classList.add("victory")
 };
 
-// btnBackFromQuestionToBoardgame.addEventListener("click", function () {
-//     sectionQuestion.style.display = 'none'
-//     sectionBoardgame.style.display = 'flex'
+btnBackFromQuestionToBoardgame.addEventListener("click", function () {
+    sectionQuestion.style.display = 'none'
+    sectionBoardgame.style.display = 'flex'
 
-//     document.body.classList.remove("question")
-//     document.body.classList.add("boardgame")
+    document.body.classList.remove("question")
+    document.body.classList.add("boardgame")
 
-//     numberQuestion--
-//     updateActiveSlotQuestion(numberQuestion)
-// });
+    numberQuestion--
+    updateActiveSlotQuestion(numberQuestion)
+});
 
 // EXIT THE GAME
 btnExit.addEventListener("click", function() {
@@ -549,12 +559,12 @@ function updateActiveSlotQuestion(numberQuestion) {
     }
 }
 
-function prepareQuestion() {
-    document.querySelector("p#numberQuestion.apresentationText").innerHTML = `${numberQuestion + 1}° Questão`
-    document.querySelector("p#questionText.apresentationText").innerHTML = `${questions[numberQuestion].title}`
-    document.querySelector("p#option1.apresentationText").innerHTML = `${questions[numberQuestion].choices[0]}`
-    document.querySelector("p#option2.apresentationText").innerHTML = `${questions[numberQuestion].choices[1]}`
-}
+// function prepareQuestion() {
+//     // document.querySelector("p#numberQuestion.apresentationText").innerHTML = `${numberQuestion + 1}° Questão`
+//     document.querySelector("p#questionText.apresentationText").innerHTML = `${questions[numberQuestion].title}`
+//     document.querySelector("p#option1.apresentationText").innerHTML = `${questions[numberQuestion].choices[0]}`
+//     document.querySelector("p#option2.apresentationText").innerHTML = `${questions[numberQuestion].choices[1]}`
+// }
 
 function delay(milliseconds) {
     return new Promise(resolve => {
