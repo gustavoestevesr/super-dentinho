@@ -1,4 +1,4 @@
-let apresentation = `Olá, eu sou o super dentinho e vou ajudar você a ter um super sorriso. Vem comigo nessa aventura, jogando e aprendendo como podemos nos proteger da cárie e manter a nossa saúde bucal em dia.`
+var apresentation = `Olá, eu sou o super dentinho e vou ajudar você a ter um super sorriso. Vem comigo nessa aventura, jogando e aprendendo como podemos nos proteger da cárie e manter a nossa saúde bucal em dia.`
 
 function delay(milliseconds){
     return new Promise(resolve => {

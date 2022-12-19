@@ -14,6 +14,7 @@ body {
     background-color: #38B6FF;
     background-position: center;
     height: 100vh;
+ 
 }
 
 /* Class to change the background - start */
@@ -37,16 +38,216 @@ body {
 .boardgame {
     background-image: url("../images/backgrounds/BOARDGAME.png");
     background-size: contain;
+    background-color: #38B6FF;    
+}
+
+.question1 {
+    background-image: url("../images/backgrounds/QUESTION1.png");
     background-color: #38B6FF;
 }
 
-.question {
-    background-image: url("../images/backgrounds/QUESTION.png");
+.question2 {
+    background-image: url("../images/backgrounds/QUESTION2.png");
     background-color: #38B6FF;
 }
 
-.answer {
-    background-image: url("../images/backgrounds/ANSWER.jpg");
+.question3 {
+    background-image: url("../images/backgrounds/QUESTION3.png");
+    background-color: #38B6FF;
+}
+
+.question4 {
+    background-image: url("../images/backgrounds/QUESTION4.png");
+    background-color: #38B6FF;
+}
+
+.question5 {
+    background-image: url("../images/backgrounds/QUESTION5.png");
+    background-color: #38B6FF;
+}
+
+.question6 {
+    background-image: url("../images/backgrounds/QUESTION6.png");
+    background-color: #38B6FF;
+}
+
+.question1 {
+    background-image: url("../images/backgrounds/QUESTION1.png");
+    background-color: #38B6FF;
+}
+
+.question1 {
+    background-image: url("../images/backgrounds/QUESTION1.png");
+    background-color: #38B6FF;
+}
+
+.question1 {
+    background-image: url("../images/backgrounds/QUESTION1.png");
+    background-color: #38B6FF;
+}
+
+.question1 {
+    background-image: url("../images/backgrounds/QUESTION1.png");
+    background-color: #38B6FF;
+}
+
+.question1 {
+    background-image: url("../images/backgrounds/QUESTION1.png");
+    background-color: #38B6FF;
+}
+
+.question1 {
+    background-image: url("../images/backgrounds/QUESTION1.png");
+    background-color: #38B6FF;
+}
+
+.question1 {
+    background-image: url("../images/backgrounds/QUESTION1.png");
+    background-color: #38B6FF;
+}
+
+.question1 {
+    background-image: url("../images/backgrounds/QUESTION1.png");
+    background-color: #38B6FF;
+}
+
+.question1 {
+    background-image: url("../images/backgrounds/QUESTION1.png");
+    background-color: #38B6FF;
+}
+
+.question1 {
+    background-image: url("../images/backgrounds/QUESTION1.png");
+    background-color: #38B6FF;
+}
+
+.question1 {
+    background-image: url("../images/backgrounds/QUESTION1.png");
+    background-color: #38B6FF;
+}
+
+.question1 {
+    background-image: url("../images/backgrounds/QUESTION1.png");
+    background-color: #38B6FF;
+}
+
+.question1 {
+    background-image: url("../images/backgrounds/QUESTION1.png");
+    background-color: #38B6FF;
+}
+
+.question1 {
+    background-image: url("../images/backgrounds/QUESTION1.png");
+    background-color: #38B6FF;
+}
+
+.correctanswer1 {
+    background-image: url("../images/backgrounds/CORRECTANSWER1.png");
+    background-color: #38B6FF;
+}
+
+.correctanswer2 {
+    background-image: url("../images/backgrounds/CORRECTANSWER2.png");
+    background-color: #38B6FF;
+}
+
+.correctanswer3 {
+    background-image: url("../images/backgrounds/CORRECTANSWER3.png");
+    background-color: #38B6FF;
+}
+
+.answer1 {
+    background-image: url("../images/backgrounds/ANSWER1.png");
+    background-color: #38B6FF;
+}
+
+.answer1 {
+    background-image: url("../images/backgrounds/ANSWER1.png");
+    background-color: #38B6FF;
+}
+
+.answer1 {
+    background-image: url("../images/backgrounds/ANSWER1.png");
+    background-color: #38B6FF;
+}
+
+.answer1 {
+    background-image: url("../images/backgrounds/ANSWER1.png");
+    background-color: #38B6FF;
+}
+
+.answer1 {
+    background-image: url("../images/backgrounds/ANSWER1.png");
+    background-color: #38B6FF;
+}
+
+.answer1 {
+    background-image: url("../images/backgrounds/ANSWER1.png");
+    background-color: #38B6FF;
+}
+
+.answer1 {
+    background-image: url("../images/backgrounds/ANSWER1.png");
+    background-color: #38B6FF;
+}
+
+.answer1 {
+    background-image: url("../images/backgrounds/ANSWER1.png");
+    background-color: #38B6FF;
+}
+
+.answer1 {
+    background-image: url("../images/backgrounds/ANSWER1.png");
+    background-color: #38B6FF;
+}
+
+.answer1 {
+    background-image: url("../images/backgrounds/ANSWER1.png");
+    background-color: #38B6FF;
+}
+
+.answer1 {
+    background-image: url("../images/backgrounds/ANSWER1.png");
+    background-color: #38B6FF;
+}
+
+.answer1 {
+    background-image: url("../images/backgrounds/ANSWER1.png");
+    background-color: #38B6FF;
+}
+
+.answer1 {
+    background-image: url("../images/backgrounds/ANSWER1.png");
+    background-color: #38B6FF;
+}
+
+.answer1 {
+    background-image: url("../images/backgrounds/ANSWER1.png");
+    background-color: #38B6FF;
+}
+
+.answer1 {
+    background-image: url("../images/backgrounds/ANSWER1.png");
+    background-color: #38B6FF;
+}
+
+.answer1 {
+    background-image: url("../images/backgrounds/ANSWER1.png");
+    background-color: #38B6FF;
+}
+
+.answer1 {
+    background-image: url("../images/backgrounds/ANSWER1.png");
+    background-color: #38B6FF;
+}
+
+.wronganswer1 {
+    background-image: url("../images/backgrounds/WRONGANSWER1.png");
+    background-color: #38B6FF;
+}
+
+.wronganswer2 {
+    background-image: url("../images/backgrounds/WRONGANSWER2.png");
     background-color: #38B6FF;
 }
 
@@ -70,13 +271,13 @@ body {
 
 .rules1 {
     background-image: url("../images/backgrounds/RULES\ 1.png");
-    background-size: cover;
+    background-size: contain;
     background-color: #38B6FF;
 }
 
 .rules2 {
     background-image: url("../images/backgrounds/RULES\ 2.png");
-    background-size: cover;
+    background-size: contain;
     background-color: #38B6FF;
 }
 
@@ -142,14 +343,14 @@ section {
 }
 
 #optionButton1 {
-    top: 55vh;
-    left: 35vw;
+    top: 52vh;
+    left: 28vw;
     cursor: pointer;
 }
 
 #optionButton2 {
-    top: 55vh;
-    left: 60vw;
+    top: 52vh;
+    left: 66vw;
     cursor: pointer;
 }
 
@@ -272,7 +473,7 @@ p#questionText.apresentationText {
         top: 2vw;
     }
   
-
+     
 }
 
 
@@ -318,11 +519,6 @@ p#questionText.apresentationText {
     cursor: pointer;
     animation: zoom-in-zoom-out 1s ease infinite;
     z-index: 10;
-}
-
-#btnNextFromToBoardgame {
-    top: 60vh;
-    left: 150vh;
 }
 
 .btnMenu {
@@ -409,6 +605,7 @@ p#questionText.apresentationText {
 .optionButton {
     width: 10vw;
     position: fixed;
+    z-index: 10;
 }
 
 .p1 {
@@ -418,7 +615,7 @@ p#questionText.apresentationText {
 
 .p2 {
     top: 75vh;
-    left: 53vw;
+    left: 52vw;
 }
 
 .p3 {
@@ -428,88 +625,196 @@ p#questionText.apresentationText {
 
 .p4 {
     top: 70vh;
-    left: 77vw;
+    left: 76vw;
 }
 
 .p5 {
-    bottom: 29vh;
-    left: 72vw;
+    bottom: 28vh;
+    left: 71vw;
 }
 
-/* .p6 {
-    bottom: 5vw;
-    left: 72vw;
-} */
-
-/* .p7 {
-    bottom: 0vw;
-    left: 84vw;
-} */
-
-/* .p8 {
-    bottom: 12vw;
-    left: 90vw;
-} */
-
-/* .p9 {
-    bottom: 18vw;
-    left: 78vw;
-} */
-
-/* .p10 {
-    bottom: 26vw;
-    left: 90vw;
-} */
-
-/* .p11 {
-    bottom: 32vw;
-    left: 78vw;
-} */
-
-/* .p12 {
-    bottom: 28vw;
-    left: 70vw;    
-} */
-
-/* .p13 {
-    bottom: 35vw;
+.p6 {
+    bottom: 27vh;
     left: 60vw;
-} */
+}
 
-/* .p14 {
-    bottom: 35vw;
-    left: 72vw;
-}  */
-
-/* .p15 {
-    bottom: 30vw;
-    left: 60vw;
-} */
-
-/* .p16 {
-    bottom: 35vw;
+.p7 {
+    bottom: 22vh;
     left: 48vw;
-} */
+}
 
-/* .p17 {
-    bottom: 30vw;
-    left: 36vw;
-} */
+.p8 {
+    bottom: 23vh;
+    left: 35vw;
+}
 
-/* .p18 {
-    bottom: 35vw;
+.p9 {
+    bottom: 26vh;
+    left: 23vw;
+}
+
+.p10 {
+    bottom: 40vh;
+    left: 14vw;
+}
+
+.p11 {
+    bottom: 51vh;
     left: 24vw;
-} */
+}
 
-/* .p19 {
-    bottom: 30vw;
-    left: 12vw;
-} */
+.p12 {
+    bottom: 50vh;
+    left: 36vw;   
+}
 
-/* .p20 {
-    bottom: 20vw;
-    left: 2vw;
-}   */
+.p13 {
+    bottom: 49vh;
+    left: 47vw;  
+}
+
+.p14 {
+    bottom: 48vh;
+    left: 57.5vw;  
+} 
+
+.p15 {
+    bottom: 48vh;
+    left: 68vw;  
+}
+
+.p16 {
+    bottom: 61vh;
+    left: 77vw;  
+}
+
+.p17 {
+    bottom: 76vh;
+    left: 70vw; 
+}
+
+.p18 {
+    bottom: 77vh;
+    left: 58vw; 
+}
+
+.p19 {
+    bottom: 77vh;
+    left: 47vw; 
+}
+
+.p20 {
+    bottom: 77vh;
+    left: 36vw; 
+}  
+
+@media screen and (max-width: 915px) {
+
+    #superDentinhoBoardGame {
+        bottom: 5.5vw;
+        left: 23vw;
+    }
+
+    .p1 {
+        top: 77vh;
+        left: 38.5vw;
+    }
+    
+    .p2 {
+        top: 78vh;
+        left: 53.5vw;
+    }
+    
+    .p3 {
+        top: 76.5vh;
+        left: 68.5vw;
+    }
+    
+    .p4 {
+        top: 71vh;
+        left: 82.5vw;
+    }
+    
+    .p5 {
+        bottom: 30vh;
+        left: 76vw;
+    }
+    
+    .p6 {
+        bottom: 29vh;
+        left: 62.5vw;
+    }
+    
+    .p7 {
+        bottom: 25vh;
+        left: 48vw;
+    }
+    
+    .p8 {
+        bottom: 25.5vh;
+        left: 33.5vw;
+    }
+    
+    .p9 {
+        bottom: 28.5vh;
+        left: 19vw;
+    }
+    
+    .p10 {
+        bottom: 42.5vh;
+        left: 8vw;
+    }
+    
+    .p11 {
+        bottom: 53.5vh;
+        left: 19.5vw;
+    }
+    
+    .p12 {
+        bottom: 52vh;
+        left: 33.5vw;   
+    }
+    
+    .p13 {
+        bottom: 50vh;
+        left: 47vw;  
+    }
+    
+    .p14 {
+        bottom: 49vh;
+        left: 59.5vw;  
+    } 
+    
+    .p15 {
+        bottom: 50vh;
+        left: 72.5vw;  
+    }
+    
+    .p16 {
+        bottom: 63.5vh;
+        left: 82.5vw;  
+    }
+    
+    .p17 {
+        bottom: 79vh;
+        left: 74.5vw; 
+    }
+    
+    .p18 {
+        bottom: 79vh;
+        left: 60.5vw; 
+    }
+    
+    .p19 {
+        bottom: 78.5vh;
+        left: 47vw; 
+    }
+    
+    .p20 {
+        bottom: 78.5vh;
+        left: 34vw; 
+    }  
+}
 
 /* SLOTS OF QUESTIONS - END */
 

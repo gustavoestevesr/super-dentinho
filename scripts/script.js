@@ -17,7 +17,7 @@ let btnContinue = document.querySelector('#btnContinue')
 let btnRules = document.querySelector('#btnRules')
 let btnBackFromRulesToApresentation = document.querySelector('#btnBackFromRulesToApresentation')
 let btnBackFromCreditsToApresentation = document.querySelector('#btnBackFromCreditsToApresentation')
-// let btnBackFromQuestionToBoardgame = document.querySelector('#btnBackFromQuestionToBoardgame')
+let btnBackFromQuestionToBoardgame = document.querySelector('#btnBackFromQuestionToBoardgame')
 let btnNextFromToBoardgame = document.querySelector('#btnNextFromToBoardgame')
 let btnBackFromBoardgameToMenu = document.querySelector('#btnBackFromBoardgameToMenu')
 
@@ -142,8 +142,9 @@ btnNextFromToBoardgame.addEventListener("click", function () {
     sectionAnswer.style.display = 'none'
     sectionBoardgame.style.display = 'flex'
 
-    document.body.classList.remove("answer")
-    document.body.classList.add("boardgame")
+    document.body.classList.remove(`correctanswer${numberQuestion}`)
+    document.body.classList.remove(`wronganswer${numberQuestion}`)
+    document.body.classList.add("boardgame")      
 });
 
 btnBackFromBoardgameToMenu.addEventListener("click", function () {
@@ -185,11 +186,11 @@ btnBackFromQuestionToBoardgame.addEventListener("click", function () {
     sectionQuestion.style.display = 'none'
     sectionBoardgame.style.display = 'flex'
 
-    document.body.classList.remove("question")
+    document.body.classList.remove(`question${numberQuestion+1}`)
     document.body.classList.add("boardgame")
-
-    numberQuestion--
-    updateActiveSlotQuestion(numberQuestion)
+    
+    updateActiveSlotQuestion(numberQuestion-1)
+    updateDentinhoPosition(numberQuestion)            
 });
 
 // EXIT THE GAME
@@ -596,32 +597,26 @@ async function goToQuestion(slotSelectedFromUSer) {
 
     if (slotSelectedFromUSer === numberQuestion) {
         updateDentinhoPosition(numberQuestion)
-        await delay(500);
-        updateActiveSlotQuestion(numberQuestion)
+        await delay(500);        
 
         // change background
         sectionBoardgame.style.display = 'none'
         sectionQuestion.style.display = 'flex'
 
         document.body.classList.remove("background")
-        document.body.classList.add("question")
+        document.body.classList.add(`question${numberQuestion+1}`)
 
-        prepareQuestion()
+    } else {
+        alert ("Selecione a fase em destaque!")        
     }
 }
 
 function verifyQuestion(userChoice) {
-    let answerUser = userChoice === "option1" ? questions[numberQuestion].choices[0] : questions[numberQuestion].choices[1]
+    let answerUser = userChoice === "optionButton1" ? questions[numberQuestion].choices[0] : questions[numberQuestion].choices[1]
 
     let statusAnswerUser = questions[numberQuestion].answer === answerUser ? true : false
 
     feedbackAnswer(statusAnswerUser)
-}
-
-function prepareAnswerExplanation() {
-    document.querySelector("p#questionExplanation.apresentationText").innerHTML = `${questions[numberQuestion].title}`
-    document.querySelector("p#correctAnswer.apresentationText").innerHTML = `${questions[numberQuestion].answer}`
-    document.querySelector("p#correctAnswerExplanation.apresentationText").innerHTML = `${questions[numberQuestion].correctAnswerExplanation}`
 }
 
 function feedbackAnswer(statusAnswerUser) {
@@ -629,20 +624,25 @@ function feedbackAnswer(statusAnswerUser) {
     sectionAnswer.style.display = 'flex'
     sectionQuestion.style.display = 'none'
 
-    document.body.classList.remove("question")
-    document.body.classList.add("answer")
+    document.body.classList.remove(`question${numberQuestion+1}`)    
 
     if (statusAnswerUser) {
-        document.querySelector("img#superDentinhoAnswer").src = "images/characters/2712.png"
+        // document.querySelector("img#superDentinhoAnswer").src = "images/characters/2712.png"
+        document.body.classList.add(`correctanswer${numberQuestion+1}`)
         playCorrectSound()
         start();
         stop();
-    } else {
-        document.querySelector("img#superDentinhoAnswer").src = "images/characters/2702.png"
-        playWrongSound()
-    }
 
-    numberQuestion++;
-    prepareAnswerExplanation()
+        updateActiveSlotQuestion(numberQuestion)
+        updateDentinhoPosition(numberQuestion)
+        numberQuestion++  
+    } else {
+        // document.querySelector("img#superDentinhoAnswer").src = "images/characters/2702.png"
+        document.body.classList.add(`wronganswer${numberQuestion+1}`)
+        playWrongSound()
+
+        updateActiveSlotQuestion(numberQuestion-1)
+        updateDentinhoPosition(numberQuestion)    
+    }    
 
 }
