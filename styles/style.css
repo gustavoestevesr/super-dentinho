@@ -41,33 +41,10 @@ body {
     background-color: #38B6FF;    
 }
 
-.question1 {
-    background-image: url("../images/backgrounds/QUESTION1.png");
-    background-color: #38B6FF;
-}
+/* QUESTION */
 
-.question2 {
-    background-image: url("../images/backgrounds/QUESTION2.png");
-    background-color: #38B6FF;
-}
-
-.question3 {
-    background-image: url("../images/backgrounds/QUESTION3.png");
-    background-color: #38B6FF;
-}
-
-.question4 {
-    background-image: url("../images/backgrounds/QUESTION4.png");
-    background-color: #38B6FF;
-}
-
-.question5 {
-    background-image: url("../images/backgrounds/QUESTION5.png");
-    background-color: #38B6FF;
-}
-
-.question6 {
-    background-image: url("../images/backgrounds/QUESTION6.png");
+.question0 {
+    background-image: url("../images/backgrounds/QUESTION0.png");
     background-color: #38B6FF;
 }
 
@@ -76,68 +53,10 @@ body {
     background-color: #38B6FF;
 }
 
-.question1 {
-    background-image: url("../images/backgrounds/QUESTION1.png");
-    background-color: #38B6FF;
-}
+/* CORRECT ANSWER */
 
-.question1 {
-    background-image: url("../images/backgrounds/QUESTION1.png");
-    background-color: #38B6FF;
-}
-
-.question1 {
-    background-image: url("../images/backgrounds/QUESTION1.png");
-    background-color: #38B6FF;
-}
-
-.question1 {
-    background-image: url("../images/backgrounds/QUESTION1.png");
-    background-color: #38B6FF;
-}
-
-.question1 {
-    background-image: url("../images/backgrounds/QUESTION1.png");
-    background-color: #38B6FF;
-}
-
-.question1 {
-    background-image: url("../images/backgrounds/QUESTION1.png");
-    background-color: #38B6FF;
-}
-
-.question1 {
-    background-image: url("../images/backgrounds/QUESTION1.png");
-    background-color: #38B6FF;
-}
-
-.question1 {
-    background-image: url("../images/backgrounds/QUESTION1.png");
-    background-color: #38B6FF;
-}
-
-.question1 {
-    background-image: url("../images/backgrounds/QUESTION1.png");
-    background-color: #38B6FF;
-}
-
-.question1 {
-    background-image: url("../images/backgrounds/QUESTION1.png");
-    background-color: #38B6FF;
-}
-
-.question1 {
-    background-image: url("../images/backgrounds/QUESTION1.png");
-    background-color: #38B6FF;
-}
-
-.question1 {
-    background-image: url("../images/backgrounds/QUESTION1.png");
-    background-color: #38B6FF;
-}
-
-.question1 {
-    background-image: url("../images/backgrounds/QUESTION1.png");
+.correctanswer0 {
+    background-image: url("../images/backgrounds/CORRECTANSWER0.png");
     background-color: #38B6FF;
 }
 
@@ -146,98 +65,10 @@ body {
     background-color: #38B6FF;
 }
 
-.correctanswer2 {
-    background-image: url("../images/backgrounds/CORRECTANSWER2.png");
-    background-color: #38B6FF;
-}
+/* WRONG ANSWER */
 
-.correctanswer3 {
-    background-image: url("../images/backgrounds/CORRECTANSWER3.png");
-    background-color: #38B6FF;
-}
-
-.answer1 {
-    background-image: url("../images/backgrounds/ANSWER1.png");
-    background-color: #38B6FF;
-}
-
-.answer1 {
-    background-image: url("../images/backgrounds/ANSWER1.png");
-    background-color: #38B6FF;
-}
-
-.answer1 {
-    background-image: url("../images/backgrounds/ANSWER1.png");
-    background-color: #38B6FF;
-}
-
-.answer1 {
-    background-image: url("../images/backgrounds/ANSWER1.png");
-    background-color: #38B6FF;
-}
-
-.answer1 {
-    background-image: url("../images/backgrounds/ANSWER1.png");
-    background-color: #38B6FF;
-}
-
-.answer1 {
-    background-image: url("../images/backgrounds/ANSWER1.png");
-    background-color: #38B6FF;
-}
-
-.answer1 {
-    background-image: url("../images/backgrounds/ANSWER1.png");
-    background-color: #38B6FF;
-}
-
-.answer1 {
-    background-image: url("../images/backgrounds/ANSWER1.png");
-    background-color: #38B6FF;
-}
-
-.answer1 {
-    background-image: url("../images/backgrounds/ANSWER1.png");
-    background-color: #38B6FF;
-}
-
-.answer1 {
-    background-image: url("../images/backgrounds/ANSWER1.png");
-    background-color: #38B6FF;
-}
-
-.answer1 {
-    background-image: url("../images/backgrounds/ANSWER1.png");
-    background-color: #38B6FF;
-}
-
-.answer1 {
-    background-image: url("../images/backgrounds/ANSWER1.png");
-    background-color: #38B6FF;
-}
-
-.answer1 {
-    background-image: url("../images/backgrounds/ANSWER1.png");
-    background-color: #38B6FF;
-}
-
-.answer1 {
-    background-image: url("../images/backgrounds/ANSWER1.png");
-    background-color: #38B6FF;
-}
-
-.answer1 {
-    background-image: url("../images/backgrounds/ANSWER1.png");
-    background-color: #38B6FF;
-}
-
-.answer1 {
-    background-image: url("../images/backgrounds/ANSWER1.png");
-    background-color: #38B6FF;
-}
-
-.answer1 {
-    background-image: url("../images/backgrounds/ANSWER1.png");
+.wronganswer0 {
+    background-image: url("../images/backgrounds/WRONGANSWER0.png");
     background-color: #38B6FF;
 }
 
@@ -246,10 +77,7 @@ body {
     background-color: #38B6FF;
 }
 
-.wronganswer2 {
-    background-image: url("../images/backgrounds/WRONGANSWER2.png");
-    background-color: #38B6FF;
-}
+/* CREDITS */
 
 .creditsVanessa {
     background-image: url("../images/backgrounds/CREDITS\ VANESSA.png");
@@ -466,11 +294,13 @@ p#questionText.apresentationText {
         text-align: justify;
     }
     img#btnPlay.btnMenu {
-        top: 35vw;
-        left: 25vw;
+        top: 30vw;
+        left: 26vw;
     }
     #title {
-        top: 2vw;
+        width: 40vw;
+        top: 3vw;
+        left: 10vw;
     }
   
      

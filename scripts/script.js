@@ -142,7 +142,8 @@ btnNextFromToBoardgame.addEventListener("click", function () {
     sectionAnswer.style.display = 'none'
     sectionBoardgame.style.display = 'flex'
 
-    document.body.classList.remove(`correctanswer${numberQuestion}`)
+    
+    document.body.classList.remove(`correctanswer${numberQuestion-1}`)
     document.body.classList.remove(`wronganswer${numberQuestion}`)
     document.body.classList.add("boardgame")      
 });
@@ -186,7 +187,7 @@ btnBackFromQuestionToBoardgame.addEventListener("click", function () {
     sectionQuestion.style.display = 'none'
     sectionBoardgame.style.display = 'flex'
 
-    document.body.classList.remove(`question${numberQuestion+1}`)
+    document.body.classList.remove(`question${numberQuestion}`)
     document.body.classList.add("boardgame")
     
     updateActiveSlotQuestion(numberQuestion-1)
@@ -227,15 +228,15 @@ function playWrongSound() {
 var questions = [
     {
         title: "Quantas vezes devemos escovar nossos dentinhos ao dia?",
-        choices: ["Sempre após nos alimentar.", "Parte da manhã e a noite."],
+        choices: ["Parte da manhã e a noite.","Sempre após nos alimentar."],
         answer: "Sempre após nos alimentar.",
         correctAnswerExplanation: "Obaaa!!! Você acertou, todas as vezes que nos alimentamos precisamos limpar nossos dentinhos.",
         wrongAnswerExplanation: "Resposta incorreta sobre balãozinho, Hum...:( Você errou, todas as vezes que nos alimentamos precisamos limpar nossos dentinhos."
     },
     {
         title: "Qual a forma correta de escovar seus dentinhos, na sua idade?",
-        choices: ["Técnica da bolinha, escovinha não inclinada.", "Técnica da vassourinha, escovinha inclinada."],
-        answer: "Técnica da vassourinha, Escovinha inclinada.",
+        choices: ["Técnica da vassourinha, escovinha inclinada.","Técnica da bolinha, escovinha não inclinada."],
+        answer: "Técnica da vassourinha, escovinha inclinada.",
         correctAnswerExplanation: "Isso aí!!! Você acertou devemos inclinar a escova 45° e escovar os dentes em todas suas faces, lembrando que acima (na oclusal) dos dentinhos faremos movimento de vai e vem.",
         wrongAnswerExplanation: "Incorreta ,que pena você errou! A técnica da bolinha e para crianças menores de 8 anos ou aqueles que tem dificuldade motora, na hora da escovação."
     },
@@ -604,17 +605,21 @@ async function goToQuestion(slotSelectedFromUSer) {
         sectionQuestion.style.display = 'flex'
 
         document.body.classList.remove("background")
-        document.body.classList.add(`question${numberQuestion+1}`)
-
-    } else {
-        alert ("Selecione a fase em destaque!")        
-    }
+        document.body.classList.add(`question${numberQuestion}`)
+    } 
 }
 
 function verifyQuestion(userChoice) {
+
+    alert(`${numberQuestion}`)
+
     let answerUser = userChoice === "optionButton1" ? questions[numberQuestion].choices[0] : questions[numberQuestion].choices[1]
 
+    alert(`${userChoice}`)
+
     let statusAnswerUser = questions[numberQuestion].answer === answerUser ? true : false
+
+    alert(`${statusAnswerUser}`)
 
     feedbackAnswer(statusAnswerUser)
 }
@@ -624,11 +629,10 @@ function feedbackAnswer(statusAnswerUser) {
     sectionAnswer.style.display = 'flex'
     sectionQuestion.style.display = 'none'
 
-    document.body.classList.remove(`question${numberQuestion+1}`)    
+    document.body.classList.remove(`question${numberQuestion}`)    
 
     if (statusAnswerUser) {
-        // document.querySelector("img#superDentinhoAnswer").src = "images/characters/2712.png"
-        document.body.classList.add(`correctanswer${numberQuestion+1}`)
+        document.body.classList.add(`correctanswer${numberQuestion}`)
         playCorrectSound()
         start();
         stop();
@@ -637,12 +641,11 @@ function feedbackAnswer(statusAnswerUser) {
         updateDentinhoPosition(numberQuestion)
         numberQuestion++  
     } else {
-        // document.querySelector("img#superDentinhoAnswer").src = "images/characters/2702.png"
-        document.body.classList.add(`wronganswer${numberQuestion+1}`)
+        document.body.classList.add(`wronganswer${numberQuestion}`)        
+
         playWrongSound()
 
         updateActiveSlotQuestion(numberQuestion-1)
         updateDentinhoPosition(numberQuestion)    
     }    
-
 }
