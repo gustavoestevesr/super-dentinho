@@ -1,0 +1,81 @@
+.btnMenu:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 915px) {
+    img#btnPlay.btnMenu {
+        top: 30vw;
+        left: 26vw;
+    } 
+}
+
+#btnBackFromRulesToApresentation,
+#btnBackFromCreditsToApresentation,
+#btnBackFromQuestionToBoardgame,
+#btnBackFromBoardgameToMenu {
+    position: fixed;
+    top: 2.5vw;
+    left: 2.5vw;
+    width: 8vw;
+    height: 8vw;
+    cursor: pointer;
+    animation: zoom-in-zoom-out 1s ease infinite;
+    z-index: 10;
+}
+
+#btnNextCredit,
+#btnNextRule {
+    position: fixed;
+    bottom: 2vw;
+    right: 2vw;
+    width: 5vw;
+    height: 5vw;
+    cursor: pointer;
+    animation: zoom-in-zoom-out 1s ease infinite;
+    z-index: 10;
+}
+
+#btnNextFromToBoardgame {
+    position: fixed;
+    bottom: 5vw;
+    right: 5vw;
+    width: 9vh;
+    height: 9vh;
+    cursor: pointer;
+    animation: zoom-in-zoom-out 1s ease infinite;
+    z-index: 10;
+}
+
+.btnMenu {
+    position: fixed;
+    width: 9vw;
+    height: 9vw;
+    animation: zoom-in-zoom-out 1s ease infinite;
+    cursor: pointer;
+    z-index: 20;
+}
+
+#btnPlay {
+    top: 36vw;
+    left: 25vw;
+}
+
+#btnContinue {
+    top: 2vw;
+    right: 3vw;
+}
+
+#btnCredits {
+    top: 13vw;
+    right: 3vw;
+}
+
+#btnRules {
+    top: 24vw;
+    right: 3vw;
+}
+
+#btnExit {
+    top: 35vw;
+    right: 3vw;
+}

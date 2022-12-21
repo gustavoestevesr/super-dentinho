@@ -17,109 +17,10 @@ body {
  
 }
 
-/* Class to change the background - start */
-
-.start {
-    background-image: url("../images/backgrounds/START.png");
-    background-color: #38B6FF;
-}
-
-.apresentation {
-    background-image: url("../images/backgrounds/APRESENTATION.png");
-    background-color: #38B6FF;
-    background-size: contain;
-}
-
-.background {
-    background-image: url("../images/backgrounds/BACKGROUND.png");
-    background-color: #38B6FF;
-}
-
-.boardgame {
-    background-image: url("../images/backgrounds/BOARDGAME.png");
-    background-size: contain;
-    background-color: #38B6FF;    
-}
-
-/* QUESTION */
-
-.question0 {
-    background-image: url("../images/backgrounds/QUESTION0.png");
-    background-color: #38B6FF;
-}
-
-.question1 {
-    background-image: url("../images/backgrounds/QUESTION1.png");
-    background-color: #38B6FF;
-}
-
-/* CORRECT ANSWER */
-
-.correctanswer0 {
-    background-image: url("../images/backgrounds/CORRECTANSWER0.png");
-    background-color: #38B6FF;
-}
-
-.correctanswer1 {
-    background-image: url("../images/backgrounds/CORRECTANSWER1.png");
-    background-color: #38B6FF;
-}
-
-/* WRONG ANSWER */
-
-.wronganswer0 {
-    background-image: url("../images/backgrounds/WRONGANSWER0.png");
-    background-color: #38B6FF;
-}
-
-.wronganswer1 {
-    background-image: url("../images/backgrounds/WRONGANSWER1.png");
-    background-color: #38B6FF;
-}
-
-/* CREDITS */
-
-.creditsVanessa {
-    background-image: url("../images/backgrounds/CREDITS\ VANESSA.png");
-    background-size: contain;
-    background-color: #38B6FF;
-}
-
-.creditsCarlos {
-    background-image: url("../images/backgrounds/CREDITS\ CARLOS.png");
-    background-size: contain;
-    background-color: #38B6FF;
-}
-
-.creditsGustavo {
-    background-image: url("../images/backgrounds/CREDITS\ GUSTAVO.png");
-    background-size: contain;
-    background-color: #38B6FF;
-}
-
-.rules1 {
-    background-image: url("../images/backgrounds/RULES\ 1.png");
-    background-size: contain;
-    background-color: #38B6FF;
-}
-
-.rules2 {
-    background-image: url("../images/backgrounds/RULES\ 2.png");
-    background-size: contain;
-    background-color: #38B6FF;
-}
-
-.winner {
-    background-image: url("../images/backgrounds/WINNER.png");
-    background-size: cover;
-    background-color: #38B6FF;
-}
-
-/* Class to change the background - end */
-
 section {
     display: flex;
     flex-direction: column;
+    height: 100vh;
 }
 
 .menu {
@@ -129,10 +30,6 @@ section {
     align-items: flex-end;
     flex-direction: row;
     flex-wrap: wrap;
-}
-
-.btnMenu:hover {
-    transform: scale(1.1);
 }
 
 #title {
@@ -293,10 +190,6 @@ p#questionText.apresentationText {
         width: 60vw;
         text-align: justify;
     }
-    img#btnPlay.btnMenu {
-        top: 30vw;
-        left: 26vw;
-    }
     #title {
         width: 40vw;
         top: 3vw;
@@ -312,77 +205,6 @@ p#questionText.apresentationText {
     bottom: 1vh;
     right: 1vw;
     height: 25vh;
-}
-
-#btnBackFromRulesToApresentation,
-#btnBackFromCreditsToApresentation,
-#btnBackFromQuestionToBoardgame,
-#btnBackFromBoardgameToMenu {
-    position: fixed;
-    top: 2.5vw;
-    left: 2.5vw;
-    width: 8vw;
-    height: 8vw;
-    cursor: pointer;
-    animation: zoom-in-zoom-out 1s ease infinite;
-    z-index: 10;
-}
-
-#btnNextCredit,
-#btnNextRule {
-    position: fixed;
-    bottom: 2vw;
-    right: 2vw;
-    width: 5vw;
-    height: 5vw;
-    cursor: pointer;
-    animation: zoom-in-zoom-out 1s ease infinite;
-    z-index: 10;
-}
-
-#btnNextFromToBoardgame {
-    position: fixed;
-    bottom: 5vw;
-    right: 5vw;
-    width: 9vh;
-    height: 9vh;
-    cursor: pointer;
-    animation: zoom-in-zoom-out 1s ease infinite;
-    z-index: 10;
-}
-
-.btnMenu {
-    position: fixed;
-    width: 9vw;
-    height: 9vw;
-    animation: zoom-in-zoom-out 1s ease infinite;
-    cursor: pointer;
-    z-index: 20;
-}
-
-#btnPlay {
-    top: 36vw;
-    left: 25vw;
-}
-
-#btnContinue {
-    top: 2vw;
-    right: 5vw;
-}
-
-#btnCredits {
-    top: 13vw;
-    right: 5vw;
-}
-
-#btnRules {
-    top: 24vw;
-    right: 5vw;
-}
-
-#btnExit {
-    top: 35vw;
-    right: 5vw;
 }
 
 .column {

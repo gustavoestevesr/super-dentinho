@@ -1,0 +1,385 @@
+.start {
+    background-image: url("../images/backgrounds/START.png");
+    background-color: #38B6FF;
+}
+
+.apresentation {
+    background-image: url("../images/backgrounds/APRESENTATION.png");
+    background-color: #38B6FF;
+    background-size: contain;
+}
+
+.background {
+    background-image: url("../images/backgrounds/BACKGROUND.png");
+    background-color: #38B6FF;
+}
+
+.boardgame {
+    background-image: url("../images/backgrounds/BOARDGAME.png");
+    background-size: contain;
+    background-color: #38B6FF;    
+}
+
+/* QUESTION */
+
+.question0 {
+    background-image: url("../images/backgrounds/QUESTION0.png");
+    background-color: #38B6FF;
+}
+
+.question1 {
+    background-image: url("../images/backgrounds/QUESTION1.png");
+    background-color: #38B6FF;
+}
+
+.question2 {
+    background-image: url("../images/backgrounds/QUESTION2.png");
+    background-color: #38B6FF;
+}
+
+.question3 {
+    background-image: url("../images/backgrounds/QUESTION3.png");
+    background-color: #38B6FF;
+}
+
+.question4 {
+    background-image: url("../images/backgrounds/QUESTION4.png");
+    background-color: #38B6FF;
+}
+
+.question5 {
+    background-image: url("../images/backgrounds/QUESTION5.png");
+    background-color: #38B6FF;
+}
+
+.question6 {
+    background-image: url("../images/backgrounds/QUESTION6.png");
+    background-color: #38B6FF;
+}
+
+.question7 {
+    background-image: url("../images/backgrounds/QUESTION7.png");
+    background-color: #38B6FF;
+}
+
+.question8 {
+    background-image: url("../images/backgrounds/QUESTION8.png");
+    background-color: #38B6FF;
+}
+
+.question9 {
+    background-image: url("../images/backgrounds/QUESTION9.png");
+    background-color: #38B6FF;
+}
+
+.question10 {
+    background-image: url("../images/backgrounds/QUESTION10.png");
+    background-color: #38B6FF;
+}
+
+.question11 {
+    background-image: url("../images/backgrounds/QUESTION11.png");
+    background-color: #38B6FF;
+}
+
+.question12 {
+    background-image: url("../images/backgrounds/QUESTION12.png");
+    background-color: #38B6FF;
+}
+
+.question13 {
+    background-image: url("../images/backgrounds/QUESTION13.png");
+    background-color: #38B6FF;
+}
+
+.question14 {
+    background-image: url("../images/backgrounds/QUESTION14.png");
+    background-color: #38B6FF;
+}
+
+.question15 {
+    background-image: url("../images/backgrounds/QUESTION15.png");
+    background-color: #38B6FF;
+}
+
+.question16 {
+    background-image: url("../images/backgrounds/QUESTION16.png");
+    background-color: #38B6FF;
+}
+
+.question17 {
+    background-image: url("../images/backgrounds/QUESTION17.png");
+    background-color: #38B6FF;
+}
+
+.question18 {
+    background-image: url("../images/backgrounds/QUESTION18.png");
+    background-color: #38B6FF;
+}
+
+.question19 {
+    background-image: url("../images/backgrounds/QUESTION19.png");
+    background-color: #38B6FF;
+}
+
+.question20 {
+    background-image: url("../images/backgrounds/QUESTION20.png");
+    background-color: #38B6FF;
+}
+
+/* CORRECT ANSWER */
+
+.correctanswer0 {
+    background-image: url("../images/backgrounds/CORRECTANSWER0.png");
+    background-color: #38B6FF;
+}
+
+.correctanswer1 {
+    background-image: url("../images/backgrounds/CORRECTANSWER1.png");
+    background-color: #38B6FF;
+}
+
+.correctanswer2 {
+    background-image: url("../images/backgrounds/CORRECTANSWER2.png");
+    background-color: #38B6FF;
+}
+
+.correctanswer3 {
+    background-image: url("../images/backgrounds/CORRECTANSWER3.png");
+    background-color: #38B6FF;
+}
+
+.correctanswer4 {
+    background-image: url("../images/backgrounds/CORRECTANSWER4.png");
+    background-color: #38B6FF;
+}
+
+.correctanswer5 {
+    background-image: url("../images/backgrounds/CORRECTANSWER5.png");
+    background-color: #38B6FF;
+}
+
+.correctanswer6 {
+    background-image: url("../images/backgrounds/CORRECTANSWER6.png");
+    background-color: #38B6FF;
+}
+
+.correctanswer7 {
+    background-image: url("../images/backgrounds/CORRECTANSWER7.png");
+    background-color: #38B6FF;
+}
+
+.correctanswer8 {
+    background-image: url("../images/backgrounds/CORRECTANSWER8.png");
+    background-color: #38B6FF;
+}
+
+.correctanswer9 {
+    background-image: url("../images/backgrounds/CORRECTANSWER9.png");
+    background-color: #38B6FF;
+}
+
+.correctanswer10 {
+    background-image: url("../images/backgrounds/CORRECTANSWER10.png");
+    background-color: #38B6FF;
+}
+
+.correctanswer11 {
+    background-image: url("../images/backgrounds/CORRECTANSWER11.png");
+    background-color: #38B6FF;
+}
+
+.correctanswer12 {
+    background-image: url("../images/backgrounds/CORRECTANSWER12.png");
+    background-color: #38B6FF;
+}
+
+.correctanswer13 {
+    background-image: url("../images/backgrounds/CORRECTANSWER13.png");
+    background-color: #38B6FF;
+}
+
+.correctanswer14 {
+    background-image: url("../images/backgrounds/CORRECTANSWER14.png");
+    background-color: #38B6FF;
+}
+
+.correctanswer15 {
+    background-image: url("../images/backgrounds/CORRECTANSWER15.png");
+    background-color: #38B6FF;
+}
+
+.correctanswer16 {
+    background-image: url("../images/backgrounds/CORRECTANSWER16.png");
+    background-color: #38B6FF;
+}
+
+.correctanswer17 {
+    background-image: url("../images/backgrounds/CORRECTANSWER17.png");
+    background-color: #38B6FF;
+}
+
+.correctanswer18 {
+    background-image: url("../images/backgrounds/CORRECTANSWER18.png");
+    background-color: #38B6FF;
+}
+
+.correctanswer19 {
+    background-image: url("../images/backgrounds/CORRECTANSWER19.png");
+    background-color: #38B6FF;
+}
+
+.correctanswer20 {
+    background-image: url("../images/backgrounds/CORRECTANSWER20.png");
+    background-color: #38B6FF;
+}
+
+/* WRONG ANSWER */
+
+.wronganswer0 {
+    background-image: url("../images/backgrounds/WRONGANSWER0.png");
+    background-color: #38B6FF;
+}
+
+.wronganswer1 {
+    background-image: url("../images/backgrounds/WRONGANSWER1.png");
+    background-color: #38B6FF;
+}
+
+.wronganswer2 {
+    background-image: url("../images/backgrounds/WRONGANSWER2.png");
+    background-color: #38B6FF;
+}
+
+.wronganswer3 {
+    background-image: url("../images/backgrounds/WRONGANSWER3.png");
+    background-color: #38B6FF;
+}
+
+.wronganswer4 {
+    background-image: url("../images/backgrounds/WRONGANSWER4.png");
+    background-color: #38B6FF;
+}
+
+.wronganswer5 {
+    background-image: url("../images/backgrounds/WRONGANSWER5.png");
+    background-color: #38B6FF;
+}
+
+.wronganswer6 {
+    background-image: url("../images/backgrounds/WRONGANSWER6.png");
+    background-color: #38B6FF;
+}
+
+.wronganswer7 {
+    background-image: url("../images/backgrounds/WRONGANSWER7.png");
+    background-color: #38B6FF;
+}
+
+.wronganswer8 {
+    background-image: url("../images/backgrounds/WRONGANSWER8.png");
+    background-color: #38B6FF;
+}
+
+.wronganswer9 {
+    background-image: url("../images/backgrounds/WRONGANSWER9.png");
+    background-color: #38B6FF;
+}
+
+.wronganswer10 {
+    background-image: url("../images/backgrounds/WRONGANSWER10.png");
+    background-color: #38B6FF;
+}
+
+.wronganswer11 {
+    background-image: url("../images/backgrounds/WRONGANSWER11.png");
+    background-color: #38B6FF;
+}
+
+.wronganswer12 {
+    background-image: url("../images/backgrounds/WRONGANSWER12.png");
+    background-color: #38B6FF;
+}
+
+.wronganswer13 {
+    background-image: url("../images/backgrounds/WRONGANSWER13.png");
+    background-color: #38B6FF;
+}
+
+.wronganswer14 {
+    background-image: url("../images/backgrounds/WRONGANSWER14.png");
+    background-color: #38B6FF;
+}
+
+.wronganswer15 {
+    background-image: url("../images/backgrounds/WRONGANSWER15.png");
+    background-color: #38B6FF;
+}
+
+.wronganswer16 {
+    background-image: url("../images/backgrounds/WRONGANSWER16.png");
+    background-color: #38B6FF;
+}
+
+.wronganswer17 {
+    background-image: url("../images/backgrounds/WRONGANSWER17.png");
+    background-color: #38B6FF;
+}
+
+.wronganswer18 {
+    background-image: url("../images/backgrounds/WRONGANSWER18.png");
+    background-color: #38B6FF;
+}
+
+.wronganswer19 {
+    background-image: url("../images/backgrounds/WRONGANSWER19.png");
+    background-color: #38B6FF;
+}
+
+.wronganswer20 {
+    background-image: url("../images/backgrounds/WRONGANSWER20.png");
+    background-color: #38B6FF;
+}
+
+/* CREDITS */
+
+.creditsVanessa {
+    background-image: url("../images/backgrounds/CREDITS\ VANESSA.png");
+    background-size: contain;
+    background-color: #38B6FF;
+}
+
+.creditsCarlos {
+    background-image: url("../images/backgrounds/CREDITS\ CARLOS.png");
+    background-size: contain;
+    background-color: #38B6FF;
+}
+
+.creditsGustavo {
+    background-image: url("../images/backgrounds/CREDITS\ GUSTAVO.png");
+    background-size: contain;
+    background-color: #38B6FF;
+}
+
+/* RULES */
+
+.rules1 {
+    background-image: url("../images/backgrounds/RULES\ 1.png");
+    background-size: contain;
+    background-color: #38B6FF;
+}
+
+.rules2 {
+    background-image: url("../images/backgrounds/RULES\ 2.png");
+    background-size: contain;
+    background-color: #38B6FF;
+}
+
+/* WINNER- THE END */
+
+.winner {
+    background-image: url("../images/backgrounds/WINNER.png");
+    background-size: cover;
+    background-color: #38B6FF;
+}
+
