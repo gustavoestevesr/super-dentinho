@@ -244,20 +244,20 @@ var questions = [
         title: "Como deve ser a escovinha dental?",
         choices: ["Dura, e com a cabeça da escova pequena.", "Macia, e com a cabeça da escova pequena."],
         answer: "Macia, e com a cabeça da escova pequena.",
-        correctAnswerExplanation: "Parabéns !!Isso mesmo você está indo muito bem, a escova dental deve sempre ser pequena e macia para conseguir limpar todos os cantinhos do dente, sem machucar.",
+        correctAnswerExplanation: "Parabéns!! Isso mesmo você está indo muito bem, a escova dental deve sempre ser pequena e macia para conseguir limpar todos os cantinhos do dente, sem machucar.",
         wrongAnswerExplanation: "Incorreta !A escovinha sempre deve ser pequena e macia  para conseguir limpar todos os cantinhos do dente ,sem machucar."
     },
     {
         title: "A pasta de dental e uma grande amiga da escovinha, ela precisa de flúor para manter o dentinho longe das cáries?",
-        choices: ["sim, precisa.", "Não, precisa."],
+        choices: ["Sim, precisa.", "Não, precisa."],
         answer: "Sim, precisa.",
         correctAnswerExplanation: "Correta, todas as pastas precisam de flúor para combater o bichinho da cárie, e manter o esmalte forte .( bichinho cárie, flúor caindo no dentinho)gif",
         wrongAnswerExplanation: "Incorreta, sem flúor as pastas não ajudarão os dentinhos contras as cáries. (dentinho lutando contra a cárie)"
     },
     {
         title: "E a quantidade de pasta para colocar para idade de vocês?",
-        choices: ["A quantidade vai de um lado ao outro da escova (foto mandada da pasta em toda a escova)", "A quantidade e relativa a um grão de ervilha"],
-        answer: "A quantidade e relativa a um grão de ervilha",
+        choices: ["A quantidade vai de um lado ao outro da escova.", "A quantidade e relativa a um grão de ervilha."],
+        answer: "A quantidade e relativa a um grão de ervilha.",
         correctAnswerExplanation: "Acertou!!! a pasta deve ser colocada na idade de vocês, do mesmo tamanho de um carocinho de ver ilha!! ( foto de uma ervilha)",
         wrongAnswerExplanation: "Errou !!! a pasta deve ser colocada na idade de vocês ,do mesmo tamanho de um carocinho de ver ilha!! ( foto de uma ervilha)"
     },
@@ -611,15 +611,9 @@ async function goToQuestion(slotSelectedFromUSer) {
 
 function verifyQuestion(userChoice) {
 
-    alert(`${numberQuestion}`)
-
     let answerUser = userChoice === "optionButton1" ? questions[numberQuestion].choices[0] : questions[numberQuestion].choices[1]
 
-    alert(`${userChoice}`)
-
     let statusAnswerUser = questions[numberQuestion].answer === answerUser ? true : false
-
-    alert(`${statusAnswerUser}`)
 
     feedbackAnswer(statusAnswerUser)
 }
