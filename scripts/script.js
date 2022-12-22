@@ -270,35 +270,35 @@ var questions = [
     },
     {
         title: "A massinha branca que fica sobre os dentes, precisam ser removidas com a escovação?",
-        choices: ["Sim, caso não seja removida ela poderá causar a cárie ou doença na gengiva", "Não ,essa massinha é a pasta de dente que ficou no dente.(foto de varias bichinhos no dente, escovando eles somem)"],
-        answer: "Sim, caso não seja removida ela poderá causar a cárie ou doença na gengiva",
+        choices: ["Sim, caso não seja removida ela poderá causar a cárie ou doença na gengiva.", "Não ,essa massinha é a pasta de dente que ficou no dente.(foto de varias bichinhos no dente, escovando eles somem)"],
+        answer: "Sim, caso não seja removida ela poderá causar a cárie ou doença na gengiva.",
         correctAnswerExplanation: "Correta! Essa massinha e devido a não escovação correta é ela que tem várias bactérias e pode causar a cárie e gengivite (doença que causa inflamação, vermelhão, dor e sangramento na gengiva)",
         wrongAnswerExplanation: "Errada! Não é pasta não!! Essa massinha e devido a não escovação correta é ela que tem várias bactérias e pode causar a cárie ou gengivite (doença que causa inflamação, vermelhão, dor e sangramento na gengiva)"
     },
     {
         title: "O fio dental é usado antes ou depois da escovação?",
-        choices: ["Depois da escovação", "Antes da escovação"],
-        answer: "Antes da escovação",
+        choices: ["Depois da escovação.", "Antes da escovação."],
+        answer: "Antes da escovação.",
         correctAnswerExplanation: "Isso aí!! Muito bem sempre antes da escovação passamos o fio dental",
         wrongAnswerExplanation: "Errou! ( carinha de triste) sempre antes da escovação passamos o fio dental"
     },
     {
         title: "Alimentos cariogênicos são aqueles que causam cárie. Eles são:",
-        choices: ["Balas, chocolates, refrigerantes", "Frutas, legumes e verduras."],
-        answer: "Balas, chocolates, refrigerantes",
+        choices: ["Balas, chocolates, refrigerantes.", "Frutas, legumes e verduras."],
+        answer: "Balas, chocolates, refrigerantes.",
         correctAnswerExplanation: "Isso, as balas, chocolates são ricos em açúcares por isso causam cárie.",
         wrongAnswerExplanation: "Esses alimentos não são cariogênicos, ou seja, eles não causam a cárie, e ainda contribuem para saúde de uma forma geral prevenindo diabetes, obesidade e hipertensão."
     },
     {
         title: "Os alimentos autolimpantes são aqueles, que limpam os dentes eles podem ser:",
-        choices: ["Geleias e chicletes", "Maças e cenouras"],
-        answer: "Maças e cenouras",
+        choices: ["Geleias e chicletes.", "Maças e cenouras."],
+        answer: "Maças e cenouras.",
         correctAnswerExplanation: "Sim, eles limpam as faces dos dentes ,contribuindo para uma gengiva saudável",
         wrongAnswerExplanation: "Não, pelo contrário esses alimentos agarram nos dentes"
     },
     {
         title: "A língua precisa também ser escovada em todas as escovações do dente?",
-        choices: ["Uma vez ao dia é o suficiente", "Sim, todas as escovações precisamos escovar a língua(língua sendo limpa)"],
+        choices: ["Uma vez ao dia é o suficiente.", "Sim, todas as escovações precisamos escovar a língua(língua sendo limpa)"],
         answer: "Sim, todas as escovações precisamos escovar a língua(língua sendo limpa)",
         correctAnswerExplanation: "Sim!!!! A língua assim como os dentes ,precisa de cuidados ,todas as vezes que escovamos os dentes ,precisamos escovar a língua também .",
         wrongAnswerExplanation: "Errada! A língua assim como os dentes, precisa de cuidados ,todas as vezes que escovamos os dentes ,precisamos escovar a língua também"
@@ -321,22 +321,22 @@ var questions = [
         title: "Como os açúcares atacam o dente e formam as lesões de cárie?",
         choices: ["As bactérias na placa dental destroem o açúcar que é ingerido e o convertem em ácidos, destruindo o esmalte instalando-se a cárie.", "As bactérias na placa dental  colaboram com o dente ,destruindo o esmalte instalando-se a cárie."],
         answer: "As bactérias na placa dental destroem o açúcar que é ingerido e o convertem em ácidos, destruindo o esmalte instalando-se a cárie.",
-        correctAnswerExplanation: "correto!!!  As bactérias na placa dental destroem o açúcar que é ingerido e o convertem em ácidos, destruindo o esmalte instalando-se a cárie. ( cárie comendo o dente)",
+        correctAnswerExplanation: "Correto!!!  As bactérias na placa dental destroem o açúcar que é ingerido e o convertem em ácidos, destruindo o esmalte instalando-se a cárie. ( cárie comendo o dente)",
         wrongAnswerExplanation: "Não, não!! As bactérias na placa dental, NÃO colaboram com o dente elas destroem o esmalte instalando-se a cárie."
     },
     {
         title: "A última escovação do dia precisa:",
-        choices: ["Ser supervisionada por um responsável", "não precisa ser supervisionada por um responsável"],
-        answer: "Ser supervisionada por um responsável",
+        choices: ["Ser supervisionada por um responsável.", "Não precisa ser supervisionada por um responsável."],
+        answer: "Ser supervisionada por um responsável.",
         correctAnswerExplanation: "Isso aí! sim, a escovação da noite é a mais importante e precisa ser supervisionada por um responsável, para ver se foi feito da maneira correta.",
         wrongAnswerExplanation: "Precisa sim!! A supervisão e para que o responsável verifique se foi realizada de maneira satisfatória a escovação."
     },
     {
         title: "Por que alimentos como macarrão, hambúrguer e pizzas também precisam ser evitados para manutenção da saúde bucal, e da saúde de uma forma geral?",
-        choices: ["Esses alimentos são ricos em carboidratos e depois se transformam em açúcares no nosso corpo.", "esses alimentos são ricos em proteínas e depois se transformam em açúcares no nosso corpo."],
+        choices: ["Esses alimentos são ricos em carboidratos e depois se transformam em açúcares no nosso corpo.", "Esses alimentos são ricos em proteínas e depois se transformam em açúcares no nosso corpo."],
         answer: "Esses alimentos são ricos em carboidratos e depois se transformam em açúcares no nosso corpo.",
-        correctAnswerExplanation: "",
-        wrongAnswerExplanation: ""
+        correctAnswerExplanation: "Correto, esses alimentos depois se transformam em açúcares e potencializam o aparecimento da cárie.",
+        wrongAnswerExplanation: "Errado, as proteínas não se transformação em açúcares !Elas são excelentes para a saúde de uma forma geral."
     },
     {
         title: "Antibiótico faz aparecer cárie?",
