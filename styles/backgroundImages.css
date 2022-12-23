@@ -1,3 +1,9 @@
+.rotatescreen {
+    background-image: url("../images/backgrounds/ROTATESCREEN.png");
+    background-color: #38B6FF;
+    background-size: contain;
+}
+
 .start {
     background-image: url("../images/backgrounds/START.png");
     background-color: #38B6FF;

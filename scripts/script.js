@@ -7,6 +7,7 @@ let sectionAnswer = document.querySelector('#answer')
 let sectionApresentation = document.querySelector('#apresentation')
 let sectionRules = document.querySelector('#rules')
 let sectionVictory = document.querySelector('#victory')
+let sectionRotateScreen = document.querySelector('#rotateScreen')
 
 
 // BTNs
@@ -52,7 +53,7 @@ let questionSlot20 = document.querySelector('img#q20')
 let numberQuestion = 0
 
 // INITIALIZE
-sectionMenu.style.display = 'flex'
+sectionMenu.style.display = 'none'
 sectionCredits.style.display = 'none'
 sectionBoardgame.style.display = 'none'
 sectionQuestion.style.display = 'none'
@@ -60,12 +61,10 @@ sectionAnswer.style.display = 'none'
 sectionApresentation.style.display = 'none'
 sectionRules.style.display = 'none'
 sectionVictory.style.display = 'none'
+sectionRotateScreen.style.display = 'none'
 
 // DEFINE THE FIRST SCREEN
-document.body.classList.add("start");
-
-// // DEFINE THE FIRST POSITION
-// superDentinhoBoardGame.classList.add("p1")
+// document.body.classList.add("start");
 
 // DEFINE THE FIRST ACTIVE SLOT QUESTION
 questionSlot1.classList.add("questionSlotActive")
@@ -101,8 +100,6 @@ btnPlay.addEventListener("click", function () {
     document.body.classList.add("apresentation")
 
     btnPlay.style.display = 'none'
-
-    displayApresentationGame()
 
     playBackgroundSound()
 });
@@ -340,24 +337,24 @@ var questions = [
     },
     {
         title: "Antibiótico faz aparecer cárie?",
-        choices: ["Sim, sempre que a criança faz uso de antibiótico ela faz aparecer a cárie", "Não, ele não faz aparecer cárie."],
+        choices: ["Sim, sempre que a criança faz uso de antibiótico ela faz aparecer a cárie.", "Não, ele não faz aparecer cárie."],
         answer: "Não, ele não faz aparecer cárie.",
-        correctAnswerExplanation: "correta, o antibiótico não tem a capacidade de fazer aparecer a doença cárie. O que determina a instalação da cárie é o consumo excessivo de açúcares e falta de escovação correta!",
-        wrongAnswerExplanation: "incorreta, o que determina a instalação da cárie é o consumo excessivo de açúcares e falta de escovação correta!"
+        correctAnswerExplanation: "Correta, o antibiótico não tem a capacidade de fazer aparecer a doença cárie. O que determina a instalação da cárie é o consumo excessivo de açúcares e falta de escovação correta!",
+        wrongAnswerExplanation: "Incorreta, o que determina a instalação da cárie é o consumo excessivo de açúcares e falta de escovação correta!"
     },
     {
         title: "A “massinha branca na parede do dente” é chamada de biofilme dental, ela pode ocasionar o aparecimento de uma doença na gengiva que faz sangra, ela se chama?",
-        choices: ["Gengivite", "Cárie"],
-        answer: "Gengivite",
-        correctAnswerExplanation: "correta, gengivite é uma doença que pode ser ocasionada pela falta de uma escovação correta, instalada pelo acúmulo do biofilme que gera uma inflamação na gengiva faz sangra e doer",
-        wrongAnswerExplanation: "a doença cárie não sangra, mas doe e assim como a gengivite pode causar a perda do dentinho."
+        choices: ["Gengivite.", "Cárie."],
+        answer: "Gengivite.",
+        correctAnswerExplanation: "Correta, gengivite é uma doença que pode ser ocasionada pela falta de uma escovação correta, instalada pelo acúmulo do biofilme que gera uma inflamação na gengiva faz sangra e doer.",
+        wrongAnswerExplanation: "A doença cárie não sangra, mas doe e assim como a gengivite pode causar a perda do dentinho."
     },
     {
         title: "É obrigatório o uso de enxaguante bucal?",
-        choices: ["Sim", "Não"],
-        answer: "Não",
-        correctAnswerExplanation: "correto, não e obrigatório mas é eficiente sua utilização é aconselhado o enxaguante que contenha flúor em sua composição",
-        wrongAnswerExplanation: "incorreto, não é obrigatório, mas é eficiente sua utilização é aconselhado o enxaguante que contenha flúor em sua composição."
+        choices: ["Sim.", "Não."],
+        answer: "Não.",
+        correctAnswerExplanation: "Correto, não e obrigatório mas é eficiente sua utilização é aconselhado o enxaguante que contenha flúor em sua composição.",
+        wrongAnswerExplanation: "Incorreto, não é obrigatório, mas é eficiente sua utilização é aconselhado o enxaguante que contenha flúor em sua composição."
     },
     {
         title: "Qual a importância desse jogo?",

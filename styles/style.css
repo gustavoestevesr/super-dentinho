@@ -360,6 +360,18 @@ p#questionText.apresentationText {
     left: 36vw; 
 }  
 
+/* @media screen and (orientation:portrait) {
+    #sectionRotateScreen {
+        visibility: flex;
+    }
+}
+
+@media screen and (orientation:landscape) {
+    #sectionRotateScreen {
+        visibility: none;
+    }
+} */
+
 @media screen and (max-width: 915px) {
 
     #superDentinhoBoardGame {
