@@ -16,8 +16,8 @@
     position: fixed;
     top: 2.5vw;
     left: 2.5vw;
-    width: 8vw;
-    height: 8vw;
+    width: 7vw;
+    height: 7vw;
     cursor: pointer;
     animation: zoom-in-zoom-out 1s ease infinite;
     z-index: 10;
@@ -28,8 +28,8 @@
     position: fixed;
     bottom: 2vw;
     right: 2vw;
-    width: 5vw;
-    height: 5vw;
+    width: 7vw;
+    height: 7vw;
     cursor: pointer;
     animation: zoom-in-zoom-out 1s ease infinite;
     z-index: 10;

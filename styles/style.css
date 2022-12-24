@@ -337,27 +337,27 @@ p#questionText.apresentationText {
 
 .p16 {
     bottom: 61vh;
-    left: 77vw;  
+    left: 76vw;  
 }
 
 .p17 {
     bottom: 76vh;
-    left: 70vw; 
+    left: 65vw; 
 }
 
 .p18 {
-    bottom: 77vh;
-    left: 58vw; 
+    bottom: 76vh;
+    left: 53vw; 
 }
 
 .p19 {
-    bottom: 77vh;
-    left: 47vw; 
+    bottom: 76vh;
+    left: 40.5vw; 
 }
 
 .p20 {
-    bottom: 77vh;
-    left: 36vw; 
+    bottom: 76vh;
+    left: 28vw; 
 }  
 
 /* @media screen and (orientation:portrait) {
@@ -372,11 +372,11 @@ p#questionText.apresentationText {
     }
 } */
 
-@media screen and (max-width: 915px) {
+@media screen and (max-width: 600px) {
 
     #superDentinhoBoardGame {
         bottom: 5.5vw;
-        left: 23vw;
+        left: 20vw;
     }
 
     .p1 {
@@ -400,12 +400,12 @@ p#questionText.apresentationText {
     }
     
     .p5 {
-        bottom: 30vh;
+        bottom: 29.5vh;
         left: 76vw;
     }
     
     .p6 {
-        bottom: 29vh;
+        bottom: 27vh;
         left: 62.5vw;
     }
     
@@ -455,28 +455,28 @@ p#questionText.apresentationText {
     }
     
     .p16 {
-        bottom: 63.5vh;
-        left: 82.5vw;  
+        bottom: 64vh;
+        left: 83vw;  
     }
     
     .p17 {
         bottom: 79vh;
-        left: 74.5vw; 
+        left: 70vw; 
     }
     
     .p18 {
         bottom: 79vh;
-        left: 60.5vw; 
+        left: 55vw; 
     }
     
     .p19 {
-        bottom: 78.5vh;
-        left: 47vw; 
+        bottom: 78vh;
+        left: 39.5vw; 
     }
     
     .p20 {
-        bottom: 78.5vh;
-        left: 34vw; 
+        bottom: 78vh;
+        left: 24.5vw; 
     }  
 }
 

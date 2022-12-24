@@ -177,7 +177,7 @@ function victory() {
     sectionVictory.style.display = 'flex'
 
     document.body.classList.remove("boardgame")
-    document.body.classList.add("victory")
+    document.body.classList.add(".winner")
 };
 
 btnBackFromQuestionToBoardgame.addEventListener("click", function () {
@@ -589,8 +589,9 @@ function getOffset(el) {
 
 async function goToQuestion(slotSelectedFromUSer) {
 
-    if (numberQuestion === questions.length) {
+    if (numberQuestion === 1) {
         victory()
+        return
     }
 
     if (slotSelectedFromUSer === numberQuestion) {

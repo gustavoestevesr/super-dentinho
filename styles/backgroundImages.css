@@ -385,7 +385,7 @@
 
 .winner {
     background-image: url("../images/backgrounds/WINNER.png");
-    background-size: cover;
+    background-size: contain;
     background-color: #38B6FF;
 }
 
