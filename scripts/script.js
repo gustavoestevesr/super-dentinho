@@ -173,11 +173,14 @@ btnBackFromCreditsToApresentation.addEventListener("click", function () {
 });
 
 function victory() {
+    start();
+    stop();
+
     sectionBoardgame.style.display = 'none'
     sectionVictory.style.display = 'flex'
 
     document.body.classList.remove("boardgame")
-    document.body.classList.add(".winner")
+    document.body.classList.add("winner")
 };
 
 btnBackFromQuestionToBoardgame.addEventListener("click", function () {
@@ -589,7 +592,7 @@ function getOffset(el) {
 
 async function goToQuestion(slotSelectedFromUSer) {
 
-    if (numberQuestion === 1) {
+    if (numberQuestion === questions.length) {
         victory()
         return
     }

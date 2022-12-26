@@ -1,7 +1,7 @@
 .rotatescreen {
     background-image: url("../images/backgrounds/ROTATESCREEN.png");
     background-color: #38B6FF;
-    background-size: contain;
+    background-size: cover;
 }
 
 .start {
@@ -385,7 +385,7 @@
 
 .winner {
     background-image: url("../images/backgrounds/WINNER.png");
-    background-size: contain;
+    background-size: cover;
     background-color: #38B6FF;
 }
 

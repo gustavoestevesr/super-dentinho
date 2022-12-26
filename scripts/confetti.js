@@ -215,7 +215,7 @@ var confetti = {
 const start = () => {
 	setTimeout(function() {
 		confetti.start()
-	}, 500); // 1000 is time that after 1 second start the confetti ( 1000 = 1 sec)
+	}, 500); // 500 is time that after 0.5 second start the confetti ( 500 = 0.5 sec)
 };
 
 //  Stop
@@ -223,5 +223,5 @@ const start = () => {
 const stop = () => {
 	setTimeout(function() {
 		confetti.stop()
-	}, 5000); // 5000 is time that after 5 second stop the confetti ( 5000 = 5 sec)
+	}, 3000); // 5000 is time that after 5 second stop the confetti ( 3000 = 3 sec)
 };
