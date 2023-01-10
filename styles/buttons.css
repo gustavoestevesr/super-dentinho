@@ -6,7 +6,7 @@
     img#btnPlay.btnMenu {
         top: 30vw;
         left: 26vw;
-    } 
+    }   
 }
 
 #btnBackFromRulesToApresentation,
@@ -40,9 +40,16 @@
     position: fixed;
     width: 9vw;
     height: 9vw;
-    animation: zoom-in-zoom-out 1s ease infinite;
+    /* animation: zoom-in-zoom-out 1s ease infinite; */
     cursor: pointer;
     z-index: 20;
+}
+
+.fingerPressing {
+    position: fixed;
+    width: 4vw;    
+    z-index: 21;
+    animation: zoom-out-zoom-in 1s ease infinite; 
 }
 
 #btnPlay {

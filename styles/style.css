@@ -69,13 +69,13 @@ section {
 
 #optionButton1 {
     top: 52vh;
-    left: 28vw;
+    left: 30vw;
     cursor: pointer;
 }
 
 #optionButton2 {
     top: 52vh;
-    left: 66vw;
+    left: 60vw;
     cursor: pointer;
 }
 
@@ -250,12 +250,11 @@ p#questionText.apresentationText {
     animation: bounce 6s ease infinite;
 }
 
-
 /* SLOTS OF QUESTIONS - START */
 
 .questionSlot,
 .optionButton {
-    width: 10vw;
+    width: 15vw;
     position: fixed;
     z-index: 10;
 }
@@ -519,6 +518,20 @@ p#questionText.apresentationText {
 
     100% {
         transform: scale(1, 1);
+    }
+}
+
+@keyframes zoom-out-zoom-in {
+    0% {
+        transform: scale(1.2, 1.2);
+    }
+
+    50% {
+        transform: scale(1, 1);
+    }
+
+    100% {
+        transform: scale(1.2, 1.2);
     }
 }
 

@@ -16,6 +16,9 @@ async function changeOrientationBackgroundImage() {
     document.querySelector('#menu').style.display = "flex"
     document.body.classList.add("start");
 
+    document.querySelector('#fingerPressing').style.display = 'block'
+    document.querySelector('#fingerPressing').style.top = getOffset(document.querySelector('img#btnPlay.btnMenu')).top + 60 + 'px';
+    document.querySelector('#fingerPressing').style.left = getOffset(document.querySelector('img#btnPlay.btnMenu')).left + 60 + 'px';
 }
 
 changeOrientationBackgroundImage()
