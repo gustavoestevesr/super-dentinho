@@ -24,9 +24,7 @@
     </style>
 </head>
 
-<body>
-
-    <img src="images/finger/finger pressing.png" alt="" class="fingerPressing" id="fingerPressing">
+<body>    
 
     <section id="rotateScreen">
         
@@ -34,26 +32,39 @@
 
     <section id="menu">        
         <img id="title" src="images/texts/TITLE.png" alt="">
-        <img class="btnMenu" id="btnPlay" src="images/buttons/PLAY.png" alt="">
         <img id="superDentinhoStart" src="images/characters/SUPER HAPPY TOOTH.gif" alt="">
+
+        <img class="button" id="btnPlay" src="images/buttons/PLAY.png" alt="">
+        <img src="images/finger/finger pressing.png" alt="" class="fingerPressing" id="fingerPressingMenu">
+
+        <div class="creative-common">
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img alt="Licença Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />Este obra está licenciado com uma Licença <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Atribuição-NãoComercial-CompartilhaIgual 4.0 Internacional</a>
+        </div>
     </section>
 
     <section id="apresentation">
         <img id="superDentinhoApresentacao" src="images/characters/SUPER HAPPY TOOTH SPEAKING.gif" alt="">
 
-        <!-- btns -->
-        <img id="btnContinue" class="btnMenu" src="images/buttons/PLAY.png" alt="">
-        <img id="btnRules" class="btnMenu" src="images/buttons/RULE.png" alt="">
-        <img id="btnCredits" class="btnMenu" src="images/buttons/CREDITS.png" alt="">
-        <img id="btnExit" class="btnMenu" src="images/buttons/EXIT.png" alt="">
+        <img src="images/finger/finger pressing.png" alt="" class="fingerPressing" id="fingerPressingApresentation">
+
+        <!-- btns -->        
+        <img id="btnRules" class="button" src="images/buttons/RULE.png" alt="">
+        <img id="btnCredits" class="button" src="images/buttons/CREDITS.png" alt="">      
+        <img id="btnContinue" class="button" src="images/buttons/PLAY.png" alt="">  
     </section>
 
     <section id="boardgame">
+        <img src="images/finger/finger pressing.png" alt="" class="fingerPressing" id="fingerPressingBoardgame">
+
         <!-- btns -->
         <img id="btnBackFromBoardgameToMenu" src="images/buttons/BACK.png" alt="">        
 
         <img class="questionSlot" id="q1" src="images/buttons/BUTTON.png" alt="" onclick="goToQuestion(0)">
+        
+        <!-- <iframe class="video_explicacao_escovacao" width="560" height="315" src="https://www.youtube.com/embed/LLX8uFlWLDA?start=44" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
         <img class="questionSlot" id="q2" src="images/buttons/BUTTON.png" alt="" onclick="goToQuestion(1)">
+        <!-- <iframe class="video_explicacao_escovacao" width="560" height="315" src="https://www.youtube.com/embed/LLX8uFlWLDA?start=58" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+
         <img class="questionSlot" id="q3" src="images/buttons/BUTTON.png" alt="" onclick="goToQuestion(2)">
         <img class="questionSlot" id="q4" src="images/buttons/BUTTON.png" alt="" onclick="goToQuestion(3)">
         <img class="questionSlot" id="q5" src="images/buttons/BUTTON.png" alt="" onclick="goToQuestion(4)">
@@ -78,12 +89,14 @@
     </section>
 
     <section id="rules">
+        <img src="images/finger/finger pressing.png" alt="" class="fingerPressing" id="fingerPressingRules">
         <!-- btns -->
         <img id="btnBackFromRulesToApresentation" src="images/buttons/BACK.png" alt="">
         <img id="btnNextRule" src="images/buttons/NEXT.png" alt="" onclick="nextRule()">
     </section>
 
     <section id="credits">
+        <img src="images/finger/finger pressing.png" alt="" class="fingerPressing" id="fingerPressingCredits">
         <!-- btns -->
         <img id="btnBackFromCreditsToApresentation" src="images/buttons/BACK.png" alt="">
         <img id="btnNextCredit" src="images/buttons/NEXT.png" alt="" onclick="nextAuthor()">
@@ -94,6 +107,9 @@
     </section>
 
     <section id="question">        
+        <img src="images/finger/finger pressing.png" alt="" class="fingerPressing" id="fingerPressingQuestion1">
+        <img src="images/finger/finger pressing.png" alt="" class="fingerPressing" id="fingerPressingQuestion2">
+
         <img id="btnBackFromQuestionToBoardgame" src="images/buttons/BACK.png" alt="">
 
         <img class="optionButton" id="optionButton1" src="images/buttons/BUTTON.png" alt=""
@@ -104,6 +120,7 @@
     </section>
 
     <section id="answer">        
+        <img src="images/finger/finger pressing.png" alt="" class="fingerPressing" id="fingerPressingAnswer">
         <img id="btnNextFromToBoardgame" src="images/buttons/NEXT.png" alt="">        
     </section>
 
@@ -117,6 +134,7 @@
 
     <!-- Script -->
     <script src="scripts/script.js"></script>
+    <script src="scripts/navigationScreens.js"></script>
     <script src="scripts/apresentationCredits.js"></script>
     <script src="scripts/apresentationRules.js"></script>    
     <script src="scripts/confetti.js"></script>

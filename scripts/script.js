@@ -9,18 +9,25 @@ let sectionRules = document.querySelector('#rules')
 let sectionVictory = document.querySelector('#victory')
 let sectionRotateScreen = document.querySelector('#rotateScreen')
 
+// BTNs Screens
+let btnPlay = document.querySelector('img#btnPlay.button')
+let btnCredits = document.querySelector('img#btnCredits.button')
+let btnContinue = document.querySelector('img#btnContinue.button')
+let btnRules = document.querySelector('img#btnRules.button')
 
-// BTNs
-let btnPlay = document.querySelector('img#btnPlay')
-let btnCredits = document.querySelector('#btnCredits')
-let btnExit = document.querySelector('#btnExit')
-let btnContinue = document.querySelector('#btnContinue')
-let btnRules = document.querySelector('#btnRules')
+// BTNs Back
 let btnBackFromRulesToApresentation = document.querySelector('#btnBackFromRulesToApresentation')
 let btnBackFromCreditsToApresentation = document.querySelector('#btnBackFromCreditsToApresentation')
 let btnBackFromQuestionToBoardgame = document.querySelector('#btnBackFromQuestionToBoardgame')
 let btnNextFromToBoardgame = document.querySelector('#btnNextFromToBoardgame')
 let btnBackFromBoardgameToMenu = document.querySelector('#btnBackFromBoardgameToMenu')
+
+// BTNs Next
+let btnNextCredit = document.querySelector('img#btnNextCredit')
+let btnNextRule = document.querySelector('img#btnNextRule')
+
+// License Creative Commons
+let creativeCommon = document.querySelector('.creative-common')
 
 //CHARACTER
 let superDentinhoBoardGame = document.querySelector('#superDentinhoBoardGame')
@@ -51,6 +58,13 @@ let questionSlot20 = document.querySelector('img#q20')
 // VARS
 let numberQuestion = 0
 
+// FINGERS
+let fingerPressingMenu = document.querySelector('img#fingerPressingMenu.fingerPressing')
+let fingerPressingApresentation = document.querySelector('img#fingerPressingApresentation.fingerPressing')
+let fingerPressingRules = document.querySelector('img#fingerPressingRules.fingerPressing')
+let fingerPressingCredits = document.querySelector('img#fingerPressingCredits.fingerPressing')
+let fingerPressingBoardgame = document.querySelector('img#fingerPressingBoardgame.fingerPressing')
+
 // INITIALIZE
 sectionMenu.style.display = 'none'
 sectionCredits.style.display = 'none'
@@ -61,12 +75,6 @@ sectionApresentation.style.display = 'none'
 sectionRules.style.display = 'none'
 sectionVictory.style.display = 'none'
 sectionRotateScreen.style.display = 'none'
-
-// Escondendo o dedo
-document.querySelector('#fingerPressing').style.display = 'none'
-
-// DEFINE THE FIRST ACTIVE SLOT QUESTION
-// questionSlot1.classList.add("questionSlotActive")
 
 // DEFINE THE OTHERS SLOT QUESTION POSITIONS
 questionSlot1.classList.add("p1")
@@ -91,50 +99,21 @@ questionSlot18.classList.add("p18")
 questionSlot19.classList.add("p19")
 questionSlot20.classList.add("p20")
 
-// NAVIGATE FROM START PLAY TO APRESENTATION
+// NAVIGATE FROM START TO APRESENTATION
 btnPlay.addEventListener("click", function () {
-    sectionMenu.style.display = 'none'
-    sectionApresentation.style.display = 'flex'
-
-    document.body.classList.remove("background")
-    document.body.classList.add("apresentation")
-
-    btnPlay.style.display = 'none'
-
-    document.querySelector('#fingerPressing').style.display = 'block'
-    document.querySelector('#fingerPressing').style.top = getOffset(document.querySelector('img#btnContinue.btnMenu')).top + 60 + 'px';
-    document.querySelector('#fingerPressing').style.left = getOffset(document.querySelector('img#btnContinue.btnMenu')).left + 60 + 'px';
-
+    navigateFromStartToApresentation()
     playBackgroundSound()
 });
 
 // NAVIGATE FROM APRESENTATION TO CREDITS
 btnCredits.addEventListener("click", function () {
-    sectionApresentation.style.display = 'none'
-    sectionCredits.style.display = 'flex'
-
-    document.body.classList.remove("apresentation")
-    document.body.classList.add("creditsVanessa")
-
-    document.querySelector('#fingerPressing').style.display = 'block'
-    document.querySelector('#fingerPressing').style.top = getOffset(document.querySelector('img#btnNextCredit')).top + 60 + 'px';
-    document.querySelector('#fingerPressing').style.left = getOffset(document.querySelector('img#btnNextCredit')).left + 60 + 'px';
-
+    navigateFromApresentationToCredits()
     displayApresentationCredits()
 });
 
 // NAVIGATE FROM APRESENTATION TO RULES
 btnRules.addEventListener("click", function () {
-    sectionApresentation.style.display = 'none'
-    sectionRules.style.display = 'flex'
-
-    document.body.classList.remove("background")
-    document.body.classList.add("rules1")
-
-    document.querySelector('#fingerPressing').style.display = 'block'
-    document.querySelector('#fingerPressing').style.top = getOffset(document.querySelector('img#btnNextRule')).top + 60 + 'px';
-    document.querySelector('#fingerPressing').style.left = getOffset(document.querySelector('img#btnNextRule')).left + 60 + 'px';
-
+    navigateFromApresentationToRules()
     displayApresentationRules()
 });
 
@@ -146,9 +125,9 @@ btnContinue.addEventListener("click", function () {
     document.body.classList.remove("apresentation")
     document.body.classList.add("boardgame")
 
-    document.querySelector('#fingerPressing').style.display = 'block'
-    document.querySelector('#fingerPressing').style.top = getOffset(document.querySelector( `img#q1.questionSlot.p1` )).top + 60 + 'px';
-    document.querySelector('#fingerPressing').style.left = getOffset(document.querySelector( `img#q1.questionSlot.p1` )).left + 60 + 'px';
+    // document.querySelector('#fingerPressing').style.display = 'block'
+    // document.querySelector('#fingerPressing').style.top = getOffset(document.querySelector( `img#q1.questionSlot.p1` )).top + 60 + 'px';
+    // document.querySelector('#fingerPressing').style.left = getOffset(document.querySelector( `img#q1.questionSlot.p1` )).left + 60 + 'px';
 });
 
 btnNextFromToBoardgame.addEventListener("click", function () {
@@ -159,9 +138,9 @@ btnNextFromToBoardgame.addEventListener("click", function () {
     document.body.classList.remove(`wronganswer${numberQuestion}`)
     document.body.classList.add("boardgame")  
     
-    document.querySelector('#fingerPressing').style.display = 'block'
-    document.querySelector('#fingerPressing').style.top = getOffset(document.querySelector( `img#q${numberQuestion+1}.questionSlot.p${numberQuestion+1}` )).top + 60 + 'px';
-    document.querySelector('#fingerPressing').style.left = getOffset(document.querySelector( `img#q${numberQuestion+1}.questionSlot.p${numberQuestion+1}` )).left + 60 + 'px';
+    // document.querySelector('#fingerPressing').style.display = 'block'
+    // document.querySelector('#fingerPressing').style.top = getOffset(document.querySelector( `img#q${numberQuestion+1}.questionSlot.p${numberQuestion+1}` )).top + 60 + 'px';
+    // document.querySelector('#fingerPressing').style.left = getOffset(document.querySelector( `img#q${numberQuestion+1}.questionSlot.p${numberQuestion+1}` )).left + 60 + 'px';
 });
 
 btnBackFromBoardgameToMenu.addEventListener("click", function () {
@@ -171,9 +150,9 @@ btnBackFromBoardgameToMenu.addEventListener("click", function () {
     document.body.classList.remove("boardgame")
     document.body.classList.add("apresentation")
 
-    document.querySelector('#fingerPressing').style.display = 'block'
-    document.querySelector('#fingerPressing').style.top = getOffset(document.querySelector('img#btnPlay')).top + 60 + 'px';
-    document.querySelector('#fingerPressing').style.left = getOffset(document.querySelector('img#btnPlay')).left + 60 + 'px';
+    // document.querySelector('#fingerPressing').style.display = 'block'
+    // document.querySelector('#fingerPressing').style.top = getOffset(document.querySelector('img#btnContinue')).top + 60 + 'px';
+    // document.querySelector('#fingerPressing').style.left = getOffset(document.querySelector('img#btnContinue')).left + 60 + 'px';
 });
 
 btnBackFromRulesToApresentation.addEventListener("click", function () {
@@ -184,9 +163,9 @@ btnBackFromRulesToApresentation.addEventListener("click", function () {
     document.body.classList.remove("rules2")
     document.body.classList.add("apresentation")
 
-    document.querySelector('#fingerPressing').style.display = 'block'
-    document.querySelector('#fingerPressing').style.top = getOffset(document.querySelector('img#btnContinue')).top + 60 + 'px';
-    document.querySelector('#fingerPressing').style.left = getOffset(document.querySelector('img#btnContinue')).left + 60 + 'px';
+    // document.querySelector('#fingerPressing').style.display = 'block'
+    // document.querySelector('#fingerPressing').style.top = getOffset(document.querySelector('img#btnContinue')).top + 60 + 'px';
+    // document.querySelector('#fingerPressing').style.left = getOffset(document.querySelector('img#btnContinue')).left + 60 + 'px';
 });
 
 btnBackFromCreditsToApresentation.addEventListener("click", function () {
@@ -198,9 +177,9 @@ btnBackFromCreditsToApresentation.addEventListener("click", function () {
     document.body.classList.remove("creditsGustavo")
     document.body.classList.add("apresentation")    
 
-    document.querySelector('#fingerPressing').style.display = 'block'
-    document.querySelector('#fingerPressing').style.top = getOffset(document.querySelector('img#btnPlay')).top + 60 + 'px';
-    document.querySelector('#fingerPressing').style.left = getOffset(document.querySelector('img#btnPlay')).left + 60 + 'px';
+    // document.querySelector('#fingerPressing').style.display = 'block'
+    // document.querySelector('#fingerPressing').style.top = getOffset(document.querySelector('img#btnContinue')).top + 60 + 'px';
+    // document.querySelector('#fingerPressing').style.left = getOffset(document.querySelector('img#btnContinue')).left + 60 + 'px';
 });
 
 function victory() {
@@ -223,11 +202,6 @@ btnBackFromQuestionToBoardgame.addEventListener("click", function () {
     
     // updateActiveSlotQuestion(numberQuestion-1)
     updateDentinhoPosition(numberQuestion)            
-});
-
-// EXIT THE GAME
-btnExit.addEventListener("click", function() {
-    window.close()
 });
 
 // BACKGROUND SOUND
@@ -618,12 +592,17 @@ function getOffset(el) {
     };
 }
 
+// document.querySelector(".video_explicacao_escovacao").style.display = none
 async function goToQuestion(slotSelectedFromUSer) {
 
     if (numberQuestion === questions.length) {
         victory()
         return
     }
+
+    // if (numberQuestion === 1) { // fase da escovacao
+    //     document.querySelector(".video_explicacao_escovacao").style.display = block
+    // }
 
     if (slotSelectedFromUSer === numberQuestion) {
         updateDentinhoPosition(numberQuestion)
@@ -676,4 +655,10 @@ function feedbackAnswer(statusAnswerUser) {
         document.querySelector('#fingerPressing').style.top = getOffset(document.querySelector('img#btnNextFromToBoardgame')).top + 60 + 'px';
         document.querySelector('#fingerPressing').style.left = getOffset(document.querySelector('img#btnNextFromToBoardgame')).left + 60 + 'px';
     }    
+}
+
+function delay(milliseconds) {
+    return new Promise(resolve => {
+        setTimeout(resolve, milliseconds);
+    });
 }

@@ -2,13 +2,6 @@
     transform: scale(1.1);
 }
 
-@media screen and (max-width: 915px) {
-    img#btnPlay.btnMenu {
-        top: 30vw;
-        left: 26vw;
-    }   
-}
-
 #btnBackFromRulesToApresentation,
 #btnBackFromCreditsToApresentation,
 #btnBackFromQuestionToBoardgame,
@@ -36,11 +29,10 @@
     z-index: 10;
 }
 
-.btnMenu {
+.button {
     position: fixed;
     width: 9vw;
-    height: 9vw;
-    /* animation: zoom-in-zoom-out 1s ease infinite; */
+    height: 9vw;    
     cursor: pointer;
     z-index: 20;
 }
@@ -49,7 +41,7 @@
     position: fixed;
     width: 4vw;    
     z-index: 21;
-    animation: zoom-out-zoom-in 1s ease infinite; 
+    animation: zoom-out-zoom-in 0.5s ease infinite; 
 }
 
 #btnPlay {
@@ -58,8 +50,8 @@
 }
 
 #btnContinue {
-    top: 2vw;
-    right: 3vw;
+    top: 24vw;
+    right: 3vw;    
 }
 
 #btnCredits {
@@ -68,7 +60,7 @@
 }
 
 #btnRules {
-    top: 24vw;
+    top: 2vw;
     right: 3vw;
 }
 

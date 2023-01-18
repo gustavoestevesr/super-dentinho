@@ -5,16 +5,19 @@
     transition: 0.5s;
 }
 
+:root {
+    --primary-color: var(--primary-color);
+}
+
 body {
     display: flex;
     align-items: center;
     justify-content: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: #38B6FF;
+    background-color: var(--primary-color);
     background-position: center;
-    height: 100vh;
- 
+    height: 100vh;    
 }
 
 section {
@@ -39,18 +42,34 @@ section {
     width: 50vw;
 }
 
+a {
+    color: black;
+}
+
+.creative-common {
+    position: fixed;
+    bottom: 1vw;
+    right: 1vw;
+    width: 100vw;
+    max-width: 340px;
+    margin: auto;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    text-align: right;
+}
+
 #ballon {
     top: 0vw;
     left: 20vw;
     width: 62vw;
-    position: fixed;
-    /* animation: bounce 6s ease infinite;     */
+    position: fixed;    
 }
 
 .creator {
     width: 20vh;
 }
-
 
 #numberQuestion {
     font-size: 1.1rem;
@@ -134,9 +153,7 @@ p#questionText.apresentationText {
     position: fixed;
     color: black;
     font-size: 1.6rem;
-    text-align: center;
-    /* animation: bounce 6s ease infinite; */
-
+    text-align: center; 
 }
 
 @media screen and (max-width: 915px) {
@@ -190,15 +207,13 @@ p#questionText.apresentationText {
         width: 60vw;
         text-align: justify;
     }
+
     #title {
         width: 40vw;
         top: 3vw;
         left: 10vw;
-    }
-  
-     
+    }     
 }
-
 
 #tooths {
     position: fixed;
@@ -227,25 +242,23 @@ p#questionText.apresentationText {
     position: fixed;
     bottom: 0vw;
     left: 0vw;
-
     width: 25vw;
     animation: bounce 6s ease infinite;
 }
 
 #superDentinhoStart {
     position: fixed;
-    top: 2.5vw;
+    top: 1vw;
     left: 55vw;
-
     height: 40vw;
     animation: bounce 6s ease infinite;
+    z-index: 2;
 }
 
 #superDentinhoBoardGame {
     position: fixed;
     bottom: 4vw;
     left: 25vw;
-
     width: 10vw;
     animation: bounce 6s ease infinite;
 }
@@ -254,14 +267,15 @@ p#questionText.apresentationText {
 
 .questionSlot,
 .optionButton {
-    width: 15vw;
+    width: 10vw;
     position: fixed;
     z-index: 10;
+    cursor: pointer;
 }
 
 .p1 {
     top: 74vh;
-    left: 40vw;
+    left: 39.5vw;
 }
 
 .p2 {
@@ -359,20 +373,7 @@ p#questionText.apresentationText {
     left: 28vw; 
 }  
 
-/* @media screen and (orientation:portrait) {
-    #sectionRotateScreen {
-        visibility: flex;
-    }
-}
-
-@media screen and (orientation:landscape) {
-    #sectionRotateScreen {
-        visibility: none;
-    }
-} */
-
 @media screen and (max-width: 600px) {
-
     #superDentinhoBoardGame {
         bottom: 5.5vw;
         left: 20vw;

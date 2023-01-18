@@ -1,24 +1,51 @@
-function delay(milliseconds) {
-    return new Promise(resolve => {
-        setTimeout(resolve, milliseconds);
-    });
+/* SEÇÃO DE CÓDIGO PARA DEFINIR POSICAO CORRETA DO OBJETO FINGER, SE FOR PC OU MOBILE */
+
+let distanceFingerTop
+let distanceFingerLeft
+
+function setDistanceFingerTopLeft() {
+    if (isMobile) {
+        distanceFingerTop = 40
+        distanceFingerLeft = 40
+        navigateFromAnyToOrientation()
+    } else {
+        distanceFingerTop = 60
+        distanceFingerLeft = 60
+        navigateFromAnyToMenu()
+    }
 }
 
-async function changeOrientationBackgroundImage() {
-    document.querySelector('#rotateScreen').style.display = "flex"
-    document.body.classList.add("rotatescreen");
+let isMobile
 
-    await delay(4000);
+// VERIFICA SE O DISPOSITIVO É UM PC OU UM CELULAR
+function checkDevice() {
+    if (navigator.userAgent.match(/Android/i)
+        || navigator.userAgent.match(/webOS/i)
+        || navigator.userAgent.match(/iPhone/i)
+        || navigator.userAgent.match(/iPad/i)
+        || navigator.userAgent.match(/iPod/i)
+        || navigator.userAgent.match(/BlackBerry/i)
+        || navigator.userAgent.match(/Windows Phone/i)
+    ) {
+        isMobile = true
+    }
+    else {
+        isMobile = false        
+    }
 
-    document.querySelector('#rotateScreen').style.display = "none"
-    document.body.classList.remove("rotatescreen");
-
-    document.querySelector('#menu').style.display = "flex"
-    document.body.classList.add("start");
-
-    document.querySelector('#fingerPressing').style.display = 'block'
-    document.querySelector('#fingerPressing').style.top = getOffset(document.querySelector('img#btnPlay.btnMenu')).top + 60 + 'px';
-    document.querySelector('#fingerPressing').style.left = getOffset(document.querySelector('img#btnPlay.btnMenu')).left + 60 + 'px';
+    setDistanceFingerTopLeft()
 }
 
-changeOrientationBackgroundImage()
+checkDevice()
+
+/* DETECTAR SE USUARIO AJUSTOU A TELA PARA HORIZONTAL */
+
+let portrait = window.matchMedia("(orientation: portrait)");
+
+screen.orientation.addEventListener("change", function(e) {
+    portrait = window.matchMedia("(orientation: portrait)");
+
+    if ( !portrait.matches ) { // ladscape
+        navigateFromOrientationToMenu()
+    }
+});
