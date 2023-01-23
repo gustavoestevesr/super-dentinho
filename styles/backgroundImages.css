@@ -391,3 +391,9 @@
     background-color: #38B6FF;
 }
 
+.thanks {
+    background-image: url("../images/backgrounds/THANKS.png");
+    background-size: contain;
+    background-color: #38B6FF;
+}
+

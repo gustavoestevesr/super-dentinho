@@ -50,8 +50,8 @@ function navigateFromApresentationToCredits() {
     document.body.classList.remove("apresentation")
     document.body.classList.add("creditsVanessa")
 
-    fingerPressingApresentation.style.top = getOffset(btnNextCredit).top + distanceFingerTop + 'px';
-    fingerPressingApresentation.style.left = getOffset(btnNextCredit).left + distanceFingerLeft + 'px';
+    fingerPressingCredits.style.top = getOffset(btnNextCredit).top + distanceFingerTop + 'px';
+    fingerPressingCredits.style.left = getOffset(btnNextCredit).left + distanceFingerLeft + 'px';
 }
 
 function navigateFromApresentationToRules() {
@@ -63,4 +63,38 @@ function navigateFromApresentationToRules() {
 
     fingerPressingRules.style.top = getOffset(btnNextRule).top + distanceFingerTop + 'px';
     fingerPressingRules.style.left = getOffset(btnNextRule).left + distanceFingerLeft + 'px';
+}
+
+function navigateFromApresentationToBoardgame() {
+    sectionApresentation.style.display = 'none'
+    sectionBoardgame.style.display = 'flex'
+
+    document.body.classList.remove("apresentation")
+    document.body.classList.add("boardgame")
+
+    fingerPressingBoardgame.style.top = getOffset(questionSlot1).top + distanceFingerTop + 'px';
+    fingerPressingBoardgame.style.left = getOffset(questionSlot1).left + distanceFingerLeft + 'px';
+}
+
+function navigateForTheNextQuestionInBoardgame() {
+    sectionAnswer.style.display = 'none'
+    sectionBoardgame.style.display = 'flex'
+    
+    document.body.classList.remove(`correctanswer${numberQuestion-1}`)
+    document.body.classList.remove(`wronganswer${numberQuestion}`)
+    document.body.classList.add("boardgame")      
+
+    fingerPressingBoardgame.style.top = getOffset(document.querySelector( `img#q${numberQuestion+1}.questionSlot.p${numberQuestion+1}` )).top + distanceFingerTop + 'px';
+    fingerPressingBoardgame.style.left = getOffset(document.querySelector( `img#q${numberQuestion+1}.questionSlot.p${numberQuestion+1}` )).left + distanceFingerLeft + 'px';
+}
+
+function navigateFromBoardgameToMenu() {
+    sectionBoardgame.style.display = 'none'
+    sectionApresentation.style.display = 'flex'
+
+    document.body.classList.remove("boardgame")
+    document.body.classList.add("apresentation")
+
+    fingerPressingBoardgame.style.top = getOffset(btnContinue).top + distanceFingerTop + 'px';
+    fingerPressingBoardgame.style.left = getOffset(btnContinue).left + distanceFingerLeft + 'px';
 }

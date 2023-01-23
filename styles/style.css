@@ -269,7 +269,7 @@ p#questionText.apresentationText {
 .optionButton {
     width: 10vw;
     position: fixed;
-    z-index: 10;
+    z-index: 30;
     cursor: pointer;
 }
 

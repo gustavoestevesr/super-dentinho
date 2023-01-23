@@ -7,6 +7,7 @@ let sectionAnswer = document.querySelector('#answer')
 let sectionApresentation = document.querySelector('#apresentation')
 let sectionRules = document.querySelector('#rules')
 let sectionVictory = document.querySelector('#victory')
+let sectionThanks = document.querySelector('#thanks')
 let sectionRotateScreen = document.querySelector('#rotateScreen')
 
 // BTNs Screens
@@ -23,8 +24,8 @@ let btnNextFromToBoardgame = document.querySelector('#btnNextFromToBoardgame')
 let btnBackFromBoardgameToMenu = document.querySelector('#btnBackFromBoardgameToMenu')
 
 // BTNs Next
-let btnNextCredit = document.querySelector('img#btnNextCredit')
-let btnNextRule = document.querySelector('img#btnNextRule')
+let btnNextCredit = document.querySelector('img#btnNextCredit.button')
+let btnNextRule = document.querySelector('img#btnNextRule.button')
 
 // License Creative Commons
 let creativeCommon = document.querySelector('.creative-common')
@@ -33,27 +34,26 @@ let creativeCommon = document.querySelector('.creative-common')
 let superDentinhoBoardGame = document.querySelector('#superDentinhoBoardGame')
 
 //SLOT OF QUESTIONS
-let questionSlot1 = document.querySelector('img#q1')
-let questionSlot2 = document.querySelector('img#q2')
-let questionSlot3 = document.querySelector('img#q3')
-let questionSlot4 = document.querySelector('img#q4')
-let questionSlot5 = document.querySelector('img#q5')
-let questionSlot6 = document.querySelector('img#q6')
-let questionSlot7 = document.querySelector('img#q7')
-let questionSlot8 = document.querySelector('img#q8')
-let questionSlot9 = document.querySelector('img#q9')
-let questionSlot10 = document.querySelector('img#q10')
-
-let questionSlot11 = document.querySelector('img#q11')
-let questionSlot12 = document.querySelector('img#q12')
-let questionSlot13 = document.querySelector('img#q13')
-let questionSlot14 = document.querySelector('img#q14')
-let questionSlot15 = document.querySelector('img#q15')
-let questionSlot16 = document.querySelector('img#q16')
-let questionSlot17 = document.querySelector('img#q17')
-let questionSlot18 = document.querySelector('img#q18')
-let questionSlot19 = document.querySelector('img#q19')
-let questionSlot20 = document.querySelector('img#q20')
+let questionSlot1 = document.querySelector('img#q1.questionSlot')
+let questionSlot2 = document.querySelector('img#q2.questionSlot')
+let questionSlot3 = document.querySelector('img#q3.questionSlot')
+let questionSlot4 = document.querySelector('img#q4.questionSlot')
+let questionSlot5 = document.querySelector('img#q5.questionSlot')
+let questionSlot6 = document.querySelector('img#q6.questionSlot')
+let questionSlot7 = document.querySelector('img#q7.questionSlot')
+let questionSlot8 = document.querySelector('img#q8.questionSlot')
+let questionSlot9 = document.querySelector('img#q9.questionSlot')
+let questionSlot10 = document.querySelector('img#q10.questionSlot')
+let questionSlot11 = document.querySelector('img#q11.questionSlot')
+let questionSlot12 = document.querySelector('img#q12.questionSlot')
+let questionSlot13 = document.querySelector('img#q13.questionSlot')
+let questionSlot14 = document.querySelector('img#q14.questionSlot')
+let questionSlot15 = document.querySelector('img#q15.questionSlot')
+let questionSlot16 = document.querySelector('img#q16.questionSlot')
+let questionSlot17 = document.querySelector('img#q17.questionSlot')
+let questionSlot18 = document.querySelector('img#q18.questionSlot')
+let questionSlot19 = document.querySelector('img#q19.questionSlot')
+let questionSlot20 = document.querySelector('img#q20.questionSlot')
 
 // VARS
 let numberQuestion = 0
@@ -87,7 +87,6 @@ questionSlot7.classList.add("p7")
 questionSlot8.classList.add("p8")
 questionSlot9.classList.add("p9")
 questionSlot10.classList.add("p10")
-
 questionSlot11.classList.add("p11")
 questionSlot12.classList.add("p12")
 questionSlot13.classList.add("p13")
@@ -119,42 +118,20 @@ btnRules.addEventListener("click", function () {
 
 // NAVIGATE FROM APRESENTATION TO BOARDGAME
 btnContinue.addEventListener("click", function () {
-    sectionApresentation.style.display = 'none'
-    sectionBoardgame.style.display = 'flex'
-
-    document.body.classList.remove("apresentation")
-    document.body.classList.add("boardgame")
-
-    // document.querySelector('#fingerPressing').style.display = 'block'
-    // document.querySelector('#fingerPressing').style.top = getOffset(document.querySelector( `img#q1.questionSlot.p1` )).top + 60 + 'px';
-    // document.querySelector('#fingerPressing').style.left = getOffset(document.querySelector( `img#q1.questionSlot.p1` )).left + 60 + 'px';
+    navigateFromApresentationToBoardgame()
 });
 
+// NAVIGATE FROM ACTUAL QUESTION TO THE NEXT QUESTION
 btnNextFromToBoardgame.addEventListener("click", function () {
-    sectionAnswer.style.display = 'none'
-    sectionBoardgame.style.display = 'flex'
-    
-    document.body.classList.remove(`correctanswer${numberQuestion-1}`)
-    document.body.classList.remove(`wronganswer${numberQuestion}`)
-    document.body.classList.add("boardgame")  
-    
-    // document.querySelector('#fingerPressing').style.display = 'block'
-    // document.querySelector('#fingerPressing').style.top = getOffset(document.querySelector( `img#q${numberQuestion+1}.questionSlot.p${numberQuestion+1}` )).top + 60 + 'px';
-    // document.querySelector('#fingerPressing').style.left = getOffset(document.querySelector( `img#q${numberQuestion+1}.questionSlot.p${numberQuestion+1}` )).left + 60 + 'px';
+    navigateForTheNextQuestionInBoardgame()
 });
 
+// NAVIGATE FROM BOARDGAME TO MENU
 btnBackFromBoardgameToMenu.addEventListener("click", function () {
-    sectionBoardgame.style.display = 'none'
-    sectionApresentation.style.display = 'flex'
-
-    document.body.classList.remove("boardgame")
-    document.body.classList.add("apresentation")
-
-    // document.querySelector('#fingerPressing').style.display = 'block'
-    // document.querySelector('#fingerPressing').style.top = getOffset(document.querySelector('img#btnContinue')).top + 60 + 'px';
-    // document.querySelector('#fingerPressing').style.left = getOffset(document.querySelector('img#btnContinue')).left + 60 + 'px';
+    navigateFromBoardgameToMenu()
 });
 
+// NAVIGATE FROM RULES TO APRESENTATION
 btnBackFromRulesToApresentation.addEventListener("click", function () {
     sectionRules.style.display = 'none'
     sectionApresentation.style.display = 'flex'
@@ -191,6 +168,18 @@ function victory() {
 
     document.body.classList.remove("boardgame")
     document.body.classList.add("winner")
+
+    delay(5000)
+
+    thanks()
+};
+
+function thanks() {
+    sectionThanks.style.display = 'flex'
+    sectionVictory.style.display = 'none'
+
+    document.body.classList.remove("winner")
+    document.body.classList.add("thanks")
 };
 
 btnBackFromQuestionToBoardgame.addEventListener("click", function () {
@@ -615,7 +604,7 @@ async function goToQuestion(slotSelectedFromUSer) {
         document.body.classList.remove("background")
         document.body.classList.add(`question${numberQuestion}`)
 
-        document.querySelector('#fingerPressing').style.display = 'none'
+        // document.querySelector('#fingerPressing').style.display = 'none'
     } 
 }
 
@@ -649,7 +638,8 @@ function feedbackAnswer(statusAnswerUser) {
 
         playWrongSound()
                 
-        updateDentinhoPosition(numberQuestion)            
+        // numberQuestion--  
+        updateDentinhoPosition(numberQuestion-1)            
 
         document.querySelector('#fingerPressing').style.display = 'block'
         document.querySelector('#fingerPressing').style.top = getOffset(document.querySelector('img#btnNextFromToBoardgame')).top + 60 + 'px';
