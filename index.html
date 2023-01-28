@@ -31,7 +31,7 @@
     </section>
 
     <section id="menu">        
-        <img id="title" src="images/texts/TITLE.png" alt="">
+        <!-- <img id="title" src="images/texts/TITLE.png" alt=""> -->
         <img id="superDentinhoStart" src="images/characters/SUPER HAPPY TOOTH.gif" alt="">
 
         <img class="button" id="btnPlay" src="images/buttons/PLAY.png" alt="">
@@ -48,16 +48,16 @@
         <img src="images/finger/finger pressing.png" alt="" class="fingerPressing" id="fingerPressingApresentation">
 
         <!-- btns -->        
-        <img id="btnRules" class="button" src="images/buttons/RULE.png" alt="">
-        <img id="btnCredits" class="button" src="images/buttons/CREDITS.png" alt="">      
-        <img id="btnContinue" class="button" src="images/buttons/PLAY.png" alt="">  
+        <img class="button" id="btnRules" src="images/buttons/RULE.png" alt="">
+        <img class="button" id="btnCredits" src="images/buttons/CREDITS.png" alt="">      
+        <img class="button" id="btnContinue" src="images/buttons/PLAY.png" alt="">  
     </section>
 
     <section id="boardgame">
         <img src="images/finger/finger pressing.png" alt="" class="fingerPressing" id="fingerPressingBoardgame">
 
         <!-- btns -->
-        <img id="btnBackFromBoardgameToMenu" src="images/buttons/BACK.png" alt="">        
+        <img class="button" id="btnBackFromBoardgameToMenu" src="images/buttons/BACK.png" alt="">        
 
         <img class="questionSlot" id="q1" src="images/buttons/BUTTON.png" alt="" onclick="goToQuestion(0)">
         
@@ -92,14 +92,14 @@
         <img src="images/finger/finger pressing.png" alt="" class="fingerPressing" id="fingerPressingRules">
         <!-- btns -->
         <img id="btnBackFromRulesToApresentation" src="images/buttons/BACK.png" alt="">
-        <img id="btnNextRule" class="button" src="images/buttons/NEXT.png" alt="" onclick="nextRule()">
+        <img class="button" id="btnNextRule" src="images/buttons/NEXT.png" alt="" onclick="nextRule()">
     </section>
 
     <section id="credits">
         <img src="images/finger/finger pressing.png" alt="" class="fingerPressing" id="fingerPressingCredits">
         <!-- btns -->
         <img id="btnBackFromCreditsToApresentation" src="images/buttons/BACK.png" alt="">
-        <img id="btnNextCredit" class="button" src="images/buttons/NEXT.png" alt="" onclick="nextAuthor()">
+        <img class="button" id="btnNextCredit" src="images/buttons/NEXT.png" alt="" onclick="nextAuthor()">
 
         <!-- txt's -->
         <p class="apresentationText" id="titleApresentationCredits"></p>
@@ -108,6 +108,7 @@
 
     <section id="question">        
         <img src="images/finger/finger pressing.png" alt="" class="fingerPressing" id="fingerPressingQuestion1">
+
         <img src="images/finger/finger pressing.png" alt="" class="fingerPressing" id="fingerPressingQuestion2">
 
         <img id="btnBackFromQuestionToBoardgame" src="images/buttons/BACK.png" alt="">
@@ -121,7 +122,7 @@
 
     <section id="answer">        
         <img src="images/finger/finger pressing.png" alt="" class="fingerPressing" id="fingerPressingAnswer">
-        <img id="btnNextFromToBoardgame" class="button" src="images/buttons/NEXT.png" alt="">        
+        <img class="button" id="btnNextFromToBoardgame" src="images/buttons/NEXT.png" alt="">        
     </section>
 
     <section id="victory">
@@ -143,6 +144,7 @@
     <script src="scripts/apresentationRules.js"></script>    
     <script src="scripts/confetti.js"></script>
     <script src="scripts/orientation.js"></script>
+    <script src="scripts/questions.js"></script>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

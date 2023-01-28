@@ -39,14 +39,56 @@
 
 .fingerPressing {
     position: fixed;
-    width: 4vw;    
+    width: 3vw;    
     z-index: 30;
-    animation: zoom-out-zoom-in 0.5s ease infinite; 
+    animation: zoom-out-zoom-in 1s ease infinite; 
 }
 
 #btnPlay {
-    top: 36vw;
-    left: 25vw;
+    top: 70vh;
+    left: 21vw;
+}
+
+.optionButton {
+    width: 10vw;
+    position: fixed;
+    z-index: 30;
+    cursor: pointer;
+}
+
+#optionButton1 {
+    top: 52vh;
+    left: 30vw;
+    cursor: pointer;
+}
+
+#optionButton2 {
+    top: 52vh;
+    left: 60vw;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 915px) {
+    #btnPlay {
+        top: 70vh;
+        left: 20vw;
+    }
+
+    #option1 {
+        font-size: 1rem;
+        width: 23vw;
+
+        top: 52vh;
+        left: 60vw;
+    }
+
+    #option2 {
+        font-size: 1rem;
+        width: 23vw;
+
+        top: 0vh;
+        left: 0vw;
+    }
 }
 
 #btnContinue {

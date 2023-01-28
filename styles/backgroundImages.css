@@ -5,9 +5,10 @@
 }
 
 .start {
-    background-image: url("../images/backgrounds/START.png");
+    background-image: url("../images/backgrounds/START\ PARCIAL.png");
     background-color: #38B6FF;
-    background-size: cover;
+    background-size: contain;
+    background-position: left;
 }
 
 .apresentation {

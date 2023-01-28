@@ -72,8 +72,8 @@ function navigateFromApresentationToBoardgame() {
     document.body.classList.remove("apresentation")
     document.body.classList.add("boardgame")
 
-    fingerPressingBoardgame.style.top = getOffset(questionSlot1).top + distanceFingerTop + 'px';
-    fingerPressingBoardgame.style.left = getOffset(questionSlot1).left + distanceFingerLeft + 'px';
+    fingerPressingBoardgame.style.top = getOffset(document.querySelector( `img#q${numberQuestion+1}.questionSlot.p${numberQuestion+1}` )).top + distanceFingerTop + 'px';
+    fingerPressingBoardgame.style.left = getOffset(document.querySelector( `img#q${numberQuestion+1}.questionSlot.p${numberQuestion+1}` )).left + distanceFingerLeft + 'px';
 }
 
 function navigateForTheNextQuestionInBoardgame() {
@@ -97,4 +97,80 @@ function navigateFromBoardgameToMenu() {
 
     fingerPressingBoardgame.style.top = getOffset(btnContinue).top + distanceFingerTop + 'px';
     fingerPressingBoardgame.style.left = getOffset(btnContinue).left + distanceFingerLeft + 'px';
+}
+
+function navigateFromRulesToApresentation() {
+    sectionRules.style.display = 'none'
+    sectionApresentation.style.display = 'flex'
+
+    document.body.classList.remove("rules1")
+    document.body.classList.remove("rules2")
+    document.body.classList.add("apresentation")
+
+    fingerPressingRules.style.top = getOffset(btnNextRule).top + distanceFingerTop + 'px';
+    fingerPressingRules.style.left = getOffset(btnNextRule).left + distanceFingerLeft + 'px';
+}
+
+function navigateFromCreditsToApresentation() {
+    sectionCredits.style.display = 'none'
+    sectionApresentation.style.display = 'flex'    
+
+    document.body.classList.remove("creditsVanessa")
+    document.body.classList.remove("creditsCarlos")
+    document.body.classList.remove("creditsGustavo")
+    document.body.classList.add("apresentation") 
+    
+    fingerPressingCredits.style.top = getOffset(btnNextCredit).top + distanceFingerTop + 'px';
+    fingerPressingCredits.style.left = getOffset(btnNextCredit).left + distanceFingerLeft + 'px';
+}
+
+function navigateFromBoardgameToWinner() {
+    sectionBoardgame.style.display = 'none'
+    sectionVictory.style.display = 'flex'
+
+    document.body.classList.remove("boardgame")
+    document.body.classList.add("winner")
+}
+
+function navigateFromWinnerToThanks() {
+    sectionThanks.style.display = 'flex'
+    sectionVictory.style.display = 'none'
+
+    document.body.classList.remove("winner")
+    document.body.classList.add("thanks")
+}
+
+function navigateFromBoardgameToQuestion() {
+    sectionBoardgame.style.display = 'none'
+    sectionQuestion.style.display = 'flex'
+
+    document.body.classList.remove("background")
+    document.body.classList.add(`question${numberQuestion}`)
+
+    fingerPressingQuestion1.style.top = getOffset(btnOption1).top + distanceFingerTop + 'px';
+    fingerPressingQuestion1.style.left = getOffset(btnOption1).left + distanceFingerLeft + 10 + 'px';
+
+    fingerPressingQuestion2.style.top = getOffset(btnOption2).top + distanceFingerTop + 'px';
+    fingerPressingQuestion2.style.left = getOffset(btnOption2).left + distanceFingerLeft + 10 + 'px';
+}
+
+function navigateFromQuestionToAnswer() {
+    sectionAnswer.style.display = 'flex'
+    sectionQuestion.style.display = 'none'
+
+    fingerPressingAnswer.style.top = getOffset(btnNextFromToBoardgame).top + distanceFingerTop + 'px';
+    fingerPressingAnswer.style.left = getOffset(btnNextFromToBoardgame).left + distanceFingerLeft + 'px';
+
+    document.body.classList.remove(`question${numberQuestion}`) 
+}
+
+function navigateFromQuestionToBoardgame() {
+    sectionQuestion.style.display = 'none'
+    sectionBoardgame.style.display = 'flex'
+
+    document.body.classList.remove(`question${numberQuestion}`)
+    document.body.classList.add("boardgame")  
+
+    fingerPressingBoardgame.style.top = getOffset(document.querySelector( `img#q${numberQuestion+1}.questionSlot.p${numberQuestion+1}` )).top + distanceFingerTop + 'px';
+    fingerPressingBoardgame.style.left = getOffset(document.querySelector( `img#q${numberQuestion+1}.questionSlot.p${numberQuestion+1}` )).left + distanceFingerLeft + 'px';
 }
