@@ -38,6 +38,7 @@ let creativeCommon = document.querySelector('.creative-common')
 let superDentinhoBoardGame = document.querySelector('#superDentinhoBoardGame')
 
 //SLOT OF QUESTIONS
+let questionSlot0 = document.querySelector('img#q0.questionSlot')
 let questionSlot1 = document.querySelector('img#q1.questionSlot')
 let questionSlot2 = document.querySelector('img#q2.questionSlot')
 let questionSlot3 = document.querySelector('img#q3.questionSlot')

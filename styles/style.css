@@ -233,7 +233,7 @@ p#questionText.apresentationText {
 #superDentinhoStart {
     position: fixed;
     top: 1vw;
-    left: 55vw;
+    left: 42vw;
     height: 40vw;
     animation: bounce 6s ease infinite;
     z-index: 2;
@@ -254,6 +254,11 @@ p#questionText.apresentationText {
     position: fixed;
     z-index: 30;
     cursor: pointer;
+}
+
+.p1 {
+    top: 74vh;
+    left: 35.5vw;
 }
 
 .p1 {
