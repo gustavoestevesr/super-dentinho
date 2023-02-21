@@ -49,6 +49,12 @@
     left: 21vw;
 }
 
+#btnDoubt {
+    bottom: 3vh;
+    right: 3vw;
+    animation: zoom-out-zoom-in 2s ease infinite; 
+}
+
 .optionButton {
     width: 10vw;
     position: fixed;
@@ -92,21 +98,18 @@
 }
 
 #btnContinue {
-    top: 24vw;
-    right: 3vw;    
+    bottom: 3vh;
+    left: 45vw;
+    width: 11vw;    
+    height: 11vw;
 }
 
 #btnCredits {
-    top: 13vw;
-    right: 3vw;
+    bottom: 4vh;
+    right: 29vw;
 }
 
 #btnRules {
-    top: 2vw;
-    right: 3vw;
-}
-
-#btnExit {
-    top: 35vw;
-    right: 3vw;
+    bottom: 4vh;
+    left: 31vw;
 }

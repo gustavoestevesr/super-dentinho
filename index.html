@@ -15,64 +15,66 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- GOOGLE SEO -->
     <meta name="google-site-verification" content="rrkeXxCRR8Q8tM0eiFrCTdaMrxNIXGvWeGEsK6nGoV0" />
-    
+
     <meta name="title" content="Super Dentinho">
     <meta name="description" content="Jogo de tabuleiro sobre a saúde bucal">
     <meta name="keywords" content="jogo, educacional, tabuleiro, dente, boca, língua, saúde">
     <meta name="robots" content="index, follow">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="language" content="Portuguese">
-    <meta name="author" content="Gustavo Esteves Rocha">    
+    <meta name="author" content="Gustavo Esteves Rocha">
 
     <!-- Google Fonts -->
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');        body {
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+        body {
             font-family: 'Ubuntu', sans-serif;
         }
     </style>
 </head>
 
-<body>    
+<body>
 
     <section id="rotateScreen">
-        
+
     </section>
 
-    <section id="menu">        
-        <!-- <img id="title" src="images/texts/TITLE.png" alt=""> -->
+    <section id="menu">
+        <img id="title" src="images/texts/TITLE.png" alt="">
         <img id="superDentinhoStart" src="images/characters/SUPER HAPPY TOOTH.gif" alt="">
 
-        <img class="button" id="btnPlay" src="images/buttons/PLAY.png" alt="">
-        <img src="images/finger/finger pressing.png" alt="" class="fingerPressing" id="fingerPressingMenu">
+        <!-- botao para iniciar o jogo -->
+        <img class="button" id="btnPlay" src="images/buttons/PLAY.png" alt="">        
 
+        <!-- creative commmons direitos autorais -->
         <div class="creative-common">
-            <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img alt="Licença Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />Este obra está licenciado com uma Licença <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Atribuição-NãoComercial-CompartilhaIgual 4.0 Internacional</a>
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img
+                    alt="Licença Creative Commons" style="border-width:0"
+                    src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />Este obra está licenciado
+            com uma Licença <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons
+                Atribuição-NãoComercial-CompartilhaIgual 4.0 Internacional</a>
         </div>
     </section>
 
     <section id="apresentation">
+        <!-- super dentinho apresentacao -->
         <img id="superDentinhoApresentacao" src="images/characters/SUPER HAPPY TOOTH SPEAKING.gif" alt="">
 
-        <img src="images/finger/finger pressing.png" alt="" class="fingerPressing" id="fingerPressingApresentation">
-
-        <!-- btns -->        
-        <img class="button" id="btnRules" src="images/buttons/RULE.png" alt="">
-        <img class="button" id="btnCredits" src="images/buttons/CREDITS.png" alt="">      
-        <img class="button" id="btnContinue" src="images/buttons/PLAY.png" alt="">  
+        <!-- botoes de navegação do menu -->
+        <img class="button" id="btnRules" src="images/buttons/RULES.png" alt="">
+        <img class="button" id="btnCredits" src="images/buttons/CREDITS.png" alt="">
+        <img class="button" id="btnContinue" src="images/buttons/PLAY.png" alt="">     
     </section>
 
     <section id="boardgame">
         <img src="images/finger/finger pressing.png" alt="" class="fingerPressing" id="fingerPressingBoardgame">
 
         <!-- btns -->
-        <img class="button" id="btnBackFromBoardgameToMenu" src="images/buttons/BACK.png" alt="">     
+        <img class="button" id="btnBackFromBoardgameToMenu" src="images/buttons/BACK.png" alt="">
 
         <img class="questionSlot" id="q1" src="images/buttons/BUTTON.png" alt="" onclick="goToQuestion(0)">
-        
-        <!-- <iframe class="video_explicacao_escovacao" width="560" height="315" src="https://www.youtube.com/embed/LLX8uFlWLDA?start=44" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
         <img class="questionSlot" id="q2" src="images/buttons/BUTTON.png" alt="" onclick="goToQuestion(1)">
-        <!-- <iframe class="video_explicacao_escovacao" width="560" height="315" src="https://www.youtube.com/embed/LLX8uFlWLDA?start=58" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
-
         <img class="questionSlot" id="q3" src="images/buttons/BUTTON.png" alt="" onclick="goToQuestion(2)">
         <img class="questionSlot" id="q4" src="images/buttons/BUTTON.png" alt="" onclick="goToQuestion(3)">
         <img class="questionSlot" id="q5" src="images/buttons/BUTTON.png" alt="" onclick="goToQuestion(4)">
@@ -81,7 +83,6 @@
         <img class="questionSlot" id="q8" src="images/buttons/BUTTON.png" alt="" onclick="goToQuestion(7)">
         <img class="questionSlot" id="q9" src="images/buttons/BUTTON.png" alt="" onclick="goToQuestion(8)">
         <img class="questionSlot" id="q10" src="images/buttons/BUTTON.png" alt="" onclick="goToQuestion(9)">
-
         <img class="questionSlot" id="q11" src="images/buttons/BUTTON.png" alt="" onclick="goToQuestion(10)">
         <img class="questionSlot" id="q12" src="images/buttons/BUTTON.png" alt="" onclick="goToQuestion(11)">
         <img class="questionSlot" id="q13" src="images/buttons/BUTTON.png" alt="" onclick="goToQuestion(12)">
@@ -114,10 +115,10 @@
         <p class="apresentationText" id="apresentationCredits"></p>
     </section>
 
-    <section id="question">        
-        <img src="images/finger/finger pressing.png" alt="" class="fingerPressing" id="fingerPressingQuestion1">
+    <section id="question">
+        <!-- <img src="images/finger/finger pressing.png" alt="" class="fingerPressing" id="fingerPressingQuestion1">
 
-        <img src="images/finger/finger pressing.png" alt="" class="fingerPressing" id="fingerPressingQuestion2">
+        <img src="images/finger/finger pressing.png" alt="" class="fingerPressing" id="fingerPressingQuestion2"> -->
 
         <img id="btnBackFromQuestionToBoardgame" src="images/buttons/BACK.png" alt="">
 
@@ -126,11 +127,45 @@
 
         <img class="optionButton" id="optionButton2" src="images/buttons/BUTTON.png" alt=""
             onclick="verifyQuestion(this.id)">
+
+        <!-- iframe  -->
+        <!-- <iframe id="video-metodo-fones" src="https://www.youtube.com/embed/LLX8uFlWLDA?start=44&end=58" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        
+        <iframe id="video-metodo-bass-modificado" src="https://www.youtube.com/embed/LLX8uFlWLDA?start=92&end=112" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+
     </section>
 
-    <section id="answer">        
+    <section id="answer">
+
+        <!-- <div class="modal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Explicação</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p></p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <script>
+            var myModal = document.getElementById('myModal')
+var myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', function () {
+  myInput.focus()
+})
+          </script> -->
+          
+
         <img src="images/finger/finger pressing.png" alt="" class="fingerPressing" id="fingerPressingAnswer">
-        <img class="button" id="btnNextFromToBoardgame" src="images/buttons/NEXT.png" alt="">        
+        <img class="button" id="btnNextFromToBoardgame" src="images/buttons/NEXT.png" alt="">
     </section>
 
     <section id="victory">
@@ -149,7 +184,7 @@
     <script src="scripts/script.js"></script>
     <script src="scripts/navigationScreens.js"></script>
     <script src="scripts/apresentationCredits.js"></script>
-    <script src="scripts/apresentationRules.js"></script>    
+    <script src="scripts/apresentationRules.js"></script>
     <script src="scripts/confetti.js"></script>
     <script src="scripts/orientation.js"></script>
     <script src="scripts/questions.js"></script>

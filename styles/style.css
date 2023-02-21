@@ -247,10 +247,31 @@ p#questionText.apresentationText {
     animation: bounce 6s ease infinite;
 }
 
+iframe {
+    z-index: 2;
+    height: 25vh;
+    width: 22vw;
+    padding: 2.5px;
+    position: fixed;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#video-metodo-fones {
+    bottom: 1vw;
+    left: 1vw;
+}
+
+#video-metodo-bass-modificado {
+    bottom: 1vw;
+    right: 1vw;
+}
+
 /* SLOTS OF QUESTIONS - START */
 
 .questionSlot {
-    width: 10vw;
+    /* width: 10vw; */
+    width: 8vw;
     position: fixed;
     z-index: 30;
     cursor: pointer;
@@ -502,7 +523,7 @@ p#questionText.apresentationText {
     }
 
     50% {
-        transform: scale(1.2, 1.2);
+        transform: scale(1.05, 1.0.5);
     }
 
     100% {

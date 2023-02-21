@@ -109,7 +109,6 @@ questionSlot20.classList.add("p20")
 // NAVIGATE FROM START TO APRESENTATION
 btnPlay.addEventListener("click", function () {
     navigateFromStartToApresentation()
-    playBackgroundSound()
 });
 
 // NAVIGATE FROM APRESENTATION TO CREDITS
@@ -127,6 +126,7 @@ btnRules.addEventListener("click", function () {
 // NAVIGATE FROM APRESENTATION TO BOARDGAME
 btnContinue.addEventListener("click", function () {
     navigateFromApresentationToBoardgame()
+    playBackgroundSound()
 });
 
 // NAVIGATE FROM ACTUAL QUESTION TO THE NEXT QUESTION
@@ -176,7 +176,23 @@ function playBackgroundSound() {
     sound.currentTime = 0
     sound.loop = true
     sound.play()
+    // sound.pause()
+
+    console.log(sound.duration)
+    console.log(sound.currentTime)
+
+    // switch (key) {
+    //     case value:
+            
+    //         break;
+    
+    //     default:
+    //         break;
+    // }
+
 }
+
+
 
 // CORRECT SOUND
 function playCorrectSound() {
@@ -292,7 +308,15 @@ async function goToQuestion(slotSelectedFromUSer) {
     } else if (slotSelectedFromUSer === numberQuestion) {
         updateDentinhoPosition(numberQuestion)
         await delay(500);        
-        navigateFromBoardgameToQuestion()        
+        navigateFromBoardgameToQuestion()      
+        
+        if (numberQuestion === 12) {
+            document.querySelector('#video-metodo-fones').style.display = 'none'
+            document.querySelector('#video-metodo-bass-modificado').style.display = 'none'
+        } else {
+            // document.querySelector('#video-metodo-fones').style.display = 'none'
+            // document.querySelector('#video-metodo-bass-modificado').style.display = 'none'
+        }
     } 
 }
 
