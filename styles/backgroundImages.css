@@ -6,9 +6,9 @@
 }
 
 .start {
-    background-image: url("../images/backgrounds/START\ PARCIAL.png");
+    background-image: url("../images/backgrounds/START.png");
     background-color: #00a1ff;
-    background-position: center;
+    background-position: left;
     background-size: contain;    
 }
 

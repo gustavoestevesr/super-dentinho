@@ -44,7 +44,7 @@ a {
     bottom: 1vw;
     right: 1vw;
     width: 100vw;
-    max-width: 400px;
+    max-width: 420px;
     margin: auto;
     background-color: white;
     padding: 10px;
@@ -222,7 +222,7 @@ p#questionText.apresentationText {
 #superDentinhoQuestion,
 #superDentinhoAnswer,
 #superDentinhoRules,
-#superDentinhoApresentacao {
+#superDentinhoApresentation {
     position: fixed;
     bottom: 0vw;
     left: 0vw;
@@ -232,18 +232,24 @@ p#questionText.apresentationText {
 
 #superDentinhoStart {
     position: fixed;
-    top: 1vw;
-    left: 42vw;
-    height: 40vw;
+    top: 2vh;
+    left: 55vw;
+    width: 44vw;
     animation: bounce 6s ease infinite;
     z-index: 2;
+}
+
+#superDentinhoApresentation {
+    bottom: 28vh;
+    left: -2vw;
+    width: 28vw;
 }
 
 #superDentinhoBoardGame {
     position: fixed;
     bottom: 4vw;
-    left: 25vw;
-    width: 10vw;
+    left: 22vw;
+    width: 12vw;
     animation: bounce 6s ease infinite;
 }
 
@@ -523,7 +529,7 @@ iframe {
     }
 
     50% {
-        transform: scale(1.05, 1.0.5);
+        transform: scale(1.1, 1.1);
     }
 
     100% {
@@ -533,7 +539,7 @@ iframe {
 
 @keyframes zoom-out-zoom-in {
     0% {
-        transform: scale(1.2, 1.2);
+        transform: scale(1.1, 1.1);
     }
 
     50% {
@@ -541,7 +547,7 @@ iframe {
     }
 
     100% {
-        transform: scale(1.2, 1.2);
+        transform: scale(1.1, 1.1);
     }
 }
 
