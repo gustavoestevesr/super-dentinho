@@ -388,10 +388,15 @@ iframe {
     left: 28vw; 
 }  
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 915px) {
     #superDentinhoBoardGame {
         bottom: 5.5vw;
         left: 20vw;
+    }
+
+    #superDentinhoStart {
+        width: 38vw;
+        left: 46vw;
     }
 
     .p1 {

@@ -45,7 +45,7 @@
 
 #btnPlay {
     top: 74vh;
-    left: 26vw;
+    left: 24.5vw;
     animation: zoom-out-zoom-in 1s ease infinite; 
 }
 
@@ -71,7 +71,7 @@
 @media screen and (max-width: 915px) {
     #btnPlay {
         top: 74vh;
-        left: 28vw;
+        left: 21vw;
     }
 
     #option1 {
