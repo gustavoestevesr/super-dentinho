@@ -17,7 +17,8 @@ function updateBackgroundImageRules(){
 }
 
 function nextRule(){
-    if ( numberRule < numberOfPagesFromRules ) {        
+    if ( numberRule < numberOfPagesFromRules ) {     
+        playNotificationSound()   
         numberRule++
     } else {
         numberRule = 1

@@ -21,6 +21,7 @@ function updateBackgroundImageCredits(){
 
 function nextAuthor(){
     if ( numberAuthor < numberOfPagesFromCredits ) {
+        playNotificationSound()
         numberAuthor++
     } else {
         numberAuthor = 1

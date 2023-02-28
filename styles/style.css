@@ -143,12 +143,12 @@ p#questionText.apresentationText {
         bottom: 1vw;
         right: 1vw;
         width: 100vw;
-        max-width: 300px;
+        max-width: 250px;
         margin: auto;
         background-color: white;
-        padding: 10px;
+        padding: 5px;
         border-radius: 5px;
-        font-size: 0.55rem;
+        font-size: 0.4rem;
         text-align: right;
     }
 

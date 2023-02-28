@@ -107,49 +107,58 @@ questionSlot19.classList.add("p19")
 questionSlot20.classList.add("p20")
 
 // NAVIGATE FROM START TO APRESENTATION
-btnPlay.addEventListener("click", function () {
+btnPlay.addEventListener("click", function () {   
+    playNotificationSound()
     navigateFromStartToApresentation()
 });
 
 // NAVIGATE FROM APRESENTATION TO CREDITS
 btnCredits.addEventListener("click", function () {
+    playNotificationSound()
     navigateFromApresentationToCredits()
     displayApresentationCredits()
 });
 
 // NAVIGATE FROM APRESENTATION TO RULES
 btnRules.addEventListener("click", function () {
+    playNotificationSound()
     navigateFromApresentationToRules()
     displayApresentationRules()
 });
 
 // NAVIGATE FROM APRESENTATION TO BOARDGAME
 btnContinue.addEventListener("click", function () {
+    playNotificationSound()
     navigateFromApresentationToBoardgame()
     playBackgroundSound()
 });
 
 // NAVIGATE FROM ACTUAL QUESTION TO THE NEXT QUESTION
 btnNextFromToBoardgame.addEventListener("click", function () {
+    playNotificationSound()
     navigateForTheNextQuestionInBoardgame()
 });
 
 // NAVIGATE FROM BOARDGAME TO MENU
 btnBackFromBoardgameToMenu.addEventListener("click", function () {
+    playNotificationSound()
     navigateFromBoardgameToMenu()
 });
 
 // NAVIGATE FROM RULES TO APRESENTATION
 btnBackFromRulesToApresentation.addEventListener("click", function () {
+    playNotificationSound()
     navigateFromRulesToApresentation()
 });
 
 // NAVIGATE FROM CREDITS TO APRESENTATION
 btnBackFromCreditsToApresentation.addEventListener("click", function () {
+    playNotificationSound()
     navigateFromCreditsToApresentation()
 });
 
 btnBackFromQuestionToBoardgame.addEventListener("click", function () {
+    playNotificationSound()
     navigateFromQuestionToBoardgame()
     updateDentinhoPosition(numberQuestion-1)            
 });
@@ -192,7 +201,14 @@ function playBackgroundSound() {
 
 }
 
-
+// START GAME SOUND
+function playNotificationSound() {
+    let sound = document.getElementById("audioGt")
+    sound.volume = 0.2
+    sound.currentTime = 0
+    sound.loop = false
+    sound.play()
+}
 
 // CORRECT SOUND
 function playCorrectSound() {
