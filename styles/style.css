@@ -247,20 +247,10 @@ p#questionText.apresentationText {
 
 #superDentinhoBoardGame {
     position: fixed;
-    bottom: 4vw;
-    left: 22vw;
+    bottom: 5vh;
+    left: 23vw;
     width: 12vw;
     animation: bounce 6s ease infinite;
-}
-
-iframe {
-    z-index: 2;
-    height: 25vh;
-    width: 22vw;
-    padding: 2.5px;
-    position: fixed;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #video-metodo-fones {
@@ -284,114 +274,109 @@ iframe {
 }
 
 .p1 {
-    top: 74vh;
-    left: 35.5vw;
-}
-
-.p1 {
-    top: 74vh;
-    left: 39.5vw;
+    top: 76vh;
+    left: 40vw;
 }
 
 .p2 {
-    top: 75vh;
-    left: 52vw;
+    top: 77vh;
+    left: 52.5vw;
 }
 
 .p3 {
     top: 76vh;
-    left: 65vw;
+    left: 65.5vw;
 }
 
 .p4 {
     top: 70vh;
-    left: 76vw;
+    left: 79vw;
 }
 
 .p5 {
     bottom: 28vh;
-    left: 71vw;
+    left: 73vw;
 }
 
 .p6 {
-    bottom: 27vh;
+    bottom: 28vh;
     left: 60vw;
 }
 
 .p7 {
-    bottom: 22vh;
-    left: 48vw;
+    bottom: 27vh;
+    left: 47vw;
 }
 
 .p8 {
-    bottom: 23vh;
+    bottom: 27vh;
     left: 35vw;
 }
 
 .p9 {
-    bottom: 26vh;
+    bottom: 28vh;
     left: 23vw;
 }
 
 .p10 {
-    bottom: 40vh;
-    left: 14vw;
+    bottom: 44.5vh;
+    left: 13vw;
 }
 
 .p11 {
-    bottom: 51vh;
-    left: 24vw;
+    bottom: 54.5vh;
+    left: 23.5vw;
 }
 
 .p12 {
-    bottom: 50vh;
-    left: 36vw;   
+    bottom: 50.5vh;
+    left: 35.5vw;   
 }
 
 .p13 {
-    bottom: 49vh;
-    left: 47vw;  
+    bottom: 50vh;
+    left: 47.5vw;  
 }
 
 .p14 {
-    bottom: 48vh;
-    left: 57.5vw;  
+    bottom: 49vh;
+    left: 59vw;  
 } 
 
 .p15 {
-    bottom: 48vh;
-    left: 68vw;  
+    bottom: 49vh;
+    left: 70vw;  
 }
 
 .p16 {
-    bottom: 61vh;
-    left: 76vw;  
+    bottom: 63vh;
+    left: 78.5vw;  
 }
 
 .p17 {
-    bottom: 76vh;
-    left: 65vw; 
+    bottom: 78vh;
+    left: 69.5vw; 
 }
 
 .p18 {
-    bottom: 76vh;
-    left: 53vw; 
+    bottom: 78vh;
+    left: 55vw; 
 }
 
 .p19 {
-    bottom: 76vh;
-    left: 40.5vw; 
+    bottom: 77vh;
+    left: 41.5vw; 
 }
 
 .p20 {
-    bottom: 76vh;
-    left: 28vw; 
+    bottom: 77vh;
+    left: 27vw; 
 }  
 
 @media screen and (max-width: 915px) {
     #superDentinhoBoardGame {
-        bottom: 5.5vw;
-        left: 20vw;
+        bottom: 5vh;
+        left: 25vw;
     }
 
     #superDentinhoStart {
@@ -400,103 +385,103 @@ iframe {
     }
 
     .p1 {
-        top: 77vh;
-        left: 38.5vw;
+        top: 76vh;
+        left: 40vw;
     }
     
     .p2 {
-        top: 78vh;
-        left: 53.5vw;
+        top: 77vh;
+        left: 52.5vw;
     }
     
     .p3 {
-        top: 76.5vh;
-        left: 68.5vw;
+        top: 76vh;
+        left: 64vw;
     }
     
     .p4 {
-        top: 71vh;
-        left: 82.5vw;
+        top: 70vh;
+        left: 75.5vw;
     }
     
     .p5 {
-        bottom: 29.5vh;
-        left: 76vw;
+        bottom: 28vh;
+        left: 70.5vw;
     }
     
     .p6 {
-        bottom: 27vh;
-        left: 62.5vw;
+        bottom: 28vh;
+        left: 59vw;
     }
     
     .p7 {
-        bottom: 25vh;
-        left: 48vw;
+        bottom: 26vh;
+        left: 47vw;
     }
     
     .p8 {
-        bottom: 25.5vh;
-        left: 33.5vw;
+        bottom: 26vh;
+        left: 36vw;
     }
     
     .p9 {
-        bottom: 28.5vh;
-        left: 19vw;
+        bottom: 27vh;
+        left: 25vw;
     }
     
     .p10 {
-        bottom: 42.5vh;
-        left: 8vw;
+        bottom: 44vh;
+        left: 16vw;
     }
     
     .p11 {
-        bottom: 53.5vh;
-        left: 19.5vw;
+        bottom: 54.5vh;
+        left: 26vw;
     }
     
     .p12 {
-        bottom: 52vh;
-        left: 33.5vw;   
+        bottom: 50.5vh;
+        left: 36.5vw;   
     }
     
     .p13 {
         bottom: 50vh;
-        left: 47vw;  
+        left: 47.5vw;  
     }
     
     .p14 {
         bottom: 49vh;
-        left: 59.5vw;  
+        left: 57.5vw;  
     } 
     
     .p15 {
-        bottom: 50vh;
-        left: 72.5vw;  
+        bottom: 49vh;
+        left: 67.5vw;  
     }
     
     .p16 {
-        bottom: 64vh;
-        left: 83vw;  
+        bottom: 62vh;
+        left: 75vw;  
     }
     
     .p17 {
-        bottom: 79vh;
-        left: 70vw; 
+        bottom: 77vh;
+        left: 67vw; 
     }
     
     .p18 {
-        bottom: 79vh;
-        left: 55vw; 
+        bottom: 77vh;
+        left: 54vw; 
     }
     
     .p19 {
-        bottom: 78vh;
-        left: 39.5vw; 
+        bottom: 76vh;
+        left: 42vw; 
     }
     
     .p20 {
-        bottom: 78vh;
-        left: 24.5vw; 
+        bottom: 76vh;
+        left: 29vw; 
     }  
 }
 
@@ -562,3 +547,13 @@ iframe {
 }
 
 /* SLOT OF QUESTION ANIMATION - END */
+
+.modal-body {
+    height: 1000px;
+}
+
+iframe {
+    width: 100%;
+    height: 200px;
+}
+

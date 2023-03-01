@@ -21,9 +21,6 @@ async function navigateFromOrientationToMenu() {
 function navigateFromAnyToMenu() {
     document.querySelector('#menu').style.display = "flex"
     document.body.classList.add("start");
-        
-    fingerPressingMenu.style.top = getOffset(btnPlay).top + distanceFingerTop + 'px';
-    fingerPressingMenu.style.left = getOffset(btnPlay).left + distanceFingerLeft + 'px';
 }
 
 function navigateFromStartToApresentation() {
@@ -74,6 +71,9 @@ function navigateForTheNextQuestionInBoardgame() {
 
     fingerPressingBoardgame.style.top = getOffset(document.querySelector( `img#q${numberQuestion+1}.questionSlot.p${numberQuestion+1}` )).top + distanceFingerTop + 'px';
     fingerPressingBoardgame.style.left = getOffset(document.querySelector( `img#q${numberQuestion+1}.questionSlot.p${numberQuestion+1}` )).left + distanceFingerLeft + 'px';
+
+    sound1.volume = 1;
+    sound2.volume = 1;
 }
 
 function navigateFromBoardgameToMenu() {
@@ -127,9 +127,17 @@ function navigateFromBoardgameToQuestion() {
     document.body.classList.add(`question${numberQuestion}`)
 }
 
-function navigateFromQuestionToAnswer() {
+function navigateFromQuestionToAnswer() {    
     sectionAnswer.style.display = 'flex'
     sectionQuestion.style.display = 'none'
+
+    if (questions[numberQuestion].tip) {
+        document.body.querySelector('#btnModal').click();
+        sound1.volume = 0.1;
+        sound2.volume = 0.1;
+
+        document.body.getElementsByClassName('modal-body')[0].innerHTML = questions[numberQuestion].tip
+    }
 
     document.body.classList.remove(`question${numberQuestion}`) 
 }

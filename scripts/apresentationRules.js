@@ -18,10 +18,10 @@ function updateBackgroundImageRules(){
 
 function nextRule(){
     if ( numberRule < numberOfPagesFromRules ) {     
-        playNotificationSound()   
         numberRule++
     } else {
         numberRule = 1
     }
+    playNotificationSound();
     displayApresentationRules()
 }

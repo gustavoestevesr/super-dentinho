@@ -40,12 +40,12 @@
 
     </section>
 
-    <section id="menu">        
+    <section id="menu">
         <!-- super dentinho start -->
         <img id="superDentinhoStart" src="images/characters/SUPER HAPPY TOOTH.gif" alt="">
 
         <!-- botao para iniciar o jogo -->
-        <img class="button" id="btnPlay" src="images/buttons/PLAY.png" alt="">        
+        <img class="button" id="btnPlay" src="images/buttons/PLAY.png" alt="">
 
         <!-- creative commmons direitos autorais -->
         <div class="creative-common">
@@ -64,7 +64,7 @@
         <!-- botoes de navegação do menu -->
         <img class="button" id="btnRules" src="images/buttons/RULES.png" alt="">
         <img class="button" id="btnCredits" src="images/buttons/CREDITS.png" alt="">
-        <img class="button" id="btnContinue" src="images/buttons/PLAY.png" alt="">     
+        <img class="button" id="btnContinue" src="images/buttons/PLAY.png" alt="">
     </section>
 
     <section id="boardgame">
@@ -121,42 +121,29 @@
 
         <img class="optionButton" id="optionButton2" src="images/buttons/BUTTON.png" alt=""
             onclick="verifyQuestion(this.id)">
-
-        <!-- iframe  -->
-        <!-- <iframe id="video-metodo-fones" src="https://www.youtube.com/embed/LLX8uFlWLDA?start=44&end=58" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        
-        <iframe id="video-metodo-bass-modificado" src="https://www.youtube.com/embed/LLX8uFlWLDA?start=92&end=112" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
-
     </section>
 
     <section id="answer">
 
-        <!-- <div class="modal" tabindex="-1">
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title">Explicação</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <!-- Button trigger modal -->
+        <button id="btnModal" style="display: none;" type="button" class="btn btn-primary" data-bs-toggle="modal"
+            data-bs-target="#exampleModal"></button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Tela de Dica</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+             
+                    </div>
                 </div>
-                <div class="modal-body">
-                  <p></p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>                  
-                </div>
-              </div>
             </div>
-          </div>
+        </div>
 
-          <script>
-            var myModal = document.getElementById('myModal')
-var myInput = document.getElementById('myInput')
-
-myModal.addEventListener('shown.bs.modal', function () {
-  myInput.focus()
-})
-          </script> -->
-          
         <img class="button" id="btnNextFromToBoardgame" src="images/buttons/NEXT.png" alt="">
     </section>
 
@@ -172,10 +159,7 @@ myModal.addEventListener('shown.bs.modal', function () {
     <audio id="audioCt" src="sounds/correct.wav" controls style="display: none;"></audio>
     <audio id="audioWg" src="sounds/wrong.mp3" controls style="display: none;"></audio>
     <audio id="audioGt" src="sounds/notification.mp3" controls style="display: none;"></audio>
-    <audio id="audio8bit" src="sounds/8bit-music-for-game.mp3" controls style="display: none;
-    "></audio>
-    <audio id="audioCc" src="sounds/cottagecore.mp3" controls style="display: none;
-    "></audio>
+    <audio id="audioCc" src="sounds/cottagecore.mp3" controls style="display: none;"></audio>
 
     <!-- Script -->
     <script src="scripts/script.js"></script>

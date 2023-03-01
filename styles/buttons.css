@@ -40,17 +40,17 @@
     position: fixed;
     width: 3vw;    
     z-index: 30;
-    animation: zoom-out-zoom-in 1s ease infinite; 
+    animation: zoom-out-zoom-in 0.5s ease infinite; 
 }
 
 #btnPlay {
-    top: 74vh;
+    bottom: 7.5vh;
     left: 24.5vw;
     animation: zoom-out-zoom-in 1s ease infinite; 
 }
 
 .optionButton {
-    width: 10vw;
+    width: 13vw;
     position: fixed;
     z-index: 30;
     cursor: pointer;
@@ -58,7 +58,7 @@
 
 #optionButton1 {
     top: 52vh;
-    left: 30vw;
+    left: 26vw;
     cursor: pointer;
 }
 
@@ -70,24 +70,8 @@
 
 @media screen and (max-width: 915px) {
     #btnPlay {
-        top: 74vh;
+        bottom: 5vh;
         left: 21vw;
-    }
-
-    #option1 {
-        font-size: 1rem;
-        width: 23vw;
-
-        top: 52vh;
-        left: 60vw;
-    }
-
-    #option2 {
-        font-size: 1rem;
-        width: 23vw;
-
-        top: 0vh;
-        left: 0vw;
     }
 }
 
