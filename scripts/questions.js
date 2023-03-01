@@ -14,8 +14,8 @@ var questions = [
         answer: "Técnica da vassourinha, escovinha inclinada.",
         correctAnswerExplanation: "Isso aí!!! Você acertou devemos inclinar a escova 45° e escovar os dentes em todas suas faces, lembrando que acima (na oclusal) dos dentinhos faremos movimento de vai e vem.",
         wrongAnswerExplanation: "Incorreta ,que pena você errou! A técnica da bolinha e para crianças menores de 8 anos ou aqueles que tem dificuldade motora, na hora da escovação.",
-        tip: `<h5>Método de Fones</h5>
-        <iframe src="https://www.youtube.com/embed/LLX8uFlWLDA?start=46&end=58&controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        tip: `<h5>Método de Stillman Modificado</h5>
+        <iframe src="https://www.youtube.com/embed/LLX8uFlWLDA?start=58&end=91&controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         <hr>
         <h5>Método de Bass Modificado</h5>
         <iframe src="https://www.youtube.com/embed/LLX8uFlWLDA?start=92&end=113&controls=0" title="YouTube video player"
@@ -99,7 +99,7 @@ var questions = [
         correctAnswerExplanation: "Sim!!!! A língua assim como os dentes ,precisa de cuidados ,todas as vezes que escovamos os dentes ,precisamos escovar a língua também .",
         wrongAnswerExplanation: "Errada! A língua assim como os dentes, precisa de cuidados ,todas as vezes que escovamos os dentes ,precisamos escovar a língua também",
         tip: `<h5>Como usar fio dental corretamente?</h5>
-        <iframe src="https://www.youtube.com/watch?v=9FCeLKfY6V0?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/9FCeLKfY6V0?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>        
         <small>Fonte: Vina Gonçalves</small>`
     },
     {
@@ -117,7 +117,7 @@ var questions = [
         correctAnswerExplanation: "Correto! Diminuindo, e higienizando teremos sempre uma boca livre da doença cárie",
         wrongAnswerExplanation: "Incorreto! Devemos diminuir da nossa comida os açúcares, como: balas, doces, refrigerantes e higienizar sempre a boca, após todas as alimentações!",
         tip: `<h5>Como usar fio dental corretamente?</h5>
-        <iframe src="https://www.youtube.com/watch?v=HpXslusc0TE?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/HpXslusc0TE?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>        
         <small>Fonte: Coleção Miau</small>`
     },
     {
