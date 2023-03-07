@@ -64,9 +64,7 @@ var questions = [
         answer: "Sim, caso não seja removida ela poderá causar a cárie ou doença na gengiva.",
         correctAnswerExplanation: "Correta! Essa massinha e devido a não escovação correta é ela que tem várias bactérias e pode causar a cárie e gengivite (doença que causa inflamação, vermelhão, dor e sangramento na gengiva)",
         wrongAnswerExplanation: "Errada! Não é pasta não!! Essa massinha e devido a não escovação correta é ela que tem várias bactérias e pode causar a cárie ou gengivite (doença que causa inflamação, vermelhão, dor e sangramento na gengiva)",
-        tip: `<h5>Como usar fio dental corretamente?</h5>
-        <iframe src="https://www.youtube.com/embed/hM4-koredp8?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <small>Fonte: Colgate Brasil</small>`
+        tip: ``
     },
     {
         title: "O fio dental é usado antes ou depois da escovação?",
@@ -74,7 +72,9 @@ var questions = [
         answer: "Antes da escovação.",
         correctAnswerExplanation: "Isso aí!! Muito bem sempre antes da escovação passamos o fio dental",
         wrongAnswerExplanation: "Errou! ( carinha de triste) sempre antes da escovação passamos o fio dental",
-        tip: ``
+        tip: `<h5>Como escovar a língua corretamente?</h5>
+        <iframe src="https://www.youtube.com/embed/hM4-koredp8?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <small>Fonte: Colgate Brasil</small>`
     },
     {
         title: "Alimentos cariogênicos são aqueles que causam cárie. Eles são:",

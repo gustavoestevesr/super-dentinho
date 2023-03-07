@@ -5,7 +5,8 @@
 #btnBackFromRulesToApresentation,
 #btnBackFromCreditsToApresentation,
 #btnBackFromQuestionToBoardgame,
-#btnBackFromBoardgameToMenu {
+#btnBackFromBoardgameToMenu,
+#btnBackFromTeoricReferenceToApresentation {
     position: fixed;
     top: 2.5vw;
     left: 2.5vw;
@@ -75,9 +76,14 @@
     }
 }
 
+#btnTeoric {
+    bottom: 4vh;
+    right: 40vw;
+}
+
 #btnContinue {
-    bottom: 3vh;
-    left: 45vw;
+    bottom: 4vh;
+    right: 25vw;
     width: 11vw;    
     height: 11vw;
     animation: zoom-out-zoom-in 1s ease infinite; 
@@ -85,10 +91,10 @@
 
 #btnCredits {
     bottom: 4vh;
-    right: 29vw;
+    left: 38vw;
 }
 
 #btnRules {
     bottom: 4vh;
-    left: 31vw;
+    left: 25vw;
 }

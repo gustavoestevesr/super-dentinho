@@ -9,12 +9,14 @@ let sectionRules = document.querySelector("#rules");
 let sectionVictory = document.querySelector("#victory");
 let sectionThanks = document.querySelector("#thanks");
 let sectionRotateScreen = document.querySelector("#rotateScreen");
+let sectionTeoricReference = document.querySelector("#teoricReference");
 
 // BTNs Screens
 let btnPlay = document.querySelector("img#btnPlay.button");
 let btnCredits = document.querySelector("img#btnCredits.button");
 let btnContinue = document.querySelector("img#btnContinue.button");
 let btnRules = document.querySelector("img#btnRules.button");
+let btnTeoric = document.querySelector("img#btnTeoric.button");
 
 // BTNs Back
 let btnBackFromRulesToApresentation = document.querySelector(
@@ -26,9 +28,14 @@ let btnBackFromCreditsToApresentation = document.querySelector(
 let btnBackFromQuestionToBoardgame = document.querySelector(
   "#btnBackFromQuestionToBoardgame"
 );
-let btnNextFromToBoardgame = document.querySelector("#btnNextFromToBoardgame");
+let btnNextFromToBoardgame = document.querySelector(
+  "#btnNextFromToBoardgame"
+  );
 let btnBackFromBoardgameToMenu = document.querySelector(
   "#btnBackFromBoardgameToMenu"
+);
+let btnBackFromTeoricReferenceToApresentation = document.querySelector(
+  "#btnBackFromTeoricReferenceToApresentation"
 );
 
 // BTNs Next
@@ -67,6 +74,7 @@ let questionSlot17 = document.querySelector("img#q17.questionSlot");
 let questionSlot18 = document.querySelector("img#q18.questionSlot");
 let questionSlot19 = document.querySelector("img#q19.questionSlot");
 let questionSlot20 = document.querySelector("img#q20.questionSlot");
+let questionSlot21 = document.querySelector("img#q21.questionSlot");
 
 // VARS
 let numberQuestion = 0;
@@ -90,6 +98,7 @@ sectionApresentation.style.display = "none";
 sectionRules.style.display = "none";
 sectionVictory.style.display = "none";
 sectionRotateScreen.style.display = "none";
+sectionTeoricReference.style.display = "none";
 
 // DEFINE THE OTHERS SLOT QUESTION POSITIONS
 questionSlot1.classList.add("p1");
@@ -112,6 +121,7 @@ questionSlot17.classList.add("p17");
 questionSlot18.classList.add("p18");
 questionSlot19.classList.add("p19");
 questionSlot20.classList.add("p20");
+questionSlot21.classList.add("p21");
 
 // NAVIGATE FROM START TO APRESENTATION
 btnPlay.addEventListener("click", function () {
@@ -131,6 +141,12 @@ btnRules.addEventListener("click", function () {
   playNotificationSound();
   navigateFromApresentationToRules();
   displayApresentationRules();
+});
+
+// NAVIGATE FROM APRESENTATION TO RULES
+btnTeoric.addEventListener("click", function () {
+  playNotificationSound();
+  navigateFromApresentationToTeoricReference();
 });
 
 // NAVIGATE FROM APRESENTATION TO BOARDGAME
@@ -166,6 +182,11 @@ btnBackFromCreditsToApresentation.addEventListener("click", function () {
   navigateFromCreditsToApresentation();
 });
 
+btnBackFromTeoricReferenceToApresentation.addEventListener("click", function () {
+  playNotificationSound();
+  navigateFromTeoricReferenceToApresentation();
+});
+
 btnBackFromQuestionToBoardgame.addEventListener("click", function () {
   playNotificationSound();
   navigateFromQuestionToBoardgame();
@@ -182,7 +203,7 @@ async function victory() {
   // NAVIGATE FROM BOARDGAME TO WINNER
   navigateFromBoardgameToWinner();
 
-  await delay(5000);
+  await delay(10000);
 
   // NAVIGATE FROM WINNER TO THANKS
   navigateFromWinnerToThanks();
@@ -299,6 +320,7 @@ function updateDentinhoPosition(numberQuestion) {
 
     case 13:
       changeDentinhoPosition(questionSlot14);
+      updateDentinhoImage();
       break;
 
     case 14:
@@ -323,6 +345,11 @@ function updateDentinhoPosition(numberQuestion) {
 
     case 19:
       changeDentinhoPosition(questionSlot20);
+      updateDentinhoSize();
+      break;
+
+    case 20:
+      changeDentinhoPosition(questionSlot21);
       break;
 
     default:
@@ -337,16 +364,28 @@ async function goToQuestion(slotSelectedFromUSer) {
   } else if (slotSelectedFromUSer === numberQuestion) {
     updateDentinhoPosition(numberQuestion);
     await delay(500);
-    navigateFromBoardgameToQuestion();
+    navigateFromBoardgameToQuestion();    
+  }
+}
 
-    if (numberQuestion === 12) {
-      document.querySelector("#video-metodo-fones").style.display = "none";
-      document.querySelector("#video-metodo-bass-modificado").style.display =
-        "none";
-    } else {
-      // document.querySelector('#video-metodo-fones').style.display = 'none'
-      // document.querySelector('#video-metodo-bass-modificado').style.display = 'none'
-    }
+function updateDentinhoImage() {
+  superDentinhoBoardGame.src =
+      "./../images/characters/SUPER HAPPY TOOTH SPEAKING.gif";
+}
+
+function updateDentinhoSize() {
+  superDentinhoBoardGame.style.width = "700px";
+  superDentinhoBoardGame.style.height = "700px";
+}
+
+function showTip() {
+  if (questions[numberQuestion].tip) {
+    document.body.querySelector("#btnModal").click();
+    sound1.volume = 0.1;
+    sound2.volume = 0.1;
+
+    document.body.getElementsByClassName("modal-body")[0].innerHTML =
+      questions[numberQuestion].tip;
   }
 }
 
@@ -377,7 +416,7 @@ function feedbackAnswer(statusAnswerUser) {
     document.body.classList.add(`wronganswer${numberQuestion}`);
     playWrongSound();
     updateDentinhoPosition(numberQuestion - 1);
-  }
+  }  
 }
 
 function delay(milliseconds) {

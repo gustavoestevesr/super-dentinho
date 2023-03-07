@@ -50,6 +50,22 @@ function navigateFromApresentationToRules() {
     document.body.classList.add("rules1")
 }
 
+function navigateFromApresentationToTeoricReference() {
+    sectionApresentation.style.display = 'none'
+    sectionTeoricReference.style.display = 'flex'
+
+    document.body.classList.remove("apresentation")
+    document.body.classList.add("teoricReference")
+}
+
+function navigateFromTeoricReferenceToApresentation() {
+    sectionTeoricReference.style.display = 'none'
+    sectionApresentation.style.display = 'flex'
+
+    document.body.classList.remove("teoricReference")
+    document.body.classList.add("apresentation")
+}
+
 function navigateFromApresentationToBoardgame() {
     sectionApresentation.style.display = 'none'
     sectionBoardgame.style.display = 'flex'
@@ -131,13 +147,7 @@ function navigateFromQuestionToAnswer() {
     sectionAnswer.style.display = 'flex'
     sectionQuestion.style.display = 'none'
 
-    if (questions[numberQuestion].tip) {
-        document.body.querySelector('#btnModal').click();
-        sound1.volume = 0.1;
-        sound2.volume = 0.1;
-
-        document.body.getElementsByClassName('modal-body')[0].innerHTML = questions[numberQuestion].tip
-    }
+    showTip() 
 
     document.body.classList.remove(`question${numberQuestion}`) 
 }

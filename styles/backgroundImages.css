@@ -417,6 +417,15 @@
     background-position: center;
 }
 
+/* TEORIC REFERENCE */
+
+.teoricReference {
+    background-image: url("../images/backgrounds/TEORICREFERENCE.png");
+    background-size: contain;
+    background-color: #008de6;
+    background-position: center;
+}
+
 /* CREDITS */
 
 .creditsVanessa {
@@ -471,4 +480,5 @@
     background-color: #008de6;
     background-position: center;
 }
+
 

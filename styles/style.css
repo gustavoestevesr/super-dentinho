@@ -373,6 +373,11 @@ p#questionText.apresentationText {
     left: 27vw; 
 }  
 
+.p21 {
+    bottom: 76vh;
+    left: 14.5vw; 
+} 
+
 @media screen and (max-width: 915px) {
     #superDentinhoBoardGame {
         bottom: 5vh;
@@ -483,6 +488,11 @@ p#questionText.apresentationText {
         bottom: 76vh;
         left: 29vw; 
     }  
+
+    .p21 {
+        bottom: 76vh;
+        left: 17.5vw; 
+    } 
 }
 
 /* SLOTS OF QUESTIONS - END */
