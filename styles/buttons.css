@@ -80,24 +80,24 @@
 }
 
 #btnTeoric {
-    bottom: 4vh;
+    bottom: 0vh;
     right: 40vw;
 }
 
 #btnContinue {
-    bottom: 4vh;
+    bottom: 0vh;
     right: 25vw;
-    width: 11vw;    
-    height: 11vw;
+    width: 10.5vw;    
+    height: 10.5vw;
     animation: zoom-out-zoom-in 1s ease infinite; 
 }
 
 #btnCredits {
-    bottom: 4vh;
-    left: 38vw;
+    bottom: 0vh;
+    right: 55vw;
 }
 
 #btnRules {
-    bottom: 4vh;
-    left: 25vw;
+    bottom: 0vh;
+    right: 70vw;
 }

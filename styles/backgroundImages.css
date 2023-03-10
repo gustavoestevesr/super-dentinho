@@ -13,7 +13,7 @@
 }
 
 .apresentation {    
-    background-image: url("../images/backgrounds/APRESENTATION.png");
+    background-image: url("../images/backgrounds/APRESENTATION.svg");
     background-color: #008de6;
     background-position: center;
     background-size: contain;
@@ -464,7 +464,7 @@
 /* CREDITS */
 
 .creditsVanessa {
-    background-image: url("../images/backgrounds/CREDITS\ VANESSA.png");
+    background-image: url("../images/backgrounds/CREDITS\ VANESSA.svg");
     background-size: contain;
     background-color: #008de6;
     background-position: center;
