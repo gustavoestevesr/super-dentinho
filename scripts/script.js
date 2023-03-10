@@ -369,8 +369,7 @@ async function goToQuestion(slotSelectedFromUSer) {
 }
 
 function updateDentinhoImage() {
-  superDentinhoBoardGame.src =
-      "./../images/characters/SUPER HAPPY TOOTH.png";
+  superDentinhoBoardGame.src = "./images/characters/SUPER HAPPY TOOTH.png";
 }
 
 function updateDentinhoSize() {
