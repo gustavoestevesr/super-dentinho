@@ -370,7 +370,7 @@ async function goToQuestion(slotSelectedFromUSer) {
 
 function updateDentinhoImage() {
   superDentinhoBoardGame.src =
-      "./../images/characters/SUPER HAPPY TOOTH SPEAKING.gif";
+      "./../images/characters/SUPER HAPPY TOOTH.png";
 }
 
 function updateDentinhoSize() {
@@ -406,6 +406,7 @@ function feedbackAnswer(statusAnswerUser) {
 
   if (statusAnswerUser) {
     document.body.classList.add(`correctanswer${numberQuestion}`);
+    showTip() 
     playCorrectSound();
     start();
     stop();

@@ -419,8 +419,43 @@
 
 /* TEORIC REFERENCE */
 
-.teoricReference {
-    background-image: url("../images/backgrounds/TEORICREFERENCE.png");
+.teoricReference1 {
+    background-image: url("../images/backgrounds/TEORIC\ REFERENCE\ 1.png");
+    background-size: contain;
+    background-color: #008de6;
+    background-position: center;
+}
+
+.teoricReference2 {
+    background-image: url("../images/backgrounds/TEORIC\ REFERENCE\ 2.png");
+    background-size: contain;
+    background-color: #008de6;
+    background-position: center;
+}
+
+.teoricReference3 {
+    background-image: url("../images/backgrounds/TEORIC\ REFERENCE\ 3.png");
+    background-size: contain;
+    background-color: #008de6;
+    background-position: center;
+}
+
+.teoricReference4 {
+    background-image: url("../images/backgrounds/TEORIC\ REFERENCE\ 4.png");
+    background-size: contain;
+    background-color: #008de6;
+    background-position: center;
+}
+
+.teoricReference5 {
+    background-image: url("../images/backgrounds/TEORIC\ REFERENCE\ 5.png");
+    background-size: contain;
+    background-color: #008de6;
+    background-position: center;
+}
+
+.teoricReference6 {
+    background-image: url("../images/backgrounds/TEORIC\ REFERENCE\ 6.png");
     background-size: contain;
     background-color: #008de6;
     background-position: center;

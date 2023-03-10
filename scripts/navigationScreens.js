@@ -55,7 +55,7 @@ function navigateFromApresentationToTeoricReference() {
     sectionTeoricReference.style.display = 'flex'
 
     document.body.classList.remove("apresentation")
-    document.body.classList.add("teoricReference")
+    document.body.classList.add("teoricReference1")
 }
 
 function navigateFromTeoricReferenceToApresentation() {
@@ -146,8 +146,6 @@ function navigateFromBoardgameToQuestion() {
 function navigateFromQuestionToAnswer() {    
     sectionAnswer.style.display = 'flex'
     sectionQuestion.style.display = 'none'
-
-    showTip() 
 
     document.body.classList.remove(`question${numberQuestion}`) 
 }

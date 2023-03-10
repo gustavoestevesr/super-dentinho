@@ -18,6 +18,7 @@
 
 #btnNextCredit,
 #btnNextRule,
+#btnNextTeoricReference,
 #btnNextFromToBoardgame {
     position: fixed;
     bottom: 2vw;
@@ -51,10 +52,12 @@
 }
 
 .optionButton {
-    width: 13vw;
+    /* width: 7.5vw; */
+    width: 15vw;
     position: fixed;
     z-index: 30;
     cursor: pointer;
+    animation: zoom-out-zoom-in 1s ease infinite; 
 }
 
 #optionButton1 {

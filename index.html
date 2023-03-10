@@ -42,7 +42,7 @@
         <img id="superDentinhoStart" src="images/characters/SUPER HAPPY TOOTH.gif" alt="">
 
         <!-- botao para iniciar o jogo -->
-        <img class="button" id="btnPlay" src="images/buttons/PLAY.png" alt="">
+        <img class="button" id="btnPlay" src="images/buttons/PLAY.svg" alt="">
 
         <!-- creative commmons direitos autorais -->
         <div class="creative-common">
@@ -59,13 +59,13 @@
         <img id="superDentinhoApresentation" src="images/characters/SUPER HAPPY TOOTH SPEAKING.gif" alt="">
 
         <!-- botoes de navegação do menu -->
-        <img class="button" id="btnRules" src="images/buttons/RULES.png" alt="" data-bs-toggle="tooltip"
+        <img class="button" id="btnRules" src="images/buttons/RULES.svg" alt="" data-bs-toggle="tooltip"
             data-bs-placement="top" title="Regras do Jogo">
-        <img class="button" id="btnCredits" src="images/buttons/CREDITS.png" alt="" data-bs-toggle="tooltip"
+        <img class="button" id="btnCredits" src="images/buttons/CREDITS.svg" alt="" data-bs-toggle="tooltip"
             data-bs-placement="top" title="Autores do Jogo">
-        <img class="button" id="btnContinue" src="images/buttons/PLAY.png" alt="" data-bs-toggle="tooltip"
+        <img class="button" id="btnContinue" src="images/buttons/PLAY.svg" alt="" data-bs-toggle="tooltip"
             data-bs-placement="top" title="Iniciar o Jogo">
-        <img class="button" id="btnTeoric" src="images/buttons/TEORIC REFERENCE.png" alt="" data-bs-toggle="tooltip"
+        <img class="button" id="btnTeoric" src="images/buttons/TEORIC REFERENCE.svg" alt="" data-bs-toggle="tooltip"
             data-bs-placement="top" title="Refencial Teórido do Jogo">
     </section>
 
@@ -73,7 +73,7 @@
         <img src="images/finger/finger pressing.png" alt="" class="fingerPressing" id="fingerPressingBoardgame">
 
         <!-- btns -->
-        <img class="button" id="btnBackFromBoardgameToMenu" src="images/buttons/BACK.png" alt="">
+        <img class="button" id="btnBackFromBoardgameToMenu" src="images/buttons/BACK.svg" alt="">
 
         <img class="questionSlot" id="q1" src="images/buttons/BUTTON.png" alt="" onclick="goToQuestion(0)">
         <img class="questionSlot" id="q2" src="images/buttons/BUTTON.png" alt="" onclick="goToQuestion(1)">
@@ -97,19 +97,19 @@
         <img class="questionSlot" id="q20" src="images/buttons/BUTTON.png" alt="" onclick="goToQuestion(19)">
         <img class="questionSlot" id="q21" src="images/buttons/BUTTON.png" alt="" onclick="goToQuestion(20)">
 
-        <img id="superDentinhoBoardGame" src="images/characters/super happy tooth.png" alt="">
+        <img id="superDentinhoBoardGame" src="images/characters/SUPER SICK TOOTH.png" alt="">
     </section>
 
     <section id="rules">
         <!-- btns -->
-        <img id="btnBackFromRulesToApresentation" src="images/buttons/BACK.png" alt="">
-        <img class="button" id="btnNextRule" src="images/buttons/NEXT.png" alt="" onclick="nextRule()">
+        <img id="btnBackFromRulesToApresentation" src="images/buttons/BACK.svg" alt="">
+        <img class="button" id="btnNextRule" src="images/buttons/NEXT.svg" alt="" onclick="nextRule()">
     </section>
 
     <section id="credits">
         <!-- btns -->
-        <img id="btnBackFromCreditsToApresentation" src="images/buttons/BACK.png" alt="">
-        <img class="button" id="btnNextCredit" src="images/buttons/NEXT.png" alt="" onclick="nextAuthor()">
+        <img id="btnBackFromCreditsToApresentation" src="images/buttons/BACK.svg" alt="">
+        <img class="button" id="btnNextCredit" src="images/buttons/NEXT.svg" alt="" onclick="nextAuthor()">
 
         <!-- txt's -->
         <p class="apresentationText" id="titleApresentationCredits"></p>
@@ -117,7 +117,7 @@
     </section>
 
     <section id="question">
-        <img id="btnBackFromQuestionToBoardgame" src="images/buttons/BACK.png" alt="">
+        <img id="btnBackFromQuestionToBoardgame" src="images/buttons/BACK.svg" alt="">
 
         <img class="optionButton" id="optionButton1" src="images/buttons/BUTTON.png" alt=""
             onclick="verifyQuestion(this.id)">
@@ -151,11 +151,12 @@
             </div>
         </div>
 
-        <img class="button" id="btnNextFromToBoardgame" src="images/buttons/NEXT.png" alt="">
+        <img class="button" id="btnNextFromToBoardgame" src="images/buttons/NEXT.svg" alt="">
     </section>
 
     <section id="teoricReference">
-        <img id="btnBackFromTeoricReferenceToApresentation" src="images/buttons/BACK.png" alt="">
+        <img id="btnBackFromTeoricReferenceToApresentation" src="images/buttons/BACK.svg" alt="">
+        <img class="button" id="btnNextTeoricReference" src="images/buttons/NEXT.svg" alt="" onclick="nextTeoricReference()">
     </section>
 
     <section id="victory"></section>
@@ -173,6 +174,7 @@
     <script src="scripts/navigationScreens.js"></script>
     <script src="scripts/apresentationCredits.js"></script>
     <script src="scripts/apresentationRules.js"></script>
+    <script src="scripts/apresentationTeoricReference.js"></script>
     <script src="scripts/confetti.js"></script>
     <script src="scripts/orientation.js"></script>
     <script src="scripts/questions.js"></script>
