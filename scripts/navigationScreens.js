@@ -62,7 +62,12 @@ function navigateFromTeoricReferenceToApresentation() {
     sectionTeoricReference.style.display = 'none'
     sectionApresentation.style.display = 'flex'
 
-    document.body.classList.remove("teoricReference")
+    document.body.classList.remove("teoricReference1")
+    document.body.classList.remove("teoricReference2")
+    document.body.classList.remove("teoricReference3")
+    document.body.classList.remove("teoricReference4")
+    document.body.classList.remove("teoricReference5")
+    document.body.classList.remove("teoricReference6")
     document.body.classList.add("apresentation")
 }
 
