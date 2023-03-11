@@ -15,14 +15,14 @@ var questions = [
         correctAnswerExplanation: "Isso aí!!! Você acertou devemos inclinar a escova 45° e escovar os dentes em todas suas faces, lembrando que acima (na oclusal) dos dentinhos faremos movimento de vai e vem.",
         wrongAnswerExplanation: "Incorreta ,que pena você errou! A técnica da bolinha e para crianças menores de 8 anos ou aqueles que tem dificuldade motora, na hora da escovação.",
         tip: `<h5>Método de Stillman Modificado</h5>
-        <iframe src="https://www.youtube.com/embed/LLX8uFlWLDA?start=58&end=91&controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/LLX8uFlWLDA?start=58&end=91&controls=&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         <hr>
         <h5>Método de Bass Modificado</h5>
         <iframe src="https://www.youtube.com/embed/LLX8uFlWLDA?start=92&end=113&controls=0" title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen></iframe>
-        <small>Fonte: Dentalpad</small>`
+        <small>DENTALPAD. Como escovar os dentes: principais técnicas. YouTube, 02 de outubro de 2016. Disponível em: <https://www.youtube.com/watch?v=LLX8uFlWLDA>. Acesso em: 10 de março de 2023.</small>`
     },
     {
         title: "Como deve ser a escovinha dental?",
@@ -31,7 +31,7 @@ var questions = [
         correctAnswerExplanation: "Parabéns!! Isso mesmo você está indo muito bem, a escova dental deve sempre ser pequena e macia para conseguir limpar todos os cantinhos do dente, sem machucar.",
         wrongAnswerExplanation: "Incorreta !A escovinha sempre deve ser pequena e macia  para conseguir limpar todos os cantinhos do dente ,sem machucar.",
         tip: `<img src="https://trindadeodontologia.com/wp-content/uploads/2017/08/escova-de-dentes-ideal.jpg" alt="" width="100%">
-        <small>Fonte: Trindadeodontologia</small>`
+        <small>Fonte: Trindadeodontologia </small>`
     },
     {
         title: "A pasta de dental e uma grande amiga da escovinha, ela precisa de flúor para manter o dentinho longe das cáries?",
