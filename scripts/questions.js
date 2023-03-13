@@ -30,7 +30,7 @@ var questions = [
         answer: "Macia, e com a cabeça da escova pequena.",
         correctAnswerExplanation: "Parabéns!! Isso mesmo você está indo muito bem, a escova dental deve sempre ser pequena e macia para conseguir limpar todos os cantinhos do dente, sem machucar.",
         wrongAnswerExplanation: "Incorreta !A escovinha sempre deve ser pequena e macia  para conseguir limpar todos os cantinhos do dente ,sem machucar.",
-        tip: `<img src="https://trindadeodontologia.com/wp-content/uploads/2017/08/escova-de-dentes-ideal.jpg" alt="" width="100%">
+        tip: `<img src="./images/questions/escova-de-dentes-ideal.jpg" alt="" style="width: 600px; max-width: 100%">
         <small>Fonte: Trindadeodontologia </small>`
     },
     {
@@ -47,7 +47,7 @@ var questions = [
         answer: "A quantidade e relativa a um grão de ervilha.",
         correctAnswerExplanation: "Acertou!!! a pasta deve ser colocada na idade de vocês, do mesmo tamanho de um carocinho de ver ilha!! ( foto de uma ervilha)",
         wrongAnswerExplanation: "Errou !!! a pasta deve ser colocada na idade de vocês ,do mesmo tamanho de um carocinho de ver ilha!! ( foto de uma ervilha)",
-        tip: `<img src="https://monicabarreto.com.br/wp-content/uploads/2020/01/quantidade-pasta.jpg" alt="" width="100%">
+        tip: `<img src="./images/questions/quantidade-de-pasta.jpg" alt="" style="width: 600px; max-width: 100%">
         <small>Fonte: Monicabarreto</small>`
     },
     {
@@ -72,7 +72,7 @@ var questions = [
         answer: "Antes da escovação.",
         correctAnswerExplanation: "Isso aí!! Muito bem sempre antes da escovação passamos o fio dental",
         wrongAnswerExplanation: "Errou! ( carinha de triste) sempre antes da escovação passamos o fio dental",
-        tip: `<h5>Como escovar a língua corretamente?</h5>
+        tip: `<h5>Como usar o fio dental corretamente?</h5>
         <iframe src="https://www.youtube.com/embed/hM4-koredp8?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         <small>Fonte: Colgate Brasil</small>`
     },
@@ -98,7 +98,7 @@ var questions = [
         answer: "Sim, todas as escovações precisamos escovar a língua(língua sendo limpa)",
         correctAnswerExplanation: "Sim!!!! A língua assim como os dentes ,precisa de cuidados ,todas as vezes que escovamos os dentes ,precisamos escovar a língua também .",
         wrongAnswerExplanation: "Errada! A língua assim como os dentes, precisa de cuidados ,todas as vezes que escovamos os dentes ,precisamos escovar a língua também",
-        tip: `<h5>Como usar fio dental corretamente?</h5>
+        tip: `<h5>Como realizar a Higienização da Língua corretamente?</h5>
         <iframe src="https://www.youtube.com/embed/9FCeLKfY6V0?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>        
         <small>Fonte: Vina Gonçalves</small>`
     },
@@ -116,7 +116,7 @@ var questions = [
         answer: "Diminuir os açúcares da comida, e sempre higienizar a boca.",
         correctAnswerExplanation: "Correto! Diminuindo, e higienizando teremos sempre uma boca livre da doença cárie",
         wrongAnswerExplanation: "Incorreto! Devemos diminuir da nossa comida os açúcares, como: balas, doces, refrigerantes e higienizar sempre a boca, após todas as alimentações!",
-        tip: `<h5>Como usar fio dental corretamente?</h5>
+        tip: `<h5>Cuide bem dos seus dentes!</h5>
         <iframe src="https://www.youtube.com/embed/HpXslusc0TE?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>        
         <small>Fonte: Coleção Miau</small>`
     },
