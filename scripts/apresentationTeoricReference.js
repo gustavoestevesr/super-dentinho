@@ -37,3 +37,14 @@ function nextTeoricReference(){
     playNotificationSound();
     displayApresentationTeoricReference()
 }
+
+function previousTeoricReference(){
+    if ( numberTeoricReference < numberOfPagesOfTeoricReference ) {  
+        numberTeoricReference = numberOfPagesOfTeoricReference           
+    } else {
+        numberTeoricReference--
+    }
+    playNotificationSound();
+    displayApresentationTeoricReference()
+}
+

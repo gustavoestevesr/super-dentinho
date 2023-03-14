@@ -33,7 +33,7 @@
     <meta name="author" content="Gustavo Esteves Rocha">
 </head>
 
-<body>
+<body onload="checkDevice()">
 
     <section id="rotateScreen"></section>
 
@@ -66,10 +66,13 @@
         <img class="button" id="btnContinue" src="images/buttons/PLAY.svg" alt="" data-bs-toggle="tooltip"
             data-bs-placement="top" title="Iniciar o Jogo">
         <img class="button" id="btnTeoric" src="images/buttons/TEORIC REFERENCE.svg" alt="" data-bs-toggle="tooltip"
-            data-bs-placement="top" title="Refencial Teórido do Jogo">
+            data-bs-placement="top" title="Refencial Teórico do Jogo">
     </section>
 
     <section id="boardgame">
+
+        <img id="superDentinhoBoardGame" src="images/characters/SUPER SICK TOOTH.png" alt="">
+
         <img src="images/finger/finger pressing.png" alt="" class="fingerPressing" id="fingerPressingBoardgame">
 
         <!-- btns -->
@@ -95,20 +98,20 @@
         <img class="questionSlot" id="q18" src="images/buttons/BUTTON.png" alt="" onclick="goToQuestion(17)">
         <img class="questionSlot" id="q19" src="images/buttons/BUTTON.png" alt="" onclick="goToQuestion(18)">
         <img class="questionSlot" id="q20" src="images/buttons/BUTTON.png" alt="" onclick="goToQuestion(19)">
-        <img class="questionSlot" id="q21" src="images/buttons/BUTTON.png" alt="" onclick="goToQuestion(20)">
-
-        <img id="superDentinhoBoardGame" src="images/characters/SUPER SICK TOOTH.png" alt="">
+        <img class="questionSlot" id="q21" src="images/buttons/BUTTON.png" alt="" onclick="goToQuestion(20)">        
     </section>
-
+   
     <section id="rules">
         <!-- btns -->
         <img id="btnBackFromRulesToApresentation" src="images/buttons/BACK.svg" alt="">
+        <img class="button" id="btnPreviousRule" src="images/buttons/PREVIOUS.svg" alt="" onclick="previousRule()">
         <img class="button" id="btnNextRule" src="images/buttons/NEXT.svg" alt="" onclick="nextRule()">
     </section>
 
     <section id="credits">
         <!-- btns -->
         <img id="btnBackFromCreditsToApresentation" src="images/buttons/BACK.svg" alt="">
+        <img class="button" id="btnPreviousCredit" src="images/buttons/PREVIOUS.svg" alt="" onclick="previousAuthor()">
         <img class="button" id="btnNextCredit" src="images/buttons/NEXT.svg" alt="" onclick="nextAuthor()">
 
         <!-- txt's -->
@@ -157,6 +160,7 @@
     <section id="teoricReference">
         <img id="btnBackFromTeoricReferenceToApresentation" src="images/buttons/BACK.svg" alt="">
         <img class="button" id="btnNextTeoricReference" src="images/buttons/NEXT.svg" alt="" onclick="nextTeoricReference()">
+        <img class="button" id="btnPreviousTeoricReference" src="images/buttons/PREVIOUS.svg" alt="" onclick="previousTeoricReference()">
     </section>
 
     <section id="victory"></section>

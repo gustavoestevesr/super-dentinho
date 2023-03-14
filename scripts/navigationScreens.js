@@ -13,13 +13,13 @@ async function navigateFromOrientationToMenu() {
     sectionRotateScreen.style.display = "none"
     document.body.classList.remove("rotatescreen");
 
-    document.querySelector('#menu').style.display = "flex"
+    sectionMenu.style.display = "flex"
     document.body.classList.add("start");   
 }
 
 
 function navigateFromAnyToMenu() {
-    document.querySelector('#menu').style.display = "flex"
+    sectionMenu.style.display = "flex"
     document.body.classList.add("start");
 }
 
@@ -75,23 +75,23 @@ function navigateFromApresentationToBoardgame() {
     sectionApresentation.style.display = 'none'
     sectionBoardgame.style.display = 'flex'
 
-    document.body.classList.remove("apresentation")
-    document.body.classList.add("boardgame")
-
     fingerPressingBoardgame.style.top = getOffset(document.querySelector( `img#q${numberQuestion+1}.questionSlot.p${numberQuestion+1}` )).top + distanceFingerTop + 'px';
     fingerPressingBoardgame.style.left = getOffset(document.querySelector( `img#q${numberQuestion+1}.questionSlot.p${numberQuestion+1}` )).left + distanceFingerLeft + 'px';
+
+    document.body.classList.remove("apresentation")
+    document.body.classList.add("boardgame")    
 }
 
 function navigateForTheNextQuestionInBoardgame() {
     sectionAnswer.style.display = 'none'
     sectionBoardgame.style.display = 'flex'
-    
-    document.body.classList.remove(`correctanswer${numberQuestion-1}`)
-    document.body.classList.remove(`wronganswer${numberQuestion}`)
-    document.body.classList.add("boardgame")      
 
     fingerPressingBoardgame.style.top = getOffset(document.querySelector( `img#q${numberQuestion+1}.questionSlot.p${numberQuestion+1}` )).top + distanceFingerTop + 'px';
     fingerPressingBoardgame.style.left = getOffset(document.querySelector( `img#q${numberQuestion+1}.questionSlot.p${numberQuestion+1}` )).left + distanceFingerLeft + 'px';
+    
+    document.body.classList.remove(`correctanswer${numberQuestion-1}`)
+    document.body.classList.remove(`wronganswer${numberQuestion}`)
+    document.body.classList.add("boardgame")          
 
     sound1.volume = 1;
     sound2.volume = 1;

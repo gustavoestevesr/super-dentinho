@@ -25,3 +25,14 @@ function nextRule(){
     playNotificationSound();
     displayApresentationRules()
 }
+
+function previousRule(){
+    if ( numberRule < numberOfPagesFromRules ) {    
+        numberRule = numberOfPagesFromRules         
+    } else {
+        numberRule--
+    }
+    playNotificationSound();
+    displayApresentationRules()
+}
+

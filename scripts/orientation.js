@@ -36,8 +36,6 @@ function checkDevice() {
     setDistanceFingerTopLeft()
 }
 
-checkDevice()
-
 /* DETECTAR SE USUARIO AJUSTOU A TELA PARA HORIZONTAL */
 
 let portrait = window.matchMedia("(orientation: portrait)");

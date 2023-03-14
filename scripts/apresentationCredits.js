@@ -28,3 +28,14 @@ function nextAuthor(){
     playNotificationSound();
     displayApresentationCredits()
 }
+
+function previousAuthor(){
+    if ( numberAuthor < numberOfPagesFromCredits ) {
+        numberAuthor = numberOfPagesFromCredits
+    } else {
+        numberAuthor--
+    }
+    playNotificationSound();
+    displayApresentationCredits()
+}
+

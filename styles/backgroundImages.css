@@ -471,14 +471,14 @@
 }
 
 .creditsCarlos {
-    background-image: url("../images/backgrounds/CREDITS\ CARLOS.png");
+    background-image: url("../images/backgrounds/CREDITS\ CARLOS.svg");
     background-size: contain;
     background-color: #008de6;
     background-position: center;
 }
 
 .creditsGustavo {
-    background-image: url("../images/backgrounds/CREDITS\ GUSTAVO.png");
+    background-image: url("../images/backgrounds/CREDITS\ GUSTAVO.svg");
     background-size: contain;
     background-color: #008de6;
     background-position: center;
@@ -487,14 +487,14 @@
 /* RULES */
 
 .rules1 {
-    background-image: url("../images/backgrounds/RULES\ 1.png");
+    background-image: url("../images/backgrounds/RULES\ 1.svg");
     background-size: contain;
     background-color: #008de6;
     background-position: center;
 }
 
 .rules2 {
-    background-image: url("../images/backgrounds/RULES\ 2.png");
+    background-image: url("../images/backgrounds/RULES\ 2.svg");
     background-size: contain;
     background-color: #008de6;
     background-position: center;

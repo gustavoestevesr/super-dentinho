@@ -188,9 +188,10 @@ btnBackFromTeoricReferenceToApresentation.addEventListener("click", function () 
 });
 
 btnBackFromQuestionToBoardgame.addEventListener("click", function () {
-  playNotificationSound();
-  navigateFromQuestionToBoardgame();
-  updateDentinhoPosition(numberQuestion - 1);
+  // updateDentinhoPosition(numberQuestion - 1);
+  updateDentinhoPosition(numberQuestion);
+  playNotificationSound();  
+  navigateFromQuestionToBoardgame();  
 });
 
 // SHOW VICTORY
@@ -363,7 +364,7 @@ async function goToQuestion(slotSelectedFromUSer) {
     return;
   } else if (slotSelectedFromUSer === numberQuestion) {
     updateDentinhoPosition(numberQuestion);
-    await delay(500);
+    await delay(1000);
     navigateFromBoardgameToQuestion();    
   }
 }
@@ -404,18 +405,23 @@ function feedbackAnswer(statusAnswerUser) {
   navigateFromQuestionToAnswer();
 
   if (statusAnswerUser) {
+    // updateDentinhoPosition(numberQuestion);
+    // numberQuestion++;
+    updateDentinhoPosition(numberQuestion);   
+
     document.body.classList.add(`correctanswer${numberQuestion}`);
     showTip() 
     playCorrectSound();
     start();
     stop();
 
-    updateDentinhoPosition(numberQuestion);
     numberQuestion++;
   } else {
+    // updateDentinhoPosition(numberQuestion - 1);
+    updateDentinhoPosition(numberQuestion);
+
     document.body.classList.add(`wronganswer${numberQuestion}`);
-    playWrongSound();
-    updateDentinhoPosition(numberQuestion - 1);
+    playWrongSound();    
   }  
 }
 
