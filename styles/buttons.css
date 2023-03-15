@@ -47,7 +47,9 @@
 .button {
     position: fixed;
     width: 9vw;
+    max-width: 200px;
     height: 9vw;    
+    max-height: 200px;
     cursor: pointer;
     z-index: 20;
 }
@@ -59,8 +61,8 @@
 }
 
 .optionButton {
-    /* width: 7.5vw; */
     width: 15vw;
+    max-width: 350px;
     position: fixed;
     z-index: 30;
     cursor: pointer;

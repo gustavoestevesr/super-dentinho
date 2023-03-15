@@ -1,33 +1,33 @@
 .rotatescreen {
-    background-image: url("../images/backgrounds/ROTATESCREEN.jpg");
+    background-image: url("../images/backgrounds/ROTATESCREEN.png");
     background-color: #008de6;
     background-position: center;
     background-size: contain;
 }
 
 .start {
-    background-image: url("../images/backgrounds/START.jpg");
+    background-image: url("../images/backgrounds/START.png");
     background-color: #008de6;
     background-position: left;
     background-size: contain;    
 }
 
 .apresentation {    
-    background-image: url("../images/backgrounds/APRESENTATION.jpg");
+    background-image: url("../images/backgrounds/APRESENTATION.png");
     background-color: #008de6;
     background-position: center;
     background-size: contain;
 }
 
 .background {
-    background-image: url("../images/backgrounds/BACKGROUND.jpg");
+    background-image: url("../images/backgrounds/BACKGROUND.png");
     background-color: #008de6;
     background-position: center;
     background-size: contain;
 }
 
 .boardgame {
-    background-image: url("../images/backgrounds/BOARDGAME.jpg");
+    background-image: url("../images/backgrounds/BOARDGAME.png");
     background-size: contain;
     background-color: #008de6; 
     background-position: center;    
@@ -36,127 +36,127 @@
 /* QUESTION */
 
 .question0 {
-    background-image: url("../images/backgrounds/QUESTION0.jpg");
+    background-image: url("../images/backgrounds/QUESTION0.png");
     background-color: #008de6;
     background-position: center;
 }
 
 .question1 {
-    background-image: url("../images/backgrounds/QUESTION1.jpg");
+    background-image: url("../images/backgrounds/QUESTION1.png");
     background-color: #008de6;
     background-position: center;
 }
 
 .question2 {
-    background-image: url("../images/backgrounds/QUESTION2.jpg");
+    background-image: url("../images/backgrounds/QUESTION2.png");
     background-color: #008de6;
     background-position: center;
 }
 
 .question3 {
-    background-image: url("../images/backgrounds/QUESTION3.jpg");
+    background-image: url("../images/backgrounds/QUESTION3.png");
     background-color: #008de6;
     background-position: center;
 }
 
 .question4 {
-    background-image: url("../images/backgrounds/QUESTION4.jpg");
+    background-image: url("../images/backgrounds/QUESTION4.png");
     background-color: #008de6;
     background-position: center;
 }
 
 .question5 {
-    background-image: url("../images/backgrounds/QUESTION5.jpg");
+    background-image: url("../images/backgrounds/QUESTION5.png");
     background-color: #008de6;
     background-position: center;
 }
 
 .question6 {
-    background-image: url("../images/backgrounds/QUESTION6.jpg");
+    background-image: url("../images/backgrounds/QUESTION6.png");
     background-color: #008de6;
     background-position: center;
 }
 
 .question7 {
-    background-image: url("../images/backgrounds/QUESTION7.jpg");
+    background-image: url("../images/backgrounds/QUESTION7.png");
     background-color: #008de6;
     background-position: center;
 }
 
 .question8 {
-    background-image: url("../images/backgrounds/QUESTION8.jpg");
+    background-image: url("../images/backgrounds/QUESTION8.png");
     background-color: #008de6;
     background-position: center;
 }
 
 .question9 {
-    background-image: url("../images/backgrounds/QUESTION9.jpg");
+    background-image: url("../images/backgrounds/QUESTION9.png");
     background-color: #008de6;
     background-position: center;
 }
 
 .question10 {
-    background-image: url("../images/backgrounds/QUESTION10.jpg");
+    background-image: url("../images/backgrounds/QUESTION10.png");
     background-color: #008de6;
     background-position: center;
 }
 
 .question11 {
-    background-image: url("../images/backgrounds/QUESTION11.jpg");
+    background-image: url("../images/backgrounds/QUESTION11.png");
     background-color: #008de6;
     background-position: center;
 }
 
 .question12 {
-    background-image: url("../images/backgrounds/QUESTION12.jpg");
+    background-image: url("../images/backgrounds/QUESTION12.png");
     background-color: #008de6;
     background-position: center;
 }
 
 .question13 {
-    background-image: url("../images/backgrounds/QUESTION13.jpg");
+    background-image: url("../images/backgrounds/QUESTION13.png");
     background-color: #008de6;
     background-position: center;
 }
 
 .question14 {
-    background-image: url("../images/backgrounds/QUESTION14.jpg");
+    background-image: url("../images/backgrounds/QUESTION14.png");
     background-color: #008de6;
     background-position: center;
 }
 
 .question15 {
-    background-image: url("../images/backgrounds/QUESTION15.jpg");
+    background-image: url("../images/backgrounds/QUESTION15.png");
     background-color: #008de6;
     background-position: center;
 }
 
 .question16 {
-    background-image: url("../images/backgrounds/QUESTION16.jpg");
+    background-image: url("../images/backgrounds/QUESTION16.png");
     background-color: #008de6;
     background-position: center;
 }
 
 .question17 {
-    background-image: url("../images/backgrounds/QUESTION17.jpg");
+    background-image: url("../images/backgrounds/QUESTION17.png");
     background-color: #008de6;
     background-position: center;
 }
 
 .question18 {
-    background-image: url("../images/backgrounds/QUESTION18.jpg");
+    background-image: url("../images/backgrounds/QUESTION18.png");
     background-color: #008de6;
     background-position: center;
 }
 
 .question19 {
-    background-image: url("../images/backgrounds/QUESTION19.jpg");
+    background-image: url("../images/backgrounds/QUESTION19.png");
     background-color: #008de6;
     background-position: center;
 }
 
 .question20 {
-    background-image: url("../images/backgrounds/QUESTION20.jpg");
+    background-image: url("../images/backgrounds/QUESTION20.png");
     background-color: #008de6;
     background-position: center;
 }
@@ -164,127 +164,127 @@
 /* CORRECT ANSWER */
 
 .correctanswer0 {
-    background-image: url("../images/backgrounds/CORRECTANSWER0.jpg");
+    background-image: url("../images/backgrounds/CORRECTANSWER0.png");
     background-color: #008de6;
     background-position: center;
 }
 
 .correctanswer1 {
-    background-image: url("../images/backgrounds/CORRECTANSWER1.jpg");
+    background-image: url("../images/backgrounds/CORRECTANSWER1.png");
     background-color: #008de6;
     background-position: center;
 }
 
 .correctanswer2 {
-    background-image: url("../images/backgrounds/CORRECTANSWER2.jpg");
+    background-image: url("../images/backgrounds/CORRECTANSWER2.png");
     background-color: #008de6;
     background-position: center;
 }
 
 .correctanswer3 {
-    background-image: url("../images/backgrounds/CORRECTANSWER3.jpg");
+    background-image: url("../images/backgrounds/CORRECTANSWER3.png");
     background-color: #008de6;
     background-position: center;
 }
 
 .correctanswer4 {
-    background-image: url("../images/backgrounds/CORRECTANSWER4.jpg");
+    background-image: url("../images/backgrounds/CORRECTANSWER4.png");
     background-color: #008de6;
     background-position: center;
 }
 
 .correctanswer5 {
-    background-image: url("../images/backgrounds/CORRECTANSWER5.jpg");
+    background-image: url("../images/backgrounds/CORRECTANSWER5.png");
     background-color: #008de6;
     background-position: center;
 }
 
 .correctanswer6 {
-    background-image: url("../images/backgrounds/CORRECTANSWER6.jpg");
+    background-image: url("../images/backgrounds/CORRECTANSWER6.png");
     background-color: #008de6;
     background-position: center;
 }
 
 .correctanswer7 {
-    background-image: url("../images/backgrounds/CORRECTANSWER7.jpg");
+    background-image: url("../images/backgrounds/CORRECTANSWER7.png");
     background-color: #008de6;
     background-position: center;
 }
 
 .correctanswer8 {
-    background-image: url("../images/backgrounds/CORRECTANSWER8.jpg");
+    background-image: url("../images/backgrounds/CORRECTANSWER8.png");
     background-color: #008de6;
     background-position: center;
 }
 
 .correctanswer9 {
-    background-image: url("../images/backgrounds/CORRECTANSWER9.jpg");
+    background-image: url("../images/backgrounds/CORRECTANSWER9.png");
     background-color: #008de6;
     background-position: center;
 }
 
 .correctanswer10 {
-    background-image: url("../images/backgrounds/CORRECTANSWER10.jpg");
+    background-image: url("../images/backgrounds/CORRECTANSWER10.png");
     background-color: #008de6;
     background-position: center;
 }
 
 .correctanswer11 {
-    background-image: url("../images/backgrounds/CORRECTANSWER11.jpg");
+    background-image: url("../images/backgrounds/CORRECTANSWER11.png");
     background-color: #008de6;
     background-position: center;
 }
 
 .correctanswer12 {
-    background-image: url("../images/backgrounds/CORRECTANSWER12.jpg");
+    background-image: url("../images/backgrounds/CORRECTANSWER12.png");
     background-color: #008de6;
     background-position: center;
 }
 
 .correctanswer13 {
-    background-image: url("../images/backgrounds/CORRECTANSWER13.jpg");
+    background-image: url("../images/backgrounds/CORRECTANSWER13.png");
     background-color: #008de6;
     background-position: center;
 }
 
 .correctanswer14 {
-    background-image: url("../images/backgrounds/CORRECTANSWER14.jpg");
+    background-image: url("../images/backgrounds/CORRECTANSWER14.png");
     background-color: #008de6;
     background-position: center;
 }
 
 .correctanswer15 {
-    background-image: url("../images/backgrounds/CORRECTANSWER15.jpg");
+    background-image: url("../images/backgrounds/CORRECTANSWER15.png");
     background-color: #008de6;
     background-position: center;
 }
 
 .correctanswer16 {
-    background-image: url("../images/backgrounds/CORRECTANSWER16.jpg");
+    background-image: url("../images/backgrounds/CORRECTANSWER16.png");
     background-color: #008de6;
     background-position: center;
 }
 
 .correctanswer17 {
-    background-image: url("../images/backgrounds/CORRECTANSWER17.jpg");
+    background-image: url("../images/backgrounds/CORRECTANSWER17.png");
     background-color: #008de6;
     background-position: center;
 }
 
 .correctanswer18 {
-    background-image: url("../images/backgrounds/CORRECTANSWER18.jpg");
+    background-image: url("../images/backgrounds/CORRECTANSWER18.png");
     background-color: #008de6;
     background-position: center;
 }
 
 .correctanswer19 {
-    background-image: url("../images/backgrounds/CORRECTANSWER19.jpg");
+    background-image: url("../images/backgrounds/CORRECTANSWER19.png");
     background-color: #008de6;
     background-position: center;
 }
 
 .correctanswer20 {
-    background-image: url("../images/backgrounds/CORRECTANSWER20.jpg");
+    background-image: url("../images/backgrounds/CORRECTANSWER20.png");
     background-color: #008de6;
     background-position: center;
 }
@@ -292,127 +292,127 @@
 /* WRONG ANSWER */
 
 .wronganswer0 {
-    background-image: url("../images/backgrounds/WRONGANSWER0.jpg");
+    background-image: url("../images/backgrounds/WRONGANSWER0.png");
     background-color: #008de6;
     background-position: center;
 }
 
 .wronganswer1 {
-    background-image: url("../images/backgrounds/WRONGANSWER1.jpg");
+    background-image: url("../images/backgrounds/WRONGANSWER1.png");
     background-color: #008de6;
     background-position: center;
 }
 
 .wronganswer2 {
-    background-image: url("../images/backgrounds/WRONGANSWER2.jpg");
+    background-image: url("../images/backgrounds/WRONGANSWER2.png");
     background-color: #008de6;
     background-position: center;
 }
 
 .wronganswer3 {
-    background-image: url("../images/backgrounds/WRONGANSWER3.jpg");
+    background-image: url("../images/backgrounds/WRONGANSWER3.png");
     background-color: #008de6;
     background-position: center;
 }
 
 .wronganswer4 {
-    background-image: url("../images/backgrounds/WRONGANSWER4.jpg");
+    background-image: url("../images/backgrounds/WRONGANSWER4.png");
     background-color: #008de6;
     background-position: center;
 }
 
 .wronganswer5 {
-    background-image: url("../images/backgrounds/WRONGANSWER5.jpg");
+    background-image: url("../images/backgrounds/WRONGANSWER5.png");
     background-color: #008de6;
     background-position: center;
 }
 
 .wronganswer6 {
-    background-image: url("../images/backgrounds/WRONGANSWER6.jpg");
+    background-image: url("../images/backgrounds/WRONGANSWER6.png");
     background-color: #008de6;
     background-position: center;
 }
 
 .wronganswer7 {
-    background-image: url("../images/backgrounds/WRONGANSWER7.jpg");
+    background-image: url("../images/backgrounds/WRONGANSWER7.png");
     background-color: #008de6;
     background-position: center;
 }
 
 .wronganswer8 {
-    background-image: url("../images/backgrounds/WRONGANSWER8.jpg");
+    background-image: url("../images/backgrounds/WRONGANSWER8.png");
     background-color: #008de6;
     background-position: center;
 }
 
 .wronganswer9 {
-    background-image: url("../images/backgrounds/WRONGANSWER9.jpg");
+    background-image: url("../images/backgrounds/WRONGANSWER9.png");
     background-color: #008de6;
     background-position: center;
 }
 
 .wronganswer10 {
-    background-image: url("../images/backgrounds/WRONGANSWER10.jpg");
+    background-image: url("../images/backgrounds/WRONGANSWER10.png");
     background-color: #008de6;
     background-position: center;
 }
 
 .wronganswer11 {
-    background-image: url("../images/backgrounds/WRONGANSWER11.jpg");
+    background-image: url("../images/backgrounds/WRONGANSWER11.png");
     background-color: #008de6;
     background-position: center;
 }
 
 .wronganswer12 {
-    background-image: url("../images/backgrounds/WRONGANSWER12.jpg");
+    background-image: url("../images/backgrounds/WRONGANSWER12.png");
     background-color: #008de6;
     background-position: center;
 }
 
 .wronganswer13 {
-    background-image: url("../images/backgrounds/WRONGANSWER13.jpg");
+    background-image: url("../images/backgrounds/WRONGANSWER13.png");
     background-color: #008de6;
     background-position: center;
 }
 
 .wronganswer14 {
-    background-image: url("../images/backgrounds/WRONGANSWER14.jpg");
+    background-image: url("../images/backgrounds/WRONGANSWER14.png");
     background-color: #008de6;
     background-position: center;
 }
 
 .wronganswer15 {
-    background-image: url("../images/backgrounds/WRONGANSWER15.jpg");
+    background-image: url("../images/backgrounds/WRONGANSWER15.png");
     background-color: #008de6;
     background-position: center;
 }
 
 .wronganswer16 {
-    background-image: url("../images/backgrounds/WRONGANSWER16.jpg");
+    background-image: url("../images/backgrounds/WRONGANSWER16.png");
     background-color: #008de6;
     background-position: center;
 }
 
 .wronganswer17 {
-    background-image: url("../images/backgrounds/WRONGANSWER17.jpg");
+    background-image: url("../images/backgrounds/WRONGANSWER17.png");
     background-color: #008de6;
     background-position: center;
 }
 
 .wronganswer18 {
-    background-image: url("../images/backgrounds/WRONGANSWER18.jpg");
+    background-image: url("../images/backgrounds/WRONGANSWER18.png");
     background-color: #008de6;
     background-position: center;
 }
 
 .wronganswer19 {
-    background-image: url("../images/backgrounds/WRONGANSWER19.jpg");
+    background-image: url("../images/backgrounds/WRONGANSWER19.png");
     background-color: #008de6;
     background-position: center;
 }
 
 .wronganswer20 {
-    background-image: url("../images/backgrounds/WRONGANSWER20.jpg");
+    background-image: url("../images/backgrounds/WRONGANSWER20.png");
     background-color: #008de6;
     background-position: center;
 }
@@ -420,42 +420,35 @@
 /* TEORIC REFERENCE */
 
 .teoricReference1 {
-    background-image: url("../images/backgrounds/TEORIC\ REFERENCE\ 1.jpg");
+    background-image: url("../images/backgrounds/TEORIC\ REFERENCE\ 1.png");
     background-size: contain;
     background-color: #008de6;
     background-position: center;
 }
 
 .teoricReference2 {
-    background-image: url("../images/backgrounds/TEORIC\ REFERENCE\ 2.jpg");
+    background-image: url("../images/backgrounds/TEORIC\ REFERENCE\ 2.png");
     background-size: contain;
     background-color: #008de6;
     background-position: center;
 }
 
 .teoricReference3 {
-    background-image: url("../images/backgrounds/TEORIC\ REFERENCE\ 3.jpg");
+    background-image: url("../images/backgrounds/TEORIC\ REFERENCE\ 3.png");
     background-size: contain;
     background-color: #008de6;
     background-position: center;
 }
 
 .teoricReference4 {
-    background-image: url("../images/backgrounds/TEORIC\ REFERENCE\ 4.jpg");
+    background-image: url("../images/backgrounds/TEORIC\ REFERENCE\ 4.png");
     background-size: contain;
     background-color: #008de6;
     background-position: center;
 }
 
 .teoricReference5 {
-    background-image: url("../images/backgrounds/TEORIC\ REFERENCE\ 5.jpg");
-    background-size: contain;
-    background-color: #008de6;
-    background-position: center;
-}
-
-.teoricReference6 {
-    background-image: url("../images/backgrounds/TEORIC\ REFERENCE\ 6.jpg");
+    background-image: url("../images/backgrounds/TEORIC\ REFERENCE\ 5.png");
     background-size: contain;
     background-color: #008de6;
     background-position: center;
@@ -463,22 +456,22 @@
 
 /* CREDITS */
 
-.creditsVanessa {
-    background-image: url("../images/backgrounds/CREDITS\ VANESSA.jpg");
+.credits1 {
+    background-image: url("../images/backgrounds/CREDITS\ VANESSA.png");
     background-size: contain;
     background-color: #008de6;
     background-position: center;
 }
 
-.creditsCarlos {
-    background-image: url("../images/backgrounds/CREDITS\ CARLOS.jpg");
+.credits2 {
+    background-image: url("../images/backgrounds/CREDITS\ CARLOS.png");
     background-size: contain;
     background-color: #008de6;
     background-position: center;
 }
 
-.creditsGustavo {
-    background-image: url("../images/backgrounds/CREDITS\ GUSTAVO.jpg");
+.credits3 {
+    background-image: url("../images/backgrounds/CREDITS\ GUSTAVO.png");
     background-size: contain;
     background-color: #008de6;
     background-position: center;
@@ -487,14 +480,14 @@
 /* RULES */
 
 .rules1 {
-    background-image: url("../images/backgrounds/RULES\ 1.jpg");
+    background-image: url("../images/backgrounds/RULES\ 1.png");
     background-size: contain;
     background-color: #008de6;
     background-position: center;
 }
 
 .rules2 {
-    background-image: url("../images/backgrounds/RULES\ 2.jpg");
+    background-image: url("../images/backgrounds/RULES\ 2.png");
     background-size: contain;
     background-color: #008de6;
     background-position: center;
@@ -503,14 +496,14 @@
 /* WINNER- THE END */
 
 .winner {
-    background-image: url("../images/backgrounds/WINNER.jpg");
+    background-image: url("../images/backgrounds/WINNER.png");
     background-size: contain;
     background-color: #008de6;
     background-position: center;
 }
 
 .thanks {
-    background-image: url("../images/backgrounds/THANKS.jpg");
+    background-image: url("../images/backgrounds/THANKS.png");
     background-size: contain;
     background-color: #008de6;
     background-position: center;

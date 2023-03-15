@@ -227,6 +227,7 @@ p#questionText.apresentationText {
     bottom: 0vw;
     left: 0vw;
     width: 25vw;
+    max-width: 425px;
     animation: bounce 6s ease infinite;
 }
 

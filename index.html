@@ -70,7 +70,6 @@
     </section>
 
     <section id="boardgame">
-
         <img id="superDentinhoBoardGame" src="images/characters/VERY SAD TOOTH.png" alt="">
 
         <img src="images/finger/finger pressing.png" alt="" class="fingerPressing" id="fingerPressingBoardgame">
@@ -104,15 +103,15 @@
     <section id="rules">
         <!-- btns -->
         <img id="btnBackFromRulesToApresentation" src="images/buttons/BACK.svg" alt="">
-        <img class="button" id="btnPreviousRule" src="images/buttons/PREVIOUS.svg" alt="" onclick="previousRule()">
-        <img class="button" id="btnNextRule" src="images/buttons/NEXT.svg" alt="" onclick="nextRule()">
+        <img class="button" id="btnPreviousRule" src="images/buttons/PREVIOUS.svg" alt="" onclick="previous(this.id)">
+        <img class="button" id="btnNextRule" src="images/buttons/NEXT.svg" alt="" onclick="next(this.id)">
     </section>
 
     <section id="credits">
         <!-- btns -->
         <img id="btnBackFromCreditsToApresentation" src="images/buttons/BACK.svg" alt="">
-        <img class="button" id="btnPreviousCredit" src="images/buttons/PREVIOUS.svg" alt="" onclick="previousAuthor()">
-        <img class="button" id="btnNextCredit" src="images/buttons/NEXT.svg" alt="" onclick="nextAuthor()">
+        <img class="button" id="btnPreviousCredit" src="images/buttons/PREVIOUS.svg" alt="" onclick="previous(this.id)">
+        <img class="button" id="btnNextCredit" src="images/buttons/NEXT.svg" alt="" onclick="next(this.id)">
 
         <!-- txt's -->
         <p class="apresentationText" id="titleApresentationCredits"></p>
@@ -127,10 +126,6 @@
 
         <img class="optionButton" id="optionButton2" src="images/buttons/BUTTON.png" alt=""
             onclick="verifyQuestion(this.id)">
-
-           <!-- <div style="background-image: url('images/buttons/BUTTON - Copia.png'); height: 125px; width: 125px; background-size: contain; display: flex; justify-content: center; align-items: center;">
-            <p style="color: white; font-size: 32px; font-weight: bold;">A</p>  
-           </div> -->
     </section>
 
     <section id="answer">
@@ -159,13 +154,17 @@
 
     <section id="teoricReference">
         <img id="btnBackFromTeoricReferenceToApresentation" src="images/buttons/BACK.svg" alt="">
-        <img class="button" id="btnNextTeoricReference" src="images/buttons/NEXT.svg" alt="" onclick="nextTeoricReference()">
-        <img class="button" id="btnPreviousTeoricReference" src="images/buttons/PREVIOUS.svg" alt="" onclick="previousTeoricReference()">
+        <img class="button" id="btnNextTeoricReference" src="images/buttons/NEXT.svg" alt="" onclick="next(this.id)">
+        <img class="button" id="btnPreviousTeoricReference" src="images/buttons/PREVIOUS.svg" alt="" onclick="previous(this.id)">
     </section>
 
-    <section id="victory"></section>
+    <section id="victory">
 
-    <section id="thanks"></section>
+    </section>
+
+    <section id="thanks">
+
+    </section>
 
     <audio id="audioBd" src="sounds/background.mp3" controls style="display: none;"></audio>
     <audio id="audioCt" src="sounds/correct.wav" controls style="display: none;"></audio>
@@ -176,9 +175,7 @@
     <!-- Script -->
     <script src="scripts/script.js"></script>
     <script src="scripts/navigationScreens.js"></script>
-    <script src="scripts/apresentationCredits.js"></script>
-    <script src="scripts/apresentationRules.js"></script>
-    <script src="scripts/apresentationTeoricReference.js"></script>
+    <script src="scripts/previousNextButtons.js"></script>
     <script src="scripts/confetti.js"></script>
     <script src="scripts/orientation.js"></script>
     <script src="scripts/questions.js"></script>
