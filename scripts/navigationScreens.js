@@ -27,7 +27,7 @@ function navigateFromStartToApresentation() {
     sectionMenu.style.display = 'none'
     sectionApresentation.style.display = 'flex'
 
-    document.body.classList.remove("background")
+    document.body.classList.remove("start")
     document.body.classList.add("apresentation")
 
     btnPlay.style.display = 'none'
@@ -39,14 +39,14 @@ function navigateFromApresentationToCredits() {
     sectionCredits.style.display = 'flex'
 
     document.body.classList.remove("apresentation")
-    document.body.classList.add("creditsVanessa")
+    document.body.classList.add("credits1")
 }
 
 function navigateFromApresentationToRules() {
     sectionApresentation.style.display = 'none'
     sectionRules.style.display = 'flex'
 
-    document.body.classList.remove("background")
+    document.body.classList.remove("apresentation")
     document.body.classList.add("rules1")
 }
 
@@ -118,9 +118,9 @@ function navigateFromCreditsToApresentation() {
     sectionCredits.style.display = 'none'
     sectionApresentation.style.display = 'flex'    
 
-    document.body.classList.remove("creditsVanessa")
-    document.body.classList.remove("creditsCarlos")
-    document.body.classList.remove("creditsGustavo")
+    document.body.classList.remove("credits1")
+    document.body.classList.remove("credits2")
+    document.body.classList.remove("credits3")
     document.body.classList.add("apresentation") 
 }
 
@@ -144,7 +144,7 @@ function navigateFromBoardgameToQuestion() {
     sectionBoardgame.style.display = 'none'
     sectionQuestion.style.display = 'flex'
 
-    document.body.classList.remove("background")
+    document.body.classList.remove("boardgame")
     document.body.classList.add(`question${numberQuestion}`)
 }
 

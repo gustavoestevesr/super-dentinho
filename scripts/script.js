@@ -133,14 +133,12 @@ btnPlay.addEventListener("click", function () {
 btnCredits.addEventListener("click", function () {
   playNotificationSound();
   navigateFromApresentationToCredits();
-  displayApresentationCredits();
 });
 
 // NAVIGATE FROM APRESENTATION TO RULES
 btnRules.addEventListener("click", function () {
   playNotificationSound();
   navigateFromApresentationToRules();
-  displayApresentationRules();
 });
 
 // NAVIGATE FROM APRESENTATION TO RULES
@@ -188,8 +186,7 @@ btnBackFromTeoricReferenceToApresentation.addEventListener("click", function () 
 });
 
 btnBackFromQuestionToBoardgame.addEventListener("click", function () {
-  // updateDentinhoPosition(numberQuestion - 1);
-  updateDentinhoPosition(numberQuestion);
+  updateDentinhoPosition(numberQuestion-1);
   playNotificationSound();  
   navigateFromQuestionToBoardgame();  
 });
@@ -389,8 +386,8 @@ function updateDentinhoImageSlot20() {
 }
 
 function updateDentinhoSize() {
-  superDentinhoBoardGame.style.width = "700px";
-  superDentinhoBoardGame.style.height = "700px";
+  superDentinhoBoardGame.style.width = "25vw";
+  superDentinhoBoardGame.style.height = "25vw";
 }
 
 function showTip() {
