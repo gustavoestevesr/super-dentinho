@@ -41,6 +41,8 @@ let btnBackFromTeoricReferenceToApresentation = document.querySelector(
 // BTNs Next
 let btnNextCredit = document.querySelector("img#btnNextCredit.button");
 let btnNextRule = document.querySelector("img#btnNextRule.button");
+let btnFromWinnerToThanks = document.querySelector("img#btnFromWinnerToThanks.button");
+let btnFromThanksToTeoricReference = document.querySelector("img#btnFromThanksToTeoricReference.button");
 
 // BTNs Options
 let btnOption1 = document.querySelector("img#optionButton1.optionButton");
@@ -99,6 +101,7 @@ sectionRules.style.display = "none";
 sectionVictory.style.display = "none";
 sectionRotateScreen.style.display = "none";
 sectionTeoricReference.style.display = "none";
+sectionThanks.style.display = "none";
 
 // DEFINE THE OTHERS SLOT QUESTION POSITIONS
 questionSlot1.classList.add("p1");
@@ -162,6 +165,19 @@ btnNextFromToBoardgame.addEventListener("click", function () {
   navigateForTheNextQuestionInBoardgame();
 });
 
+
+// NAVIGATE FROM BOARDGAME TO WINNER
+btnFromWinnerToThanks.addEventListener("click", function () {
+  playNotificationSound();
+  navigateFromBoardgameToWinner();
+});
+
+// NAVIGATE FROM WINNER TO THANKS
+btnFromWinnerToThanks.addEventListener("click", function () {
+  playNotificationSound();
+  navigateFromWinnerToThanks();
+});
+
 // NAVIGATE FROM BOARDGAME TO MENU
 btnBackFromBoardgameToMenu.addEventListener("click", function () {
   playNotificationSound();
@@ -192,19 +208,10 @@ btnBackFromQuestionToBoardgame.addEventListener("click", function () {
 });
 
 // SHOW VICTORY
-async function victory() {
+function victory() {
   fingerPressingBoardgame.style.display = "none";
-
   start();
   stop();
-
-  // NAVIGATE FROM BOARDGAME TO WINNER
-  navigateFromBoardgameToWinner();
-
-  await delay(10000);
-
-  // NAVIGATE FROM WINNER TO THANKS
-  navigateFromWinnerToThanks();
 }
 
 function changeBackgroundSounds(sound1, sound2) {

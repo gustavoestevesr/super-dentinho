@@ -30,7 +30,7 @@ function navigateFromStartToApresentation() {
     document.body.classList.remove("start")
     document.body.classList.add("apresentation")
 
-    btnPlay.style.display = 'none'
+    btnPlay.style.display = 'none'    
     creativeCommon.style.display = 'none'
 }
 
@@ -128,6 +128,7 @@ function navigateFromBoardgameToWinner() {
     sectionBoardgame.style.display = 'none'
     sectionVictory.style.display = 'flex'
 
+    btnBackFromBoardgameToMenu.style.display = 'none'
     document.body.classList.remove("boardgame")
     document.body.classList.add("winner")
 }

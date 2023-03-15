@@ -19,7 +19,9 @@
 #btnNextCredit,
 #btnNextRule,
 #btnNextTeoricReference,
-#btnNextFromToBoardgame {
+#btnNextFromToBoardgame,
+#btnFromWinnerToThanks,
+#btnFromThanksToTeoricReference {
     position: fixed;
     bottom: 1vw;
     right: 1vw;
