@@ -567,7 +567,15 @@ p#questionText.apresentationText {
 }
 
 iframe {
-    width: 560px;
-    height: 315px;
+    width: 100%;
+    max-width: 560px;
+    max-height: 315px;
+    height: 100%;
 }
 
+.fingerPressing {
+    position: fixed;
+    width: 3vw;  
+    z-index: -1;  
+    animation: zoom-in-zoom-out 0.5s ease infinite; 
+}

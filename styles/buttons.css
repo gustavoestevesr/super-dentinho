@@ -52,13 +52,6 @@
     z-index: 20;
 }
 
-.fingerPressing {
-    position: fixed;
-    width: 3vw;    
-    z-index: 30;
-    animation: zoom-out-zoom-in 0.5s ease infinite; 
-}
-
 #btnPlay {
     bottom: 7.5vh;
     left: 24.5vw;

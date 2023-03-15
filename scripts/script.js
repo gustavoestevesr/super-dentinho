@@ -285,6 +285,7 @@ function updateDentinhoPosition(numberQuestion) {
 
     case 4:
       changeDentinhoPosition(questionSlot5);
+      updateDentinhoImageSlot5();
       break;
 
     case 5:
@@ -305,6 +306,7 @@ function updateDentinhoPosition(numberQuestion) {
 
     case 9:
       changeDentinhoPosition(questionSlot10);
+      updateDentinhoImageSlot10();
       break;
 
     case 10:
@@ -321,11 +323,11 @@ function updateDentinhoPosition(numberQuestion) {
 
     case 13:
       changeDentinhoPosition(questionSlot14);
-      updateDentinhoImage();
       break;
 
     case 14:
       changeDentinhoPosition(questionSlot15);
+      updateDentinhoImageSlot15();
       break;
 
     case 15:
@@ -346,6 +348,7 @@ function updateDentinhoPosition(numberQuestion) {
 
     case 19:
       changeDentinhoPosition(questionSlot20);
+      updateDentinhoImageSlot20();
       updateDentinhoSize();
       break;
 
@@ -369,8 +372,20 @@ async function goToQuestion(slotSelectedFromUSer) {
   }
 }
 
-function updateDentinhoImage() {
-  superDentinhoBoardGame.src = "./images/characters/SUPER HAPPY TOOTH.png";
+function updateDentinhoImageSlot5() {
+  superDentinhoBoardGame.src = "./images/characters/SAD TOOTH.png";
+}
+
+function updateDentinhoImageSlot10() {
+  superDentinhoBoardGame.src = "./images/characters/HAPPY TOOTH.png";
+}
+
+function updateDentinhoImageSlot15() {
+  superDentinhoBoardGame.src = "./images/characters/SUPER TOOTH.png";
+}
+
+function updateDentinhoImageSlot20() {
+  superDentinhoBoardGame.src = "./images/characters/SUPER HAPPY TOOTH.gif";
 }
 
 function updateDentinhoSize() {
