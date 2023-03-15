@@ -141,6 +141,13 @@ function navigateFromWinnerToThanks() {
     document.body.classList.add("thanks")
 }
 
+function navigateFromThanksToStart() {
+    sectionThanks.style.display = 'none'
+    document.body.classList.add("start");   
+
+    document.body.classList.remove("thanks")
+}
+
 function navigateFromBoardgameToQuestion() {
     sectionBoardgame.style.display = 'none'
     sectionQuestion.style.display = 'flex'

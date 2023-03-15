@@ -165,17 +165,16 @@ btnNextFromToBoardgame.addEventListener("click", function () {
   navigateForTheNextQuestionInBoardgame();
 });
 
-
-// NAVIGATE FROM BOARDGAME TO WINNER
-btnFromWinnerToThanks.addEventListener("click", function () {
-  playNotificationSound();
-  navigateFromBoardgameToWinner();
-});
-
 // NAVIGATE FROM WINNER TO THANKS
 btnFromWinnerToThanks.addEventListener("click", function () {
   playNotificationSound();
   navigateFromWinnerToThanks();
+});
+
+// NAVIGATE FROM THANKS TO
+btnFromWinnerToThanks.addEventListener("click", function () {
+  playNotificationSound();
+  
 });
 
 // NAVIGATE FROM BOARDGAME TO MENU
@@ -203,15 +202,19 @@ btnBackFromTeoricReferenceToApresentation.addEventListener("click", function () 
 
 btnBackFromQuestionToBoardgame.addEventListener("click", function () {
   updateDentinhoPosition(numberQuestion-1);
-  playNotificationSound();  
-  navigateFromQuestionToBoardgame();  
+  playNotificationSound();      
+  navigateFromQuestionToBoardgame();
 });
 
 // SHOW VICTORY
-function victory() {
+async function victory() {
   fingerPressingBoardgame.style.display = "none";
   start();
   stop();
+
+  await delay(1000);
+
+  navigateFromBoardgameToWinner();
 }
 
 function changeBackgroundSounds(sound1, sound2) {
@@ -352,12 +355,12 @@ function updateDentinhoPosition(numberQuestion) {
 
     case 19:
       changeDentinhoPosition(questionSlot20);
-      updateDentinhoImageSlot20();
-      updateDentinhoSize();
       break;
 
     case 20:
       changeDentinhoPosition(questionSlot21);
+      updateDentinhoImageSlot20();
+      updateDentinhoSize();
       break;
 
     default:
@@ -371,7 +374,7 @@ async function goToQuestion(slotSelectedFromUSer) {
     return;
   } else if (slotSelectedFromUSer === numberQuestion) {
     updateDentinhoPosition(numberQuestion);
-    await delay(1000);
+    await delay(500);
     navigateFromBoardgameToQuestion();    
   }
 }
