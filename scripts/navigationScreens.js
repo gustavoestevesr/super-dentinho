@@ -1,6 +1,6 @@
 async function navigateFromAnyToOrientation() {
     sectionRotateScreen.style.display = "flex"
-    document.body.classList.add("rotatescreen");
+    document.body.classList.add("rotatescreen");    
     
     await delay(4000);
 
@@ -9,18 +9,18 @@ async function navigateFromAnyToOrientation() {
     } 
 }
 
-async function navigateFromOrientationToMenu() {
-    sectionRotateScreen.style.display = "none"
-    document.body.classList.remove("rotatescreen");
-
+function navigateFromOrientationToMenu() {
     sectionMenu.style.display = "flex"
+    sectionRotateScreen.style.display = "none"    
+
+    document.body.classList.remove("rotatescreen");
     document.body.classList.add("start");   
 }
 
 
 function navigateFromAnyToMenu() {
-    sectionMenu.style.display = "flex"
-    document.body.classList.add("start");
+    sectionMenu.style.display = "flex"    
+    document.body.classList.add("start");   
 }
 
 function navigateFromStartToApresentation() {
@@ -29,9 +29,6 @@ function navigateFromStartToApresentation() {
 
     document.body.classList.remove("start")
     document.body.classList.add("apresentation")
-
-    btnPlay.style.display = 'none'    
-    creativeCommon.style.display = 'none'
 }
 
 function navigateFromApresentationToCredits() {
@@ -82,7 +79,7 @@ function navigateFromApresentationToBoardgame() {
     document.body.classList.add("boardgame")    
 }
 
-function navigateForTheNextQuestionInBoardgame() {
+async function navigateForTheNextQuestionInBoardgame() {
     sectionAnswer.style.display = 'none'
     sectionBoardgame.style.display = 'flex'
 
@@ -91,7 +88,7 @@ function navigateForTheNextQuestionInBoardgame() {
     
     document.body.classList.remove(`correctanswer${numberQuestion-1}`)
     document.body.classList.remove(`wronganswer${numberQuestion}`)
-    document.body.classList.add("boardgame")          
+    document.body.classList.add("boardgame")    
 
     sound1.volume = 1;
     sound2.volume = 1;
@@ -141,11 +138,23 @@ function navigateFromWinnerToThanks() {
     document.body.classList.add("thanks")
 }
 
-function navigateFromThanksToStart() {
-    sectionThanks.style.display = 'none'
-    document.body.classList.add("start");   
+function navigateFromThanksToReferences() {
+    sectionThanks.style.display = 'none'    
+    sectionReferences.style.display = 'flex'
 
     document.body.classList.remove("thanks")
+    document.body.classList.add("references1")
+}
+
+function navigateFromReferencestoStart() {
+    sectionReferences.style.display = 'none'
+    sectionMenu.style.display = 'flex'    
+
+    document.body.classList.remove("references1")
+    document.body.classList.remove("references2")
+    document.body.classList.remove("references3")
+    document.body.classList.remove("references4")
+    document.body.classList.add("start")
 }
 
 function navigateFromBoardgameToQuestion() {

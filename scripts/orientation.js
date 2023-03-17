@@ -5,8 +5,8 @@ let distanceFingerLeft
 
 function setDistanceFingerTopLeft() {
     if (isMobile) {
-        distanceFingerTop = 40
-        distanceFingerLeft = 35
+        distanceFingerTop = 45
+        distanceFingerLeft = 50
         navigateFromAnyToOrientation()
     } else {
         distanceFingerTop = 60

@@ -10,6 +10,7 @@ let sectionVictory = document.querySelector("#victory");
 let sectionThanks = document.querySelector("#thanks");
 let sectionRotateScreen = document.querySelector("#rotateScreen");
 let sectionTeoricReference = document.querySelector("#teoricReference");
+let sectionReferences = document.querySelector("#references");
 
 // BTNs Screens
 let btnPlay = document.querySelector("img#btnPlay.button");
@@ -42,7 +43,8 @@ let btnBackFromTeoricReferenceToApresentation = document.querySelector(
 let btnNextCredit = document.querySelector("img#btnNextCredit.button");
 let btnNextRule = document.querySelector("img#btnNextRule.button");
 let btnFromWinnerToThanks = document.querySelector("img#btnFromWinnerToThanks.button");
-let btnFromThanksToTeoricReference = document.querySelector("img#btnFromThanksToTeoricReference.button");
+let btnFromThanksToReferences = document.querySelector("img#btnFromThanksToReferences.button");
+let btnFromReferencesToStart = document.querySelector("img#btnFromReferencesToStart.button");
 
 // BTNs Options
 let btnOption1 = document.querySelector("img#optionButton1.optionButton");
@@ -102,6 +104,7 @@ sectionVictory.style.display = "none";
 sectionRotateScreen.style.display = "none";
 sectionTeoricReference.style.display = "none";
 sectionThanks.style.display = "none";
+sectionReferences.style.display = "none";
 
 // DEFINE THE OTHERS SLOT QUESTION POSITIONS
 questionSlot1.classList.add("p1");
@@ -171,10 +174,10 @@ btnFromWinnerToThanks.addEventListener("click", function () {
   navigateFromWinnerToThanks();
 });
 
-// NAVIGATE FROM THANKS TO
-btnFromWinnerToThanks.addEventListener("click", function () {
+// NAVIGATE FROM THANKS TO REFERENCES
+btnFromThanksToReferences.addEventListener("click", function () {
   playNotificationSound();
-  
+  navigateFromThanksToReferences();
 });
 
 // NAVIGATE FROM BOARDGAME TO MENU
@@ -201,10 +204,17 @@ btnBackFromTeoricReferenceToApresentation.addEventListener("click", function () 
 });
 
 btnBackFromQuestionToBoardgame.addEventListener("click", function () {
-  updateDentinhoPosition(numberQuestion-1);
+  updateDentinhoPosition(numberQuestion);
   playNotificationSound();      
   navigateFromQuestionToBoardgame();
 });
+
+btnFromReferencesToStart.addEventListener("click", function () {
+  playNotificationSound();      
+  navigateFromReferencestoStart()
+});
+
+
 
 // SHOW VICTORY
 async function victory() {
@@ -370,12 +380,15 @@ function updateDentinhoPosition(numberQuestion) {
 
 async function goToQuestion(slotSelectedFromUSer) {
   if (numberQuestion === questions.length) {
+    await delay(500);
     victory();
     return;
-  } else if (slotSelectedFromUSer === numberQuestion) {
+  } else if (slotSelectedFromUSer === numberQuestion) {    
     updateDentinhoPosition(numberQuestion);
+    superDentinhoBoardGame.style.transition = "all 0.5s"
     await delay(500);
     navigateFromBoardgameToQuestion();    
+    superDentinhoBoardGame.style.transition = "all 0s"
   }
 }
 

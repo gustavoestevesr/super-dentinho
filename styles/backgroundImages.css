@@ -517,6 +517,36 @@
     background-position: center;
 }
 
+/*  REFERENCE */
+
+.references1 {
+    background-image: url("../images/backgrounds/REFERENCES\ 1.png");
+    background-size: contain;
+    background-color: #008de6;
+    background-position: center;
+}
+
+.references2 {
+    background-image: url("../images/backgrounds/REFERENCES\ 2.png");
+    background-size: contain;
+    background-color: #008de6;
+    background-position: center;
+}
+
+.references3 {
+    background-image: url("../images/backgrounds/REFERENCES\ 3.png");
+    background-size: contain;
+    background-color: #008de6;
+    background-position: center;
+}
+
+.references4 {
+    background-image: url("../images/backgrounds/REFERENCES\ 4.png");
+    background-size: contain;
+    background-color: #008de6;
+    background-position: center;
+}
+
 /* CREDITS */
 
 .credits1 {

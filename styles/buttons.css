@@ -21,9 +21,21 @@
 #btnNextTeoricReference,
 #btnNextFromToBoardgame,
 #btnFromWinnerToThanks,
-#btnFromThanksToTeoricReference {
+#btnFromThanksToReferences,
+#btnNextReferences {
     position: fixed;
     bottom: 1vw;
+    right: 1vw;
+    width: 6vw;
+    height: 6vw;
+    cursor: pointer;
+    animation: zoom-in-zoom-out 1s ease infinite;
+    z-index: 10;
+}
+
+#btnFromReferencesToStart {
+    position: fixed;
+    top: 1vw;
     right: 1vw;
     width: 6vw;
     height: 6vw;
@@ -35,7 +47,8 @@
 #btnPreviousCredit,
 #btnPreviousRule,
 #btnPreviousTeoricReference,
-#btnPreviousFromToBoardgame {
+#btnPreviousFromToBoardgame,
+#btnPreviousReferences {
     position: fixed;
     bottom: 1vw;
     right: 8vw;
