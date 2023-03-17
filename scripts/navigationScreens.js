@@ -9,7 +9,7 @@ async function navigateFromAnyToOrientation() {
     } 
 }
 
-function navigateFromOrientationToMenu() {
+async function navigateFromOrientationToMenu() {
     sectionMenu.style.display = "flex"
     sectionRotateScreen.style.display = "none"    
 
