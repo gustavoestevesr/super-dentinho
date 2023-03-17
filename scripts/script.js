@@ -365,12 +365,12 @@ function updateDentinhoPosition(numberQuestion) {
 
     case 19:
       changeDentinhoPosition(questionSlot20);
+      updateDentinhoImageSlot20();
+      updateDentinhoSize();
       break;
 
     case 20:
-      changeDentinhoPosition(questionSlot21);
-      updateDentinhoImageSlot20();
-      updateDentinhoSize();
+      changeDentinhoPosition(questionSlot21);      
       break;
 
     default:
