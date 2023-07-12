@@ -162,7 +162,7 @@ function navigateFromBoardgameToQuestion() {
     sectionQuestion.style.display = 'flex'
 
     document.body.classList.remove(idioma === "pt-br" ? "boardgame" : "englishboardgame")
-    document.body.classList.add(idioma === "pt-br" ? `question${numberQuestion}` : `engishquestion${numberQuestion}`)
+    document.body.classList.add(idioma === "pt-br" ? `question${numberQuestion}` : `englishquestion${numberQuestion}`)
 }
 
 function navigateFromQuestionToAnswer() {    
@@ -177,5 +177,5 @@ function navigateFromQuestionToBoardgame() {
     sectionBoardgame.style.display = 'flex'
 
     document.body.classList.remove(idioma === "pt-br" ? `question${numberQuestion}` : `engishquestion${numberQuestion}`)
-    document.body.classList.add(idioma === "pt-br" ? "references1" : "englishreferences1")  
+    document.body.classList.add(idioma === "pt-br" ? "boardgame" : "englishboardgame")  
 }
