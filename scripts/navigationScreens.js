@@ -1,6 +1,6 @@
 async function navigateFromAnyToOrientation() {
     sectionRotateScreen.style.display = "flex"
-    document.body.classList.add("rotatescreen");    
+    document.body.classList.add(idioma === "pt-br" ? "rotatescreen" : "englishrotatescreen");    
     
     await delay(4000);
 
@@ -13,59 +13,59 @@ async function navigateFromOrientationToMenu() {
     sectionMenu.style.display = "flex"
     sectionRotateScreen.style.display = "none"    
 
-    document.body.classList.remove("rotatescreen");
-    document.body.classList.add("start");   
+    document.body.classList.remove(idioma === "pt-br" ? "rotatescreen" : "englishrotatescreen");
+    document.body.classList.add(idioma === "pt-br" ? "start" : "englishstart");   
 }
 
 
 function navigateFromAnyToMenu() {
     sectionMenu.style.display = "flex"    
-    document.body.classList.add("start");   
+    document.body.classList.add(idioma === "pt-br" ? "start" : "englishstart");   
 }
 
 function navigateFromStartToApresentation() {
     sectionMenu.style.display = 'none'
     sectionApresentation.style.display = 'flex'
 
-    document.body.classList.remove("start")
-    document.body.classList.add("apresentation")
+    document.body.classList.remove(idioma === "pt-br" ? "start" : "englishstart")
+    document.body.classList.add(idioma === "pt-br" ? "apresentation" : "englishapresentation")
 }
 
 function navigateFromApresentationToCredits() {
     sectionApresentation.style.display = 'none'
     sectionCredits.style.display = 'flex'
 
-    document.body.classList.remove("apresentation")
-    document.body.classList.add("credits1")
+    document.body.classList.remove(idioma === "pt-br" ? "apresentation" : "englishapresentation")
+    document.body.classList.add(idioma === "pt-br" ? "credits1" : "enghishcredits1")
 }
 
 function navigateFromApresentationToRules() {
     sectionApresentation.style.display = 'none'
     sectionRules.style.display = 'flex'
 
-    document.body.classList.remove("apresentation")
-    document.body.classList.add("rules1")
+    document.body.classList.remove(idioma === "pt-br" ? "apresentation" : "englishapresentation")
+    document.body.classList.add(idioma === "pt-br" ? "rules1" : "englishrules1")
 }
 
 function navigateFromApresentationToTeoricReference() {
     sectionApresentation.style.display = 'none'
     sectionTeoricReference.style.display = 'flex'
 
-    document.body.classList.remove("apresentation")
-    document.body.classList.add("teoricReference1")
+    document.body.classList.remove(idioma === "pt-br" ? "apresentation" : "englishapresentation")
+    document.body.classList.add(idioma === "pt-br" ? "teoricReference1" : "englishteoricReference1")
 }
 
 function navigateFromTeoricReferenceToApresentation() {
     sectionTeoricReference.style.display = 'none'
     sectionApresentation.style.display = 'flex'
 
-    document.body.classList.remove("teoricReference1")
-    document.body.classList.remove("teoricReference2")
-    document.body.classList.remove("teoricReference3")
-    document.body.classList.remove("teoricReference4")
-    document.body.classList.remove("teoricReference5")
-    document.body.classList.remove("teoricReference6")
-    document.body.classList.add("apresentation")
+    document.body.classList.remove(idioma === "pt-br" ? "teoricReference1" : "englishteoricReference1")
+    document.body.classList.remove(idioma === "pt-br" ? "teoricReference2" : "englishteoricReference2")
+    document.body.classList.remove(idioma === "pt-br" ? "teoricReference3" : "englishteoricReference3")
+    document.body.classList.remove(idioma === "pt-br" ? "teoricReference4" : "englishteoricReference4")
+    document.body.classList.remove(idioma === "pt-br" ? "teoricReference5" : "englishteoricReference5")
+    document.body.classList.remove(idioma === "pt-br" ? "teoricReference6" : "englishteoricReference6")
+    document.body.classList.add(idioma === "pt-br" ? "apresentation" : "englishapresentation")
 }
 
 function navigateFromApresentationToBoardgame() {
@@ -75,8 +75,8 @@ function navigateFromApresentationToBoardgame() {
     fingerPressingBoardgame.style.top = getOffset(document.querySelector( `img#q${numberQuestion+1}.questionSlot.p${numberQuestion+1}` )).top + distanceFingerTop + 'px';
     fingerPressingBoardgame.style.left = getOffset(document.querySelector( `img#q${numberQuestion+1}.questionSlot.p${numberQuestion+1}` )).left + distanceFingerLeft + 'px';
 
-    document.body.classList.remove("apresentation")
-    document.body.classList.add("boardgame")    
+    document.body.classList.remove(idioma === "pt-br" ? "apresentation" : "englishapresentation")
+    document.body.classList.add(idioma === "pt-br" ? "references1" : "englishreferences1")    
 }
 
 async function navigateForTheNextQuestionInBoardgame() {
@@ -86,9 +86,9 @@ async function navigateForTheNextQuestionInBoardgame() {
     fingerPressingBoardgame.style.top = getOffset(document.querySelector( `img#q${numberQuestion+1}.questionSlot.p${numberQuestion+1}` )).top + distanceFingerTop + 'px';
     fingerPressingBoardgame.style.left = getOffset(document.querySelector( `img#q${numberQuestion+1}.questionSlot.p${numberQuestion+1}` )).left + distanceFingerLeft + 'px';
     
-    document.body.classList.remove(`correctanswer${numberQuestion-1}`)
-    document.body.classList.remove(`wronganswer${numberQuestion}`)
-    document.body.classList.add("boardgame")    
+    document.body.classList.remove(idioma === "pt-br" ? `correctanswer${numberQuestion-1}` : `englishcorrectanswer${numberQuestion-1}`)
+    document.body.classList.remove(idioma === "pt-br" ? `wronganswer${numberQuestion}` : `englishwronganswer${numberQuestion}`)
+    document.body.classList.add(idioma === "pt-br" ? "references1" : "englishreferences1")    
 
     sound1.volume = 1;
     sound2.volume = 1;
@@ -98,8 +98,8 @@ function navigateFromBoardgameToMenu() {
     sectionBoardgame.style.display = 'none'
     sectionApresentation.style.display = 'flex'
 
-    document.body.classList.remove("boardgame")
-    document.body.classList.add("apresentation")
+    document.body.classList.remove(idioma === "pt-br" ? "references1" : "englishreferences1")
+    document.body.classList.add(idioma === "pt-br" ? "apresentation" : "englishapresentation")
 }
 
 function navigateFromRulesToApresentation() {
@@ -115,10 +115,10 @@ function navigateFromCreditsToApresentation() {
     sectionCredits.style.display = 'none'
     sectionApresentation.style.display = 'flex'    
 
-    document.body.classList.remove("credits1")
-    document.body.classList.remove("credits2")
-    document.body.classList.remove("credits3")
-    document.body.classList.add("apresentation") 
+    document.body.classList.remove(idioma === "pt-br" ? "credits1" : "englishcredits1")
+    document.body.classList.remove(idioma === "pt-br" ? "credits2" : "englishcredits2")
+    document.body.classList.remove(idioma === "pt-br" ? "credits3" : "englishcredits3")
+    document.body.classList.add(idioma === "pt-br" ? "apresentation" : "englishapresentation") 
 }
 
 function navigateFromBoardgameToWinner() {
@@ -126,16 +126,16 @@ function navigateFromBoardgameToWinner() {
     sectionVictory.style.display = 'flex'
 
     btnBackFromBoardgameToMenu.style.display = 'none'
-    document.body.classList.remove("boardgame")
-    document.body.classList.add("winner")
+    document.body.classList.remove(idioma === "pt-br" ? "references1" : "englishreferences1")
+    document.body.classList.add(idioma === "pt-br" ? "winner" : "englishwinner")
 }
 
 function navigateFromWinnerToThanks() {
     sectionThanks.style.display = 'flex'
     sectionVictory.style.display = 'none'
 
-    document.body.classList.remove("winner")
-    document.body.classList.add("thanks")
+    document.body.classList.remove(idioma === "pt-br" ? "thanks" : "englishwinner")
+    document.body.classList.add(idioma === "pt-br" ? "thanks" : "englishthanks")
 }
 
 function navigateFromThanksToReferences() {
@@ -143,39 +143,39 @@ function navigateFromThanksToReferences() {
     sectionReferences.style.display = 'flex'
 
     document.body.classList.remove("thanks")
-    document.body.classList.add("references1")
+    document.body.classList.add(idioma === "pt-br" ? "start" : "englishstart")
 }
 
 function navigateFromReferencestoStart() {
     sectionReferences.style.display = 'none'
     sectionMenu.style.display = 'flex'    
 
-    document.body.classList.remove("references1")
-    document.body.classList.remove("references2")
-    document.body.classList.remove("references3")
-    document.body.classList.remove("references4")
-    document.body.classList.add("start")
+    document.body.classList.remove(idioma === "pt-br" ? "references1" : "englishreferences1")
+    document.body.classList.remove(idioma === "pt-br" ? "references2" : "englishreferences2")
+    document.body.classList.remove(idioma === "pt-br" ? "references3" : "englishreferences3")
+    document.body.classList.remove(idioma === "pt-br" ? "references4" : "englishreferences4")
+    document.body.classList.add(idioma === "pt-br" ? "start" : "englishstart")
 }
 
 function navigateFromBoardgameToQuestion() {
     sectionBoardgame.style.display = 'none'
     sectionQuestion.style.display = 'flex'
 
-    document.body.classList.remove("boardgame")
-    document.body.classList.add(`question${numberQuestion}`)
+    document.body.classList.remove(idioma === "pt-br" ? "boardgame" : "englishboardgame")
+    document.body.classList.add(idioma === "pt-br" ? `question${numberQuestion}` : `engishquestion${numberQuestion}`)
 }
 
 function navigateFromQuestionToAnswer() {    
     sectionAnswer.style.display = 'flex'
     sectionQuestion.style.display = 'none'
 
-    document.body.classList.remove(`question${numberQuestion}`) 
+    document.body.classList.remove(idioma === "pt-br" ? `question${numberQuestion}` : `engishquestion${numberQuestion}`) 
 }
 
 function navigateFromQuestionToBoardgame() {
     sectionQuestion.style.display = 'none'
     sectionBoardgame.style.display = 'flex'
 
-    document.body.classList.remove(`question${numberQuestion}`)
-    document.body.classList.add("boardgame")  
+    document.body.classList.remove(idioma === "pt-br" ? `question${numberQuestion}` : `engishquestion${numberQuestion}`)
+    document.body.classList.add(idioma === "pt-br" ? "references1" : "englishreferences1")  
 }

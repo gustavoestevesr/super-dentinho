@@ -480,3 +480,17 @@ function getOffset(el) {
     top: rect.top + window.scrollY,
   };
 }
+
+// IDIOMA
+let idioma = "pt-br";
+
+function alterarIdioma() {
+  const targetFlag = document.getElementById("targetFlag");
+  if (targetFlag.src.includes("brazil.png")) {
+    targetFlag.src = "./images/flags/usa.png";
+    idioma = "en-usa";
+  } else {
+    targetFlag.src = "./images/flags/brazil.png";
+    idioma = "pt-br";
+  }
+}

@@ -1,0 +1,605 @@
+.englishrotatescreen {
+    background-image: url("../images/backgrounds/en-usa/ROTATESCREEN.png");
+    background-color: #008de6;
+    background-position: center;
+    background-size: contain;
+}
+
+.englishstart {
+    background-image: url("../images/backgrounds/en-usa/START.png");
+    background-color: #008de6;
+    background-position: left;
+    background-size: contain;    
+}
+
+.englishapresentation {    
+    background-image: url("../images/backgrounds/en-usa/APRESENTATION.png");
+    background-color: #008de6;
+    background-position: center;
+    background-size: contain;
+}
+
+.englishbackground {
+    background-image: url("../images/backgrounds/en-usa/BACKGROUND.png");
+    background-color: #008de6;
+    background-position: center;
+    background-size: contain;
+}
+
+.englishboardgame {
+    background-image: url("../images/backgrounds/en-usa/BOARDGAME.png");
+    background-size: contain;
+    background-color: #008de6; 
+    background-position: center;    
+}
+
+/* QUESTION */
+
+.englishquestion0 {
+    background-image: url("../images/backgrounds/en-usa/QUESTION0.png");
+    background-color: #008de6;
+    background-position: center;
+    background-size: contain;
+}
+
+.englishquestion1 {
+    background-image: url("../images/backgrounds/en-usa/QUESTION1.png");
+    background-color: #008de6;
+    background-position: center;
+    background-size: contain;
+}
+
+.englishquestion2 {
+    background-image: url("../images/backgrounds/en-usa/QUESTION2.png");
+    background-color: #008de6;
+    background-position: center;
+    background-size: contain;
+}
+
+.englishquestion3 {
+    background-image: url("../images/backgrounds/en-usa/QUESTION3.png");
+    background-color: #008de6;
+    background-position: center;
+    background-size: contain;
+}
+
+.englishquestion4 {
+    background-image: url("../images/backgrounds/en-usa/QUESTION4.png");
+    background-color: #008de6;
+    background-position: center;
+    background-size: contain;
+}
+
+.englishquestion5 {
+    background-image: url("../images/backgrounds/en-usa/QUESTION5.png");
+    background-color: #008de6;
+    background-position: center;
+    background-size: contain;
+}
+
+.englishquestion6 {
+    background-image: url("../images/backgrounds/en-usa/QUESTION6.png");
+    background-color: #008de6;
+    background-position: center;
+    background-size: contain;
+}
+
+.englishquestion7 {
+    background-image: url("../images/backgrounds/en-usa/QUESTION7.png");
+    background-color: #008de6;
+    background-position: center;
+    background-size: contain;
+}
+
+.englishquestion8 {
+    background-image: url("../images/backgrounds/en-usa/QUESTION8.png");
+    background-color: #008de6;
+    background-position: center;
+    background-size: contain;
+}
+
+.englishquestion9 {
+    background-image: url("../images/backgrounds/en-usa/QUESTION9.png");
+    background-color: #008de6;
+    background-position: center;
+    background-size: contain;
+}
+
+.englishquestion10 {
+    background-image: url("../images/backgrounds/en-usa/QUESTION10.png");
+    background-color: #008de6;
+    background-position: center;
+    background-size: contain;
+}
+
+.englishquestion11 {
+    background-image: url("../images/backgrounds/en-usa/QUESTION11.png");
+    background-color: #008de6;
+    background-position: center;
+    background-size: contain;
+}
+
+.englishquestion12 {
+    background-image: url("../images/backgrounds/en-usa/QUESTION12.png");
+    background-color: #008de6;
+    background-position: center;
+    background-size: contain;
+}
+
+.englishquestion13 {
+    background-image: url("../images/backgrounds/en-usa/QUESTION13.png");
+    background-color: #008de6;
+    background-position: center;
+    background-size: contain;
+}
+
+.englishquestion14 {
+    background-image: url("../images/backgrounds/en-usa/QUESTION14.png");
+    background-color: #008de6;
+    background-position: center;
+    background-size: contain;
+}
+
+.englishquestion15 {
+    background-image: url("../images/backgrounds/en-usa/QUESTION15.png");
+    background-color: #008de6;
+    background-position: center;
+    background-size: contain;
+}
+
+.englishquestion16 {
+    background-image: url("../images/backgrounds/en-usa/QUESTION16.png");
+    background-color: #008de6;
+    background-position: center;
+    background-size: contain;
+}
+
+.englishquestion17 {
+    background-image: url("../images/backgrounds/en-usa/QUESTION17.png");
+    background-color: #008de6;
+    background-position: center;
+    background-size: contain;
+}
+
+.englishquestion18 {
+    background-image: url("../images/backgrounds/en-usa/QUESTION18.png");
+    background-color: #008de6;
+    background-position: center;
+    background-size: contain;
+}
+
+.englishquestion19 {
+    background-image: url("../images/backgrounds/en-usa/QUESTION19.png");
+    background-color: #008de6;
+    background-position: center;
+    background-size: contain;
+}
+
+.englishquestion20 {
+    background-image: url("../images/backgrounds/en-usa/QUESTION20.png");
+    background-color: #008de6;
+    background-position: center;
+    background-size: contain;
+}
+
+/* CORRECT ANSWER */
+
+.englishcorrectanswer0 {
+    background-image: url("../images/backgrounds/en-usa/CORRECTANSWER0.png");
+    background-color: #008de6;
+    background-position: center;
+    background-size: contain;
+}
+
+.englishcorrectanswer1 {
+    background-image: url("../images/backgrounds/en-usa/CORRECTANSWER1.png");
+    background-color: #008de6;
+    background-position: center;
+    background-size: contain;
+}
+
+.englishcorrectanswer2 {
+    background-image: url("../images/backgrounds/en-usa/CORRECTANSWER2.png");
+    background-color: #008de6;
+    background-position: center;
+    background-size: contain;
+}
+
+.englishcorrectanswer3 {
+    background-image: url("../images/backgrounds/en-usa/CORRECTANSWER3.png");
+    background-color: #008de6;
+    background-position: center;
+    background-size: contain;
+}
+
+.englishcorrectanswer4 {
+    background-image: url("../images/backgrounds/en-usa/CORRECTANSWER4.png");
+    background-color: #008de6;
+    background-position: center;
+    background-size: contain;
+}
+
+.englishcorrectanswer5 {
+    background-image: url("../images/backgrounds/en-usa/CORRECTANSWER5.png");
+    background-color: #008de6;
+    background-position: center;
+    background-size: contain;
+}
+
+.englishcorrectanswer6 {
+    background-image: url("../images/backgrounds/en-usa/CORRECTANSWER6.png");
+    background-color: #008de6;
+    background-position: center;
+    background-size: contain;
+}
+
+.englishcorrectanswer7 {
+    background-image: url("../images/backgrounds/en-usa/CORRECTANSWER7.png");
+    background-color: #008de6;
+    background-position: center;
+    background-size: contain;
+}
+
+.englishcorrectanswer8 {
+    background-image: url("../images/backgrounds/en-usa/CORRECTANSWER8.png");
+    background-color: #008de6;
+    background-position: center;
+    background-size: contain;
+}
+
+.englishcorrectanswer9 {
+    background-image: url("../images/backgrounds/en-usa/CORRECTANSWER9.png");
+    background-color: #008de6;
+    background-position: center;
+    background-size: contain;
+}
+
+.englishcorrectanswer10 {
+    background-image: url("../images/backgrounds/en-usa/CORRECTANSWER10.png");
+    background-color: #008de6;
+    background-position: center;
+    background-size: contain;
+}
+
+.englishcorrectanswer11 {
+    background-image: url("../images/backgrounds/en-usa/CORRECTANSWER11.png");
+    background-color: #008de6;
+    background-position: center;
+    background-size: contain;
+}
+
+.englishcorrectanswer12 {
+    background-image: url("../images/backgrounds/en-usa/CORRECTANSWER12.png");
+    background-color: #008de6;
+    background-position: center;
+    background-size: contain;
+}
+
+.englishcorrectanswer13 {
+    background-image: url("../images/backgrounds/en-usa/CORRECTANSWER13.png");
+    background-color: #008de6;
+    background-position: center;
+    background-size: contain;
+}
+
+.englishcorrectanswer14 {
+    background-image: url("../images/backgrounds/en-usa/CORRECTANSWER14.png");
+    background-color: #008de6;
+    background-position: center;
+    background-size: contain;
+}
+
+.englishcorrectanswer15 {
+    background-image: url("../images/backgrounds/en-usa/CORRECTANSWER15.png");
+    background-color: #008de6;
+    background-position: center;
+    background-size: contain;
+}
+
+.englishcorrectanswer16 {
+    background-image: url("../images/backgrounds/en-usa/CORRECTANSWER16.png");
+    background-color: #008de6;
+    background-position: center;
+    background-size: contain;
+}
+
+.englishcorrectanswer17 {
+    background-image: url("../images/backgrounds/en-usa/CORRECTANSWER17.png");
+    background-color: #008de6;
+    background-position: center;
+    background-size: contain;
+}
+
+.englishcorrectanswer18 {
+    background-image: url("../images/backgrounds/en-usa/CORRECTANSWER18.png");
+    background-color: #008de6;
+    background-position: center;
+    background-size: contain;
+}
+
+.englishcorrectanswer19 {
+    background-image: url("../images/backgrounds/en-usa/CORRECTANSWER19.png");
+    background-color: #008de6;
+    background-position: center;
+    background-size: contain;
+}
+
+.englishcorrectanswer20 {
+    background-image: url("../images/backgrounds/en-usa/CORRECTANSWER20.png");
+    background-color: #008de6;
+    background-position: center;
+    background-size: contain;
+}
+
+/* WRONG ANSWER */
+
+.englishwronganswer0 {
+    background-image: url("../images/backgrounds/en-usa/WRONGANSWER0.png");
+    background-color: #008de6;
+    background-position: center;
+    background-size: contain;
+}
+
+.englishwronganswer1 {
+    background-image: url("../images/backgrounds/en-usa/WRONGANSWER1.png");
+    background-color: #008de6;
+    background-position: center;
+    background-size: contain;
+}
+
+.englishwronganswer2 {
+    background-image: url("../images/backgrounds/en-usa/WRONGANSWER2.png");
+    background-color: #008de6;
+    background-position: center;
+    background-size: contain;
+}
+
+.englishwronganswer3 {
+    background-image: url("../images/backgrounds/en-usa/WRONGANSWER3.png");
+    background-color: #008de6;
+    background-position: center;
+    background-size: contain;
+}
+
+.englishwronganswer4 {
+    background-image: url("../images/backgrounds/en-usa/WRONGANSWER4.png");
+    background-color: #008de6;
+    background-position: center;
+    background-size: contain;
+}
+
+.englishwronganswer5 {
+    background-image: url("../images/backgrounds/en-usa/WRONGANSWER5.png");
+    background-color: #008de6;
+    background-position: center;
+    background-size: contain;
+}
+
+.englishwronganswer6 {
+    background-image: url("../images/backgrounds/en-usa/WRONGANSWER6.png");
+    background-color: #008de6;
+    background-position: center;
+    background-size: contain;
+}
+
+.englishwronganswer7 {
+    background-image: url("../images/backgrounds/en-usa/WRONGANSWER7.png");
+    background-color: #008de6;
+    background-position: center;
+    background-size: contain;
+}
+
+.englishwronganswer8 {
+    background-image: url("../images/backgrounds/en-usa/WRONGANSWER8.png");
+    background-color: #008de6;
+    background-position: center;
+    background-size: contain;
+}
+
+.englishwronganswer9 {
+    background-image: url("../images/backgrounds/en-usa/WRONGANSWER9.png");
+    background-color: #008de6;
+    background-position: center;
+    background-size: contain;
+}
+
+.englishwronganswer10 {
+    background-image: url("../images/backgrounds/en-usa/WRONGANSWER10.png");
+    background-color: #008de6;
+    background-position: center;
+    background-size: contain;
+}
+
+.englishwronganswer11 {
+    background-image: url("../images/backgrounds/en-usa/WRONGANSWER11.png");
+    background-color: #008de6;
+    background-position: center;
+    background-size: contain;
+}
+
+.englishwronganswer12 {
+    background-image: url("../images/backgrounds/en-usa/WRONGANSWER12.png");
+    background-color: #008de6;
+    background-position: center;
+    background-size: contain;
+}
+
+.englishwronganswer13 {
+    background-image: url("../images/backgrounds/en-usa/WRONGANSWER13.png");
+    background-color: #008de6;
+    background-position: center;
+    background-size: contain;
+}
+
+.englishwronganswer14 {
+    background-image: url("../images/backgrounds/en-usa/WRONGANSWER14.png");
+    background-color: #008de6;
+    background-position: center;
+    background-size: contain;
+}
+
+.englishwronganswer15 {
+    background-image: url("../images/backgrounds/en-usa/WRONGANSWER15.png");
+    background-color: #008de6;
+    background-position: center;
+    background-size: contain;
+}
+
+.englishwronganswer16 {
+    background-image: url("../images/backgrounds/en-usa/WRONGANSWER16.png");
+    background-color: #008de6;
+    background-position: center;
+    background-size: contain;
+}
+
+.englishwronganswer17 {
+    background-image: url("../images/backgrounds/en-usa/WRONGANSWER17.png");
+    background-color: #008de6;
+    background-position: center;
+    background-size: contain;
+}
+
+.englishwronganswer18 {
+    background-image: url("../images/backgrounds/en-usa/WRONGANSWER18.png");
+    background-color: #008de6;
+    background-position: center;
+    background-size: contain;
+}
+
+.englishwronganswer19 {
+    background-image: url("../images/backgrounds/en-usa/WRONGANSWER19.png");
+    background-color: #008de6;
+    background-position: center;
+    background-size: contain;
+}
+
+.englishwronganswer20 {
+    background-image: url("../images/backgrounds/en-usa/WRONGANSWER20.png");
+    background-color: #008de6;
+    background-position: center;
+    background-size: contain;
+}
+
+/* TEORIC REFERENCE */
+
+.englishteoricReference1 {
+    background-image: url("../images/backgrounds/en-usa/TEORIC\ REFERENCE\ 1.png");
+    background-size: contain;
+    background-color: #008de6;
+    background-position: center;
+}
+
+.englishteoricReference2 {
+    background-image: url("../images/backgrounds/en-usa/TEORIC\ REFERENCE\ 2.png");
+    background-size: contain;
+    background-color: #008de6;
+    background-position: center;
+}
+
+.englishteoricReference3 {
+    background-image: url("../images/backgrounds/en-usa/TEORIC\ REFERENCE\ 3.png");
+    background-size: contain;
+    background-color: #008de6;
+    background-position: center;
+}
+
+.englishteoricReference4 {
+    background-image: url("../images/backgrounds/en-usa/TEORIC\ REFERENCE\ 4.png");
+    background-size: contain;
+    background-color: #008de6;
+    background-position: center;
+}
+
+.englishteoricReference5 {
+    background-image: url("../images/backgrounds/en-usa/TEORIC\ REFERENCE\ 5.png");
+    background-size: contain;
+    background-color: #008de6;
+    background-position: center;
+}
+
+/*  REFERENCE */
+
+.englishreferences1 {
+    background-image: url("../images/backgrounds/en-usa/REFERENCES\ 1.png");
+    background-size: contain;
+    background-color: #008de6;
+    background-position: center;
+}
+
+.englishreferences2 {
+    background-image: url("../images/backgrounds/en-usa/REFERENCES\ 2.png");
+    background-size: contain;
+    background-color: #008de6;
+    background-position: center;
+}
+
+.englishreferences3 {
+    background-image: url("../images/backgrounds/en-usa/REFERENCES\ 3.png");
+    background-size: contain;
+    background-color: #008de6;
+    background-position: center;
+}
+
+.englishreferences4 {
+    background-image: url("../images/backgrounds/en-usa/REFERENCES\ 4.png");
+    background-size: contain;
+    background-color: #008de6;
+    background-position: center;
+}
+
+/* CREDITS */
+
+.englishcredits1 {
+    background-image: url("../images/backgrounds/en-usa/CREDITS\ VANESSA.png");
+    background-size: contain;
+    background-color: #008de6;
+    background-position: center;
+}
+
+.englishcredits2 {
+    background-image: url("../images/backgrounds/en-usa/CREDITS\ CARLOS.png");
+    background-size: contain;
+    background-color: #008de6;
+    background-position: center;
+}
+
+.englishcredits3 {
+    background-image: url("../images/backgrounds/en-usa/CREDITS\ GUSTAVO.png");
+    background-size: contain;
+    background-color: #008de6;
+    background-position: center;
+}
+
+/* RULES */
+
+.englishrules1 {
+    background-image: url("../images/backgrounds/en-usa/RULES\ 1.png");
+    background-size: contain;
+    background-color: #008de6;
+    background-position: center;
+}
+
+.englishrules2 {
+    background-image: url("../images/backgrounds/en-usa/RULES\ 2.png");
+    background-size: contain;
+    background-color: #008de6;
+    background-position: center;
+}
+
+/* WINNER- THE END */
+
+.englishwinner {
+    background-image: url("../images/backgrounds/en-usa/WINNER.png");
+    background-size: contain;
+    background-color: #008de6;
+    background-position: center;
+}
+
+.englishthanks {
+    background-image: url("../images/backgrounds/en-usa/THANKS.png");
+    background-size: contain;
+    background-color: #008de6;
+    background-position: center;
+}
+
+

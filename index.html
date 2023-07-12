@@ -15,6 +15,7 @@
     <!-- styles -->
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/backgroundImages.css">
+    <link rel="stylesheet" href="styles/backgroundImagesEnglish.css">
     <link rel="stylesheet" href="styles/buttons.css">
 
     <!-- Bootstrap CSS -->
@@ -43,6 +44,10 @@
 
         <!-- botao para iniciar o jogo -->
         <img class="button" id="btnPlay" src="images/buttons/PLAY.svg" alt="">
+
+        <!-- idioma do jogo -->
+        <img id="targetFlag" class="m-2" src="./images/flags/brazil.png" alt="Bandeira do Brasil"
+            onclick="alterarIdioma()">
 
         <!-- creative commmons direitos autorais -->
         <div class="creative-common">
@@ -97,9 +102,9 @@
         <img class="questionSlot" id="q18" src="images/buttons/BUTTON.png" alt="" onclick="goToQuestion(17)">
         <img class="questionSlot" id="q19" src="images/buttons/BUTTON.png" alt="" onclick="goToQuestion(18)">
         <img class="questionSlot" id="q20" src="images/buttons/BUTTON.png" alt="" onclick="goToQuestion(19)">
-        <img class="questionSlot" id="q21" src="images/buttons/BUTTON.png" alt="" onclick="goToQuestion(20)">        
+        <img class="questionSlot" id="q21" src="images/buttons/BUTTON.png" alt="" onclick="goToQuestion(20)">
     </section>
-   
+
     <section id="rules">
         <!-- btns -->
         <img id="btnBackFromRulesToApresentation" src="images/buttons/BACK.svg" alt="">
@@ -155,7 +160,8 @@
     <section id="teoricReference">
         <img id="btnBackFromTeoricReferenceToApresentation" src="images/buttons/BACK.svg" alt="">
         <img class="button" id="btnNextTeoricReference" src="images/buttons/NEXT.svg" alt="" onclick="next(this.id)">
-        <img class="button" id="btnPreviousTeoricReference" src="images/buttons/PREVIOUS.svg" alt="" onclick="previous(this.id)">
+        <img class="button" id="btnPreviousTeoricReference" src="images/buttons/PREVIOUS.svg" alt=""
+            onclick="previous(this.id)">
     </section>
 
     <section id="victory">
@@ -169,16 +175,16 @@
     <section id="references">
         <img class="button" id="btnFromReferencesToStart" src="images/buttons/NEXT.svg" alt="">
         <img class="button" id="btnNextReferences" src="images/buttons/NEXT.svg" alt="" onclick="next(this.id)">
-        <img class="button" id="btnPreviousReferences" src="images/buttons/PREVIOUS.svg" alt="" onclick="previous(this.id)">
+        <img class="button" id="btnPreviousReferences" src="images/buttons/PREVIOUS.svg" alt=""
+            onclick="previous(this.id)">
     </section>
 
-    <audio id="audioBd" src="sounds/background.mp3" controls style="display: none;"></audio>
-    <audio id="audioCt" src="sounds/correct.wav" controls style="display: none;"></audio>
-    <audio id="audioWg" src="sounds/wrong.mp3" controls style="display: none;"></audio>
-    <audio id="audioGt" src="sounds/notification.mp3" controls style="display: none;"></audio>
-    <audio id="audioCc" src="sounds/cottagecore.mp3" controls style="display: none;"></audio>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 
-    <!-- Script -->
+    <!-- Scripts -->
     <script src="scripts/script.js"></script>
     <script src="scripts/navigationScreens.js"></script>
     <script src="scripts/previousNextButtons.js"></script>
@@ -186,10 +192,12 @@
     <script src="scripts/orientation.js"></script>
     <script src="scripts/questions.js"></script>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+    <!-- Audio -->
+    <audio id="audioBd" src="sounds/background.mp3" ></audio>
+    <audio id="audioCt" src="sounds/correct.wav"></audio>
+    <audio id="audioWg" src="sounds/wrong.mp3"></audio>
+    <audio id="audioGt" src="sounds/notification.mp3"></audio>
+    <audio id="audioCc" src="sounds/cottagecore.mp3"></audio>
 
 </body>
 
