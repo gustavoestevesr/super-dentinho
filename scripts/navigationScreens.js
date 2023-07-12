@@ -36,7 +36,7 @@ function navigateFromApresentationToCredits() {
     sectionCredits.style.display = 'flex'
 
     document.body.classList.remove(idioma === "pt-br" ? "apresentation" : "englishapresentation")
-    document.body.classList.add(idioma === "pt-br" ? "credits1" : "enghishcredits1")
+    document.body.classList.add(idioma === "pt-br" ? "credits1" : "englishcredits1")
 }
 
 function navigateFromApresentationToRules() {
@@ -76,7 +76,7 @@ function navigateFromApresentationToBoardgame() {
     fingerPressingBoardgame.style.left = getOffset(document.querySelector( `img#q${numberQuestion+1}.questionSlot.p${numberQuestion+1}` )).left + distanceFingerLeft + 'px';
 
     document.body.classList.remove(idioma === "pt-br" ? "apresentation" : "englishapresentation")
-    document.body.classList.add(idioma === "pt-br" ? "references1" : "englishreferences1")    
+    document.body.classList.add(idioma === "pt-br" ? "boardgame" : "englishboardgame")    
 }
 
 async function navigateForTheNextQuestionInBoardgame() {
@@ -106,9 +106,9 @@ function navigateFromRulesToApresentation() {
     sectionRules.style.display = 'none'
     sectionApresentation.style.display = 'flex'
 
-    document.body.classList.remove("rules1")
-    document.body.classList.remove("rules2")
-    document.body.classList.add("apresentation")
+    document.body.classList.remove(idioma === "pt-br" ? "rules1" : "englishrules1")
+    document.body.classList.remove(idioma === "pt-br" ? "rules2" : "englishrules2")
+    document.body.classList.add(idioma === "pt-br" ? "apresentation" : "englishapresentation")
 }
 
 function navigateFromCreditsToApresentation() {

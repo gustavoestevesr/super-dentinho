@@ -489,8 +489,14 @@ function alterarIdioma() {
   if (targetFlag.src.includes("brazil.png")) {
     targetFlag.src = "./images/flags/usa.png";
     idioma = "en-usa";
+
+    document.body.classList.remove("start");
+    document.body.classList.add("englishstart");   
   } else {
     targetFlag.src = "./images/flags/brazil.png";
     idioma = "pt-br";
+
+    document.body.classList.remove("englishstart");
+    document.body.classList.add("start");   
   }
 }

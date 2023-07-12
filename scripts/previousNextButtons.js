@@ -16,30 +16,30 @@ let maxNumberOfReferences = 4;
 
 function displayApresentationRules() {
     for (let index = 1; index <= maxNumberOfPagesRules; index++) {
-        document.body.classList.remove(`rules${index}`)    
+        document.body.classList.remove(idioma === 'pt-br' ? `rules${index}` : `englishrules${index}`)    
     }
-    document.body.classList.add(`rules${indexRulePage}`)
+    document.body.classList.add(idioma === 'pt-br' ? `rules${indexRulePage}` : `englishrules${indexRulePage}`)
 }
 
 function displayApresentationCredits() {
     for (let index = 1; index <= maxNumberOfPagesCredits; index++) {
-        document.body.classList.remove(`credits${index}`)    
+        document.body.classList.remove(idioma === 'pt-br' ? `credits${index}` : `englishcredits${index}`)    
     }
-    document.body.classList.add(`credits${indexCreditPage}`)
+    document.body.classList.add(idioma === 'pt-br' ? `credits${indexCreditPage}` : `englishcredits${indexCreditPage}`)
 }
 
 function displayApresentationTeoricReference() {
     for (let index = 1; index <= maxNumberOfTeoricReference; index++) {
-        document.body.classList.remove(`teoricReference${index}`)    
+        document.body.classList.remove(idioma === 'pt-br' ? `teoricReference${index}` : `englishteoricReference${index}`)    
     }
-    document.body.classList.add(`teoricReference${indexTeoricReferencePage}`)
+    document.body.classList.add(idioma === 'pt-br' ? `teoricReference${indexTeoricReferencePage}` : `englishteoricReference${indexTeoricReferencePage}`)
 }
 
 function displayApresentationReferences() {
   for (let index = 1; index <= maxNumberOfReferences; index++) {
-      document.body.classList.remove(`references${index}`)    
+      document.body.classList.remove(idioma === 'pt-br' ? `references${index}` : `englishreferences${index}`)    
   }
-  document.body.classList.add(`references${indexReferencesPage}`)
+  document.body.classList.add(idioma === 'pt-br' ? `references${indexReferencesPage}` : `englishreferences${indexReferencesPage}`)
 }
 
 function previous(idButton) {
