@@ -96,10 +96,17 @@
     cursor: pointer;
 }
 
-@media screen and (max-width: 915px) {
+@media screen and (max-width: 700px) {
+    #btnPlay {
+        bottom: 8vh;
+        left: 29vw;
+    }
+}
+
+@media screen and (min-width: 701px) and (max-width: 1300px) {
     #btnPlay {
         bottom: 5vh;
-        left: 21vw;
+        left: 23vw;
     }
 }
 

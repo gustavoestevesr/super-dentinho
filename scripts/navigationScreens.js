@@ -88,7 +88,7 @@ async function navigateForTheNextQuestionInBoardgame() {
     
     document.body.classList.remove(idioma === "pt-br" ? `correctanswer${numberQuestion-1}` : `englishcorrectanswer${numberQuestion-1}`)
     document.body.classList.remove(idioma === "pt-br" ? `wronganswer${numberQuestion}` : `englishwronganswer${numberQuestion}`)
-    document.body.classList.add(idioma === "pt-br" ? "references1" : "englishreferences1")    
+    document.body.classList.add(idioma === "pt-br" ? "boardgame" : "englishboardgame")    
 
     sound1.volume = 1;
     sound2.volume = 1;
@@ -98,7 +98,7 @@ function navigateFromBoardgameToMenu() {
     sectionBoardgame.style.display = 'none'
     sectionApresentation.style.display = 'flex'
 
-    document.body.classList.remove(idioma === "pt-br" ? "references1" : "englishreferences1")
+    document.body.classList.remove(idioma === "pt-br" ? "boardgame" : "englishboardgame")
     document.body.classList.add(idioma === "pt-br" ? "apresentation" : "englishapresentation")
 }
 
@@ -169,13 +169,13 @@ function navigateFromQuestionToAnswer() {
     sectionAnswer.style.display = 'flex'
     sectionQuestion.style.display = 'none'
 
-    document.body.classList.remove(idioma === "pt-br" ? `question${numberQuestion}` : `engishquestion${numberQuestion}`) 
+    document.body.classList.remove(idioma === "pt-br" ? `question${numberQuestion}` : `englishquestion${numberQuestion}`) 
 }
 
 function navigateFromQuestionToBoardgame() {
     sectionQuestion.style.display = 'none'
     sectionBoardgame.style.display = 'flex'
 
-    document.body.classList.remove(idioma === "pt-br" ? `question${numberQuestion}` : `engishquestion${numberQuestion}`)
+    document.body.classList.remove(idioma === "pt-br" ? `question${numberQuestion}` : `englishquestion${numberQuestion}`)
     document.body.classList.add(idioma === "pt-br" ? "boardgame" : "englishboardgame")  
 }

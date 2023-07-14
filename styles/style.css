@@ -23,6 +23,7 @@ section {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    width: 100vw;
 }
 
 .menu {
@@ -42,13 +43,13 @@ a {
     position: fixed;
     bottom: 1vw;
     right: 1vw;
-    width: 100vw;
-    max-width: 420px;
+    width: 120vw;
+    max-width: 380px;
     margin: auto;
     background-color: white;
     padding: 10px;
     border-radius: 5px;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     text-align: right;
 }
 
@@ -145,13 +146,17 @@ p#questionText.apresentationText {
     text-align: center; 
 }
 
-@media screen and (max-width: 915px) {
+@media screen and (max-width: 1300px) {
+    #targetFlag {
+        width: 90px;
+    }
+
     .creative-common {
         position: fixed;
         bottom: 1vw;
         right: 1vw;
         width: 100vw;
-        max-width: 250px;
+        max-width: 230px;
         margin: auto;
         background-color: white;
         padding: 5px;
@@ -387,7 +392,7 @@ p#questionText.apresentationText {
     left: 14.5vw; 
 } 
 
-@media screen and (max-width: 915px) {
+@media screen and (min-width: 701px) and (max-width: 915px) {
     #superDentinhoBoardGame {
         bottom: 5vh;
         left: 25vw;
