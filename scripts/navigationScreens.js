@@ -90,8 +90,8 @@ async function navigateForTheNextQuestionInBoardgame() {
     document.body.classList.remove(idioma === "pt-br" ? `wronganswer${numberQuestion}` : `englishwronganswer${numberQuestion}`)
     document.body.classList.add(idioma === "pt-br" ? "boardgame" : "englishboardgame")    
 
-    sound1.volume = 1;
-    sound2.volume = 1;
+    /*sound1.volume = 1;
+    sound2.volume = 1;*/
 }
 
 function navigateFromBoardgameToMenu() {

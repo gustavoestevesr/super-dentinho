@@ -89,8 +89,8 @@ let fingerPressingBoardgame = document.querySelector(
 );
 
 // SOUNDS
-let sound1 = document.getElementById("audioBd");
-let sound2 = document.getElementById("audioCc");
+/*let sound1 = document.getElementById("audioBd");
+let sound2 = document.getElementById("audioCc");*/
 
 // INITIALIZE
 sectionMenu.style.display = "none";
@@ -157,9 +157,9 @@ btnTeoric.addEventListener("click", function () {
 btnContinue.addEventListener("click", function () {
   playNotificationSound();
   navigateFromApresentationToBoardgame();
-  if (sound1.currentTime == 0) {
+  /*if (sound1.currentTime == 0) {
     playBackgroundSound1();
-  }
+  }*/
 });
 
 // NAVIGATE FROM ACTUAL QUESTION TO THE NEXT QUESTION
@@ -235,9 +235,9 @@ function changeBackgroundSounds(sound1, sound2) {
   }
 }
 
-const interval = setInterval(function () {
+/*const interval = setInterval(function () {
   changeBackgroundSounds(sound1, sound2);
-}, 5000);
+}, 5000);*/
 
 // BACKGROUND SOUND
 function playBackgroundSound1() {
@@ -416,10 +416,12 @@ function updateDentinhoSize() {
 function showTip() {
   if (questions[numberQuestion].tip) {
     document.body.querySelector("#btnModal").click();
-    sound1.volume = 0.1;
-    sound2.volume = 0.1;
+    /*sound1.volume = 0.1;
+    sound2.volume = 0.1;*/
 
-    document.body.getElementsByClassName("modal-body")[0].innerHTML =
+    document.getElementById("modal-label").innerHTML = idioma === 'pt-br' ? 'Tela de Dica' : 'Hint Screen';
+
+    document.getElementById("modal-body").innerHTML =
       questions[numberQuestion].tip;
   }
 }
@@ -444,7 +446,7 @@ function feedbackAnswer(statusAnswerUser) {
     // numberQuestion++;
     updateDentinhoPosition(numberQuestion);   
 
-    document.body.classList.add(`correctanswer${numberQuestion}`);
+    document.body.classList.add(idioma === 'pt-br' ? `correctanswer${numberQuestion}` : `englishcorrectanswer${numberQuestion}`);
     showTip() 
     playCorrectSound();
     start();
@@ -455,7 +457,7 @@ function feedbackAnswer(statusAnswerUser) {
     // updateDentinhoPosition(numberQuestion - 1);
     updateDentinhoPosition(numberQuestion);
 
-    document.body.classList.add(`wronganswer${numberQuestion}`);
+    document.body.classList.add(idioma === 'pt-br' ? `wronganswer${numberQuestion}` : `englishwronganswer${numberQuestion}`);
     playWrongSound();    
   }  
 }
