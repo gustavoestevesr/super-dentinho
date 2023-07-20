@@ -427,10 +427,15 @@ function showTip() {
     document.getElementById("modal-label").innerHTML =
       idioma === "pt-br" ? "Tela de Dica" : "Hint Screen";
 
-    document.getElementById("modal-body").innerHTML =
+    document.getElementById("modal-body-content").innerHTML =
       questions[numberQuestion].tip;
-      document.getElementById("modal-body2").innerHTML =
+    document.getElementById("modal-body-content-reference").innerHTML =
+      questions[numberQuestion].reference;
+
+    document.getElementById("modal-body-content2").innerHTML =
       questions[numberQuestion].tip2;
+    document.getElementById("modal-body-content2-reference").innerHTML =
+      questions[numberQuestion].reference2;
 
     if (numberQuestion === 1) {
       document.getElementById("btnModalToggle2").classList.remove("d-none");
@@ -508,27 +513,28 @@ function getOffset(el) {
 // IDIOMA
 let idioma = "pt-br";
 
-function alterarIdioma() {
-  const targetFlag = document.getElementById("targetFlag");
-  if (targetFlag.src.includes("brazil.png")) {
-    targetFlag.src = "./images/flags/usa.png";
-    idioma = "en-usa";
+document.getElementById("targetFlagBrasil").addEventListener("click", () => {
+  playNotificationSound();
+  idioma = "pt-br";
+  document.body.classList.remove("englishstart");
+  document.body.classList.add("start");
+  document.getElementById("creative-common-1").innerHTML =
+    "Esta obra está licenciada com uma Licença";
+  document.getElementById("creative-common-2").innerHTML =
+    "Atribuição-NãoComercial-CompartilhaIgual 4.0 Internacional";
+  document.getElementById("fechar").innerHTML = "Fechar";
+  document.getElementById("btnModalToggle2").innerHTML = "Próximo";
+});
 
-    document.body.classList.remove("start");
-    document.body.classList.add("englishstart");
-    document.getElementById("creative-common-1").innerHTML =
-      "This work is licensed under a License";
-    document.getElementById("creative-common-2").innerHTML =
-      "Attribution-NonCommercial-ShareAlike 4.0 International";
-  } else {
-    targetFlag.src = "./images/flags/brazil.png";
-    idioma = "pt-br";
-
-    document.body.classList.remove("englishstart");
-    document.body.classList.add("start");
-    document.getElementById("creative-common-1").innerHTML =
-      "Este obra está licenciado com uma Licença";
-    document.getElementById("creative-common-2").innerHTML =
-      "Atribuição-NãoComercial-CompartilhaIgual 4.0 Internacional";
-  }
-}
+document.getElementById("targetFlagUSA").addEventListener("click", () => {
+  playNotificationSound();
+  idioma = "en-usa";
+  document.body.classList.remove("start");
+  document.body.classList.add("englishstart");
+  document.getElementById("creative-common-1").innerHTML =
+    "This work is licensed under a License";
+  document.getElementById("creative-common-2").innerHTML =
+    "Attribution-NonCommercial-ShareAlike 4.0 International";
+  document.getElementById("fechar").innerHTML = "Close";
+  document.getElementById("btnModalToggle2").innerHTML = "Next";
+});

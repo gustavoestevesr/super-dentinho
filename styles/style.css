@@ -62,12 +62,20 @@ a {
 
 #targetFlag {
   position: fixed;
-  width: 120px;
+  width: 150px;
   cursor: pointer;
   top: 1vh;
   right: 1vw;
+}
+
+#targetFlagBrasil {
   animation: zoom-out-zoom-in 1s ease infinite;
 }
+
+#targetFlagUSA {
+  animation: zoom-in-zoom-out 1s ease infinite;
+}
+
 
 .creator {
   width: 20vh;
@@ -148,7 +156,7 @@ p#questionText.apresentationText {
 
 @media screen and (max-width: 1300px) {
   #targetFlag {
-    width: 90px;
+    width: 80px;
   }
 
   .creative-common {

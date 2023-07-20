@@ -1,5 +1,4 @@
 /*  QUESTIONS  */
-//<small>` + idioma === 'pt-br' ? 'DENTALPAD. Como escovar os dentes: principais técnicas. YouTube, 02 de outubro de 2016. Disponível em: <https://www.youtube.com/watch?v=LLX8uFlWLDA>. Acesso em: 10 de março de 2023.' : 'DENTALPAD. How to brush your teeth: main techniques. YouTube, October 2, 2016. Available at: <https://www.youtube.com/watch?v=LLX8uFlWLDA>. Accessed on: March 10, 2023.' + '</small>'
 var questions = [
     {
         title: "Quantas vezes devemos escovar nossos dentinhos ao dia?",
@@ -19,12 +18,15 @@ var questions = [
         + `<div class="responsive-iframe">
             <iframe src="https://www.youtube.com/embed/LLX8uFlWLDA?start=58&end=91&controls=&mute=1" 
             title="YouTube video player"></iframe>
-        </div>`,
+           </div>`,
+        reference: `<small>` + idioma === 'pt-br' ? 'DENTALPAD. Como escovar os dentes: principais técnicas. YouTube, 02 de outubro de 2016. Disponível em: <https://www.youtube.com/watch?v=LLX8uFlWLDA>. Acesso em: 10 de março de 2023.' : 'DENTALPAD. How to brush your teeth: main techniques. YouTube, October 2, 2016. Available at: <https://www.youtube.com/watch?v=LLX8uFlWLDA>. Accessed on: March 10, 2023.' + '</small>',
         tip2: '<h5>' + idioma === 'pt-br' ? 'Método de Bass Modificado' : 'Modified Bass Method' + '</h5>'
         + `<div class="responsive-iframe">
             <iframe src="https://www.youtube.com/embed/LLX8uFlWLDA?start=92&end=113&controls=0&mute=1"
             title="YouTube video player"></iframe>
-        </div>`
+           </div>`,
+        reference2: `<small>` + idioma === 'pt-br' ? 'DENTALPAD. Como escovar os dentes: principais técnicas. YouTube, 02 de outubro de 2016. Disponível em: <https://www.youtube.com/watch?v=LLX8uFlWLDA>. Acesso em: 10 de março de 2023.' : 'DENTALPAD. How to brush your teeth: main techniques. YouTube, October 2, 2016. Available at: <https://www.youtube.com/watch?v=LLX8uFlWLDA>. Accessed on: March 10, 2023.' + '</small>',
+
     },
     {
         title: "Como deve ser a escovinha dental?",
@@ -32,8 +34,8 @@ var questions = [
         answer: "Macia, e com a cabeça da escova pequena.",
         correctAnswerExplanation: "Parabéns!! Isso mesmo você está indo muito bem, a escova dental deve sempre ser pequena e macia para conseguir limpar todos os cantinhos do dente, sem machucar.",
         wrongAnswerExplanation: "Incorreta !A escovinha sempre deve ser pequena e macia  para conseguir limpar todos os cantinhos do dente ,sem machucar.",
-        tip: `<img src="./images/questions/escova-de-dentes-ideal.jpg" alt="" style="width: 600px; max-width: 100%">
-        <small>Fonte: Trindadeodontologia </small>`
+        tip: `<img src="./images/questions/escova-de-dentes-ideal.jpg" alt="" style="width: 600px; max-width: 100%">`,
+        reference: `<small>` + idioma === 'pt-br' ? 'Fonte: Trindadeodontologia' : 'Source: Trindadeodontologia',
     },
     {
         title: "A pasta de dental e uma grande amiga da escovinha, ela precisa de flúor para manter o dentinho longe das cáries?",
@@ -49,8 +51,8 @@ var questions = [
         answer: "A quantidade e relativa a um grão de ervilha.",
         correctAnswerExplanation: "Acertou!!! a pasta deve ser colocada na idade de vocês, do mesmo tamanho de um carocinho de ver ilha!! ( foto de uma ervilha)",
         wrongAnswerExplanation: "Errou !!! a pasta deve ser colocada na idade de vocês ,do mesmo tamanho de um carocinho de ver ilha!! ( foto de uma ervilha)",
-        tip: `<img src="./images/questions/quantidade-de-pasta.jpg" alt="" style="width: 600px; max-width: 100%">
-        <small>Fonte: Monicabarreto</small>`
+        tip: `<img src="./images/questions/quantidade-de-pasta.jpg" alt="" style="width: 600px; max-width: 100%">`,
+        reference: `<small>` + idioma === 'pt-br' ? 'Fonte: Monicabarreto' : 'Source: Monicabarreto',
     },
     {
         title: "Você precisa ir no dentista quando...",
@@ -77,8 +79,8 @@ var questions = [
         tip: `<h5>${idioma === 'pt-br' ? 'Como usar o fio dental corretamente?' : 'How to floss correctly?'}</h5>
         <div class="responsive-iframe">
             <iframe src="https://www.youtube.com/embed/hM4-koredp8?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-        <small>Fonte: Colgate Brasil</small>`
+        </div>`,
+        reference: `<small>` + idioma === 'pt-br' ? 'Fonte: Colgate Brasil' : 'Source: Colgate Brazil',
     },
     {
         title: "Alimentos cariogênicos são aqueles que causam cárie. Eles são:",
@@ -105,8 +107,8 @@ var questions = [
         tip: `<h5>Como realizar a Higienização da Língua corretamente?</h5>
         <div class="responsive-iframe">
             <iframe src="https://www.youtube.com/embed/9FCeLKfY6V0?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>        
-        </div>
-        <small>Fonte: Vina Gonçalves</small>`
+        </div>`,
+        reference: `<small>` + idioma === 'pt-br' ? 'Fonte: Vina Gonçalves' : 'Source: Vina Gonçalves',
     },
     {
         title: "Estou com dor de dente na escola, o que devo fazer?",
@@ -126,8 +128,8 @@ var questions = [
         <h5>${idioma === 'pt-br' ? 'Cuide bem dos seus dentes!' : 'Take good care of your teeth!'}</h5>
         <div class="responsive-iframe">
             <iframe src="https://www.youtube.com/embed/HpXslusc0TE?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>        
-        </div>
-        <small>Fonte: Coleção Miau</small>`
+        </div>`,
+        reference: `<small>` + idioma === 'pt-br' ? 'Fonte: Coleção Miau' : 'Source: Coleção Miau',
     },
     {
         title: "Como os açúcares atacam o dente e formam as lesões de cárie?",
