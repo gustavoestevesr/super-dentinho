@@ -1,234 +1,233 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;    
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
-    --primary-color: var(--primary-color);
+  --primary-color: var(--primary-color);
 }
 
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: var(--primary-color);
-    background-position: center;
-    height: 100vh;    
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: var(--primary-color);
+  background-position: center;
+  height: 100vh;
 }
 
 section {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    width: 100vw;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
 }
 
 .menu {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
-    flex-direction: row;
-    flex-wrap: wrap;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 a {
-    color: black;
+  color: black;
 }
 
 .creative-common {
-    position: fixed;
-    bottom: 1vw;
-    right: 1vw;
-    width: 120vw;
-    max-width: 380px;
-    margin: auto;
-    background-color: white;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 0.8rem;
-    text-align: right;
+  position: fixed;
+  bottom: 1vw;
+  right: 1vw;
+  width: 120vw;
+  max-width: 380px;
+  margin: auto;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  text-align: right;
 }
 
 #ballon {
-    top: 0vw;
-    left: 20vw;
-    width: 62vw;
-    position: fixed;    
+  top: 0vw;
+  left: 20vw;
+  width: 62vw;
+  position: fixed;
 }
 
 #targetFlag {
-    position: fixed;
-    width: 120px;
-    cursor: pointer;
-    top: 1vh;
-    right: 1vw;
-    animation: zoom-out-zoom-in 1s ease infinite; 
+  position: fixed;
+  width: 120px;
+  cursor: pointer;
+  top: 1vh;
+  right: 1vw;
+  animation: zoom-out-zoom-in 1s ease infinite;
 }
 
 .creator {
-    width: 20vh;
+  width: 20vh;
 }
 
 #numberQuestion {
-    font-size: 1.1rem;
-    top: 5vw;
-    left: 30vw;
-    height: auto;
+  font-size: 1.1rem;
+  top: 5vw;
+  left: 30vw;
+  height: auto;
 }
 
 #questionText,
 #questionExplanation {
-    top: 5vw;
-    left: 25vw;
-    height: auto;
-    width: 50vw;
+  top: 5vw;
+  left: 25vw;
+  height: auto;
+  width: 50vw;
 }
 
 #correctAnswer {
-    top: 15vw;
-    left: 25vw;
-    width: 50vw;
-    font-weight: bold;
+  top: 15vw;
+  left: 25vw;
+  width: 50vw;
+  font-weight: bold;
 }
 
 #correctAnswerExplanation {
-    font-size: 1.3rem;
-    top: 50vh;
-    left: 65vh;
-    height: auto;
-    width: 90vh;
+  font-size: 1.3rem;
+  top: 50vh;
+  left: 65vh;
+  height: auto;
+  width: 90vh;
 }
 
 #titleApresentationCredits {
-    font-size: 3rem;
-    top: 5vw;
-    left: 7.5vw;
+  font-size: 3rem;
+  top: 5vw;
+  left: 7.5vw;
 }
 
 #apresentationCredits {
-    font-size: 1.2rem;
-    top: 11vw;
-    left: 20vw;
-    width: 50vw;
-    text-align: justify;
+  font-size: 1.2rem;
+  top: 11vw;
+  left: 20vw;
+  width: 50vw;
+  text-align: justify;
 }
 
 #titleApresentation {
-    font-size: 2.2rem;
-    top: 10vw;
-    left: 26.5vw;
+  font-size: 2.2rem;
+  top: 10vw;
+  left: 26.5vw;
 }
 
 #titleApresentationRules {
-    font-size: 2.2rem;
-    top: 4vw;
-    left: 27vw;
+  font-size: 2.2rem;
+  top: 4vw;
+  left: 27vw;
 }
 
 p#questionText.apresentationText {
-    width: 50vw;
-    left: 26vw;
-    top: 10vw;
+  width: 50vw;
+  left: 26vw;
+  top: 10vw;
 }
 
 .apresentationText {
-    top: 18vw;
-    left: 28vw;
-    width: 45vw;
+  top: 18vw;
+  left: 28vw;
+  width: 45vw;
 
-    position: fixed;
-    color: black;
-    font-size: 1.6rem;
-    text-align: center; 
+  position: fixed;
+  color: black;
+  font-size: 1.6rem;
+  text-align: center;
 }
 
 @media screen and (max-width: 1300px) {
-    #targetFlag {
-        width: 90px;
-    }
+  #targetFlag {
+    width: 90px;
+  }
 
-    .creative-common {
-        position: fixed;
-        bottom: 1vw;
-        right: 1vw;
-        width: 100vw;
-        max-width: 230px;
-        margin: auto;
-        background-color: white;
-        padding: 5px;
-        border-radius: 5px;
-        font-size: 0.4rem;
-        text-align: right;
-    }
+  .creative-common {
+    position: fixed;
+    bottom: 1vw;
+    right: 1vw;
+    width: 100vw;
+    max-width: 230px;
+    margin: auto;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 0.4rem;
+    text-align: right;
+  }
 
-    #titleApresentation {
-        font-size: 1.3rem;
-        top: 6vw;
-        left: 26.5vw;
-        font-weight: bold;
-    }
+  #titleApresentation {
+    font-size: 1.3rem;
+    top: 6vw;
+    left: 26.5vw;
+    font-weight: bold;
+  }
 
-    #titleApresentationRules {
-        font-size: 1.3rem;
-    }
+  #titleApresentationRules {
+    font-size: 1.3rem;
+  }
 
-    .apresentationText {
-        font-size: 1.2rem;
-        top: 11vw;
-        width: 42vw;
-    }
+  .apresentationText {
+    font-size: 1.2rem;
+    top: 11vw;
+    width: 42vw;
+  }
 
-    #apresentationCredits {
-        font-size: 1.2rem;
-        top: 18vh;
-        width: 85vh;
-        left: 55vh;
-    }
+  #apresentationCredits {
+    font-size: 1.2rem;
+    top: 18vh;
+    width: 85vh;
+    left: 55vh;
+  }
 
-    #apresentationRules {
-        top: 22vh;
-        width: 80vh;
-    }
+  #apresentationRules {
+    top: 22vh;
+    width: 80vh;
+  }
 
-    #questionText {
-        font-size: 1.2rem;
-    }    
+  #questionText {
+    font-size: 1.2rem;
+  }
 
-    #titleApresentationCredits {
-        font-size: 2rem;
-    }
+  #titleApresentationCredits {
+    font-size: 2rem;
+  }
 
-    #apresentationCredits {
-        font-size: 0.7rem;
-        top: 12vw;
-        left: 20vw;
-        width: 60vw;
-        text-align: justify;
-    }
-   
+  #apresentationCredits {
+    font-size: 0.7rem;
+    top: 12vw;
+    left: 20vw;
+    width: 60vw;
+    text-align: justify;
+  }
 }
 
 #tooths {
-    position: fixed;
-    bottom: 1vh;
-    right: 1vw;
-    height: 25vh;
+  position: fixed;
+  bottom: 1vh;
+  right: 1vw;
+  height: 25vh;
 }
 
 .column {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 #superDentinhoCredits,
@@ -236,277 +235,277 @@ p#questionText.apresentationText {
 #superDentinhoAnswer,
 #superDentinhoRules,
 #superDentinhoApresentation {
-    position: fixed;
-    bottom: 0vw;
-    left: 0vw;
-    width: 25vw;
-    max-width: 425px;
-    animation: bounce 6s ease infinite;
+  position: fixed;
+  bottom: 0vw;
+  left: 0vw;
+  width: 25vw;
+  max-width: 425px;
+  animation: bounce 6s ease infinite;
 }
 
 #superDentinhoStart {
-    position: fixed;
-    top: 2vh;
-    left: 55vw;
-    width: 35vw;
-    animation: bounce 6s ease infinite;
-    z-index: 2;
+  position: fixed;
+  top: 2vh;
+  left: 55vw;
+  width: 35vw;
+  animation: bounce 6s ease infinite;
+  z-index: 2;
 }
 
 #superDentinhoApresentation {
-    bottom: 28vh;
-    left: -2vw;
-    width: 28vw;
+  bottom: 28vh;
+  left: -2vw;
+  width: 28vw;
 }
 
 #superDentinhoBoardGame {
-    position: fixed;
-    bottom: 5vh;
-    left: 23vw;
-    width: 12vw;
-    animation: bounce 6s ease infinite;
+  position: fixed;
+  bottom: 5vh;
+  left: 23vw;
+  width: 12vw;
+  animation: bounce 6s ease infinite;
 }
 
 #video-metodo-fones {
-    bottom: 1vw;
-    left: 1vw;
+  bottom: 1vw;
+  left: 1vw;
 }
 
 #video-metodo-bass-modificado {
-    bottom: 1vw;
-    right: 1vw;
+  bottom: 1vw;
+  right: 1vw;
 }
 
 /* SLOTS OF QUESTIONS - START */
 
 .questionSlot {
-    /* width: 10vw; */
-    width: 8vw;
-    position: fixed;
-    z-index: 30;
-    cursor: pointer;
+  /* width: 10vw; */
+  width: 8vw;
+  position: fixed;
+  z-index: 30;
+  cursor: pointer;
 }
 
 .p1 {
-    top: 76vh;
-    left: 40vw;
+  top: 76vh;
+  left: 40vw;
 }
 
 .p2 {
-    top: 77vh;
-    left: 52.5vw;
+  top: 77vh;
+  left: 52.5vw;
 }
 
 .p3 {
-    top: 76vh;
-    left: 65.5vw;
+  top: 76vh;
+  left: 65.5vw;
 }
 
 .p4 {
-    top: 70vh;
-    left: 79vw;
+  top: 70vh;
+  left: 79vw;
 }
 
 .p5 {
-    bottom: 28vh;
-    left: 73vw;
+  bottom: 28vh;
+  left: 73vw;
 }
 
 .p6 {
-    bottom: 28vh;
-    left: 60vw;
+  bottom: 28vh;
+  left: 60vw;
 }
 
 .p7 {
-    bottom: 27vh;
-    left: 47vw;
+  bottom: 27vh;
+  left: 47vw;
 }
 
 .p8 {
-    bottom: 27vh;
-    left: 35vw;
+  bottom: 27vh;
+  left: 35vw;
 }
 
 .p9 {
-    bottom: 28vh;
-    left: 23vw;
+  bottom: 28vh;
+  left: 23vw;
 }
 
 .p10 {
-    bottom: 44.5vh;
-    left: 13vw;
+  bottom: 44.5vh;
+  left: 13vw;
 }
 
 .p11 {
-    bottom: 54.5vh;
-    left: 23.5vw;
+  bottom: 54.5vh;
+  left: 23.5vw;
 }
 
 .p12 {
-    bottom: 50.5vh;
-    left: 35.5vw;   
+  bottom: 50.5vh;
+  left: 35.5vw;
 }
 
 .p13 {
-    bottom: 50vh;
-    left: 47.5vw;  
+  bottom: 50vh;
+  left: 47.5vw;
 }
 
 .p14 {
-    bottom: 49vh;
-    left: 59vw;  
-} 
+  bottom: 49vh;
+  left: 59vw;
+}
 
 .p15 {
-    bottom: 49vh;
-    left: 70vw;  
+  bottom: 49vh;
+  left: 70vw;
 }
 
 .p16 {
-    bottom: 63vh;
-    left: 78.5vw;  
+  bottom: 63vh;
+  left: 78.5vw;
 }
 
 .p17 {
-    bottom: 78vh;
-    left: 69.5vw; 
+  bottom: 78vh;
+  left: 69.5vw;
 }
 
 .p18 {
-    bottom: 78vh;
-    left: 55vw; 
+  bottom: 78vh;
+  left: 55vw;
 }
 
 .p19 {
-    bottom: 77vh;
-    left: 41.5vw; 
+  bottom: 77vh;
+  left: 41.5vw;
 }
 
 .p20 {
-    bottom: 77vh;
-    left: 27vw; 
-}  
+  bottom: 77vh;
+  left: 27vw;
+}
 
 .p21 {
-    bottom: 76vh;
-    left: 14.5vw; 
-} 
+  bottom: 76vh;
+  left: 14.5vw;
+}
 
 @media screen and (min-width: 701px) and (max-width: 915px) {
-    #superDentinhoBoardGame {
-        bottom: 5vh;
-        left: 25vw;
-    }
+  #superDentinhoBoardGame {
+    bottom: 5vh;
+    left: 25vw;
+  }
 
-    #superDentinhoStart {
-        width: 38vw;
-        left: 46vw;
-    }
+  #superDentinhoStart {
+    width: 38vw;
+    left: 46vw;
+  }
 
-    .p1 {
-        top: 76vh;
-        left: 40vw;
-    }
-    
-    .p2 {
-        top: 77vh;
-        left: 52.5vw;
-    }
-    
-    .p3 {
-        top: 76vh;
-        left: 64vw;
-    }
-    
-    .p4 {
-        top: 70vh;
-        left: 75.5vw;
-    }
-    
-    .p5 {
-        bottom: 28vh;
-        left: 70.5vw;
-    }
-    
-    .p6 {
-        bottom: 28vh;
-        left: 59vw;
-    }
-    
-    .p7 {
-        bottom: 26vh;
-        left: 47vw;
-    }
-    
-    .p8 {
-        bottom: 26vh;
-        left: 36vw;
-    }
-    
-    .p9 {
-        bottom: 27vh;
-        left: 25vw;
-    }
-    
-    .p10 {
-        bottom: 44vh;
-        left: 16vw;
-    }
-    
-    .p11 {
-        bottom: 54.5vh;
-        left: 26vw;
-    }
-    
-    .p12 {
-        bottom: 50.5vh;
-        left: 36.5vw;   
-    }
-    
-    .p13 {
-        bottom: 50vh;
-        left: 47.5vw;  
-    }
-    
-    .p14 {
-        bottom: 49vh;
-        left: 57.5vw;  
-    } 
-    
-    .p15 {
-        bottom: 49vh;
-        left: 67.5vw;  
-    }
-    
-    .p16 {
-        bottom: 62vh;
-        left: 75vw;  
-    }
-    
-    .p17 {
-        bottom: 77vh;
-        left: 67vw; 
-    }
-    
-    .p18 {
-        bottom: 77vh;
-        left: 54vw; 
-    }
-    
-    .p19 {
-        bottom: 76vh;
-        left: 42vw; 
-    }
-    
-    .p20 {
-        bottom: 76vh;
-        left: 29vw; 
-    }  
+  .p1 {
+    top: 76vh;
+    left: 40vw;
+  }
 
-    .p21 {
-        bottom: 76vh;
-        left: 17.5vw; 
-    } 
+  .p2 {
+    top: 77vh;
+    left: 52.5vw;
+  }
+
+  .p3 {
+    top: 76vh;
+    left: 64vw;
+  }
+
+  .p4 {
+    top: 70vh;
+    left: 75.5vw;
+  }
+
+  .p5 {
+    bottom: 28vh;
+    left: 70.5vw;
+  }
+
+  .p6 {
+    bottom: 28vh;
+    left: 59vw;
+  }
+
+  .p7 {
+    bottom: 26vh;
+    left: 47vw;
+  }
+
+  .p8 {
+    bottom: 26vh;
+    left: 36vw;
+  }
+
+  .p9 {
+    bottom: 27vh;
+    left: 25vw;
+  }
+
+  .p10 {
+    bottom: 44vh;
+    left: 16vw;
+  }
+
+  .p11 {
+    bottom: 54.5vh;
+    left: 26vw;
+  }
+
+  .p12 {
+    bottom: 50.5vh;
+    left: 36.5vw;
+  }
+
+  .p13 {
+    bottom: 50vh;
+    left: 47.5vw;
+  }
+
+  .p14 {
+    bottom: 49vh;
+    left: 57.5vw;
+  }
+
+  .p15 {
+    bottom: 49vh;
+    left: 67.5vw;
+  }
+
+  .p16 {
+    bottom: 62vh;
+    left: 75vw;
+  }
+
+  .p17 {
+    bottom: 77vh;
+    left: 67vw;
+  }
+
+  .p18 {
+    bottom: 77vh;
+    left: 54vw;
+  }
+
+  .p19 {
+    bottom: 76vh;
+    left: 42vw;
+  }
+
+  .p20 {
+    bottom: 76vh;
+    left: 29vw;
+  }
+
+  .p21 {
+    bottom: 76vh;
+    left: 17.5vw;
+  }
 }
 
 /* SLOTS OF QUESTIONS - END */
@@ -514,82 +513,89 @@ p#questionText.apresentationText {
 /* ANIMATION START SUPER DENTINHO - START */
 
 @keyframes bounce {
-    0% {
-        transform: translateY(0px);
-    }
+  0% {
+    transform: translateY(0px);
+  }
 
-    50% {
-        transform: translateY(25px);
-    }
+  50% {
+    transform: translateY(25px);
+  }
 
-    100% {
-        transform: translateY(0px);
-    }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 .questionSlotActive {
-    animation: zoom-in-zoom-out 1s ease infinite;
-    cursor: pointer;
+  animation: zoom-in-zoom-out 1s ease infinite;
+  cursor: pointer;
 }
 
 /* ANIMATION START SUPER DENTINHO - END */
 
-
 /* SLOT OF QUESTION ANIMATION - START */
 
 @keyframes zoom-in-zoom-out {
-    0% {
-        transform: scale(1, 1);
-    }
+  0% {
+    transform: scale(1, 1);
+  }
 
-    50% {
-        transform: scale(1.1, 1.1);
-    }
+  50% {
+    transform: scale(1.1, 1.1);
+  }
 
-    100% {
-        transform: scale(1, 1);
-    }
+  100% {
+    transform: scale(1, 1);
+  }
 }
 
 @keyframes zoom-out-zoom-in {
-    0% {
-        transform: scale(1.1, 1.1);
-    }
+  0% {
+    transform: scale(1.1, 1.1);
+  }
 
-    50% {
-        transform: scale(1, 1);
-    }
+  50% {
+    transform: scale(1, 1);
+  }
 
-    100% {
-        transform: scale(1.1, 1.1);
-    }
+  100% {
+    transform: scale(1.1, 1.1);
+  }
 }
 
 .questionSlotActive {
-    animation: zoom-in-zoom-out 1s ease infinite;
-    cursor: pointer;
+  animation: zoom-in-zoom-out 1s ease infinite;
+  cursor: pointer;
 }
 
 /* SLOT OF QUESTION ANIMATION - END */
 
 .modal-body {
-    height: 1000px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-iframe {
-    width: 100%;
-    max-width: 560px;
-    max-height: 315px;
-    height: 100%;
+.responsive-iframe {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (e.g., 56.25% for 16:9, 75% for 4:3) */
+  width: 100%; /* Make sure the container has a width */
+}
+
+.responsive-iframe iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .fingerPressing {
-    position: fixed;
-    width: 3vw;  
-    z-index: -1;  
-    animation: zoom-in-zoom-out 0.5s ease infinite; 
+  position: fixed;
+  width: 3vw;
+  z-index: -1;
+  animation: zoom-in-zoom-out 0.5s ease infinite;
 }

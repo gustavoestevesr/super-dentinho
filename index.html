@@ -53,9 +53,10 @@
         <div class="creative-common">
             <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img
                     alt="Licença Creative Commons" style="border-width:0"
-                    src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />Este obra está licenciado
-            com uma Licença <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons
-                Atribuição-NãoComercial-CompartilhaIgual 4.0 Internacional</a>
+                    src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /> <span
+                id="creative-common-1">Este obra está licenciado com uma Licença</span> <a rel="license"
+                href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons
+                <span id="creative-common-2">Atribuição-NãoComercial-CompartilhaIgual 4.0 Internacional</span> </a>
         </div>
     </section>
 
@@ -135,23 +136,42 @@
 
     <section id="answer">
         <!-- Button trigger modal -->
-        <button id="btnModal" style="display: none;" type="button" class="btn btn-primary" data-bs-toggle="modal"
-            data-bs-target="#exampleModal"></button>
+        <button id="btnModal" type="button" class="btn btn-primary d-none" data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop"></button>
 
         <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="modal-label" aria-hidden="true">
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" tabindex="-1">
             <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="modal-label"></h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div id="modal-body">
-
+                    <div class="modal-body" id="modal-body"></div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button class="btn btn-primary d-none" id="btnModalToggle2" data-bs-target="#modalToggle2"
+                            data-bs-toggle="modal" data-bs-dismiss="modal">Próximo</button>
                     </div>
                 </div>
             </div>
         </div>
+
+        <div class="modal fade" id="modalToggle2" data-bs-backdrop="static" tabindex="-1">
+            <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal-label"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" id="modal-body2"></div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
         <img class="button" id="btnNextFromToBoardgame" src="images/buttons/NEXT.svg" alt="">
     </section>
@@ -192,7 +212,7 @@
     <script src="scripts/questions.js"></script>
 
     <!-- Audio -->
-    <audio id="audioBd" src="sounds/background.mp3" ></audio>
+    <audio id="audioBd" src="sounds/background.mp3"></audio>
     <audio id="audioCt" src="sounds/correct.wav"></audio>
     <audio id="audioWg" src="sounds/wrong.mp3"></audio>
     <audio id="audioGt" src="sounds/notification.mp3"></audio>

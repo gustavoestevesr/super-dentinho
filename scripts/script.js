@@ -29,9 +29,7 @@ let btnBackFromCreditsToApresentation = document.querySelector(
 let btnBackFromQuestionToBoardgame = document.querySelector(
   "#btnBackFromQuestionToBoardgame"
 );
-let btnNextFromToBoardgame = document.querySelector(
-  "#btnNextFromToBoardgame"
-  );
+let btnNextFromToBoardgame = document.querySelector("#btnNextFromToBoardgame");
 let btnBackFromBoardgameToMenu = document.querySelector(
   "#btnBackFromBoardgameToMenu"
 );
@@ -42,9 +40,15 @@ let btnBackFromTeoricReferenceToApresentation = document.querySelector(
 // BTNs Next
 let btnNextCredit = document.querySelector("img#btnNextCredit.button");
 let btnNextRule = document.querySelector("img#btnNextRule.button");
-let btnFromWinnerToThanks = document.querySelector("img#btnFromWinnerToThanks.button");
-let btnFromThanksToReferences = document.querySelector("img#btnFromThanksToReferences.button");
-let btnFromReferencesToStart = document.querySelector("img#btnFromReferencesToStart.button");
+let btnFromWinnerToThanks = document.querySelector(
+  "img#btnFromWinnerToThanks.button"
+);
+let btnFromThanksToReferences = document.querySelector(
+  "img#btnFromThanksToReferences.button"
+);
+let btnFromReferencesToStart = document.querySelector(
+  "img#btnFromReferencesToStart.button"
+);
 
 // BTNs Options
 let btnOption1 = document.querySelector("img#optionButton1.optionButton");
@@ -198,23 +202,24 @@ btnBackFromCreditsToApresentation.addEventListener("click", function () {
   navigateFromCreditsToApresentation();
 });
 
-btnBackFromTeoricReferenceToApresentation.addEventListener("click", function () {
-  playNotificationSound();
-  navigateFromTeoricReferenceToApresentation();
-});
+btnBackFromTeoricReferenceToApresentation.addEventListener(
+  "click",
+  function () {
+    playNotificationSound();
+    navigateFromTeoricReferenceToApresentation();
+  }
+);
 
 btnBackFromQuestionToBoardgame.addEventListener("click", function () {
   updateDentinhoPosition(numberQuestion);
-  playNotificationSound();      
+  playNotificationSound();
   navigateFromQuestionToBoardgame();
 });
 
 btnFromReferencesToStart.addEventListener("click", function () {
-  playNotificationSound();      
-  navigateFromReferencestoStart()
+  playNotificationSound();
+  navigateFromReferencestoStart();
 });
-
-
 
 // SHOW VICTORY
 async function victory() {
@@ -370,7 +375,7 @@ function updateDentinhoPosition(numberQuestion) {
       break;
 
     case 20:
-      changeDentinhoPosition(questionSlot21);      
+      changeDentinhoPosition(questionSlot21);
       break;
 
     default:
@@ -383,12 +388,12 @@ async function goToQuestion(slotSelectedFromUSer) {
     await delay(500);
     victory();
     return;
-  } else if (slotSelectedFromUSer === numberQuestion) {    
+  } else if (slotSelectedFromUSer === numberQuestion) {
     updateDentinhoPosition(numberQuestion);
-    superDentinhoBoardGame.style.transition = "all 0.5s"
+    superDentinhoBoardGame.style.transition = "all 0.5s";
     await delay(500);
-    navigateFromBoardgameToQuestion();    
-    superDentinhoBoardGame.style.transition = "all 0s"
+    navigateFromBoardgameToQuestion();
+    superDentinhoBoardGame.style.transition = "all 0s";
   }
 }
 
@@ -419,10 +424,19 @@ function showTip() {
     /*sound1.volume = 0.1;
     sound2.volume = 0.1;*/
 
-    document.getElementById("modal-label").innerHTML = idioma === 'pt-br' ? 'Tela de Dica' : 'Hint Screen';
+    document.getElementById("modal-label").innerHTML =
+      idioma === "pt-br" ? "Tela de Dica" : "Hint Screen";
 
     document.getElementById("modal-body").innerHTML =
       questions[numberQuestion].tip;
+      document.getElementById("modal-body2").innerHTML =
+      questions[numberQuestion].tip2;
+
+    if (numberQuestion === 1) {
+      document.getElementById("btnModalToggle2").classList.remove("d-none");
+    } else {
+      document.getElementById("btnModalToggle2").classList.add("d-none");
+    }
   }
 }
 
@@ -444,10 +458,14 @@ function feedbackAnswer(statusAnswerUser) {
   if (statusAnswerUser) {
     // updateDentinhoPosition(numberQuestion);
     // numberQuestion++;
-    updateDentinhoPosition(numberQuestion);   
+    updateDentinhoPosition(numberQuestion);
 
-    document.body.classList.add(idioma === 'pt-br' ? `correctanswer${numberQuestion}` : `englishcorrectanswer${numberQuestion}`);
-    showTip() 
+    document.body.classList.add(
+      idioma === "pt-br"
+        ? `correctanswer${numberQuestion}`
+        : `englishcorrectanswer${numberQuestion}`
+    );
+    showTip();
     playCorrectSound();
     start();
     stop();
@@ -457,9 +475,13 @@ function feedbackAnswer(statusAnswerUser) {
     // updateDentinhoPosition(numberQuestion - 1);
     updateDentinhoPosition(numberQuestion);
 
-    document.body.classList.add(idioma === 'pt-br' ? `wronganswer${numberQuestion}` : `englishwronganswer${numberQuestion}`);
-    playWrongSound();    
-  }  
+    document.body.classList.add(
+      idioma === "pt-br"
+        ? `wronganswer${numberQuestion}`
+        : `englishwronganswer${numberQuestion}`
+    );
+    playWrongSound();
+  }
 }
 
 function delay(milliseconds) {
@@ -493,12 +515,20 @@ function alterarIdioma() {
     idioma = "en-usa";
 
     document.body.classList.remove("start");
-    document.body.classList.add("englishstart");   
+    document.body.classList.add("englishstart");
+    document.getElementById("creative-common-1").innerHTML =
+      "This work is licensed under a License";
+    document.getElementById("creative-common-2").innerHTML =
+      "Attribution-NonCommercial-ShareAlike 4.0 International";
   } else {
     targetFlag.src = "./images/flags/brazil.png";
     idioma = "pt-br";
 
     document.body.classList.remove("englishstart");
-    document.body.classList.add("start");   
+    document.body.classList.add("start");
+    document.getElementById("creative-common-1").innerHTML =
+      "Este obra está licenciado com uma Licença";
+    document.getElementById("creative-common-2").innerHTML =
+      "Atribuição-NãoComercial-CompartilhaIgual 4.0 Internacional";
   }
 }

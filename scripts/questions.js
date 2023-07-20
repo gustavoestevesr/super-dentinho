@@ -1,4 +1,5 @@
 /*  QUESTIONS  */
+//<small>` + idioma === 'pt-br' ? 'DENTALPAD. Como escovar os dentes: principais técnicas. YouTube, 02 de outubro de 2016. Disponível em: <https://www.youtube.com/watch?v=LLX8uFlWLDA>. Acesso em: 10 de março de 2023.' : 'DENTALPAD. How to brush your teeth: main techniques. YouTube, October 2, 2016. Available at: <https://www.youtube.com/watch?v=LLX8uFlWLDA>. Accessed on: March 10, 2023.' + '</small>'
 var questions = [
     {
         title: "Quantas vezes devemos escovar nossos dentinhos ao dia?",
@@ -14,15 +15,16 @@ var questions = [
         answer: "Técnica da vassourinha, escovinha inclinada.",
         correctAnswerExplanation: "Isso aí!!! Você acertou devemos inclinar a escova 45° e escovar os dentes em todas suas faces, lembrando que acima (na oclusal) dos dentinhos faremos movimento de vai e vem.",
         wrongAnswerExplanation: "Incorreta ,que pena você errou! A técnica da bolinha e para crianças menores de 8 anos ou aqueles que tem dificuldade motora, na hora da escovação.",
-        tip: `<h5>Método de Stillman Modificado</h5>
-        <iframe src="https://www.youtube.com/embed/LLX8uFlWLDA?start=58&end=91&controls=&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <hr>
-        <h5>Método de Bass Modificado</h5>
-        <iframe src="https://www.youtube.com/embed/LLX8uFlWLDA?start=92&end=113&controls=0" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
-        <small>DENTALPAD. Como escovar os dentes: principais técnicas. YouTube, 02 de outubro de 2016. Disponível em: <https://www.youtube.com/watch?v=LLX8uFlWLDA>. Acesso em: 10 de março de 2023.</small>`
+        tip: '<h5>' + idioma === 'pt-br' ? 'Método de Stillman Modificado' : 'Modified Stillman Method' + '</h5>'
+        + `<div class="responsive-iframe">
+            <iframe src="https://www.youtube.com/embed/LLX8uFlWLDA?start=58&end=91&controls=&mute=1" 
+            title="YouTube video player"></iframe>
+        </div>`,
+        tip2: '<h5>' + idioma === 'pt-br' ? 'Método de Bass Modificado' : 'Modified Bass Method' + '</h5>'
+        + `<div class="responsive-iframe">
+            <iframe src="https://www.youtube.com/embed/LLX8uFlWLDA?start=92&end=113&controls=0&mute=1"
+            title="YouTube video player"></iframe>
+        </div>`
     },
     {
         title: "Como deve ser a escovinha dental?",
@@ -72,8 +74,10 @@ var questions = [
         answer: "Antes da escovação.",
         correctAnswerExplanation: "Isso aí!! Muito bem sempre antes da escovação passamos o fio dental",
         wrongAnswerExplanation: "Errou! ( carinha de triste) sempre antes da escovação passamos o fio dental",
-        tip: `<h5>Como usar o fio dental corretamente?</h5>
-        <iframe src="https://www.youtube.com/embed/hM4-koredp8?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        tip: `<h5>${idioma === 'pt-br' ? 'Como usar o fio dental corretamente?' : 'How to floss correctly?'}</h5>
+        <div class="responsive-iframe">
+            <iframe src="https://www.youtube.com/embed/hM4-koredp8?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
         <small>Fonte: Colgate Brasil</small>`
     },
     {
@@ -99,7 +103,9 @@ var questions = [
         correctAnswerExplanation: "Sim!!!! A língua assim como os dentes ,precisa de cuidados ,todas as vezes que escovamos os dentes ,precisamos escovar a língua também .",
         wrongAnswerExplanation: "Errada! A língua assim como os dentes, precisa de cuidados ,todas as vezes que escovamos os dentes ,precisamos escovar a língua também",
         tip: `<h5>Como realizar a Higienização da Língua corretamente?</h5>
-        <iframe src="https://www.youtube.com/embed/9FCeLKfY6V0?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>        
+        <div class="responsive-iframe">
+            <iframe src="https://www.youtube.com/embed/9FCeLKfY6V0?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>        
+        </div>
         <small>Fonte: Vina Gonçalves</small>`
     },
     {
@@ -116,8 +122,11 @@ var questions = [
         answer: "Diminuir os açúcares da comida, e sempre higienizar a boca.",
         correctAnswerExplanation: "Correto! Diminuindo, e higienizando teremos sempre uma boca livre da doença cárie",
         wrongAnswerExplanation: "Incorreto! Devemos diminuir da nossa comida os açúcares, como: balas, doces, refrigerantes e higienizar sempre a boca, após todas as alimentações!",
-        tip: `<h5>Cuide bem dos seus dentes!</h5>
-        <iframe src="https://www.youtube.com/embed/HpXslusc0TE?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>        
+        tip: `
+        <h5>${idioma === 'pt-br' ? 'Cuide bem dos seus dentes!' : 'Take good care of your teeth!'}</h5>
+        <div class="responsive-iframe">
+            <iframe src="https://www.youtube.com/embed/HpXslusc0TE?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>        
+        </div>
         <small>Fonte: Coleção Miau</small>`
     },
     {
