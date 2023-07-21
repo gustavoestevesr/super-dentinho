@@ -147,16 +147,19 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="modal-label"></h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="d-flex justify-content-between">
+                            <button type="button" class="btn fs-1 d-none" id="btnModalToggle2" data-bs-target="#modalToggle2"
+                            data-bs-toggle="modal" data-bs-dismiss="modal" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </button>
+                            <button type="button" class="btn fs-3" data-bs-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
                     </div>
                     <div class="modal-body">
                         <div id="modal-body-content" class="w-100"></div>
-                        <div id="modal-body-content-reference"></div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="fechar">Fechar</button>
-                        <button class="btn btn-primary d-none proximo" id="btnModalToggle2" data-bs-target="#modalToggle2"
-                            data-bs-toggle="modal" data-bs-dismiss="modal">Próximo</button>
+                        <small id="modal-body-content-reference"></small>
                     </div>
                 </div>
             </div>
@@ -167,14 +170,13 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="modal-label"></h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <button type="button" class="btn fs-3" data-bs-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
                     </div>
                     <div class="modal-body">
                         <div id="modal-body-content2" class="w-100"></div>
-                        <div id="modal-body-content2-reference"></div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="fechar">Fechar</button>
+                        <small id="modal-body-content2-reference"></small>
                     </div>
                 </div>
             </div>

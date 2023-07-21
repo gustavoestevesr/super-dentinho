@@ -92,10 +92,6 @@ let fingerPressingBoardgame = document.querySelector(
   "img#fingerPressingBoardgame.fingerPressing"
 );
 
-// SOUNDS
-/*let sound1 = document.getElementById("audioBd");
-let sound2 = document.getElementById("audioCc");*/
-
 // INITIALIZE
 sectionMenu.style.display = "none";
 sectionCredits.style.display = "none";
@@ -161,9 +157,7 @@ btnTeoric.addEventListener("click", function () {
 btnContinue.addEventListener("click", function () {
   playNotificationSound();
   navigateFromApresentationToBoardgame();
-  /*if (sound1.currentTime == 0) {
-    playBackgroundSound1();
-  }*/
+  playBackgroundSound1();
 });
 
 // NAVIGATE FROM ACTUAL QUESTION TO THE NEXT QUESTION
@@ -232,7 +226,9 @@ async function victory() {
   navigateFromBoardgameToWinner();
 }
 
-function changeBackgroundSounds(sound1, sound2) {
+function changeBackgroundSounds() {
+  const sound1 = document.getElementById("audioBd");
+  const sound2 = document.getElementById("audioCc");
   if (sound1.currentTime === sound1.duration && !sound1.pause) {
     playBackgroundSound2();
   } else if (sound2.currentTime === sound2.duration && !sound2.pause) {
@@ -240,12 +236,13 @@ function changeBackgroundSounds(sound1, sound2) {
   }
 }
 
-/*const interval = setInterval(function () {
-  changeBackgroundSounds(sound1, sound2);
-}, 5000);*/
+const interval = setInterval(function () {
+  changeBackgroundSounds();
+}, 5000);
 
 // BACKGROUND SOUND
 function playBackgroundSound1() {
+  const sound1 = document.getElementById("audioBd");
   sound1.currentTime = 0;
   sound1.loop = false;
   sound1.play();
@@ -253,6 +250,7 @@ function playBackgroundSound1() {
 
 // NOTIFICATION SOUND
 function playBackgroundSound2() {
+  const sound2 = document.getElementById("audioCc");
   sound2.currentTime = 0;
   sound2.loop = false;
   sound2.play();
@@ -260,7 +258,7 @@ function playBackgroundSound2() {
 
 // NOTIFICATION SOUND
 function playNotificationSound() {
-  let sound = document.getElementById("audioGt");
+  const sound = document.getElementById("audioGt");
   sound.volume = 0.2;
   sound.currentTime = 0;
   sound.loop = false;
@@ -269,7 +267,7 @@ function playNotificationSound() {
 
 // CORRECT SOUND
 function playCorrectSound() {
-  let sound = document.getElementById("audioCt");
+  const sound = document.getElementById("audioCt");
   sound.currentTime = 0;
   sound.loop = false;
   sound.play();
@@ -277,7 +275,7 @@ function playCorrectSound() {
 
 // WRONG SOUND
 function playWrongSound() {
-  let sound = document.getElementById("audioWg");
+  const sound = document.getElementById("audioWg");
   sound.currentTime = 0;
   sound.loop = false;
   sound.play();
@@ -419,10 +417,13 @@ function updateDentinhoSize() {
 }
 
 function showTip() {
+  const sound1 = document.getElementById("audioCt");
+  const sound2 = document.getElementById("audioWg");
+
   if (questions[numberQuestion].tip) {
     document.body.querySelector("#btnModal").click();
-    /*sound1.volume = 0.1;
-    sound2.volume = 0.1;*/
+    sound1.volume = 0.1;
+    sound2.volume = 0.1;
 
     document.getElementById("modal-label").innerHTML =
       idioma === "pt-br" ? "Tela de Dica" : "Hint Screen";
@@ -522,7 +523,6 @@ document.getElementById("targetFlagBrasil").addEventListener("click", () => {
     "Esta obra está licenciada com uma Licença";
   document.getElementById("creative-common-2").innerHTML =
     "Atribuição-NãoComercial-CompartilhaIgual 4.0 Internacional";
-  document.getElementById("fechar").innerHTML = "Fechar";
   document.getElementById("btnModalToggle2").innerHTML = "Próximo";
 });
 
@@ -535,6 +535,5 @@ document.getElementById("targetFlagUSA").addEventListener("click", () => {
     "This work is licensed under a License";
   document.getElementById("creative-common-2").innerHTML =
     "Attribution-NonCommercial-ShareAlike 4.0 International";
-  document.getElementById("fechar").innerHTML = "Close";
   document.getElementById("btnModalToggle2").innerHTML = "Next";
 });

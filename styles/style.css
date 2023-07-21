@@ -68,6 +68,14 @@ a {
   right: 1vw;
 }
 
+#btnModalToggle2 {
+  animation: zoom-out-zoom-in 1s ease infinite;
+} 
+
+.modal-header {
+  padding: 0.5rem 1rem;
+}
+
 #targetFlagBrasil {
   animation: zoom-out-zoom-in 1s ease infinite;
 }
@@ -75,7 +83,6 @@ a {
 #targetFlagUSA {
   animation: zoom-in-zoom-out 1s ease infinite;
 }
-
 
 .creator {
   width: 20vh;
