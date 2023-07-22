@@ -72,10 +72,6 @@ a {
   animation: zoom-out-zoom-in 1s ease infinite;
 } 
 
-.modal-header {
-  padding: 0.5rem 1rem;
-}
-
 #targetFlagBrasil {
   animation: zoom-out-zoom-in 1s ease infinite;
 }
