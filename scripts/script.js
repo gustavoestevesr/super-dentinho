@@ -396,15 +396,15 @@ async function goToQuestion(slotSelectedFromUSer) {
 }
 
 function updateDentinhoImageSlot5() {
-  superDentinhoBoardGame.src = "./images/characters/SAD TOOTH.png";
+  superDentinhoBoardGame.src = "./images/characters/SAD TOOTH.svg";
 }
 
 function updateDentinhoImageSlot10() {
-  superDentinhoBoardGame.src = "./images/characters/HAPPY TOOTH.png";
+  superDentinhoBoardGame.src = "./images/characters/HAPPY TOOTH.svg";
 }
 
 function updateDentinhoImageSlot15() {
-  superDentinhoBoardGame.src = "./images/characters/SUPER TOOTH.png";
+  superDentinhoBoardGame.src = "./images/characters/SUPER TOOTH.svg";
 }
 
 function updateDentinhoImageSlot20() {

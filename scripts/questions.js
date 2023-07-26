@@ -34,7 +34,7 @@ var questions = [
         answer: "Macia, e com a cabeça da escova pequena.",
         correctAnswerExplanation: "Parabéns!! Isso mesmo você está indo muito bem, a escova dental deve sempre ser pequena e macia para conseguir limpar todos os cantinhos do dente, sem machucar.",
         wrongAnswerExplanation: "Incorreta !A escovinha sempre deve ser pequena e macia  para conseguir limpar todos os cantinhos do dente ,sem machucar.",
-        tip: `<img src="./images/questions/escova-de-dentes-ideal.jpg" alt="" style="width: 600px; max-width: 100%">`,
+        tip: `<img src="./images/questions/escova-de-dentes-ideal.svg" alt="" style="width: 600px; max-width: 100%">`,
         reference: `<small>` + idioma === 'pt-br' ? 'Fonte: Trindadeodontologia' : 'Source: Trindadeodontologia',
     },
     {
@@ -51,7 +51,7 @@ var questions = [
         answer: "A quantidade e relativa a um grão de ervilha.",
         correctAnswerExplanation: "Acertou!!! a pasta deve ser colocada na idade de vocês, do mesmo tamanho de um carocinho de ver ilha!! ( foto de uma ervilha)",
         wrongAnswerExplanation: "Errou !!! a pasta deve ser colocada na idade de vocês ,do mesmo tamanho de um carocinho de ver ilha!! ( foto de uma ervilha)",
-        tip: `<img src="./images/questions/quantidade-de-pasta.jpg" alt="" style="width: 600px; max-width: 100%">`,
+        tip: `<img src="./images/questions/quantidade-de-pasta.svg" alt="" style="width: 600px; max-width: 100%">`,
         reference: `<small>` + idioma === 'pt-br' ? 'Fonte: Monicabarreto' : 'Source: Monicabarreto',
     },
     {
