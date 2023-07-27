@@ -13,7 +13,7 @@
 }
 
 .englishapresentation {    
-    background-image: url("../images/backgrounds/en-usa/APRESENTATION.png");
+    background-image: url("../images/backgrounds/en-usa/APRESENTATION.svg");
     background-color: #008de6;
     background-position: center;
     background-size: contain;
@@ -27,7 +27,7 @@
 }
 
 .englishboardgame {
-    background-image: url("../images/backgrounds/en-usa/BOARDGAME.png");
+    background-image: url("../images/backgrounds/en-usa/BOARDGAME.svg");
     background-size: contain;
     background-color: #008de6; 
     background-position: center;    
@@ -185,28 +185,28 @@
 /* CORRECT ANSWER */
 
 .englishcorrectanswer0 {
-    background-image: url("../images/backgrounds/en-usa/CORRECTANSWER0.png");
+    background-image: url("../images/backgrounds/en-usa/CORRECTANSWER0.svg");
     background-color: #008de6;
     background-position: center;
     background-size: contain;
 }
 
 .englishcorrectanswer1 {
-    background-image: url("../images/backgrounds/en-usa/CORRECTANSWER1.png");
+    background-image: url("../images/backgrounds/en-usa/CORRECTANSWER1.svg");
     background-color: #008de6;
     background-position: center;
     background-size: contain;
 }
 
 .englishcorrectanswer2 {
-    background-image: url("../images/backgrounds/en-usa/CORRECTANSWER2.png");
+    background-image: url("../images/backgrounds/en-usa/CORRECTANSWER2.svg");
     background-color: #008de6;
     background-position: center;
     background-size: contain;
 }
 
 .englishcorrectanswer3 {
-    background-image: url("../images/backgrounds/en-usa/CORRECTANSWER3.png");
+    background-image: url("../images/backgrounds/en-usa/CORRECTANSWER3.svg");
     background-color: #008de6;
     background-position: center;
     background-size: contain;
