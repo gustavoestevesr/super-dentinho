@@ -123,18 +123,18 @@ function navigateFromCreditsToApresentation() {
 
 function navigateFromBoardgameToWinner() {
     sectionBoardgame.style.display = 'none'
-    sectionVictory.style.display = 'flex'
+    sectionWinner.style.display = 'flex'
 
     btnBackFromBoardgameToMenu.style.display = 'none'
-    document.body.classList.remove(idioma === "pt-br" ? "references1" : "englishreferences1")
+    document.body.classList.remove(idioma === "pt-br" ? "boardgame" : "englishboardgame")
     document.body.classList.add(idioma === "pt-br" ? "winner" : "englishwinner")
 }
 
 function navigateFromWinnerToThanks() {
+    sectionWinner.style.display = 'none'
     sectionThanks.style.display = 'flex'
-    sectionVictory.style.display = 'none'
 
-    document.body.classList.remove(idioma === "pt-br" ? "thanks" : "englishwinner")
+    document.body.classList.remove(idioma === "pt-br" ? "winner" : "englishwinner")
     document.body.classList.add(idioma === "pt-br" ? "thanks" : "englishthanks")
 }
 
@@ -142,8 +142,8 @@ function navigateFromThanksToReferences() {
     sectionThanks.style.display = 'none'    
     sectionReferences.style.display = 'flex'
 
-    document.body.classList.remove("thanks")
-    document.body.classList.add(idioma === "pt-br" ? "start" : "englishstart")
+    document.body.classList.remove(idioma === "pt-br" ? "thanks" : "englishthanks")
+    document.body.classList.add(idioma === "pt-br" ? "references1" : "englishreferences1")
 }
 
 function navigateFromReferencestoStart() {
